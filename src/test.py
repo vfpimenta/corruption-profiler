@@ -20,7 +20,7 @@ ys = []
 plt.xticks(x,x_ticks)
 
 for state in states:
-	y = handler.fetch_state_expenses(state)
+	y = handler.fetch_expenses('state',state)
 	ys.append(y)
 	plt.plot(x,y,label=state,marker=next(markers))
 	print("Ploted graph for "+state+"...")
