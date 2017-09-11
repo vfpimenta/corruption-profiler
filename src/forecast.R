@@ -1,0 +1,52 @@
+suppressMessages(library(base))
+suppressMessages(library(tseries))
+suppressMessages(library(forecast))
+suppressMessages(library(hydroGOF))
+suppressMessages(library(optparse))
+
+option_list = list(
+	make_option(c('-t','--type'), type="character", default=NULL, help="execution type", metavar="character")
+);
+
+opt_parser = OptionParser(option_list=option_list);
+opt = parse_args(opt_parser);
+
+range01 <- function(x){(x-min(x))/(max(x)-min(x))}
+
+expenses = c(13137034.469999887, 13712445.279999502, 14099374.119999519, 14484886.569999475, 14538760.079999547, 18412715.509999678, 11112159.339999944, 12702249.949999727, 16946508.969999343, 12604061.029999655, 11952303.19999957, 11903463.89999959, 9777888.319999967, 9072373.91000004, 8389802.809999995, 10792336.709999792, 17467485.29999906, 21670784.289999586, 11531046.739999702, 12088164.449999712, 12976107.60000019, 14730721.52000021, 15129765.510000344, 15388385.710000532, 13886519.950000234, 15528536.280000627, 15048678.820000581, 14921438.770000596, 14548717.790000375, 16090104.170000412, 11759920.24000008, 14402402.740000382, 15224433.140000252, 14991388.620000377, 15241006.050000302, 13628943.870000144, 13638626.070000332, 13271942.059999881, 12305925.519999854, 14155121.039999975, 15548079.380000057, 16289049.589999953, 11595245.140000097, 13110896.970000094, 15258421.679999942, 16427142.720000045, 16408472.200000163, 16001574.77000029, 15550746.420000255, 16016084.97000021, 16503868.980000162, 17050488.040000163, 16072560.770000074, 19102247.96000018, 12580977.719999973, 17411948.760000203, 17642353.970000256, 18269381.18000047, 19236521.530000333, 13285805.819999943, 11659691.319999816, 9830135.019999832, 8989929.639999827, 16849108.559999563, 22476226.539999634, 27704513.790000156, 12744554.19999972, 13375881.749999307, 17512553.959999114, 17149029.109998994, 18121816.20999907, 17844123.669999246, 17734045.479999274, 19464478.49999972, 19400218.549999937, 19227905.699999835, 18576822.559999775, 22654848.62999961, 13360062.119999953, 17158969.129999954, 20462751.53999951, 18694603.88999993, 19597110.339999948, 18313788.660000216, 16919024.900000248, 18354020.12999976)
+expenses.ts = ts(expenses,frequency=12,start=c(2009,7))
+
+expenses.norm = range01(expenses)
+expenses.norm.ts = ts(expenses.norm,frequency=12,start=c(2009,7))
+
+if (opt$type == 'simple') {
+	expenses.norm.ts_hold = ts(expenses.norm,frequency=12,start=c(2009,7),end=c(2015,12))
+	expenses.norm.arima = auto.arima(expenses.norm.ts_hold)
+	expenses.norm.forecast = forecast(expenses.norm.arima, h=8)
+
+	print(expenses.norm.forecast$mean)
+
+	diff = mse(expenses.norm.forecast$mean, expenses.norm.ts[79:86])
+	cat('final mse:',diff,'\n')
+
+	plot(expenses.norm.forecast)
+	par(new=TRUE)
+	plot(expenses.norm.ts)
+} else if (opt$type == 'full') {
+	forecasts = c()
+	for (i in c(79:86)) {
+		expenses.norm.ts_hold = ts(expenses.norm[1:i],frequency=12,start=c(2009,7))
+		expenses.norm.arima = auto.arima(expenses.norm.ts_hold)
+		expenses.norm.forecast = forecast(expenses.norm.arima, h=1)
+
+		diff = mse(expenses.norm.forecast$mean, expenses.norm.ts[i])
+		forecasts[i-78] = expenses.norm.forecast$mean
+		print(diff)
+
+		plot(expenses.norm.forecast)
+	}
+	print(forecasts)
+
+	diff = mse(forecasts, expenses.norm.ts[79:86])
+	cat('final mse:',diff,'\n')
+}
