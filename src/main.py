@@ -1,9 +1,20 @@
 from profiler import Profiler
 from sklearn.cluster import KMeans
 from scipy.spatial import distance
+from optparse import OptionParser
 import matplotlib.pyplot as plt
 import numpy as np
 import itertools
+
+parser = OptionParser()
+parser.add_option('-c', '--clusters', dest='opt_n_clusters', type='int',
+    help='Number of clusters (2 to 8).', metavar='NUMBER')
+parser.add_option('-p', '--plot', dest='opt_plot', action='store_true',
+    help='Plot the graph for the clusters and its members.', metavar='BOOLEAN')
+parser.add_option('-f', '--fit', dest='opt_fit', action='store_true',
+    help='Claculate the inner/outer distance to clusters.', metavar='BOOLEAN')
+
+(options, args) = parser.parse_args()
 
 def plot_cluster(n_clusters, series, kmeans):
     deep_colors = ['red','blue','green','purple','olive','darkslategray','saddlebrown','deeppink']
@@ -33,7 +44,7 @@ def iodistance(series_list, kmeans):
     print('Inner-cluster distance: {}'.format(np.mean(idist)))
     print('Outer-cluster distance: {}'.format(np.mean(odist)))
 
-def main(n_clusters, threshold, _plot=False, _dist=False):
+def main(n_clusters, threshold, _plot=False, _fit=False):
     profiler = Profiler()
     series = profiler.get_general(opt='state')
     series_list = list(series.values())
@@ -49,8 +60,8 @@ def main(n_clusters, threshold, _plot=False, _dist=False):
         plot_cluster(n_clusters, series, kmeans)
 
     
-    # Calculate inner/outer cluster distance to select best partition
-    if _dist:
+    # Calculate inner/outer cluster distance to select best partition fit
+    if _fit:
         iodistance(series_list, kmeans)
 
     # Find outliers
@@ -69,4 +80,5 @@ def main(n_clusters, threshold, _plot=False, _dist=False):
     print('Outliers found: {}'.format(outliers))
 
 if __name__ == '__main__':
-    main(n_clusters=5, threshold=2.32)
+    main(n_clusters=options.opt_n_clusters, threshold=2.32, 
+        _plot=options.opt_plot, _fit=options.opt_fit)
