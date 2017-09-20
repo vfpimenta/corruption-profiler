@@ -46,7 +46,7 @@ def iodistance(series_list, kmeans):
 
 def main(n_clusters, threshold, _plot=False, _fit=False):
     profiler = Profiler()
-    series = profiler.get_general(opt='state')
+    series = profiler.get_congressman_ts()
     series_list = list(series.values())
     kmeans = KMeans(n_clusters=n_clusters).fit(series_list)
     series_dist = kmeans.transform(series_list)

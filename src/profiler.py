@@ -64,16 +64,15 @@ class Profiler:
 
         return y
 
-    def get_congressman_ts(self):
+    def get_congressman_ts(self, trim=True):
         congressman_ts = {}
         print('Reading csv info...')
         congressman = handler.get_congressman_info()
         idx = 0
         for _id in congressman:
-            congressman_ts[_id] = handler.fetch_expenses('congressperson_id',_id)
+            congressman_ts[_id] = handler.fetch_expenses('congressperson_id',_id, trim)
             handler.printProgressBar(idx, len(congressman), prefix='Fetching data', suffix='Complete')
             idx += 1
-            if idx == 10: break;
 
         print()
         return congressman_ts
