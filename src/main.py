@@ -1,3 +1,4 @@
+from collections import OrderedDict
 from profiler import Profiler
 from sklearn.cluster import KMeans
 from scipy.spatial import distance
@@ -5,6 +6,7 @@ from optparse import OptionParser
 import matplotlib.pyplot as plt
 import numpy as np
 import itertools
+import time
 
 parser = OptionParser()
 parser.add_option('-c', '--clusters', dest='opt_n_clusters', type='int',
@@ -46,10 +48,11 @@ def iodistance(series_list, kmeans):
 
 def main(n_clusters, threshold, _plot=False, _fit=False):
     profiler = Profiler()
-    series = profiler.get_congressman_ts()
-    series_list = list(series.values())
+    series = profiler.read_congressman_json()
+    series_list = [x[2] for x in series.values()]
     kmeans = KMeans(n_clusters=n_clusters).fit(series_list)
     series_dist = kmeans.transform(series_list)
+    congressman_info = handler.get_congressman_info()
 
     for i in range(len(series.keys())):
         key = list(series.keys())[i]
@@ -69,7 +72,7 @@ def main(n_clusters, threshold, _plot=False, _fit=False):
     for key in series.keys():
         cluster_distances = list(map(lambda v: v[1][v[2]], 
             list(filter(lambda el: el[2] == series[key][2], 
-                series.values()))))
+                series.values()[2]))))
         mu = np.mean(cluster_distances)
         sd = np.std(cluster_distances)
         d = series[key][1][series[key][2]]
@@ -77,7 +80,11 @@ def main(n_clusters, threshold, _plot=False, _fit=False):
         if  d > (mu+threshold*sd) or d < (mu-threshold*sd):
             outliers.append(key)
 
-    print('Outliers found: {}'.format(outliers))
+    filename = '../data/outliers-{}.log'.format(time.strftime('%Y-%m-%d'))
+    with open(filename,'w') as logfile:
+        logfile.write('UF\tName')
+        for outlier in outliers:
+            logfile.write('{}\t{}'.format(series[outlier][1], series[outlier][0]))
 
 if __name__ == '__main__':
     main(n_clusters=options.opt_n_clusters, threshold=2.32, 
