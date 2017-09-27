@@ -7,6 +7,7 @@ import matplotlib.pyplot as plt
 import numpy as np
 import itertools
 import time
+import os.path
 
 parser = OptionParser()
 parser.add_option('-c', '--clusters', dest='opt_n_clusters', type='int',
@@ -25,8 +26,8 @@ def plot_cluster(n_clusters, series, kmeans):
     if n_clusters > 8 or n_clusters < 2:
         raise Exception('Unable to plot {} clusters!'.format(n_clusters))
 
-    for key in series.keys():
-        plt.plot(series[key][0], color=light_colors[series[key][2]])    
+    #for key in series.keys():
+        #plt.plot(series[key][0][2], color=light_colors[series[key][2]]) 
 
     for i in range(len(kmeans.cluster_centers_)):
         plt.plot(kmeans.cluster_centers_[i], 
@@ -52,7 +53,6 @@ def main(n_clusters, threshold, _plot=False, _fit=False):
     series_list = [x[2] for x in series.values()]
     kmeans = KMeans(n_clusters=n_clusters).fit(series_list)
     series_dist = kmeans.transform(series_list)
-    congressman_info = handler.get_congressman_info()
 
     for i in range(len(series.keys())):
         key = list(series.keys())[i]
@@ -72,7 +72,7 @@ def main(n_clusters, threshold, _plot=False, _fit=False):
     for key in series.keys():
         cluster_distances = list(map(lambda v: v[1][v[2]], 
             list(filter(lambda el: el[2] == series[key][2], 
-                series.values()[2]))))
+                series.values()))))
         mu = np.mean(cluster_distances)
         sd = np.std(cluster_distances)
         d = series[key][1][series[key][2]]
@@ -80,11 +80,12 @@ def main(n_clusters, threshold, _plot=False, _fit=False):
         if  d > (mu+threshold*sd) or d < (mu-threshold*sd):
             outliers.append(key)
 
-    filename = '../data/outliers-{}.log'.format(time.strftime('%Y-%m-%d'))
+    filename = '../data/outliers-{}.log'.format(time.strftime('%Y-%m-%d-%H:%M:%S'))
     with open(filename,'w') as logfile:
-        logfile.write('UF\tName')
+        logfile.write('Outliers found for {} clusters and threshold {}\n'.format(n_clusters, threshold))
+        logfile.write('UF\tName\n')
         for outlier in outliers:
-            logfile.write('{}\t{}'.format(series[outlier][1], series[outlier][0]))
+            logfile.write('{}\t{}\n'.format(series[outlier][0][1], series[outlier][0][0]))
 
 if __name__ == '__main__':
     main(n_clusters=options.opt_n_clusters, threshold=2.32, 
