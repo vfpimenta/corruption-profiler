@@ -26,7 +26,7 @@ class SQLiteHandler:
         if trim:
             # jul 2009 ~ ago 2016
             sql += ' WHERE (c.year = ? AND c.month >= ?) OR (c.year = ? AND c.month <= ?) OR (c.year >= ? AND c.year <= ?)'
-            for val in cur.execute(sql,[value,2009,7,2016,8,2010,2015]):
+            for val in cur.execute(sql,[value,2009,4,2016,8,2010,2015]):
                 tuples.append(val)
         else:
             for val in cur.execute(sql,[value]):
@@ -43,7 +43,7 @@ class SQLiteHandler:
         if trim:
             # jul 2009 ~ ago 2016
             sql += ' WHERE (c.year = ? AND c.month >= ?) OR (c.year = ? AND c.month <= ?) OR (c.year >= ? AND c.year <= ?)'
-            for val in self.cursor.execute(sql,[2009,7,2016,8,2010,2015]):
+            for val in self.cursor.execute(sql,[2009,4,2016,8,2010,2015]):
                 tuples.append(val)
         else:
             for val in self.cursor.execute(sql):
@@ -54,7 +54,7 @@ class SQLiteHandler:
 
     @sqlite_transaction
     def fetch_congressman_info(cur, self, _id):
-        for row in cur.execute('SELECT congressperson_name, state FROM previous_years WHERE congressperson_id = ? GROUP BY congressperson_id', [_id]):
+        for row in cur.execute('SELECT congressperson_name, state, party, legislature_53, legislature_54, legislature_55 FROM previous_years WHERE congressperson_id = ? GROUP BY congressperson_id', [_id]):
             info = row
 
         return info
@@ -136,9 +136,10 @@ class JsonHandler:
         self.filepath = '../data/congressman_ts.json'
 
     def dump(self, data):
-        print('Dumping data to json...')
-        with open(filepath,'w') as jsonfile:
+        print('Dumping data to json...',end='\r')
+        with open(self.filepath,'w') as jsonfile:
             json.dump(data, jsonfile)
+        print('Dumping data to json... Done')
 
     def load(self):
         with open('../data/congressman_ts.json') as jsonfile:    

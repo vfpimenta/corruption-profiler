@@ -1,4 +1,6 @@
 import time
+import datetime
+import calendar
 
 def timing(f):
     def wrap(*args):
@@ -28,3 +30,10 @@ def printProgressBar (iteration, total, prefix = '', suffix = '', decimals = 2, 
     # Print New Line on Complete
     if iteration == total: 
         print()
+
+def add_months(sourcedate,months):
+    month = sourcedate.month - 1 + months
+    year = int(sourcedate.year + month / 12 )
+    month = month % 12 + 1
+    day = min(sourcedate.day,calendar.monthrange(year,month)[1])
+    return datetime.date(year,month,day)

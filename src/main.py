@@ -31,7 +31,7 @@ def plot_cluster(n_clusters, series, kmeans):
         raise Exception('Unable to plot {} clusters!'.format(n_clusters))
 
     for key in series.keys():
-        plt.plot(series[key][0][2], color=colors['light'][series[key][2]]) 
+        plt.plot(series[key][0][-1], color=colors['light'][series[key][-1]]) 
 
     for i in range(len(kmeans.cluster_centers_)):
         plt.plot(kmeans.cluster_centers_[i], 
@@ -51,53 +51,56 @@ def in_out_distance(series_list, kmeans):
     print('Inner-cluster distance: {}'.format(np.mean(idist)))
     print('Outer-cluster distance: {}'.format(np.mean(odist)))
 
-def print_outlier_log(n_clusters, threshold, series, outliers):
+def print_outlier_log(n_clusters, threshold, series, outliers, legislature):
     filename = '../log/outliers-{}.log'.format(time.strftime('%Y-%m-%d-%H:%M:%S'))
     with open(filename,'w') as logfile:
         logfile.write('Outliers found for {} clusters and threshold {}\n'.format(n_clusters, threshold))
+        logfile.write('Considering congressman for legislature #{}\n'.format(legislature))
         logfile.write('UF\tName\n')
         for outlier in outliers:
             logfile.write('{}\t{}\n'.format(series[outlier][0][1], series[outlier][0][0]))
 
-def main(n_clusters, threshold=2.32, _plot=False, _fit=False, _log=False):
-    profiler = Profiler()
-    series = profiler.read_congressman_json()
-    series_list = [x[2] for x in series.values()]
-    kmeans = KMeans(n_clusters=n_clusters).fit(series_list)
-    series_dist = kmeans.transform(series_list)
+def main(n_clusters, legislatures, threshold=2.32, _plot=False, _fit=False, _log=False):
+    for legislature in legislatures:
+        print('Running profiler for legislature {}...'.format(legislature))
+        profiler = Profiler()
+        series = profiler.read_congressman_json(legislature=legislature)
+        series_list = [x[-1] for x in series.values()]
+        kmeans = KMeans(n_clusters=n_clusters).fit(series_list)
+        series_dist = kmeans.transform(series_list)
 
-    for i in range(len(series.keys())):
-        key = list(series.keys())[i]
-        series[key] = (series[key], series_dist[i], kmeans.labels_[i])
+        for i in range(len(series.keys())):
+            key = list(series.keys())[i]
+            series[key] = (series[key], series_dist[i], kmeans.labels_[i])
 
-    # Plot the cluster curves
-    if _plot:
-        plot_cluster(n_clusters, series, kmeans)
+        # Plot the cluster curves
+        if _plot:
+            plot_cluster(n_clusters, series, kmeans)
 
-    
-    # Calculate inner/outer cluster distance to select best partition fit
-    if _fit:
-        in_out_distance(series_list, kmeans)
+        
+        # Calculate inner/outer cluster distance to select best partition fit
+        if _fit:
+            in_out_distance(series_list, kmeans)
 
-    # Find outliers
-    outliers = []
-    for key in series.keys():
-        cluster_distances = list(map(lambda v: v[1][v[2]], 
-            list(filter(lambda el: el[2] == series[key][2], 
-                series.values()))))
-        mu = np.mean(cluster_distances)
-        sd = np.std(cluster_distances)
-        d = series[key][1][series[key][2]]
+        # Find outliers
+        outliers = []
+        for key in series.keys():
+            cluster_distances = list(map(lambda v: v[1][v[2]], 
+                list(filter(lambda el: el[2] == series[key][2], 
+                    series.values()))))
+            mu = np.mean(cluster_distances)
+            sd = np.std(cluster_distances)
+            d = series[key][1][series[key][2]]
 
-        if  d > (mu+threshold*sd) or d < (mu-threshold*sd):
-            outliers.append(key)
+            if  d > (mu+threshold*sd) or d < (mu-threshold*sd):
+                outliers.append(key)
 
-    # Log results
-    if _log:
-        print_outlier_log(n_clusters,threshold,series,outliers)
+        # Log results
+        if _log:
+            print_outlier_log(n_clusters,threshold,series,outliers,legislature)
 
 if __name__ == '__main__':
     if options.opt_n_clusters == None or options.opt_n_clusters < 2:
         raise Exception('Number of clusters not provided!')
-    main(n_clusters=options.opt_n_clusters, _plot=options.opt_plot, 
-        _fit=options.opt_fit, _log=options.opt_log)
+    main(n_clusters=options.opt_n_clusters, legislatures=[53,54,55],
+        _plot=options.opt_plot, _fit=options.opt_fit, _log=options.opt_log)

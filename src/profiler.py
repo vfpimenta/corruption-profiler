@@ -47,9 +47,10 @@ class Profiler:
             ys.append(y)
             y_ts[item] = y
             if plot:
+                print("Plotting graph for "+item+"...",end='\r')
                 x = list(range(len(y)))
                 plt.plot(x,y,label=item,marker=next(self.markers))
-                print("Ploted graph for "+item+"...")
+                print("Plotting graph for "+item+"... Done")
 
         arr = np.array(ys)
         avg = np.mean(arr, axis=0)
@@ -76,8 +77,10 @@ class Profiler:
 
     def get_congressman_ts(self, trim=True):
         congressman_ts = OrderedDict()
-        print('Reading csv info...')
+        print('Reading csv info...',end='\r')
         congressman = self.csv_handler.get_congressman_info()
+        print('Reading csv info... Done')
+
         idx = 0
         for _id in congressman:
             idx += 1
@@ -91,13 +94,39 @@ class Profiler:
         for key in data.keys():
             idx += 1
             info = self.sql_handler.fetch_congressman_info(key)
-            data[key] = (info[0],info[1],data[key])
+            data[key] = (
+                info[0], # Name
+                info[1], # State
+                info[2], # party
+                (info[3],info[4],info[5]), # Legislature (53,54,55)
+                data[key] # Time series
+            )
             util.printProgressBar(idx, len(data.keys()), prefix='Fetching info', suffix='Complete')
 
         self.json_handler.dump(data) 
 
-    def read_congressman_json(self):
+    def read_congressman_json(self, legislature):
         if not os.path.exists('../data/congressman_ts.json'):
-            self.build_congressman_json()  
+            print('Json cache not found! Building cache...')
+            self.build_congressman_json()
+        else:
+            print('Json cache found.')
 
-        return self.json_handler.load()
+        data = self.json_handler.load()
+        
+        filtered_data = {}
+        for _id in data.keys():
+            if(data[_id][3][legislature-53]):
+                filtered_data[_id] = data[_id]
+                begin, end = __get_idx__(legislature)
+                filtered_data[_id][4] = filtered_data[_id][4][begin:end]
+
+        return filtered_data
+
+def __get_idx__(legislature):
+    if legislature == 53:
+        return 0, 19
+    elif legislature == 54:
+        return 19, 67
+    elif legislature == 55:
+        return 67, 86
