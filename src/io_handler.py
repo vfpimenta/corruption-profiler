@@ -1,5 +1,6 @@
 import sqlite3
 import csv
+import json
 import util
 
 def sqlite_transaction(f):
@@ -59,6 +60,29 @@ class SQLiteHandler:
         return info
 
     @sqlite_transaction
+    def get_field(cur, self, field):
+        values = []
+        for row in cur.execute('SELECT DISTINCT {} FROM previous_years'.format(field)):
+            if row[0]:
+                values.append(row[0])
+
+        return values
+
+    @sqlite_transaction
+    def __update_database__(cur, self):
+        for legislature in [53,54,55]:
+            try:
+                cur.execute('ALTER TABLE "previous_years" ADD "legislature_{}" TINYINT(1) DEFAULT 0'.format(legislature))
+            except sqlite3.OperationalError as e:
+                pass
+            
+            with open('../data/congressperson-{}.csv'.format(legislature),'r') as csvfile:
+                fieldnames = ['Name','Party','State']
+                reader = csv.DictReader(csvfile)
+                for row in reader:
+                    cur.execute('UPDATE "previous_years" SET "legislature_{}" = 1 WHERE congressperson_name = ? AND party = ? AND state = ?'.format(legislature),[row[fieldnames[0]], row[fieldnames[1]], row[fieldnames[2]]])
+
+    @sqlite_transaction
     def __create_calendar__(cur, self):
         cur.execute('CREATE TABLE "calendar" ("year" INTEGER, "month" INTEGER);')
         data = []
@@ -104,3 +128,20 @@ class CSVHandler:
                     congressman_info[row[fieldnames[0]]] = row[fieldnames[1]]
 
         return congressman_info
+
+
+class JsonHandler:
+
+    def __init__(self):
+        self.filepath = '../data/congressman_ts.json'
+
+    def dump(self, data):
+        print('Dumping data to json...')
+        with open(filepath,'w') as jsonfile:
+            json.dump(data, jsonfile)
+
+    def load(self):
+        with open('../data/congressman_ts.json') as jsonfile:    
+            data = json.load(jsonfile)
+
+        return data
