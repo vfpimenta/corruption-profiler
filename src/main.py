@@ -18,10 +18,12 @@ parser.add_option('-f', '--fit', dest='opt_fit', action='store_true',
     help='Calculate the inner/outer distance to clusters.', metavar='BOOLEAN')
 parser.add_option('-l', '--log', dest='opt_log', action='store_true',
     help='Print outlier log file.', metavar='BOOLEAN')
+parser.add_option('-t', '--threshold', dest='opt_threshold', type='float',
+    help='Threshold for outlier detection.', metavar='NUMBER')
 
 (options, args) = parser.parse_args()
 
-def plot_cluster(n_clusters, series, kmeans):
+def plot_cluster(n_clusters, legislature, series, kmeans):
     colors = dict(
         deep=['red','blue','green','purple','olive','darkslategray','saddlebrown','deeppink'],
         light=['mistyrose','skyblue','palegreen','mediumpurple','khaki','aquamarine','tan','pink']
@@ -30,14 +32,18 @@ def plot_cluster(n_clusters, series, kmeans):
     if n_clusters > 8 or n_clusters < 2:
         raise Exception('Unable to plot {} clusters!'.format(n_clusters))
 
+    fig, ax = plt.subplots( nrows=1, ncols=1 )
+
     for key in series.keys():
-        plt.plot(series[key][0][-1], color=colors['light'][series[key][-1]]) 
+        ax.plot(series[key][0][-1], color=colors['light'][series[key][-1]]) 
 
     for i in range(len(kmeans.cluster_centers_)):
-        plt.plot(kmeans.cluster_centers_[i], 
+        ax.plot(kmeans.cluster_centers_[i], 
             color=colors['deep'][i], linewidth='2') 
 
-    plt.show()
+    #plt.show()
+    fig.savefig('../img/cluster/{}_clusters_{}leg-{}.png'.format(n_clusters,legislature,time.strftime('%Y-%m-%d-%H:%M:%S')), bbox_inches='tight')
+    plt.close(fig)
 
 def in_out_distance(series_list, kmeans):
     idist = []
@@ -75,7 +81,7 @@ def main(n_clusters, legislatures, threshold=2.32, _plot=False, _fit=False, _log
 
         # Plot the cluster curves
         if _plot:
-            plot_cluster(n_clusters, series, kmeans)
+            plot_cluster(n_clusters, legislature, series, kmeans)
 
         
         # Calculate inner/outer cluster distance to select best partition fit
@@ -103,4 +109,5 @@ if __name__ == '__main__':
     if options.opt_n_clusters == None or options.opt_n_clusters < 2:
         raise Exception('Number of clusters not provided!')
     main(n_clusters=options.opt_n_clusters, legislatures=[53,54,55],
+        threshold=options.opt_threshold,
         _plot=options.opt_plot, _fit=options.opt_fit, _log=options.opt_log)
