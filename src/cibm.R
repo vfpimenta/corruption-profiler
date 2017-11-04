@@ -21,6 +21,22 @@ color.node <- function(el) {
   }
 }
 
+region.node <- function(el) {
+  if (el %in% c('RS','PR','SC')) {
+    'south'
+  } else if (el %in% c('SP','RJ','ES','MG')) {
+    'south-east'
+  } else if (el %in% c('MT','MS','GO','DF')) {
+    'center-west'
+  } else if (el %in% c('BA','SE','AL','PE','PB','RN','CE','PI','MA')) {
+    'north-east'
+  } else if (el %in% c('RO','AC','AM','RR','PA','AP','TO')) {
+    'north'
+  } else {
+    stop(paste('Unknown state ', el, sep=""))
+  }
+}
+
 congressman_data <- fromJSON(file='/home/victor/dev/corruption-profiler/data/congressman_ts.json')
 
 mat.53 <- c()
@@ -54,18 +70,18 @@ colnames(mat.55) <- names.55
 
 idx <- 53
 for (mat in list(mat.53, mat.54, mat.55)) {
-  d <- distance(mat, method='robust')
+  d <- distance(mat)
   gmstknn <- mstknn(d)
 
   for (congressman in congressman_data) {
     if (congressman[[1]] %in% colnames(mat)) {
-      V(gmstknn)[congressman[[1]]]$color <- color.node(congressman[[4]])
       V(gmstknn)[congressman[[1]]]$state <- congressman[[2]]
+      V(gmstknn)[congressman[[1]]]$region <- region.node(congressman[[2]])
       V(gmstknn)[congressman[[1]]]$size <- sum(congressman[[5]])
     }
   }
 
-  path <- paste('~/dev/corruption-profiler/data/cibm-color-', idx, '.graphml',sep='')
+  path <- paste('~/dev/corruption-profiler/data/graphs/cibm-statecolor-', idx, '.graphml',sep='')
   write_graph(gmstknn, path, 'graphml')
   idx <- idx+1
 }

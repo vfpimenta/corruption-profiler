@@ -36,17 +36,17 @@ class SQLiteHandler:
         return values
 
     @sqlite_transaction
-    def fetch_sum(self, trim):
+    def fetch_sum(cur, self, trim):
         tuples = []
 
         sql = 'SELECT c.year, c.month, COALESCE(py.net,0) FROM calendar c LEFT JOIN (SELECT year,month,SUM(net_value) as net FROM previous_years GROUP BY year, month) py ON py.year = c.year AND py.month = c.month'
         if trim:
             # jul 2009 ~ ago 2016
             sql += ' WHERE (c.year = ? AND c.month >= ?) OR (c.year = ? AND c.month <= ?) OR (c.year >= ? AND c.year <= ?)'
-            for val in self.cursor.execute(sql,[2009,4,2016,8,2010,2015]):
+            for val in cur.execute(sql,[2009,4,2016,8,2010,2015]):
                 tuples.append(val)
         else:
-            for val in self.cursor.execute(sql):
+            for val in cur.execute(sql):
                 tuples.append(val)
 
         values = [i[2] for i in tuples]

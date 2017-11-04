@@ -6,4 +6,6 @@ sudo apt-get install python3-pip
 sudo apt-get install python3-tk
 sudo pip3 install --upgrade pip3
 sudo pip3 install -U serenata-toolbox
+sudo pip3 install sklearn
+sudo pip3 install scipy
 sudo pip3 install matplotlib
