@@ -28,9 +28,10 @@ class Profiler:
         elif opt.lower() == 'party'.lower():
             collection = self.parties
         elif opt.lower() == 'quota'.lower():
+            opt = 'subquota_description'
             collection = self.subquota_description
         else:
-            raise PlotTypeError('The plot option {} is not supported!'.format(opt))
+            raise Exception('The plot option {} is not supported!'.format(opt))
 
         # x_ticks = []
         # for year in str(self.years):
