@@ -108,8 +108,8 @@ colnames(mat.full) <- names.full
 
 idx <- 53
 for (mat in list(mat.53, mat.54, mat.55)) {
-  d <- distance(mat)
-  gmstknn <- mstknn(d)
+  d <- distance(mat, method="robust")
+  gmstknn <- mstknn(d, k=5)
 
   if (opt$dumpcl) {
     cls <- clusters(gmstknn)
@@ -127,12 +127,14 @@ for (mat in list(mat.53, mat.54, mat.55)) {
     }
 
     export <- toJSON(cluster.list)
-    path <- paste('~/dev/corruption-profiler/data/dump-clusters-', idx, '.json',sep='')
+    path <- paste('~/dev/corruption-profiler/data/dump/robust/k-5/dump-clusters-', idx, '.json',sep='')
     write(export, path)
   }
 
-  for (congressman in congressman_data) {
+  for (congressman.id in names(congressman_data)) {
+    congressman <- congressman_data[[congressman.id]]
     if (congressman[[1]] %in% colnames(mat)) {
+      V(gmstknn)[congressman[[1]]]$id <- congressman.id
       V(gmstknn)[congressman[[1]]]$state <- congressman[[2]]
       V(gmstknn)[congressman[[1]]]$term_color <- color.term.node(congressman[[4]])
       V(gmstknn)[congressman[[1]]]$region <- region.node(congressman[[2]])
@@ -141,7 +143,7 @@ for (mat in list(mat.53, mat.54, mat.55)) {
   }
 
   if (opt$dumpgml) {
-    path <- paste('~/dev/corruption-profiler/data/graphs/cibm-regioncolor-', idx, '.graphml',sep='')
+    path <- paste('~/dev/corruption-profiler/data/graphs/robust/k-5/cibm-regioncolor-', idx, '.graphml',sep='')
     write_graph(gmstknn, path, 'graphml')
   }
   idx <- idx+1

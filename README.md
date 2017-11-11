@@ -9,7 +9,7 @@ The scripts used for this project are based on [Serenata de Amor](https://github
 1. Run analysis over histogram and proportions of each subgroup
   * Evaluate different input data results (subquota, proportion, pdf)
   * Evaluate othe forms of presentation (boxplot, histogram)
-1. Use the JS distance on the calculation instead of pearson/spearman
-  * Consider using the robust distance (evaluate what is best)
-  * Tinker with the K size to see the different groups
+1. ~~Use the JS distance on the calculation instead of pearson/spearman~~
+  * ~~Consider using the robust distance (evaluate what is best)~~
+  * ~~Tinker with the K size to see the different groups~~
 1. Use KNN clicks to better detect subgroups relation

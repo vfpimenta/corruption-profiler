@@ -4,8 +4,8 @@ import numpy as np
 import json
 import os
 
-def read_mstknn_dump(legislature):
-  with open('../data/dump-clusters-'+str(legislature)+'.json') as jsonfile:    
+def read_mstknn_dump(legislature, k, method='JS'):
+  with open('../data/dump/{}/k-{}/dump-clusters-{}.json'.format(method, k, legislature)) as jsonfile:    
     data = json.load(jsonfile)
 
   return data
@@ -49,11 +49,11 @@ def evaluate_avg(cluster, series):
 
   return avgs
 
-def main(legislatures):
+def main(legislatures, k, method='JS'):
   profiler = Profiler()
   for legislature in legislatures:
     series = profiler.read_congressman_json(legislature)
-    clusters = merge_min_clusters(read_mstknn_dump(legislature), 3, legislature)
+    clusters = merge_min_clusters(read_mstknn_dump(legislature, k, method), 3, legislature)
     cluster_idx = 0
     for cluster in clusters:
       cluster_idx += 1
@@ -62,12 +62,12 @@ def main(legislatures):
       fig, ax = plt.subplots( nrows=1, ncols=1 )
       ax.plot(result)
 
-      directory = '../img/graphs/JS/term-{}-groups/'.format(legislature)
+      directory = '../img/graphs/{}/k-{}/term-{}-groups/'.format(method, k, legislature)
       if not os.path.exists(directory):
         os.makedirs(directory)
 
-      fig.savefig('../img/graphs/JS/term-{}-groups/region-graph-group{}.png'.format(legislature, cluster_idx), bbox_inches='tight')
+      fig.savefig('../img/graphs/{}/k-{}/term-{}-groups/region-graph-group{}.png'.format(method, k, legislature, cluster_idx), bbox_inches='tight')
       plt.close(fig)
 
 if __name__ == '__main__':
-  main([53, 54, 55])
+  main([53, 54, 55], k=5, method="robust")
