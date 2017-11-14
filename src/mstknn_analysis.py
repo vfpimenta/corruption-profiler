@@ -70,4 +70,4 @@ def main(legislatures, k, method='JS'):
       plt.close(fig)
 
 if __name__ == '__main__':
-  main([53, 54, 55], k=5, method="robust")
+  main([53, 54, 55], k=3, method="robust")
