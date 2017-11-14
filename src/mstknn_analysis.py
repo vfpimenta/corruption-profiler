@@ -1,6 +1,7 @@
 from profiler import Profiler
 import matplotlib.pyplot as plt
 import numpy as np
+import seaborn as sns
 import json
 import os
 
@@ -38,7 +39,7 @@ def evaluate_avg(cluster, series):
 
   for i in range(len(next(iter(series.values()))[4])):
     avg = list()
-    if isinstance(cluster,list):
+    if isinstance(cluster, list):
       for congressman_id in cluster:
         avg.append(series.get(congressman_id)[4][i])
     elif isinstance(cluster, str):
@@ -49,7 +50,20 @@ def evaluate_avg(cluster, series):
 
   return avgs
 
-def main(legislatures, k, method='JS'):
+def evaluate_dist(cluster, series):
+  dist = list()
+
+  for i in range(len(next(iter(series.values()))[4])):
+    if isinstance(cluster, list):
+      for congressman_id in cluster:
+        dist.append(np.average(series.get(congressman_id)[4]))
+    elif isinstance(cluster, str):
+      congressman_id = cluster
+      dist.append(np.average(series.get(congressman_id)[4]))
+
+  return dist
+
+def main(legislatures, k, func, method='JS'):
   profiler = Profiler()
   for legislature in legislatures:
     series = profiler.read_congressman_json(legislature)
@@ -57,17 +71,23 @@ def main(legislatures, k, method='JS'):
     cluster_idx = 0
     for cluster in clusters:
       cluster_idx += 1
-      result = evaluate_avg(cluster, series)
-
       fig, ax = plt.subplots( nrows=1, ncols=1 )
-      ax.plot(result)
 
-      directory = '../img/graphs/{}/k-{}/term-{}-groups/'.format(method, k, legislature)
+      if func == 'avg':
+        result = evaluate_avg(cluster, series)
+        ax.plot(result)
+      elif func == 'dist':
+        result = evaluate_dist(cluster, series)
+        sns.distplot(result, ax=ax)
+
+      directory = '../img/graphs/{}/{}/k-{}/term-{}-groups/'.format(method, func, k, legislature)
       if not os.path.exists(directory):
         os.makedirs(directory)
 
-      fig.savefig('../img/graphs/{}/k-{}/term-{}-groups/region-graph-group{}.png'.format(method, k, legislature, cluster_idx), bbox_inches='tight')
+      fig.savefig('../img/graphs/{}/{}/k-{}/term-{}-groups/region-graph-group{}.png'.format(method, func, k, legislature, cluster_idx), bbox_inches='tight')
       plt.close(fig)
 
 if __name__ == '__main__':
-  main([53, 54, 55], k=3, method="robust")
+  for k in [3, 4, 5]:
+    for method in ["robust","JS"]:
+      main([53, 54, 55], k, 'dist', method)
