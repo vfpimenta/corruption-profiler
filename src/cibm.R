@@ -2,6 +2,16 @@ library(rjson)
 library(cibm.utils)
 library(optparse)
 
+date.range <- function(legislature) {
+  if (legislature == 53) {
+    c(1,22)
+  } else if (legislature == 54) {
+    c(23,70)
+  } else if (legislature == 55) {
+    c(71,89)
+  }
+}
+
 color.term.node <- function(el) {
   if (all(el==c(0,0,1))) {
     'red'
@@ -81,15 +91,18 @@ names.full <- c()
 
 for (congressman in congressman_data){
   if (congressman[[4]][1]) {
-    mat.53 <- cbind(mat.53, congressman[[5]])
+    range = date.range(53)
+    mat.53 <- cbind(mat.53, congressman[[5]][range[1]:range[2]])
     names.53 <- c(names.53, congressman[[1]])
   } 
   if (congressman[[4]][2]) {
-    mat.54 <- cbind(mat.54, congressman[[5]])
+    range = date.range(54)
+    mat.54 <- cbind(mat.54, congressman[[5]][range[1]:range[2]])
     names.54 <- c(names.54, congressman[[1]])
   } 
   if (congressman[[4]][3]) {
-    mat.55 <- cbind(mat.55, congressman[[5]])
+    range = date.range(55)
+    mat.55 <- cbind(mat.55, congressman[[5]][range[1]:range[2]])
     names.55 <- c(names.55, congressman[[1]])
   }
 
@@ -108,43 +121,47 @@ colnames(mat.full) <- names.full
 
 idx <- 53
 for (mat in list(mat.53, mat.54, mat.55)) {
-  d <- distance(mat, method="robust")
-  gmstknn <- mstknn(d, k=5)
+  for (method in list("robust", "JS")) {
+    for (k in list(3,4,5)) {
+      d <- distance(mat, method=method)
+      gmstknn <- mstknn(d, k=k)
 
-  if (opt$dumpcl) {
-    cls <- clusters(gmstknn)
-    cluster.list <- list()
-    for (i in 1:length(congressman_data)) {
-      congressman <- congressman_data[[i]]
-      if(congressman[[1]] %in% colnames(mat)) {
-        cluster.index <- cls$membership[[congressman[[1]]]]
-        if(cluster.index <= length(cluster.list)) {
-          cluster.list[[cluster.index]] <- c(cluster.list[[cluster.index]], names(congressman_data)[i])
-        } else {
-          cluster.list[[cluster.index]] <- names(congressman_data)[i]
+      if (opt$dumpcl) {
+        cls <- clusters(gmstknn)
+        cluster.list <- list()
+        for (i in 1:length(congressman_data)) {
+          congressman <- congressman_data[[i]]
+          if(congressman[[1]] %in% colnames(mat)) {
+            cluster.index <- cls$membership[[congressman[[1]]]]
+            if(cluster.index <= length(cluster.list)) {
+              cluster.list[[cluster.index]] <- c(cluster.list[[cluster.index]], names(congressman_data)[i])
+            } else {
+              cluster.list[[cluster.index]] <- names(congressman_data)[i]
+            }
+          }
+        }
+
+        export <- toJSON(cluster.list)
+        path <- paste('~/dev/corruption-profiler/data/dump/', method, '/k-', k, '/dump-clusters-', idx, '.json', sep='')
+        write(export, path)
+      }
+
+      for (congressman.id in names(congressman_data)) {
+        congressman <- congressman_data[[congressman.id]]
+        if (congressman[[1]] %in% colnames(mat)) {
+          V(gmstknn)[congressman[[1]]]$id <- congressman.id
+          V(gmstknn)[congressman[[1]]]$state <- congressman[[2]]
+          V(gmstknn)[congressman[[1]]]$term_color <- color.term.node(congressman[[4]])
+          V(gmstknn)[congressman[[1]]]$region <- region.node(congressman[[2]])
+          V(gmstknn)[congressman[[1]]]$size <- sum(congressman[[5]])
         }
       }
+
+      if (opt$dumpgml) {
+        path <- paste('~/dev/corruption-profiler/data/graphs/', method, '/k-', k, '/cibm-regioncolor-', idx, '.graphml', sep='')
+        write_graph(gmstknn, path, 'graphml')
+      }
     }
-
-    export <- toJSON(cluster.list)
-    path <- paste('~/dev/corruption-profiler/data/dump/robust/k-5/dump-clusters-', idx, '.json',sep='')
-    write(export, path)
-  }
-
-  for (congressman.id in names(congressman_data)) {
-    congressman <- congressman_data[[congressman.id]]
-    if (congressman[[1]] %in% colnames(mat)) {
-      V(gmstknn)[congressman[[1]]]$id <- congressman.id
-      V(gmstknn)[congressman[[1]]]$state <- congressman[[2]]
-      V(gmstknn)[congressman[[1]]]$term_color <- color.term.node(congressman[[4]])
-      V(gmstknn)[congressman[[1]]]$region <- region.node(congressman[[2]])
-      V(gmstknn)[congressman[[1]]]$size <- sum(congressman[[5]])
-    }
-  }
-
-  if (opt$dumpgml) {
-    path <- paste('~/dev/corruption-profiler/data/graphs/robust/k-5/cibm-regioncolor-', idx, '.graphml',sep='')
-    write_graph(gmstknn, path, 'graphml')
   }
   idx <- idx+1
 }

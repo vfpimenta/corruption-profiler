@@ -1,9 +1,19 @@
 from profiler import Profiler
 import matplotlib.pyplot as plt
+import pandas as pd
 import numpy as np
 import seaborn as sns
+import random
 import json
 import os
+
+def get_date_range(legislature):
+  datelist = pd.date_range(start="2009-04", freq='M', end="2016-09")
+  return {
+    53: datelist[0:22],
+    54: datelist[22:70],
+    55: datelist[70:89]
+  }[legislature]
 
 def read_mstknn_dump(legislature, k, method='JS'):
   with open('../data/dump/{}/k-{}/dump-clusters-{}.json'.format(method, k, legislature)) as jsonfile:    
@@ -26,7 +36,7 @@ def merge_min_clusters(clusters, min_value, legislature):
   if len(min_cluster) > 0:
     merged.append(min_cluster)
 
-  filepath = '__pycache__/term-{}-cluster.out'.format(legislature)
+  filepath = '__pycache__/term-{}-cluster-{}.out'.format(legislature,random.randint(10000,99999))
   with open(filepath, 'w') as file:
     file.write(str(merged))
 
@@ -39,11 +49,7 @@ def evaluate_avg(cluster, series):
 
   for i in range(len(next(iter(series.values()))[4])):
     avg = list()
-    if isinstance(cluster, list):
-      for congressman_id in cluster:
-        avg.append(series.get(congressman_id)[4][i])
-    elif isinstance(cluster, str):
-      congressman_id = cluster
+    for congressman_id in cluster:
       avg.append(series.get(congressman_id)[4][i])
 
     avgs.append(np.average(avg))
@@ -53,13 +59,8 @@ def evaluate_avg(cluster, series):
 def evaluate_dist(cluster, series):
   dist = list()
 
-  for i in range(len(next(iter(series.values()))[4])):
-    if isinstance(cluster, list):
-      for congressman_id in cluster:
-        dist.append(np.average(series.get(congressman_id)[4]))
-    elif isinstance(cluster, str):
-      congressman_id = cluster
-      dist.append(np.average(series.get(congressman_id)[4]))
+  for congressman_id in cluster:
+    dist.append(np.average(series.get(congressman_id)[4]))
 
   return dist
 
@@ -75,9 +76,11 @@ def main(legislatures, k, func, method='JS'):
 
       if func == 'avg':
         result = evaluate_avg(cluster, series)
-        ax.plot(result)
+        ax.plot(get_date_range(legislature), result)
       elif func == 'dist':
         result = evaluate_dist(cluster, series)
+        if np.count_nonzero(result) == 0:
+          result = (result + 0.00000001*np.random.randn(len(result))).tolist()
         sns.distplot(result, ax=ax)
 
       directory = '../img/graphs/{}/{}/k-{}/term-{}-groups/'.format(method, func, k, legislature)
@@ -90,4 +93,6 @@ def main(legislatures, k, func, method='JS'):
 if __name__ == '__main__':
   for k in [3, 4, 5]:
     for method in ["robust","JS"]:
-      main([53, 54, 55], k, 'dist', method)
+      for func in ["avg", "dist"]:
+        print('[DEBUG] Running analysis for k={}, method={} and func={}'.format(k, method, func))
+        main([53,54,55], k, func, method)
