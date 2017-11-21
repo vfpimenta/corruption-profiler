@@ -7,6 +7,8 @@ import random
 import json
 import os
 
+import kde_joyplot
+
 def get_date_range(legislature):
   datelist = pd.date_range(start="2009-04", freq='M', end="2016-09")
   return {
@@ -64,15 +66,16 @@ def evaluate_dist(cluster, series):
 
   return dist
 
-def main(legislatures, k, func, method='JS'):
+def main(legislatures, k, func, method='JS', save=False):
   profiler = Profiler()
   for legislature in legislatures:
     series = profiler.read_congressman_json(legislature)
     clusters = merge_min_clusters(read_mstknn_dump(legislature, k, method), 3, legislature)
     cluster_idx = 0
+    results = [list(), list()]
     for cluster in clusters:
       cluster_idx += 1
-      fig, ax = plt.subplots( nrows=1, ncols=1 )
+      #fig, ax = plt.subplots( nrows=1, ncols=1 )
 
       if func == 'avg':
         result = evaluate_avg(cluster, series)
@@ -81,18 +84,30 @@ def main(legislatures, k, func, method='JS'):
         result = evaluate_dist(cluster, series)
         if np.count_nonzero(result) == 0:
           result = (result + 0.00000001*np.random.randn(len(result))).tolist()
-        sns.distplot(result, ax=ax)
+        #sns.distplot(result, ax=ax)
 
-      directory = '../img/graphs/{}/{}/k-{}/term-{}-groups/'.format(method, func, k, legislature)
-      if not os.path.exists(directory):
-        os.makedirs(directory)
+      for el in result:
+        results[0].append(str(cluster_idx))
+        results[1].append(el)
 
-      fig.savefig('../img/graphs/{}/{}/k-{}/term-{}-groups/region-graph-group{}.png'.format(method, func, k, legislature, cluster_idx), bbox_inches='tight')
-      plt.close(fig)
+      if save:
+        directory = '../img/graphs/{}/{}/k-{}/term-{}-groups/'.format(method, func, k, legislature)
+        if not os.path.exists(directory):
+          os.makedirs(directory)
+
+        fig.savefig('../img/graphs/{}/{}/k-{}/term-{}-groups/region-graph-group{}.png'.format(method, func, k, legislature, cluster_idx), bbox_inches='tight')
+        plt.close(fig)
+
+    df = pd.DataFrame(results)
+    df = df.transpose()
+    df.columns = ['g', 'x']
+    m = df.g.map(ord)
+    kde_joyplot.plot(df)
 
 if __name__ == '__main__':
-  for k in [3, 4, 5]:
-    for method in ["robust","JS"]:
-      for func in ["avg", "dist"]:
-        print('[DEBUG] Running analysis for k={}, method={} and func={}'.format(k, method, func))
-        main([53,54,55], k, func, method)
+  main([54],k=3,func='dist',method='robust')
+  # for k in [3, 4, 5]:
+  #   for method in ["robust","JS"]:
+  #     for func in ["avg", "dist"]:
+  #       print('[DEBUG] Running analysis for k={}, method={} and func={}'.format(k, method, func))
+  #       main([53,54,55], k, func, method)
