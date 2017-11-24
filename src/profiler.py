@@ -10,17 +10,18 @@ import util
 
 class Profiler:
 
-    def __init__(self):
+    def __init__(self, light=False):
         self.sql_handler = SQLiteHandler()
         self.csv_handler = CSVHandler()
         self.json_handler = JsonHandler()
 
-        self.months = map(lambda month: month[0:3],calendar.month_name[1:])
-        self.years = self.sql_handler.get_field('year')
-        self.parties = self.sql_handler.get_field('party')
-        self.states = self.sql_handler.get_field('state')
-        self.subquota_description = self.sql_handler.get_field('subquota_description')
-        self.markers = itertools.cycle(tuple(mlines.Line2D.markers.keys()))
+        if not light:
+            self.months = map(lambda month: month[0:3],calendar.month_name[1:])
+            self.years = self.sql_handler.get_field('year')
+            self.parties = self.sql_handler.get_field('party')
+            self.states = self.sql_handler.get_field('state')
+            self.subquota_description = self.sql_handler.get_field('subquota_description')
+            self.markers = itertools.cycle(tuple(mlines.Line2D.markers.keys()))
 
     def get_general(self, opt, trim=True, plot=False):
         if opt.lower() == 'state'.lower():

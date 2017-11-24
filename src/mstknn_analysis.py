@@ -67,7 +67,7 @@ def evaluate_dist(cluster, series):
   return dist
 
 def main(legislatures, k, func, method='JS', save=False):
-  profiler = Profiler()
+  profiler = Profiler(light=True)
   for legislature in legislatures:
     series = profiler.read_congressman_json(legislature)
     clusters = merge_min_clusters(read_mstknn_dump(legislature, k, method), 3, legislature)

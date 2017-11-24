@@ -9,3 +9,5 @@ sudo pip3 install -U serenata-toolbox
 sudo pip3 install sklearn
 sudo pip3 install scipy
 sudo pip3 install matplotlib
+echo "Downloading database. This process might take some time."
+./data/fetch-database
