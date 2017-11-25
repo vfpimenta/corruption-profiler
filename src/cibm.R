@@ -79,6 +79,10 @@ opt <- parse_args(opt_parser);
 
 congressman_data <- fromJSON(file='/home/victor/dev/corruption-profiler/data/congressman_ts.json')
 
+outliers.53 <- fromJSON(file='/home/victor/dev/corruption-profiler/data/congressman_53_outliers.json')
+outliers.54 <- fromJSON(file='/home/victor/dev/corruption-profiler/data/congressman_54_outliers.json')
+outliers.55 <- fromJSON(file='/home/victor/dev/corruption-profiler/data/congressman_55_outliers.json')
+
 mat.53 <- c()
 mat.54 <- c()
 mat.55 <- c()
@@ -89,18 +93,19 @@ names.54 <- c()
 names.55 <- c()
 names.full <- c()
 
-for (congressman in congressman_data){
-  if (congressman[[4]][1]) {
+for (name in names(congressman_data)){
+  congressman = congressman_data[[name]]
+  if (congressman[[4]][1] && !(name %in% outliers.53)) {
     range = date.range(53)
     mat.53 <- cbind(mat.53, congressman[[5]][range[1]:range[2]])
     names.53 <- c(names.53, congressman[[1]])
   } 
-  if (congressman[[4]][2]) {
+  if (congressman[[4]][2] && !(name %in% outliers.54)) {
     range = date.range(54)
     mat.54 <- cbind(mat.54, congressman[[5]][range[1]:range[2]])
     names.54 <- c(names.54, congressman[[1]])
   } 
-  if (congressman[[4]][3]) {
+  if (congressman[[4]][3] && !(name %in% outliers.55)) {
     range = date.range(55)
     mat.55 <- cbind(mat.55, congressman[[5]][range[1]:range[2]])
     names.55 <- c(names.55, congressman[[1]])
