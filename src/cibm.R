@@ -77,11 +77,11 @@ opt <- parse_args(opt_parser);
 # Building expense matrixes
 # #########################
 
-congressman_data <- fromJSON(file='/home/victor/dev/corruption-profiler/data/congressman_ts.json')
+congressman_data <- fromJSON(file='../data/congressman_ts.json')
 
-outliers.53 <- fromJSON(file='/home/victor/dev/corruption-profiler/data/congressman_53_outliers.json')
-outliers.54 <- fromJSON(file='/home/victor/dev/corruption-profiler/data/congressman_54_outliers.json')
-outliers.55 <- fromJSON(file='/home/victor/dev/corruption-profiler/data/congressman_55_outliers.json')
+outliers.53 <- fromJSON(file='../data/congressman_53_outliers.json')
+outliers.54 <- fromJSON(file='../data/congressman_54_outliers.json')
+outliers.55 <- fromJSON(file='../data/congressman_55_outliers.json')
 
 mat.53 <- c()
 mat.54 <- c()
@@ -147,7 +147,7 @@ for (mat in list(mat.53, mat.54, mat.55)) {
         }
 
         export <- toJSON(cluster.list)
-        path <- paste('~/dev/corruption-profiler/data/dump/', method, '/k-', k, '/dump-clusters-', idx, '.json', sep='')
+        path <- paste('../data/dump/', method, '/k-', k, '/dump-clusters-', idx, '.json', sep='')
         write(export, path)
       }
 
@@ -163,7 +163,7 @@ for (mat in list(mat.53, mat.54, mat.55)) {
       }
 
       if (opt$dumpgml) {
-        path <- paste('~/dev/corruption-profiler/data/graphs/', method, '/k-', k, '/cibm-regioncolor-', idx, '.graphml', sep='')
+        path <- paste('../data/graphs/', method, '/k-', k, '/cibm-regioncolor-', idx, '.graphml', sep='')
         write_graph(gmstknn, path, 'graphml')
       }
     }

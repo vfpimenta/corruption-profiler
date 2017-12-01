@@ -4,10 +4,33 @@ sudo apt-get install libcurl4-openssl-dev
 sudo apt-get install r-base-core
 sudo apt-get install python3-pip
 sudo apt-get install python3-tk
+
+# Python dependencies
 sudo pip3 install --upgrade pip3
 sudo pip3 install -U serenata-toolbox
 sudo pip3 install sklearn
 sudo pip3 install scipy
 sudo pip3 install matplotlib
+
+# R dependencies
+# ==
+sudo Rscript -e 'install.packages("rjson", repos="https://cran.rstudio.com")'
+sudo Rscript -e 'install.packages("optparse", repos="https://cran.rstudio.com")'
+sudo Rscript -e 'install.packages("tseries", repos="https://cran.rstudio.com")'
+sudo Rscript -e 'install.packages("forecast", repos="https://cran.rstudio.com")'
+# ==
+sudo Rscript -e 'install.packages("devtools", repos="https://cran.rstudio.com")'
+sudo Rscript -e 'install.packages("plyr", repos="https://cran.rstudio.com")'
+sudo R CMD javareconf JAVA_HOME=$JAVA_HOME
+sudo Rscript -e 'install.packages("RWeka", repos="https://cran.rstudio.com")'
+sudo Rscript -e 'install.packages("rJava", repos="https://cran.rstudio.com")'
+sudo apt-get install -y r-cran-igraph
+sudo Rscript -e 'install.packages("mclust", repos="https://cran.rstudio.com")'
+sudo Rscript -e 'install.packages("irr", repos="https://cran.rstudio.com")'
+sudo Rscript -e 'install.packages("data/cibm.utils_0.6.10.tar.gz" ,repos=NULL, type="source")'
+# ==
+
+# Database
 echo "Downloading database. This process might take some time."
-./data/fetch-database
+./data/fetch-database.sh
+mv local.db data/
