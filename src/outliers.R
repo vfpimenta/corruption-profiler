@@ -34,7 +34,6 @@ opt_parser <- OptionParser(option_list=option_list);
 opt <- parse_args(opt_parser);
 
 congressman_data <- fromJSON(file='/home/victor/dev/corruption-profiler/data/congressman_ts.json')
-congressman_clusters <- fromJSON(file='/home/victor/dev/corruption-profiler/data/dump/robust/k-3/dump-clusters-54.json')
 
 # #################
 # Outlier detection
@@ -73,9 +72,12 @@ if(opt$detect) {
 # ################
 
 if(opt$analyse) {
+  congressman_clusters.robust <- fromJSON(file='/home/victor/dev/corruption-profiler/data/dump/robust/k-3/dump-clusters-54.json')
+  congressman_clusters.js <- fromJSON(file='/home/victor/dev/corruption-profiler/data/dump/robust/k-3/dump-clusters-54.json')
+
   range <- date.range(54)
 
-  cluster1 <- congressman_data[congressman_clusters[[1]]]
+  cluster1 <- congressman_data[congressman_clusters.robust[[4]]]
   cluster1.avgs <- c()
   for (congressman in cluster1) {
     cluster1.avgs <- c(cluster1.avgs, mean(congressman[[5]][range[1]:range[2]]))
