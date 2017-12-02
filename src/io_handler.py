@@ -22,14 +22,21 @@ class SQLiteHandler:
     def fetch_expenses(cur, self, field, value, trim):
         tuples = []
 
-        sql = 'SELECT c.year, c.month, COALESCE(py.net,0) FROM calendar c LEFT JOIN (SELECT year,month,SUM(net_value) as net FROM previous_years WHERE {} = ? GROUP BY year, month) py ON py.year = c.year AND py.month = c.month'.format(field)
+        sql = 'SELECT c.year, c.month, COALESCE(py.net,0) FROM calendar c LEFT JOIN (SELECT year,month,SUM(net_value) as net FROM previous_years {} GROUP BY year, month) py ON py.year = c.year AND py.month = c.month'
+        if type(field) == list and type(value) == list:
+            sql = sql.format('WHERE ' + ' AND '.join(['{} = {}'.format(f,v) for f, v in zip(field, value)]))
+        elif type(field) == str and type(value) == str:
+            sql = sql.format('WHERE {} = {}'.format(field, value))
+        else:
+            raise Exception('Unknown args for function fetch_expenses')
+
         if trim:
             # jul 2009 ~ ago 2016
             sql += ' WHERE (c.year = ? AND c.month >= ?) OR (c.year = ? AND c.month <= ?) OR (c.year >= ? AND c.year <= ?)'
-            for val in cur.execute(sql,[value,2009,4,2016,8,2010,2015]):
+            for val in cur.execute(sql,[2009,4,2016,8,2010,2015]):
                 tuples.append(val)
         else:
-            for val in cur.execute(sql,[value]):
+            for val in cur.execute(sql):
                 tuples.append(val)
 
         values = [i[2] for i in tuples]
@@ -135,14 +142,16 @@ class JsonHandler:
     def __init__(self):
         self.filepath = '../data/congressman_ts.json'
 
-    def dump(self, data):
+    def dump(self, data, external=None):
+        path = self.filepath if external == None else external
         print('Dumping data to json...',end='\r')
-        with open(self.filepath,'w') as jsonfile:
+        with open(path,'w') as jsonfile:
             json.dump(data, jsonfile)
         print('Dumping data to json... Done')
 
-    def load(self):
-        with open('../data/congressman_ts.json') as jsonfile:    
+    def load(self, external=None):
+        path = self.filepath if external == None else external
+        with open(path) as jsonfile:    
             data = json.load(jsonfile)
 
         return data
