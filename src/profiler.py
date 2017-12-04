@@ -89,12 +89,12 @@ class Profiler:
             if subquota_description == None:
                 congressman_ts[_id] = self.sql_handler.fetch_expenses('congressperson_id',_id, trim)
             else:
-                congressman_ts[_id] = self.sql_handler.fetch_expenses(['congressperson_id', 'subquota_description'],[_id, subquota_description], trim)
+                congressman_ts[_id] = self.sql_handler.fetch_expenses(['congressperson_id', 'subquota_description'],[_id, '\'{}\''.format(subquota_description)], trim)
             util.printProgressBar(idx, len(congressman), prefix='Fetching data', suffix='Complete')
         return congressman_ts
 
     def build_congressman_json(self, subquota_description=None):
-        data = self.get_congressman_ts(subquota_description)
+        data = self.get_congressman_ts(subquota_description=subquota_description)
         idx = 0
         for key in data.keys():
             idx += 1
@@ -118,10 +118,10 @@ class Profiler:
         if not subquota_description == None:
             filepath = filepath.replace('_','_{}_'.format(subquota_description.replace(' ','-').lower()))
         if not os.path.exists(filepath):
-            print('Json cache not found! Building cache...')
+            print('Json cache not found for {}! Building cache...'.format(filepath))
             self.build_congressman_json(subquota_description)
         else:
-            print('Json cache found.')
+            print('Json cache found for {}.'.format(filepath))
 
         if subquota_description == None:
             data = self.json_handler.load()

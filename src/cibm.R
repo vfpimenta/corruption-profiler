@@ -67,7 +67,9 @@ option_list <- list(
   make_option(c('-c','--dumpcl'), default=FALSE, action="store_true" ,
     dest="dumpcl", help="export clusters info to Json"),
   make_option(c('-g','--dumpgml'), default=FALSE, action="store_true",
-    dest="dumpgml", help="export cluster graphs")
+    dest="dumpgml", help="export cluster graphs"),
+  make_option(c('-s','--series'), default=NULL, type="character",
+    dest="series" , help="selected series {'flight','publicity','telecom'}", metavar="character")
 );
 
 opt_parser <- OptionParser(option_list=option_list);
@@ -77,7 +79,15 @@ opt <- parse_args(opt_parser);
 # Building expense matrixes
 # #########################
 
-congressman_data <- fromJSON(file='../data/congressman_ts.json')
+if (opt$series == 'flight') {
+  congressman_data <- fromJSON(file='../data/congressman_flight-ticket-issue_ts.json')
+} else if (opt$series == 'publicity') {
+  congressman_data <- fromJSON(file='../data/congressman_publicity-of-parliamentary-activity_ts.json')
+} else if (opt$series == 'telecom') {
+  congressman_data <- fromJSON(file='../data/congressman_telecommunication_ts.json')
+} else {
+  congressman_data <- fromJSON(file='../data/congressman_ts.json')
+}
 
 outliers.53 <- fromJSON(file='../data/congressman_53_outliers.json')
 outliers.54 <- fromJSON(file='../data/congressman_54_outliers.json')
@@ -124,6 +134,20 @@ colnames(mat.full) <- names.full
 # Main processing
 # ###############
 
+dump.path <- paste('../data/', opt$series, '/dump/', sep="")
+graphs.path <- paste('../data/', opt$series,'/graphs/', sep="")
+
+if (opt$dumpcl) {
+  if (dir.exists(dump.path)) {
+    unlink(dump.path, recursive=TRUE, force=TRUE)
+  }
+}
+if (opt$dumpgml) {
+  if (dir.exists(graphs.path)) {
+    unlink(graphs.path, recursive=TRUE, force=TRUE)
+  }
+}
+
 idx <- 53
 for (mat in list(mat.53, mat.54, mat.55)) {
   for (method in list("robust", "JS")) {
@@ -145,10 +169,11 @@ for (mat in list(mat.53, mat.54, mat.55)) {
             }
           }
         }
-
+        dump.path <- paste('../data/', opt$series, '/dump/', method, '/k-', k, '/', sep="")
+        dir.create(dump.path, recursive=TRUE)
         export <- toJSON(cluster.list)
-        path <- paste('../data/dump/', method, '/k-', k, '/dump-clusters-', idx, '.json', sep='')
-        write(export, path)
+        file <- paste(dump.path, 'dump-clusters-', idx, '.json', sep='')
+        write(export, file)
       }
 
       for (congressman.id in names(congressman_data)) {
@@ -163,8 +188,10 @@ for (mat in list(mat.53, mat.54, mat.55)) {
       }
 
       if (opt$dumpgml) {
-        path <- paste('../data/graphs/', method, '/k-', k, '/cibm-regioncolor-', idx, '.graphml', sep='')
-        write_graph(gmstknn, path, 'graphml')
+        graphs.path <- paste('../data/', opt$series,'/graphs/', method, '/k-', k, '/', sep="")
+        dir.create(graphs.path, recursive=TRUE)
+        file <- paste(graphs.path, 'cibm-regioncolor-', idx, '.graphml', sep='')
+        write_graph(gmstknn, file, 'graphml')
       }
     }
   }

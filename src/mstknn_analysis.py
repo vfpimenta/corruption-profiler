@@ -18,8 +18,8 @@ def get_date_range(legislature, section):
     55: datelist[70:89]
   }[legislature][section[0]:section[1]]
 
-def read_mstknn_dump(legislature, k, method='JS'):
-  with open('../data/dump/{}/k-{}/dump-clusters-{}.json'.format(method, k, legislature)) as jsonfile:    
+def read_mstknn_dump(legislature, series_type, k, method='JS'):
+  with open('../data/{}/dump/{}/k-{}/dump-clusters-{}.json'.format(series_type, method, k, legislature)) as jsonfile:    
     data = json.load(jsonfile)
 
   return data
@@ -88,11 +88,20 @@ def get_sections(legislature, series, split=None):
     elif split == 'annually':
       return [(chunk[0], chunk[-1]) for chunk in chunks(idxs, 12)]
 
-def main(legislatures, k, func, method='JS', split=None, save=False):
+def main(legislatures, k, func, method='JS', series_type='default', split=None, save=False):
+  if series_type == 'default':
+    subquota_description = None
+  elif series_type == 'flight':
+    subquota_description = 'Flight ticket issue'
+  elif series_type == 'publicity':
+    subquota_description = 'Publicity of parliamentary activity'
+  elif series_type == 'telecom':
+    subquota_description = 'Telecommunication'
+
   profiler = Profiler(light=True)
   for legislature in legislatures:
-    series = profiler.read_congressman_json(legislature)
-    clusters = merge_min_clusters(read_mstknn_dump(legislature, k, method), 3, legislature)
+    series = profiler.read_congressman_json(legislature, subquota_description=subquota_description)
+    clusters = merge_min_clusters(read_mstknn_dump(legislature, series_type, k, method), 3, legislature)
     cluster_idx = 0
     # results = [list(), list()]
     for cluster in clusters:
@@ -117,11 +126,11 @@ def main(legislatures, k, func, method='JS', split=None, save=False):
         #   results[1].append(el)
 
         if save:
-          directory = '../img/graphs/{}/{}/k-{}/term-{}-groups/section-{}'.format(method, func, k, legislature, section_idx)
+          directory = '../img/{}/graphs/{}/{}/k-{}/term-{}-groups/section-{}'.format(series_type, method, func, k, legislature, section_idx)
           if not os.path.exists(directory):
             os.makedirs(directory)
 
-          fig.savefig('../img/graphs/{}/{}/k-{}/term-{}-groups/section-{}/region-graph-group{}.png'.format(method, func, k, legislature, section_idx, cluster_idx), bbox_inches='tight')
+          fig.savefig('../img/{}/graphs/{}/{}/k-{}/term-{}-groups/section-{}/region-graph-group{}.png'.format(series_type, method, func, k, legislature, section_idx, cluster_idx), bbox_inches='tight')
           plt.close(fig)
 
     # df = pd.DataFrame(results)
@@ -131,9 +140,13 @@ def main(legislatures, k, func, method='JS', split=None, save=False):
     # kde_joyplot.plot(df)
 
 if __name__ == '__main__':
-  shutil.rmtree('../img/graphs/')
+  series_type = 'flight'
+  path = '../img/{}/graphs/'.format(series_type)
+  if os.path.exists(path):
+    shutil.rmtree(path)
+
   for k in [3]:
     for method in ["robust"]:
       for func in ["avg", "dist"]:
         print('[DEBUG] Running analysis for k={}, method={} and func={}'.format(k, method, func))
-        main([54], k, func, method, split='semiannual', save=True)
+        main([54], k, func, method, series_type=series_type, split='annually', save=True)
