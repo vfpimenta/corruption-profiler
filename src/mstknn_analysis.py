@@ -103,10 +103,11 @@ def main(legislatures, k, func, method='JS', series_type='default', split=None, 
     series = profiler.read_congressman_json(legislature, subquota_description=subquota_description)
     clusters = merge_min_clusters(read_mstknn_dump(legislature, series_type, k, method), 3, legislature)
     cluster_idx = 0
-    # results = [list(), list()]
+
     for cluster in clusters:
       cluster_idx += 1
       section_idx = 0
+      results = [list(), list()]
       for section in get_sections(legislature, series, split):
         section_idx += 1
         fig, ax = plt.subplots( nrows=1, ncols=1 )
@@ -121,9 +122,9 @@ def main(legislatures, k, func, method='JS', series_type='default', split=None, 
             result = (result + 0.00000001*np.random.randn(len(result))).tolist()
           sns.distplot(result, norm_hist=True, ax=ax)
 
-        # for el in result:
-        #   results[0].append(str(cluster_idx))
-        #   results[1].append(el)
+        for el in result:
+          results[0].append(str(section_idx))
+          results[1].append(el)
 
         if save:
           directory = '../img/{}/graphs/{}/{}/k-{}/term-{}-groups/section-{}'.format(series_type, method, func, k, legislature, section_idx)
@@ -133,14 +134,15 @@ def main(legislatures, k, func, method='JS', series_type='default', split=None, 
           fig.savefig('../img/{}/graphs/{}/{}/k-{}/term-{}-groups/section-{}/region-graph-group{}.png'.format(series_type, method, func, k, legislature, section_idx, cluster_idx), bbox_inches='tight')
           plt.close(fig)
 
-    # df = pd.DataFrame(results)
-    # df = df.transpose()
-    # df.columns = ['g', 'x']
-    # m = df.g.map(ord)
-    # kde_joyplot.plot(df)
+      if save:
+        df = pd.DataFrame(results)
+        df = df.transpose()
+        df.columns = ['g', 'x']
+        m = df.g.map(ord)
+        kde_joyplot.plot(df, path='../img/{}/graphs/{}/{}/k-{}/term-{}-groups/kde/kde-joyplot-group{}.png'.format(series_type, method, func, k, legislature, cluster_idx))
 
 if __name__ == '__main__':
-  series_type = 'flight'
+  series_type = None
   path = '../img/{}/graphs/'.format(series_type)
   if os.path.exists(path):
     shutil.rmtree(path)
@@ -149,4 +151,4 @@ if __name__ == '__main__':
     for method in ["robust"]:
       for func in ["avg", "dist"]:
         print('[DEBUG] Running analysis for k={}, method={} and func={}'.format(k, method, func))
-        main([54], k, func, method, series_type=series_type, split='annually', save=True)
+        main([54], k, func, method, split='annually', save=True)

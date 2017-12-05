@@ -18,7 +18,7 @@ sns.set(style="white", rc={"axes.facecolor": (0, 0, 0, 0)})
 # m = df.g.map(ord)
 # df["x"] += m
 
-def plot(df):
+def plot(df, path=None):
 
     # Initialize the FacetGrid object
     pal = sns.cubehelix_palette(10, rot=-.25, light=.7)
@@ -44,4 +44,8 @@ def plot(df):
     g.set_titles("")
     g.set(yticks=[])
     g.despine(bottom=True, left=True)
-    plt.show()
+    if not path == None:
+        plt.show()
+    else:
+        fig.savefig(path, bbox_inches='tight')
+        plt.close(fig)
