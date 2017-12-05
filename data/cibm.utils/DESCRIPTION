@@ -1,0 +1,17 @@
+Package: cibm.utils
+Type: Package
+Title: CIBM utilities
+Version: 0.6.9
+Date: 2015-03-16
+Author: Renato Vimieiro, Carlos Riveros
+Maintainer: Renato Vimieiro <renato.vimieiro@newcastle.edu.au>, Carlos Riveros
+ <carlos.riveros@newcastle.edu.au>
+Description: Contains utility functions frequently used in CIBM
+License: MIT <http://opensource.org/licenses/MIT>
+Imports: parallel
+Depends: igraph (>= 0.7.0), RWeka, plyr, rJava, irr, mclust, Matrix
+Suggests: cluster, doSNOW, doMC, SNOW
+Collate: definitions.R definitions2.R io-cibm.R cliquesFuncs.R
+        cm-functions.R distance.R kNNCliques.R RWeka-utils.R mcc.R
+        RNGgraph.R refinement.R mstknn.R
+Packaged: 2015-03-16 18:28:18 UTC; renato

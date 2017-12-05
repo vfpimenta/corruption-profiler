@@ -114,8 +114,10 @@ def main(legislatures, k, func, method='JS', series_type='default', split=None, 
 
         if func == 'avg':
           result = evaluate_avg(cluster, series, section)
-          plt.xticks(rotation=70)
-          ax.plot(get_date_range(legislature, section), result)
+          # plt.xticks(rotation=70)
+          df = pd.DataFrame(result, index=get_date_range(legislature, section))
+          df.plot(ax=ax, legend=False)
+          # ax.plot(get_date_range(legislature, section), result)
         elif func == 'dist':
           result = evaluate_dist(cluster, series, section)
           if np.count_nonzero(result) == 0:
@@ -134,15 +136,19 @@ def main(legislatures, k, func, method='JS', series_type='default', split=None, 
           fig.savefig('../img/{}/graphs/{}/{}/k-{}/term-{}-groups/section-{}/region-graph-group{}.png'.format(series_type, method, func, k, legislature, section_idx, cluster_idx), bbox_inches='tight')
           plt.close(fig)
 
-      if save:
+      if save and func == 'dist':
         df = pd.DataFrame(results)
         df = df.transpose()
         df.columns = ['g', 'x']
         m = df.g.map(ord)
+
+        directory =  '../img/{}/graphs/{}/{}/k-{}/term-{}-groups/kde'.format(series_type, method, func, k, legislature)
+        if not os.path.exists(directory):
+            os.makedirs(directory)
         kde_joyplot.plot(df, path='../img/{}/graphs/{}/{}/k-{}/term-{}-groups/kde/kde-joyplot-group{}.png'.format(series_type, method, func, k, legislature, cluster_idx))
 
 if __name__ == '__main__':
-  series_type = None
+  series_type = 'default'
   path = '../img/{}/graphs/'.format(series_type)
   if os.path.exists(path):
     shutil.rmtree(path)

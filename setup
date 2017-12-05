@@ -11,6 +11,7 @@ sudo pip3 install -U serenata-toolbox
 sudo pip3 install sklearn
 sudo pip3 install scipy
 sudo pip3 install matplotlib
+sudo pip3 install seaborn
 
 # R dependencies
 # ==

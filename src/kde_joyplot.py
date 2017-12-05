@@ -44,8 +44,9 @@ def plot(df, path=None):
     g.set_titles("")
     g.set(yticks=[])
     g.despine(bottom=True, left=True)
-    if not path == None:
+
+    if path == None:
         plt.show()
     else:
-        fig.savefig(path, bbox_inches='tight')
-        plt.close(fig)
+        g.fig.savefig(path, bbox_inches='tight')
+        plt.close(g.fig)

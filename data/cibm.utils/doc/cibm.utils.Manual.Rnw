@@ -1,0 +1,334 @@
+\documentclass[a4paper,12pt]{scrartcl}
+% \documentclass[a4paper,12pt]{article}
+
+% amsmath package, useful for mathematical formulas
+\usepackage{amsmath,amsfonts,amssymb,amsthm,bbm}
+
+% graphicx package, useful for including eps and pdf graphics
+% include graphics with the command \includegraphics
+\usepackage{graphicx}
+
+%%%%%%%%%%%%%%%%%
+% BEGIN
+\usepackage[unicode=true, 
+    				 pdfusetitle,
+					 bookmarks=true,
+					 bookmarksnumbered=false,
+					 bookmarksopen=false,
+					 breaklinks=false,
+					 pdfborder={0 0 1},
+					 colorlinks=false,
+%					 pagebackref
+					 ] {hyperref}
+
+\usepackage{xifthen}
+\usepackage[textwidth=3cm,
+					 textsize=footnotesize,
+					 prependcaption
+					 ]{todonotes}
+\setlength{\marginparwidth}{3cm}
+\usepackage{color}
+
+\usepackage[backend=bibtex8, %er,		% bibtex8,	% bibtexu
+					 style=authoryear, %lphabetic,   % authoryear-comp,  % numeric
+%					 bibstyle=alphabetic, % authoryear-comp,   % numeric,
+					 natbib=true,
+					 sorting=nty,
+					 backref=false,
+					 url=false,
+					 doi=false,
+					 autocite=inline, %superscript,	% plain, inline, footnote, superscript
+					 ]{biblatex}
+%\ExecuteBibliographyOptions{parentracker=false}
+\makeatletter
+\newrobustcmd*{\parentexttrack}[1]{%
+  \begingroup
+  \blx@blxinit
+  \blx@setsfcodes
+  \blx@bibopenparen#1\blx@bibcloseparen
+  \endgroup}
+
+\AtEveryCite{%
+  \let\parentext=\parentexttrack%
+  \let\bibopenparen=\bibopenbracket%
+  \let\bibcloseparen=\bibclosebracket}
+\makeatother
+
+\newenvironment{note2do}{\textcolor{red}\bgroup{\textbf{ TODO: }}}{\egroup}
+\newcommand{\chnge}[2]{\textcolor{#1}{#2}}
+% The main annotation command:
+\newcounter{cmmnt}
+\newcommand{\cmmnt}[4][]{%
+% initials of the author (optional) + note in the margin
+\refstepcounter{cmmnt}%
+{%
+%\setstretch{0.7}% spacing
+\ifthenelse{\isempty{#1}}{%
+  \todo[color=#2!30]{%
+  \textbf{Comment~\thecmmnt [\uppercase{#3}]:} #4}
+}{%
+  \todo[color=#2!30,#1]{%
+  \textbf{Comment~\thecmmnt [\uppercase{#3}]:} #4}
+}
+}}
+
+% Individual specialisations
+\newcommand{\commentCR}[2][]{\cmmnt[#1]{blue}{CR}{#2}}
+\newcommand{\changeCR}[1]{\chnge{blue}{#1}}
+\newcommand{\commentPM}[2][]{\cmmnt[#1{red}{PM}{#2}}
+\definecolor{MidnightBlue}{cmyk}{0.98,0.13,0,0.23}
+\newcommand{\commentNP}[2][]{\cmmnt[#1]{MidnightBlue}{NP}{#2}}
+\definecolor{orange}{RGB}{255,127,0}
+\newcommand{\commentRV}[2][]{\cmmnt[#1]{orange}{RV}{#2}} 
+\newcommand{\commentRB}[2][]{\cmmnt[#1]{green}{RB}{#2}}
+
+% END -- Renato's definitions
+%%%%%%%%%%%%%%%%%
+\newtheoremstyle{problem}
+  {\topsep}   % ABOVESPACE
+  {\topsep}   % BELOWSPACE
+  {\normalfont}  % BODYFONT
+  {0pt}       % INDENT (empty value is the same as 0pt)
+  {\sffamily\bfseries} % HEADFONT
+  {:}         % HEADPUNCT
+  {5pt plus 1pt minus 1pt} % HEADSPACE
+  {\thmname{#1}\thmnumber{ #2}\thmnote{, #3}}          % CUSTOM-HEAD-SPEC
+\theoremstyle{problem}
+\newtheorem{problem}{Problem}
+
+\renewcommand*{\theproblem}{P\arabic{problem}}
+\newcommand{\problemautorefname}{Problem}
+
+\usepackage{color} 
+
+% Use doublespacing - comment out for single spacing
+%\usepackage{setspace} 
+%\doublespacing
+
+% Text layout
+% \topmargin 0.0cm
+% \oddsidemargin 0.5cm
+% \evensidemargin 0.5cm
+% \textwidth 16cm 
+% \textheight 21cm
+
+% Bold the 'Figure #' in the caption and separate it with a period
+% Captions will be left justified
+\usepackage[labelfont=bf,labelsep=period,justification=raggedright]{caption}
+
+\usepackage[left=1cm,bottom=2cm,top=1.5cm,right=3.5cm]{geometry}
+
+% Leave date blank
+\date{}
+
+\pagestyle{myheadings}
+% ** EDIT HERE **
+
+% \addbibresource{ARCDP14.bib}
+
+\title{CIBM R utils}
+\subtitle{A collection of utilities and functions in {\tt\bf R} for the adventurous.}
+\author{R. Vimieiro, C. Riveros}
+\date{January 2014}
+
+\begin{document}
+\SweaveOpts{concordance=TRUE}
+\maketitle
+
+\begin{abstract}
+This document serves a a short user manual for the utilities and functions
+included in this package, with some usage examples.
+\end{abstract}
+
+\section{Introduction}
+\label{s:intro}
+
+This package grew out of disparate needs, and from the increased use of {\tt R} that we make 
+in the lab.  It contains a series of utility functions to convert file formats, some interesting 
+functions to compute distance matrices, ranking functions, an improved interface to some missing
+\emph{Weka} engine functionality and some graph-based methods.
+
+We collect in this manual a few usage examples, to bridge the gap of the deficient online 
+documentation.
+
+\subsection{Installing {\tt cibm.utils}}
+\label{ss:install}
+
+\paragraph{Prerequisites} The following packages are required: {\tt igraph, RWeka, rJava, devtools, plyr}.
+
+\paragraph{Install from repos:}%
+There are a couple of ways to install {\tt cibm.utils} in your current {\tt R} environment.
+The best way is from the git repositories, updates work well this way.  However, this requires 
+you have correctly configured access to the CIBM git repos at fisher (out of the scope of this document).
+
+<<eval=FALSE>>=
+library("devtools")
+install_git("ssh://git@fisher/source/cibm-R-utils")
+@
+\begin{small}
+\begin{verbatim}
+Preparing installation of cibm-R-utils using the Git-URL: ssh://git@fisher/source/cibm-R-utils
+'/bin/git'clone --depth 1 --no-hardlinks ssh://git@fisher/source/cibm-R-utils /tmp/Rtmpr2L3F8c7
+Installing package from /tmp/Rtmpr2L3F8/file2fd368856fc7
+Installing cibm.utils
+'/usr/lib64/R/bin/R' --vanilla CMD INSTALL '/tmp/Rtmpr2L3F8c7'  \
+  --library='/home/carlos/R/x86_64-redhat-linux-gnu-library/3.0'  \
+  --install-tests 
+
+* installing *source* package 'cibm.utils' ...
+** R
+** data
+** inst
+** preparing package for lazy loading
+Creating a generic function for 'format' from package 'base' in package 'cibm.utils'
+Creating a generic function for 'print' from package 'base' in package 'cibm.utils'
+** help
+*** installing help indices
+  converting help for package 'cibm.utils'
+    finding HTML links ... done
+    CM-functions                            html  
+    RNGraph                                 html  
+    a2695                                   html  
+    alzheimer                               html  
+    cibm-distances                          html  
+    cibm-utils-package                      html  
+    cibm.abk-class                          html  
+    cibm.abk-methods                        html  
+    cibm.data-class                         html  
+    cibm.data-methods                       html  
+    getClassifiers                          html  
+    kNNCliques                              html  
+    predict_XVal                            html  
+Rd warning: /tmp/Rtmpr2L3F8/file2fd368856fc7/man/predict_XVal.Rd:8: file link 'Weka_classifier'
+  in package 'RWeka' does not exist and so has been treated as a topic
+    prob-matrix-comp                        html  
+    read.abk                                html  
+    read.distance                           html  
+    read.nbi                                html  
+    runWekaClassifiers                      html  
+    write.abk                               html  
+    write.distance                          html  
+    write.nbi                               html  
+** building package indices
+** testing if installed package can be loaded
+* DONE (cibm.utils)
+\end{verbatim}
+\end{small}
+
+\paragraph{Install from source file:}%
+Download the source tar file from the CIBM wiki and install it as follows:
+<<eval=FALSE>>=
+# For version 0.1, use:
+install.packages("cibm.utils_0.1.tar.gz",repos=NULL,type="source")
+@
+\begin{small}
+\begin{verbatim}
+Installing package into '/home/renato/R/x86_64-pc-linux-gnu-library/3.0'
+(as 'lib' is unspecified)
+inferring 'repos = NULL' from the file name
+* installing *source* package 'cibm.utils' ...
+** R
+** preparing package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded
+* DONE (cibm.utils)
+\end{verbatim}
+\end{small}
+
+\paragraph{Using {\tt cibm.utils}:}
+It all begins with the usual stanza:
+<<eval=FALSE>>=
+library(cibm.utils)
+@
+\begin{small}
+\begin{verbatim}
+Loading required package: igraph
+Loading required package: RWeka
+Loading required package: plyr
+Loading required package: rJava
+
+Attaching package: 'cibm.utils'
+
+The following object is masked from ‘package:base’:
+
+    labels
+
+\end{verbatim}
+\end{small}
+In what follows, we will assume you have loaded the {\tt cibm.utils} library.
+
+\section{Data I/O}
+\label{s:dataio}
+
+\subsection{NBI Format}
+\label{ss:ionbi}
+
+The NBI format is a badly thought format, but several applications still use this
+format.  It is a `pseudo XML' format which wraps a matrix.
+{\tt cibm.utils} comes with a small sample data file for this examples.
+
+<<>>=
+# Load library
+library(cibm.utils)
+
+# defines filename
+filename <- system.file("extdata","alzheimer.nbi",package="cibm.utils")
+
+# reads
+alzheimer <- read.nbi(filename)
+
+# prints -- Notice that class is numeric
+dim(alzheimer@data)
+alzheimer[c(1:6,121),1:5]
+
+# Write data to NBI formatted file -- Notice by default the file is gzipped
+write.nbi(alzheimer,file="alzheimer-test.nbi",gzip=FALSE)
+@
+
+\subsection{ABk Format}
+\label{ss:ioabk}
+
+The ABk format is used by the $(\alpha,\beta)-k$ \emph{Feature Set} selection programs.
+It is and \emph{ad-hoc} format, and has a series of options that will get read or written 
+depending on their pressence in the file.  Below some examples of usage:
+
+<<>>=
+# loads library
+library("cibm.utils")
+
+# defines filename
+filename <- system.file("extdata","2695.abk",package="cibm.utils")
+
+# reads
+a2695 <- read.abk(filename)
+
+# prints -- Notice that class is numeric
+dim(a2695@data)
+
+a2695[c(1:6,100),1:8]
+
+# Write data to NBI formatted file -- Notice by default the file is gzipped
+write.abk(a2695,file="a2695-test.abk",classes="first",out.equalweights=T,gzip=F)
+
+a2695@caseAttr["caseweights"]
+
+# Some made-up values
+a2695@featureAttr["featurecolors"] <- rep(c(1,2,3),length.out=100)
+a2695@caseAttr["casecolors"]  <- c(1,2)
+a2695@beta <- c(0,1)
+
+write.abk(a2695,file="a2695-test2.abk",classes="first",out.equalweights=T,gzip=F)
+@
+
+
+
+
+\section{Distances}
+
+\section{Classes}
+
+\section{History}
+
+\end{document}
