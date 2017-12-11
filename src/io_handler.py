@@ -4,11 +4,11 @@ import json
 import util
 
 def sqlite_transaction(f):
-    def wrap(*args):
+    def wrap(*args, **kwargs):
         con = sqlite3.Connection('../data/local.db')
         cur = con.cursor()
 
-        ret = f(cur, *args)
+        ret = f(cur, *args, **kwargs)
 
         cur.close()
         con.commit()
