@@ -88,7 +88,7 @@ def get_sections(legislature, series, split=None):
     elif split == 'annually':
       return [(chunk[0], chunk[-1]) for chunk in chunks(idxs, 12)]
 
-def main(legislatures, k, func, method='JS', series_type='default', split=None, save=False):
+def main(legislatures, k, func, method='JS', series_type='default', split=None, presences=False, save=False):
   if series_type == 'default':
     subquota_description = None
   elif series_type == 'flight':
@@ -100,7 +100,7 @@ def main(legislatures, k, func, method='JS', series_type='default', split=None, 
 
   profiler = Profiler(light=True)
   for legislature in legislatures:
-    series = profiler.read_congressman_json(legislature, subquota_description=subquota_description)
+    series = profiler.read_congressman_json(legislature, subquota_description=subquota_description, presences=presences)
     clusters = merge_min_clusters(read_mstknn_dump(legislature, series_type, k, method), 3, legislature)
     cluster_idx = 0
 
@@ -129,27 +129,52 @@ def main(legislatures, k, func, method='JS', series_type='default', split=None, 
           results[1].append(el)
 
         if save:
-          directory = '../img/{}/graphs/{}/{}/k-{}/term-{}-groups/section-{}'.format(series_type, method, func, k, legislature, section_idx)
-          if not os.path.exists(directory):
-            os.makedirs(directory)
+          if presences:
+            directory = '../img/{}/graphs/{}/{}/k-{}/term-{}-groups/section-{}'.format('presences', method, func, k, legislature, section_idx)
+            if not os.path.exists(directory):
+              os.makedirs(directory)
 
-          fig.savefig('../img/{}/graphs/{}/{}/k-{}/term-{}-groups/section-{}/region-graph-group{}.png'.format(series_type, method, func, k, legislature, section_idx, cluster_idx), bbox_inches='tight')
-          plt.close(fig)
+            fig.savefig('../img/{}/graphs/{}/{}/k-{}/term-{}-groups/section-{}/region-graph-group{}.png'.format('presences', method, func, k, legislature, section_idx, cluster_idx), bbox_inches='tight')
+            plt.close(fig)
+          else:
+            directory = '../img/{}/graphs/{}/{}/k-{}/term-{}-groups/section-{}'.format(series_type, method, func, k, legislature, section_idx)
+            if not os.path.exists(directory):
+              os.makedirs(directory)
+
+            fig.savefig('../img/{}/graphs/{}/{}/k-{}/term-{}-groups/section-{}/region-graph-group{}.png'.format(series_type, method, func, k, legislature, section_idx, cluster_idx), bbox_inches='tight')
+            plt.close(fig)
 
       if save and func == 'dist':
-        df = pd.DataFrame(results)
-        df = df.transpose()
-        df.columns = ['g', 'x']
-        m = df.g.map(ord)
+        if presences:
+          df = pd.DataFrame(results)
+          df = df.transpose()
+          df.columns = ['g', 'x']
+          m = df.g.map(ord)
 
-        directory =  '../img/{}/graphs/{}/{}/k-{}/term-{}-groups/kde'.format(series_type, method, func, k, legislature)
-        if not os.path.exists(directory):
-            os.makedirs(directory)
-        kde_joyplot.plot(df, path='../img/{}/graphs/{}/{}/k-{}/term-{}-groups/kde/kde-joyplot-group{}.png'.format(series_type, method, func, k, legislature, cluster_idx))
+          directory =  '../img/{}/graphs/{}/{}/k-{}/term-{}-groups/kde'.format('presences', method, func, k, legislature)
+          if not os.path.exists(directory):
+              os.makedirs(directory)
+          kde_joyplot.plot(df, path='../img/{}/graphs/{}/{}/k-{}/term-{}-groups/kde/kde-joyplot-group{}.png'.format('presences', method, func, k, legislature, cluster_idx))
+        else:
+          df = pd.DataFrame(results)
+          df = df.transpose()
+          df.columns = ['g', 'x']
+          m = df.g.map(ord)
+
+          directory =  '../img/{}/graphs/{}/{}/k-{}/term-{}-groups/kde'.format(series_type, method, func, k, legislature)
+          if not os.path.exists(directory):
+              os.makedirs(directory)
+          kde_joyplot.plot(df, path='../img/{}/graphs/{}/{}/k-{}/term-{}-groups/kde/kde-joyplot-group{}.png'.format(series_type, method, func, k, legislature, cluster_idx))
 
 if __name__ == '__main__':
   series_type = 'default'
-  path = '../img/{}/graphs/'.format(series_type)
+  presences=True
+
+  if presences:
+    path = '../img/{}/graphs/'.format('presences')
+  else:
+    path = '../img/{}/graphs/'.format(series_type)
+
   if os.path.exists(path):
     shutil.rmtree(path)
 
@@ -157,4 +182,4 @@ if __name__ == '__main__':
     for method in ["robust"]:
       for func in ["avg", "dist"]:
         print('[DEBUG] Running analysis for k={}, method={} and func={}'.format(k, method, func))
-        main([54], k, func, method, split='annually', save=True)
+        main([54], k, func, method, split='annually', presences=presences, save=True)

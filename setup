@@ -12,6 +12,7 @@ sudo pip3 install sklearn
 sudo pip3 install scipy
 sudo pip3 install matplotlib
 sudo pip3 install seaborn
+sudo pip3 install unidecode
 
 # R dependencies
 # ==

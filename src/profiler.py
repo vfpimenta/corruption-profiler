@@ -113,10 +113,12 @@ class Profiler:
         else:
             self.json_handler.dump(data, self.json_handler.filepath.replace('_','_{}_'.format(subquota_description.replace(' ','-').lower()))) 
 
-    def read_congressman_json(self, legislature, subquota_description=None):
+    def read_congressman_json(self, legislature, subquota_description=None, presences=False):
         filepath = self.json_handler.filepath
         if not subquota_description == None:
             filepath = filepath.replace('_','_{}_'.format(subquota_description.replace(' ','-').lower()))
+        elif presences:
+            filepath = filepath.replace('ts','presences')
         if not os.path.exists(filepath):
             print('Json cache not found for {}! Building cache...'.format(filepath))
             self.build_congressman_json(subquota_description)
@@ -124,7 +126,10 @@ class Profiler:
             print('Json cache found for {}.'.format(filepath))
 
         if subquota_description == None:
-            data = self.json_handler.load()
+            if presences:
+                data = self.json_handler.load(self.json_handler.filepath.replace('ts','presences'))
+            else:
+                data = self.json_handler.load()
         else:
             data = self.json_handler.load(self.json_handler.filepath.replace('_','_{}_'.format(subquota_description.replace(' ','-').lower())))
         
