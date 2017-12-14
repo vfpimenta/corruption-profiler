@@ -53,7 +53,13 @@ def evaluate_avg(cluster, series, section):
   for i in range(section[0], section[1]):
     avg = list()
     for congressman_id in cluster:
-      avg.append(series.get(congressman_id)[4][i])
+      try:
+        avg.append(series.get(congressman_id)[4][i])
+      except Exception as e:
+        print(congressman_id)
+        print(series.get(congressman_id))
+        raise e
+      
 
     avgs.append(np.average(avg))
 

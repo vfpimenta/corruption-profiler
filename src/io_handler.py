@@ -2,6 +2,7 @@ import sqlite3
 import csv
 import json
 import util
+import xml.etree.ElementTree as ET
 
 def sqlite_transaction(f):
     def wrap(*args, **kwargs):
@@ -82,12 +83,17 @@ class SQLiteHandler:
                 cur.execute('ALTER TABLE "previous_years" ADD "legislature_{}" TINYINT(1) DEFAULT 0'.format(legislature))
             except sqlite3.OperationalError as e:
                 pass
-            
-            with open('../data/congressperson-{}.csv'.format(legislature),'r') as csvfile:
-                fieldnames = ['Name','Party','State']
-                reader = csv.DictReader(csvfile)
-                for row in reader:
-                    cur.execute('UPDATE "previous_years" SET "legislature_{}" = 1 WHERE congressperson_name = ? AND party = ? AND state = ?'.format(legislature),[row[fieldnames[0]], row[fieldnames[1]], row[fieldnames[2]]])
+
+            ids = list()
+            tree = ET.parse('../data/Deputados.xml')
+            root = tree.getroot()[0]
+            for congressman in root:
+                if congressman[1].text == str(legislature):
+                    ids.append(congressman[0].text)
+
+            sql = 'UPDATE "previous_years" SET "legislature_{}" = 1 WHERE congressperson_id in ({})'.format(legislature,','.join([x for x in ids]))
+
+            cur.execute(sql)
 
     @sqlite_transaction
     def __create_calendar__(cur, self):
