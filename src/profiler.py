@@ -134,11 +134,14 @@ class Profiler:
             data = self.json_handler.load(self.json_handler.filepath.replace('_','_{}_'.format(subquota_description.replace(' ','-').lower())))
         
         filtered_data = {}
-        for _id in data.keys():
-            if(data[_id][3][legislature-53]):
-                filtered_data[_id] = data[_id]
-                begin, end = __get_idx__(legislature)
-                filtered_data[_id][4] = filtered_data[_id][4][begin:end]
+        if presences:
+            filtered_data = data
+        else:
+            for _id in data.keys():
+                if(data[_id][3][legislature-53]):
+                    filtered_data[_id] = data[_id]
+                    begin, end = __get_idx__(legislature)
+                    filtered_data[_id][4] = filtered_data[_id][4][begin:end]
 
         return filtered_data
 

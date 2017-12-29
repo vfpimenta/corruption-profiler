@@ -79,14 +79,18 @@ opt <- parse_args(opt_parser);
 # Building expense matrixes
 # #########################
 
-if (opt$series == 'flight') {
-  congressman_data <- fromJSON(file='../data/congressman_flight-ticket-issue_ts.json')
-} else if (opt$series == 'publicity') {
-  congressman_data <- fromJSON(file='../data/congressman_publicity-of-parliamentary-activity_ts.json')
-} else if (opt$series == 'telecom') {
-  congressman_data <- fromJSON(file='../data/congressman_telecommunication_ts.json')
+congressman_data <- fromJSON(file='../data/congressman_ts.json')
+
+if (!is.null(opt$series)) {
+  if (opt$series == 'flight') {
+    congressman_data <- fromJSON(file='../data/congressman_flight-ticket-issue_ts.json')
+  } else if (opt$series == 'publicity') {
+    congressman_data <- fromJSON(file='../data/congressman_publicity-of-parliamentary-activity_ts.json')
+  } else if (opt$series == 'telecom') {
+    congressman_data <- fromJSON(file='../data/congressman_telecommunication_ts.json')
+  }
 } else {
-  congressman_data <- fromJSON(file='../data/congressman_ts.json')
+  opt$series = 'default'
 }
 
 outliers.53 <- fromJSON(file='../data/congressman_53_outliers.json')
@@ -169,10 +173,14 @@ for (mat in list(mat.53, mat.54, mat.55)) {
             }
           }
         }
+
         dump.path <- paste('../data/', opt$series, '/dump/', method, '/k-', k, '/', sep="")
         dir.create(dump.path, recursive=TRUE)
         export <- toJSON(cluster.list)
         file <- paste(dump.path, 'dump-clusters-', idx, '.json', sep='')
+        print('==============================================================')
+        print(paste('Dumping json to path ', dump.path, sep=""))
+        print('==============================================================')
         write(export, file)
       }
 
@@ -191,6 +199,9 @@ for (mat in list(mat.53, mat.54, mat.55)) {
         graphs.path <- paste('../data/', opt$series,'/graphs/', method, '/k-', k, '/', sep="")
         dir.create(graphs.path, recursive=TRUE)
         file <- paste(graphs.path, 'cibm-regioncolor-', idx, '.graphml', sep='')
+        print('==============================================================')
+        print(paste('Writing graphs to path ', graphs.path, sep=""))
+        print('==============================================================')
         write_graph(gmstknn, file, 'graphml')
       }
     }

@@ -9,7 +9,7 @@ tree = ET.parse('../data/Deputados.xml')
 root = tree.getroot()[0]
 
 for congressman in root:
-  if congressman[1].text == '53':
+  if congressman[1].text == '54':
     result_list.append((congressman[2].text,congressman[9].text))
 print('Fetching data from xml... Done')
 

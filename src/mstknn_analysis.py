@@ -47,29 +47,30 @@ def merge_min_clusters(clusters, min_value, legislature):
   print('The final clusters can be fount on {}'.format(filepath))
   return merged
 
-def evaluate_avg(cluster, series, section):
+def evaluate_avg(cluster, series, section, presences):
   avgs = list()
 
   for i in range(section[0], section[1]):
     avg = list()
     for congressman_id in cluster:
-      try:
-        avg.append(series.get(congressman_id)[4][i])
-      except Exception as e:
-        print(congressman_id)
-        print(series.get(congressman_id))
-        raise e
-      
+      if congressman_id in series.keys():
+        try:
+          avg.append(series.get(congressman_id)[4][i])
+        except Exception as e:
+          print(congressman_id)
+          print(series.get(congressman_id))
+          raise e
 
     avgs.append(np.average(avg))
 
   return avgs
 
-def evaluate_dist(cluster, series, section):
+def evaluate_dist(cluster, series, section, presences):
   dist = list()
 
   for congressman_id in cluster:
-    dist.append(np.average(series.get(congressman_id)[4][section[0]:section[1]]))
+    if congressman_id in series.keys():
+      dist.append(np.average(series.get(congressman_id)[4][section[0]:section[1]]))
 
   return dist
 
@@ -119,15 +120,15 @@ def main(legislatures, k, func, method='JS', series_type='default', split=None, 
         fig, ax = plt.subplots( nrows=1, ncols=1 )
 
         if func == 'avg':
-          result = evaluate_avg(cluster, series, section)
-          # plt.xticks(rotation=70)
+          result = evaluate_avg(cluster, series, section, presences)
           df = pd.DataFrame(result, index=get_date_range(legislature, section))
           df.plot(ax=ax, legend=False)
-          # ax.plot(get_date_range(legislature, section), result)
         elif func == 'dist':
-          result = evaluate_dist(cluster, series, section)
+          result = evaluate_dist(cluster, series, section, presences)
           if np.count_nonzero(result) == 0:
             result = (result + 0.00000001*np.random.randn(len(result))).tolist()
+          if len(result) == 0:
+            result = [0.00000001*np.random.rand(), 0.00000001*np.random.rand()]
           sns.distplot(result, norm_hist=True, ax=ax)
 
         for el in result:
