@@ -136,6 +136,7 @@ def main(legislatures, k, func, method='JS', series_type='default', split=None, 
 
     if silhouete:
       distance.plot(clusters)
+      return
 
     for cluster in clusters:
       cluster_idx += 1

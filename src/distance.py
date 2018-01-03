@@ -14,7 +14,7 @@ def get_cluster_labels(header, clusters):
         labels.append(i)
         break
 
-  return labels
+  return np.array(labels)
 
 def distance_matrix():
   distance = list()
@@ -24,7 +24,7 @@ def distance_matrix():
     reader = csv.reader(csvfile)
     for row in reader:
       if not header:
-        header = row
+        header = row[1:]
       else:
         distance.append(row[1:])
 
@@ -45,7 +45,16 @@ def plot(clusters):
   sample_silhouette_values = silhouette_samples(matrix, cluster_labels, metric='precomputed')
 
   y_lower = 10
-  for i in range(len(clusters)):
+  n_clusters = len(clusters)
+  for i in range(n_clusters):
+    # The 1st subplot is the silhouette plot
+    # The silhouette coefficient can range from -1, 1 but in this example all
+    # lie within [-0.1, 1]
+    ax.set_xlim([-0.1, 1])
+    # The (n_clusters+1)*10 is for inserting blank space between silhouette
+    # plots of individual clusters, to demarcate them clearly.
+    ax.set_ylim([0, len(matrix) + (n_clusters + 1) * 10])
+
     # Aggregate the silhouette scores for samples belonging to
     # cluster i, and sort them
     ith_cluster_silhouette_values =  \
@@ -56,7 +65,7 @@ def plot(clusters):
     size_cluster_i = ith_cluster_silhouette_values.shape[0]
     y_upper = y_lower + size_cluster_i
 
-    color = cm.spectral(float(i) / len(clusters))
+    color = cm.spectral(float(i) / n_clusters)
     ax.fill_betweenx(np.arange(y_lower, y_upper),
                       0, ith_cluster_silhouette_values,
                       facecolor=color, edgecolor=color, alpha=0.7)
