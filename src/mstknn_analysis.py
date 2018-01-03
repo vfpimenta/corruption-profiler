@@ -1,14 +1,37 @@
 from profiler import Profiler
+from optparse import OptionParser
+
 import matplotlib.pyplot as plt
 import pandas as pd
 import numpy as np
 import seaborn as sns
+
 import random
 import json
 import shutil
+import csv
 import os
 
 import kde_joyplot
+import distance
+
+parser = OptionParser()
+parser.add_option('-k', '--k-neighbors', dest='k', type='int',
+    help='Number of neighbors for knn', metavar='NUMBER')
+parser.add_option('-m', '--method', dest='method', type='str',
+    help='Distance method [robust|JS]', metavar='STRING')
+parser.add_option('-f', '--function', dest='func', type='str',
+    help='Function for evaluation [avg|dist|both]', metavar='STRING')
+parser.add_option('-t', '--series-type', dest='series_type', type='str',
+    help='Input series [flight|publicity|telecom]', metavar='STRING')
+parser.add_option('-s', '--split', dest='split', type='str',
+    help='Split type [annually|semiannual|quarterly]', metavar='STRING')
+parser.add_option('-p', '--presences', dest='presences', action='store_true',
+    help='If presences series should be used')
+parser.add_option('-e', '--export', dest='save', action='store_true',
+    help='Save results on /img')
+
+(options, args) = parser.parse_args()
 
 def get_date_range(legislature, section):
   datelist = pd.date_range(start="2009-04", freq='M', end="2016-09")
@@ -43,8 +66,8 @@ def merge_min_clusters(clusters, min_value, legislature):
   with open(filepath, 'w') as file:
     file.write(str(merged))
 
-  print('Merged clusters into min size {}'.format(min_value))
-  print('The final clusters can be fount on {}'.format(filepath))
+  print('[DEBUG] Merged clusters into min size {}'.format(min_value))
+  print('[DEBUG] The final clusters can be fount on {}'.format(filepath))
   return merged
 
 def evaluate_avg(cluster, series, section, presences):
@@ -95,7 +118,7 @@ def get_sections(legislature, series, split=None):
     elif split == 'annually':
       return [(chunk[0], chunk[-1]) for chunk in chunks(idxs, 12)]
 
-def main(legislatures, k, func, method='JS', series_type='default', split=None, presences=False, save=False):
+def main(legislatures, k, func, method='JS', series_type='default', split=None, presences=False, silhouete=True, save=False):
   if series_type == 'default':
     subquota_description = None
   elif series_type == 'flight':
@@ -110,6 +133,9 @@ def main(legislatures, k, func, method='JS', series_type='default', split=None, 
     series = profiler.read_congressman_json(legislature, subquota_description=subquota_description, presences=presences)
     clusters = merge_min_clusters(read_mstknn_dump(legislature, series_type, k, method), 3, legislature)
     cluster_idx = 0
+
+    if silhouete:
+      distance.plot(clusters)
 
     for cluster in clusters:
       cluster_idx += 1
@@ -127,7 +153,7 @@ def main(legislatures, k, func, method='JS', series_type='default', split=None, 
           result = evaluate_dist(cluster, series, section, presences)
           if np.count_nonzero(result) == 0:
             result = (result + 0.00000001*np.random.randn(len(result))).tolist()
-          if len(result) == 0:
+          if len(result) <= 1:
             result = [0.00000001*np.random.rand(), 0.00000001*np.random.rand()]
           sns.distplot(result, norm_hist=True, ax=ax)
 
@@ -174,8 +200,10 @@ def main(legislatures, k, func, method='JS', series_type='default', split=None, 
           kde_joyplot.plot(df, path='../img/{}/graphs/{}/{}/k-{}/term-{}-groups/kde/kde-joyplot-group{}.png'.format(series_type, method, func, k, legislature, cluster_idx))
 
 if __name__ == '__main__':
-  series_type = 'default'
-  presences=True
+  series_type = options.series_type
+  if not series_type:
+    series_type = 'default'
+  presences = options.presences
 
   if presences:
     path = '../img/{}/graphs/'.format('presences')
@@ -185,8 +213,13 @@ if __name__ == '__main__':
   if os.path.exists(path):
     shutil.rmtree(path)
 
-  for k in [3]:
-    for method in ["robust"]:
-      for func in ["avg", "dist"]:
-        print('[DEBUG] Running analysis for k={}, method={} and func={}'.format(k, method, func))
-        main([54], k, func, method, split='annually', presences=presences, save=True)
+  
+  if options.func == 'both':
+    print('[DEBUG] Running analysis for k={}, method={} and func=avg'.format(options.k, options.method))
+    main([54], options.k, 'avg', options.method, split=options.split, presences=options.presences, save=options.save)
+
+    print('[DEBUG] Running analysis for k={}, method={} and func=dist'.format(options.k, options.method))
+    main([54], options.k, 'dist', options.method, split=options.split, presences=options.presences, save=options.save)
+  else:
+    print('[DEBUG] Running analysis for k={}, method={} and func={}'.format(options.k, options.method, options.func))
+    main([54], options.k, options.func, options.method, split=options.split, presences=options.presences, save=options.save)
