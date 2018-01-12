@@ -13,7 +13,7 @@ import csv
 import os
 
 import kde_joyplot
-import distance
+import cluster_eval
 
 parser = OptionParser()
 parser.add_option('-k', '--k-neighbors', dest='k', type='int',
@@ -118,7 +118,7 @@ def get_sections(legislature, series, split=None):
     elif split == 'annually':
       return [(chunk[0], chunk[-1]) for chunk in chunks(idxs, 12)]
 
-def main(legislatures, k, func, method='JS', series_type='default', split=None, presences=False, silhouete=True, save=False):
+def main(legislatures, k, func, method='JS', series_type='default', split=None, presences=False, evaluate_clusters=True, save=False):
   if series_type == 'default':
     subquota_description = None
   elif series_type == 'flight':
@@ -134,8 +134,9 @@ def main(legislatures, k, func, method='JS', series_type='default', split=None, 
     clusters = merge_min_clusters(read_mstknn_dump(legislature, series_type, k, method), 3, legislature)
     cluster_idx = 0
 
-    if silhouete:
-      distance.plot(clusters)
+    if evaluate_clusters:
+      #cluster_eval._silhouette(clusters, method, k)
+      cluster_eval._dendrogram(clusters, method, k)
       return
 
     for cluster in clusters:

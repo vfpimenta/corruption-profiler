@@ -11,6 +11,10 @@ date.range <- function(legislature) {
   }
 }
 
+normalize.vector <- function(vector) {
+  (vector-min(vector))/(max(vector)-min(vector))
+}
+
 congressman_data <- fromJSON(file='../data/congressman_ts.json')
 
 outliers.54 <- fromJSON(file='../data/congressman_54_outliers.json')
@@ -28,7 +32,15 @@ for (name in names(congressman_data)){
 
 colnames(mat.54) <- names.54
 
-d <- distance(mat.54, method='robust')
+norm.54 <- c()
+for (vec in 1:dim(mat.54)[1]){
+  norm.54 <- rbind(norm.54, normalize.vector(mat.54[vec,]))
+}
+
+colnames(norm.54) <- names.54
+
+d <- distance(mat.54, method='JS')
+#d[is.na(d)] = 1
 dm <- as.matrix(d)
 
 write.csv(dm, file='distance.csv')
