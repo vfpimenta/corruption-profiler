@@ -32,14 +32,14 @@ for (name in names(congressman_data)){
 
 colnames(mat.54) <- names.54
 
-norm.54 <- c()
-for (vec in 1:dim(mat.54)[1]){
-  norm.54 <- rbind(norm.54, normalize.vector(mat.54[vec,]))
-}
+# norm.54 <- c()
+# for (vec in 1:dim(mat.54)[1]){
+#   norm.54 <- rbind(norm.54, normalize.vector(mat.54[vec,]))
+# }
 
-colnames(norm.54) <- names.54
+# colnames(norm.54) <- names.54
 
-d <- distance(mat.54, method='JS')
+d <- distance(mat.54, method='cosine')
 #d[is.na(d)] = 1
 dm <- as.matrix(d)
 

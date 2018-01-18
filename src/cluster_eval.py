@@ -8,6 +8,23 @@ import numpy as np
 
 import csv
 
+def get_cluster_colors(cluster_labels):
+  colors = list()
+  color_map = {
+    0:'red',
+    1:'orange',
+    2:'yellow',
+    3:'green',
+    4:'blue',
+    5:'indigo',
+    6:'purple',
+    7:'black'
+  }
+  for i in cluster_labels:
+    colors.append(color_map[i])
+
+  return colors
+
 def get_cluster_labels(header, clusters):
   labels = list()
   for congressman_id in header:
@@ -92,14 +109,23 @@ def _silhouette(clusters, method, k):
   plt.close(fig)
 
 def _dendrogram(clusters, method, k):
-  #fig, ax = plt.subplots()
+  fig, ax = plt.subplots()
 
   matrix, header = distance_matrix()
   cluster_labels = get_cluster_labels(header, clusters)
 
-  linkage_matrix = linkage(squareform(matrix))
+  matrix = np.array(matrix)
+  float_matrix = matrix.astype(np.float)
+  linkage_matrix = linkage(squareform(float_matrix))
 
-  dg = dendrogram(linkage_matrix, labels=cluster_labels)
+  dg = dendrogram(linkage_matrix, no_plot=True)
+  dg_labels = list()
+  for idx in dg['leaves']:
+    dg_labels.append(cluster_labels[idx])
 
-  plt.plot(dg)
-  plt.show()
+  dg = dendrogram(linkage_matrix, leaf_font_size=8,
+    truncate_mode='lastp', p=10,
+    show_contracted=True)
+
+  fig.savefig('../img/default/dendrogram/{}.png'.format(method), bbox_inches='tight')
+  plt.close(fig)
