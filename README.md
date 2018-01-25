@@ -5,9 +5,11 @@ The scripts used for this project are based on [Serenata de Amor](https://github
 
 ### Upcomimg changes
 
-1. Cross reference presence and expenses
-1. Calculate silhouete of each cluster
-1. Generate dendogram of clusters
+1. ~~Cross reference presence and expenses~~
+1. ~~Calculate silhouete of each cluster~~
+1. ~~Generate dendogram of clusters~~
 1. Apply different expenses on the same cluster as general
 1. Normalize and apply to JS distance
-1. Proportional expense of each congressman
+
+1. Proportional expense of each congressman as input
+1. Use other forms of cluster to divide (kmeans and such) and compute sihlluette

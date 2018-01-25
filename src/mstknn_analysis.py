@@ -118,7 +118,7 @@ def get_sections(legislature, series, split=None):
     elif split == 'annually':
       return [(chunk[0], chunk[-1]) for chunk in chunks(idxs, 12)]
 
-def main(legislatures, k, func, method='JS', series_type='default', split=None, presences=False, evaluate_clusters=True, save=False):
+def main(legislatures, k, func, method='JS', series_type='default', split=None, presences=False, evaluate_clusters=False, save=False):
   if series_type == 'default':
     subquota_description = None
   elif series_type == 'flight':
