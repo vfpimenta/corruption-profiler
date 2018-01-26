@@ -26,7 +26,8 @@ sudo Rscript -e 'install.packages("plyr", repos="https://cran.rstudio.com")'
 sudo R CMD javareconf JAVA_HOME=$JAVA_HOME
 sudo Rscript -e 'install.packages("RWeka", repos="https://cran.rstudio.com")'
 sudo Rscript -e 'install.packages("rJava", repos="https://cran.rstudio.com")'
-sudo apt-get install -y r-cran-igraph
+sudo Rscript -e 'devtools::install_github("gaborcsardi/pkgconfig")'
+sudo Rscript -e 'devtools::install_github("igraph/rigraph")'
 sudo Rscript -e 'install.packages("mclust", repos="https://cran.rstudio.com")'
 sudo Rscript -e 'install.packages("irr", repos="https://cran.rstudio.com")'
 sudo Rscript -e 'install.packages("data/cibm.utils_0.6.10.tar.gz" ,repos=NULL, type="source")'
