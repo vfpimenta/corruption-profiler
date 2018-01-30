@@ -19,7 +19,7 @@ parser = OptionParser()
 parser.add_option('-k', '--k-neighbors', dest='k', type='int',
     help='Number of neighbors for knn', metavar='NUMBER')
 parser.add_option('-m', '--method', dest='method', type='str',
-    help='Distance method [robust|JS]', metavar='STRING')
+    help='Distance method [robust|JS|cosine]', metavar='STRING')
 parser.add_option('-f', '--function', dest='func', type='str',
     help='Function for evaluation [avg|dist|both]', metavar='STRING')
 parser.add_option('-t', '--series-type', dest='series_type', type='str',
@@ -118,7 +118,7 @@ def get_sections(legislature, series, split=None):
     elif split == 'annually':
       return [(chunk[0], chunk[-1]) for chunk in chunks(idxs, 12)]
 
-def main(legislatures, k, func, method='JS', series_type='default', split=None, presences=False, evaluate_clusters=False, save=False):
+def main(legislatures, k, func, method='JS', series_type='default', split=None, presences=False, evaluate_clusters=True, save=False):
   if series_type == 'default':
     subquota_description = None
   elif series_type == 'flight':
@@ -135,8 +135,8 @@ def main(legislatures, k, func, method='JS', series_type='default', split=None, 
     cluster_idx = 0
 
     if evaluate_clusters:
-      #cluster_eval._silhouette(clusters, method, k)
-      cluster_eval._dendrogram(clusters, method, k)
+      cluster_eval._silhouette(clusters, method, k)
+      #cluster_eval._dendrogram(clusters, method, k)
       return
 
     for cluster in clusters:
@@ -148,9 +148,15 @@ def main(legislatures, k, func, method='JS', series_type='default', split=None, 
         fig, ax = plt.subplots( nrows=1, ncols=1 )
 
         if func == 'avg':
+          # ===================================================================
+          for congressman_id in cluster:
+            dfs = pd.DataFrame(series.get(congressman_id)[4][section[0]:section[1]], index=get_date_range(legislature, section))
+            dfs.plot(ax=ax, legend=False, color="blue", alpha=0.1)
+          # ===================================================================
+
           result = evaluate_avg(cluster, series, section, presences)
           df = pd.DataFrame(result, index=get_date_range(legislature, section))
-          df.plot(ax=ax, legend=False)
+          df.plot(ax=ax, legend=False, color="black")
         elif func == 'dist':
           result = evaluate_dist(cluster, series, section, presences)
           if np.count_nonzero(result) == 0:
@@ -163,43 +169,29 @@ def main(legislatures, k, func, method='JS', series_type='default', split=None, 
           results[0].append(str(section_idx))
           results[1].append(el)
 
-        if save:
-          if presences:
-            directory = '../img/{}/graphs/{}/{}/k-{}/term-{}-groups/section-{}'.format('presences', method, func, k, legislature, section_idx)
-            if not os.path.exists(directory):
-              os.makedirs(directory)
-
-            fig.savefig('../img/{}/graphs/{}/{}/k-{}/term-{}-groups/section-{}/region-graph-group{}.png'.format('presences', method, func, k, legislature, section_idx, cluster_idx), bbox_inches='tight')
-            plt.close(fig)
-          else:
-            directory = '../img/{}/graphs/{}/{}/k-{}/term-{}-groups/section-{}'.format(series_type, method, func, k, legislature, section_idx)
-            if not os.path.exists(directory):
-              os.makedirs(directory)
-
-            fig.savefig('../img/{}/graphs/{}/{}/k-{}/term-{}-groups/section-{}/region-graph-group{}.png'.format(series_type, method, func, k, legislature, section_idx, cluster_idx), bbox_inches='tight')
-            plt.close(fig)
-
-      if save and func == 'dist':
         if presences:
-          df = pd.DataFrame(results)
-          df = df.transpose()
-          df.columns = ['g', 'x']
-          m = df.g.map(ord)
-
-          directory =  '../img/{}/graphs/{}/{}/k-{}/term-{}-groups/kde'.format('presences', method, func, k, legislature)
-          if not os.path.exists(directory):
-              os.makedirs(directory)
-          kde_joyplot.plot(df, path='../img/{}/graphs/{}/{}/k-{}/term-{}-groups/kde/kde-joyplot-group{}.png'.format('presences', method, func, k, legislature, cluster_idx))
+          series_path = 'presences'
         else:
-          df = pd.DataFrame(results)
-          df = df.transpose()
-          df.columns = ['g', 'x']
-          m = df.g.map(ord)
+          series_path = series_type
 
-          directory =  '../img/{}/graphs/{}/{}/k-{}/term-{}-groups/kde'.format(series_type, method, func, k, legislature)
+        if save:
+          directory = '../img/{}/graphs/{}/{}/k-{}/term-{}-groups/section-{}'.format(series_path, method, func, k, legislature, section_idx)
           if not os.path.exists(directory):
-              os.makedirs(directory)
-          kde_joyplot.plot(df, path='../img/{}/graphs/{}/{}/k-{}/term-{}-groups/kde/kde-joyplot-group{}.png'.format(series_type, method, func, k, legislature, cluster_idx))
+            os.makedirs(directory)
+
+          fig.savefig('../img/{}/graphs/{}/{}/k-{}/term-{}-groups/section-{}/region-graph-group{}.png'.format(series_path, method, func, k, legislature, section_idx, cluster_idx), bbox_inches='tight')
+          plt.close(fig)
+
+      if save and func == 'dist' and split != None:
+        df = pd.DataFrame(results)
+        df = df.transpose()
+        df.columns = ['g', 'x']
+        m = df.g.map(ord)
+
+        directory =  '../img/{}/graphs/{}/{}/k-{}/term-{}-groups/kde'.format(series_path, method, func, k, legislature)
+        if not os.path.exists(directory):
+            os.makedirs(directory)
+        kde_joyplot.plot(df, path='../img/{}/graphs/{}/{}/k-{}/term-{}-groups/kde/kde-joyplot-group{}.png'.format(series_path, method, func, k, legislature, cluster_idx))
 
 if __name__ == '__main__':
   series_type = options.series_type
@@ -212,9 +204,8 @@ if __name__ == '__main__':
   else:
     path = '../img/{}/graphs/'.format(series_type)
 
-  if os.path.exists(path):
-    shutil.rmtree(path)
-
+  # if os.path.exists(path):
+  #   shutil.rmtree(path)
   
   if options.func == 'both':
     print('[DEBUG] Running analysis for k={}, method={} and func=avg'.format(options.k, options.method))
