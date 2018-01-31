@@ -39,8 +39,10 @@ colnames(mat.54) <- names.54
 
 # colnames(norm.54) <- names.54
 
-d <- distance(mat.54, method='cosine')
-#d[is.na(d)] = 1
-dm <- as.matrix(d)
+for (method in list("robust", "JS", "cosine")){
+  d <- distance(mat.54, method=method)
+  #d[is.na(d)] = 1
+  dm <- as.matrix(d)
 
-write.csv(dm, file='distance.csv')
+  write.csv(dm, file=paste('distance-', method, '.csv', sep=""))
+}

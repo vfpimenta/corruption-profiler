@@ -35,11 +35,11 @@ def get_cluster_labels(header, clusters):
 
   return np.array(labels)
 
-def distance_matrix():
+def distance_matrix(method):
   distance = list()
   header = None
 
-  with open('distance.csv', 'r') as csvfile:
+  with open('distance-{}.csv'.format(method), 'r') as csvfile:
     reader = csv.reader(csvfile)
     for row in reader:
       if not header:
@@ -52,7 +52,7 @@ def distance_matrix():
 def _silhouette(clusters, method, k):
   fig, ax = plt.subplots()
 
-  matrix, header = distance_matrix()
+  matrix, header = distance_matrix(method)
   cluster_labels = get_cluster_labels(header, clusters)
 
   # The silhouette_score gives the average value for all the samples.

@@ -154,7 +154,7 @@ def get_gid(congressperson_name, congressperson_document):
 
 def get_index(str_date):
   date = datetime.strptime(str_date, '%Y-%m-%d %H:%M:%S')
-  base_idx = date.year-2011 + date.month-1
+  base_idx = (date.year-2011)*12 + date.month-1
   return base_idx-1
 
 def exclude_name(str_name, *exclude):

@@ -118,7 +118,7 @@ def get_sections(legislature, series, split=None):
     elif split == 'annually':
       return [(chunk[0], chunk[-1]) for chunk in chunks(idxs, 12)]
 
-def main(legislatures, k, func, method='JS', series_type='default', split=None, presences=False, evaluate_clusters=True, save=False):
+def main(legislatures, k, func, method='JS', series_type='default', split=None, presences=False, evaluate_clusters=False, save=False):
   if series_type == 'default':
     subquota_description = None
   elif series_type == 'flight':
@@ -150,8 +150,9 @@ def main(legislatures, k, func, method='JS', series_type='default', split=None, 
         if func == 'avg':
           # ===================================================================
           for congressman_id in cluster:
-            dfs = pd.DataFrame(series.get(congressman_id)[4][section[0]:section[1]], index=get_date_range(legislature, section))
-            dfs.plot(ax=ax, legend=False, color="blue", alpha=0.1)
+            if congressman_id in series.keys():
+              dfs = pd.DataFrame(series.get(congressman_id)[4][section[0]:section[1]], index=get_date_range(legislature, section))
+              dfs.plot(ax=ax, legend=False, color="blue", alpha=0.1)
           # ===================================================================
 
           result = evaluate_avg(cluster, series, section, presences)
@@ -204,8 +205,8 @@ if __name__ == '__main__':
   else:
     path = '../img/{}/graphs/'.format(series_type)
 
-  # if os.path.exists(path):
-  #   shutil.rmtree(path)
+  if os.path.exists(path):
+    shutil.rmtree(path)
   
   if options.func == 'both':
     print('[DEBUG] Running analysis for k={}, method={} and func=avg'.format(options.k, options.method))
