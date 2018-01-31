@@ -3,11 +3,13 @@ from profiler import Profiler
 from sklearn.cluster import KMeans
 from scipy.spatial import distance
 from optparse import OptionParser
+from itertools import compress
 import matplotlib.pyplot as plt
 import numpy as np
 import itertools
 import time
-import os.path
+import json
+import os
 
 parser = OptionParser()
 parser.add_option('-c', '--clusters', dest='opt_n_clusters', type='int',
@@ -20,6 +22,8 @@ parser.add_option('-l', '--log', dest='opt_log', action='store_true',
     help='Print outlier log file.', metavar='BOOLEAN')
 parser.add_option('-t', '--threshold', dest='opt_threshold', type='float',
     help='Threshold for outlier detection.', metavar='NUMBER')
+parser.add_option('-d', '--dump', dest='opt_dump', action='store_true',
+    help='Dump clusters to data/ folder.', metavar='BOOLEAN')
 
 (options, args) = parser.parse_args()
 
@@ -66,7 +70,23 @@ def print_outlier_log(n_clusters, threshold, series, outliers, legislature):
         for outlier in outliers:
             logfile.write('{}\t{}\n'.format(series[outlier][0][1], series[outlier][0][0]))
 
-def main(n_clusters, legislatures, threshold=2.32, _plot=False, _fit=False, _log=False):
+def dump(congressman_ids, congressman_labels, n_clusters, legislature):
+    clusters = list()
+    for label in set(congressman_labels):
+        clusters.append(list(compress(congressman_ids, list(congressman_labels == label))))
+    directory = "../data/default/dump/kmeans/k-{}".format(n_clusters)
+    path = "{}/dump-clusters-{}.json".format(directory, legislature)
+
+    if not os.path.exists(directory):
+        os.makedirs(directory)
+
+    with open(path,'w') as jsonfile:
+        json.dump(clusters, jsonfile)
+
+def main(n_clusters, legislatures, threshold=2.32, _plot=False, _fit=False, _log=False, _dump=False):
+    if not threshold:
+        threshold = 2.32
+
     for legislature in legislatures:
         print('Running profiler for legislature {}...'.format(legislature))
         profiler = Profiler()
@@ -87,6 +107,10 @@ def main(n_clusters, legislatures, threshold=2.32, _plot=False, _fit=False, _log
         # Calculate inner/outer cluster distance to select best partition fit
         if _fit:
             in_out_distance(series_list, kmeans)
+
+        # Dump clusters for evaluation
+        if _dump:
+            dump(series.keys(), kmeans.labels_, n_clusters, legislature)
 
         # Find outliers
         outliers = []
@@ -109,5 +133,5 @@ if __name__ == '__main__':
     if options.opt_n_clusters == None or options.opt_n_clusters < 2:
         raise Exception('Number of clusters not provided!')
     main(n_clusters=options.opt_n_clusters, legislatures=[53,54,55],
-        threshold=options.opt_threshold,
-        _plot=options.opt_plot, _fit=options.opt_fit, _log=options.opt_log)
+        threshold=options.opt_threshold, _plot=options.opt_plot, 
+        _fit=options.opt_fit, _log=options.opt_log, _dump= options.opt_dump)

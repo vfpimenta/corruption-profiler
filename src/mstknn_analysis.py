@@ -30,6 +30,8 @@ parser.add_option('-p', '--presences', dest='presences', action='store_true',
     help='If presences series should be used')
 parser.add_option('-e', '--export', dest='save', action='store_true',
     help='Save results on /img')
+parser.add_option('-c', '--compute-silhouette', dest='evaluate_clusters', 
+  action='store_true', help='Run silhouette evaluation over clusters')
 
 (options, args) = parser.parse_args()
 
@@ -136,7 +138,6 @@ def main(legislatures, k, func, method='JS', series_type='default', split=None, 
 
     if evaluate_clusters:
       cluster_eval._silhouette(clusters, method, k)
-      #cluster_eval._dendrogram(clusters, method, k)
       return
 
     for cluster in clusters:
@@ -213,7 +214,7 @@ if __name__ == '__main__':
     main([54], options.k, 'avg', options.method, split=options.split, presences=options.presences, save=options.save)
 
     print('[DEBUG] Running analysis for k={}, method={} and func=dist'.format(options.k, options.method))
-    main([54], options.k, 'dist', options.method, split=options.split, presences=options.presences, save=options.save)
+    main([54], options.k, 'dist', options.method, split=options.split, presences=options.presences, evaluate_clusters=options.evaluate_clusters, save=options.save)
   else:
     print('[DEBUG] Running analysis for k={}, method={} and func={}'.format(options.k, options.method, options.func))
-    main([54], options.k, options.func, options.method, split=options.split, presences=options.presences, save=options.save)
+    main([54], options.k, options.func, options.method, split=options.split, presences=options.presences, evaluate_clusters=options.evaluate_clusters, save=options.save)
