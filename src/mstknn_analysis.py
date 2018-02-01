@@ -1,5 +1,6 @@
 from profiler import Profiler
 from optparse import OptionParser
+from scipy.stats import spearmanr, pearsonr
 
 import matplotlib.pyplot as plt
 import pandas as pd
@@ -136,9 +137,33 @@ def main(legislatures, k, func, method='JS', series_type='default', split=None, 
     clusters = merge_min_clusters(read_mstknn_dump(legislature, series_type, k, method), 3, legislature)
     cluster_idx = 0
 
+    # =========================================================================
+    # Cluster evaluation module
     if evaluate_clusters:
       cluster_eval._silhouette(clusters, method, k)
       return
+    # =========================================================================
+
+    # =========================================================================
+    # Presences correlation module
+    if presences:
+      expense_series = profiler.read_congressman_json(legislature, subquota_description=subquota_description, presences=False)
+
+      pearson_scores = list()
+      spearman_scores = list()
+      for congressman_id in series.keys():
+        presences_ = series.get(congressman_id)[4]
+        expenses_ = expense_series.get(congressman_id)[4]
+
+        pearson_scores.append(pearsonr(presences_, expenses_))
+        spearman_scores.append(spearmanr(presences_, expenses_))
+
+      pearson_score = np.mean(pearson_scores)
+      spearman_score = np.mean(spearman_scores)
+
+      print("Average pearson score: {}".format(pearson_score))
+      print("Average spearman score: {}".format(spearman_score))
+    # =========================================================================
 
     for cluster in clusters:
       cluster_idx += 1
@@ -206,7 +231,7 @@ if __name__ == '__main__':
   else:
     path = '../img/{}/graphs/'.format(series_type)
 
-  if os.path.exists(path):
+  if os.path.exists(path) and options.save:
     shutil.rmtree(path)
   
   if options.func == 'both':

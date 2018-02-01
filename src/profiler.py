@@ -119,6 +119,7 @@ class Profiler:
             filepath = filepath.replace('_','_{}_'.format(subquota_description.replace(' ','-').lower()))
         elif presences:
             filepath = filepath.replace('ts','presences')
+            
         if not os.path.exists(filepath):
             print('Json cache not found for {}! Building cache...'.format(filepath))
             self.build_congressman_json(subquota_description)
