@@ -27,13 +27,16 @@ option_list <- list(
   make_option(c('-d','--detect'), default=FALSE, action="store_true" ,
     dest="detect", help="detect and export outliers"),
   make_option(c('-a','--analyse'), default=FALSE, action="store_true",
-    dest="analyse", help="print max and min members of cluster 1 for legislature 54")
+    dest="analyse", help="print max and min members of cluster 1 for legislature 54"),
+  make_option(c('-c','--clear'), default=FALSE, action="store_true", dest="cls", help="Clear congressman with too many zeroes")
 );
 
 opt_parser <- OptionParser(option_list=option_list);
 opt <- parse_args(opt_parser);
 
 congressman_data <- fromJSON(file='../data/congressman_ts.json')
+
+valid_threshold <- 5
 
 # #################
 # Outlier detection
@@ -59,6 +62,12 @@ if(opt$detect) {
       congressman <- congressman_data[[name]]
       if (congressman[[4]][idx] && mean(congressman[[5]][range[1]:range[2]]) %in% outliers.expenses) {
         outliers <- c(outliers, name)
+      } else if (opt$cls && congressman[[4]][idx]) {
+        expenses_head <- head(congressman[[5]][range[1]:range[2]], valid_threshold)
+        expenses_tail <- tail(congressman[[5]][range[1]:range[2]], valid_threshold)
+        if(all(expenses_head == integer(valid_threshold)) || all(expenses_tail == integer(valid_threshold))){
+          outliers <- c(outliers, name)
+        }
       }
     }
 

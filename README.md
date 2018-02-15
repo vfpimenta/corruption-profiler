@@ -13,3 +13,7 @@ The scripts used for this project are based on [Serenata de Amor](https://github
 
 1. Proportional expense of each congressman as input
 1. Use other forms of cluster to divide (kmeans and such) and compute sihlluette
+
+1. Remove congressman that don't have data (presences+expenses) for long periods (see cluster 2)
+1. Analyse presences in 2014-dec vs. expenses (it seems that there is not enough presences for the expenses)
+1. Check if `num_matricula` is the same for the two congressman that occupy the same seat
