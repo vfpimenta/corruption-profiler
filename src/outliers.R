@@ -65,14 +65,14 @@ if(opt$detect) {
       } else if (opt$cls && congressman[[4]][idx]) {
         expenses_head <- head(congressman[[5]][range[1]:range[2]], valid_threshold)
         expenses_tail <- tail(congressman[[5]][range[1]:range[2]], valid_threshold)
-        if(all(expenses_head == integer(valid_threshold)) || all(expenses_tail == integer(valid_threshold))){
+        if(sum(expenses_head == 0) >= 4 || sum(expenses_tail == 0) >= 4){
           outliers <- c(outliers, name)
         }
       }
     }
 
     export <- toJSON(outliers)
-    write(export, paste('/home/victor/dev/corruption-profiler/data/congressman_',legislature,'_outliers.json',sep=""))
+    write(export, paste('../data/congressman_',legislature,'_outliers.json',sep=""))
   }
 }
 
@@ -81,8 +81,8 @@ if(opt$detect) {
 # ################
 
 if(opt$analyse) {
-  congressman_clusters.robust <- fromJSON(file='/home/victor/dev/corruption-profiler/data/dump/robust/k-3/dump-clusters-54.json')
-  congressman_clusters.js <- fromJSON(file='/home/victor/dev/corruption-profiler/data/dump/robust/k-3/dump-clusters-54.json')
+  congressman_clusters.robust <- fromJSON(file='../data/dump/robust/k-3/dump-clusters-54.json')
+  congressman_clusters.js <- fromJSON(file='../data/dump/robust/k-3/dump-clusters-54.json')
 
   range <- date.range(54)
 

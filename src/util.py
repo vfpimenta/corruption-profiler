@@ -37,3 +37,9 @@ def add_months(sourcedate,months):
     month = month % 12 + 1
     day = min(sourcedate.day,calendar.monthrange(year,month)[1])
     return datetime.date(year,month,day)
+
+def parse_str_list(string, delimiter=','):
+    if delimiter in string:
+        return [int(s) for s in string.split(delimiter)]  
+    else:
+        return [int(string)]

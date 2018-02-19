@@ -32,7 +32,7 @@ class SQLiteHandler:
             raise Exception('Unknown args for function fetch_expenses')
 
         if trim:
-            # jul 2009 ~ ago 2016
+            # apr 2009 ~ ago 2016
             sql += ' WHERE (c.year = ? AND c.month >= ?) OR (c.year = ? AND c.month <= ?) OR (c.year >= ? AND c.year <= ?)'
             for val in cur.execute(sql,[2009,4,2016,8,2010,2015]):
                 tuples.append(val)

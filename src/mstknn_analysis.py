@@ -15,12 +15,13 @@ import os
 
 import kde_joyplot
 import cluster_eval
+import util
 
 parser = OptionParser()
-parser.add_option('-k', '--k-neighbors', dest='k', type='int',
-    help='Number of neighbors for knn', metavar='NUMBER')
+parser.add_option('-k', '--k-neighbors', dest='k', type='str',
+    help='Number of neighbors for knn', metavar='NUMBER(S)')
 parser.add_option('-m', '--method', dest='method', type='str',
-    help='Distance method [robust|JS|cosine]', metavar='STRING')
+    help='Distance method [robust|JS|cosine|all]', metavar='STRING')
 parser.add_option('-f', '--function', dest='func', type='str',
     help='Function for evaluation [avg|dist|both]', metavar='STRING')
 parser.add_option('-t', '--series-type', dest='series_type', type='str',
@@ -224,22 +225,29 @@ if __name__ == '__main__':
   series_type = options.series_type
   if not series_type:
     series_type = 'default'
-  presences = options.presences
 
-  if presences:
-    path = '../img/{}/graphs/'.format('presences')
+  if options.method == 'all':
+    methods = ['robust', 'JS', 'cosine'] 
   else:
-    path = '../img/{}/graphs/'.format(series_type)
+    methods = [options.method]
 
-  if os.path.exists(path) and options.save:
-    shutil.rmtree(path)
-  
   if options.func == 'both':
-    print('[DEBUG] Running analysis for k={}, method={} and func=avg'.format(options.k, options.method))
-    main([54], options.k, 'avg', options.method, split=options.split, presences=options.presences, save=options.save)
-
-    print('[DEBUG] Running analysis for k={}, method={} and func=dist'.format(options.k, options.method))
-    main([54], options.k, 'dist', options.method, split=options.split, presences=options.presences, evaluate_clusters=options.evaluate_clusters, save=options.save)
+    funcs = ['avg', 'dist']
   else:
-    print('[DEBUG] Running analysis for k={}, method={} and func={}'.format(options.k, options.method, options.func))
-    main([54], options.k, options.func, options.method, split=options.split, presences=options.presences, evaluate_clusters=options.evaluate_clusters, save=options.save)
+    funcs = [options.func]
+
+  ks = util.parse_str_list(options.k)
+
+  for itr_method in methods:
+    if options.presences:
+      path = '../img/{}/graphs/{}'.format('presences', itr_method)
+    else:
+      path = '../img/{}/graphs/{}'.format(series_type, itr_method)
+
+    if os.path.exists(path) and options.save:
+      shutil.rmtree(path)
+
+    for itr_k in ks:
+      for itr_func in funcs:
+        print('[DEBUG] Running analysis for k={}, method={} and func={}'.format(itr_k, itr_method, itr_func))
+        main([54], itr_k, itr_func, itr_method, split=options.split, presences=options.presences, evaluate_clusters=options.evaluate_clusters, save=options.save)
