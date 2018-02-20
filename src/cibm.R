@@ -79,7 +79,7 @@ opt <- parse_args(opt_parser);
 # Building expense matrixes
 # #########################
 
-congressman_data <- fromJSON(file='../data/congressman_pts.json')
+congressman_data <- fromJSON(file='../data/congressman_ts.json')
 
 if (!is.null(opt$series)) {
   if (opt$series == 'flight') {

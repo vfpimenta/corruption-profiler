@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<styles>
+  <style name="Term Attributes 2" scope="node" selectionOnly="false">
+    <mapping>
+      <source name="region" origin="customProperty" type="string"/>
+      <target name="fillColor" type="color">
+        <hints/>
+      </target>
+      <conversion type="discrete">
+        <discrete>
+          <value>north</value>
+          <result>#4daf4a</result>
+        </discrete>
+        <discrete>
+          <value>north-east</value>
+          <result>#ff7f00</result>
+        </discrete>
+        <discrete>
+          <value>south-east</value>
+          <result>#984ea3</result>
+        </discrete>
+        <discrete>
+          <value>center-west</value>
+          <result>#e41a1c</result>
+        </discrete>
+        <discrete>
+          <value>south</value>
+          <result>#377eb8</result>
+        </discrete>
+      </conversion>
+    </mapping>
+    <mapping>
+      <source name="size" origin="customProperty" type="double"/>
+      <target name="geometryWidth" type="double">
+        <hints/>
+      </target>
+      <conversion type="linear">
+        <linear>
+          <min>1578.79</min>
+          <minResult>10.0</minResult>
+          <max>2680408.46</max>
+          <maxResult>100.0</maxResult>
+        </linear>
+      </conversion>
+    </mapping>
+    <mapping>
+      <source name="size" origin="customProperty" type="double"/>
+      <target name="geometryHeight" type="double">
+        <hints/>
+      </target>
+      <conversion type="linear">
+        <linear>
+          <min>1578.79</min>
+          <minResult>10.0</minResult>
+          <max>2680408.46</max>
+          <maxResult>100.0</maxResult>
+        </linear>
+      </conversion>
+    </mapping>
+  </style>
+  <style name="Term Attributes" scope="node" selectionOnly="false">
+    <mapping>
+      <source name="state_color" origin="customProperty" type="string"/>
+      <target name="fillColor" type="color">
+        <hints/>
+      </target>
+      <conversion type="asIs"/>
+    </mapping>
+    <mapping>
+      <source name="size" origin="customProperty" type="double"/>
+      <target name="geometryWidth" type="double">
+        <hints/>
+      </target>
+      <conversion type="linear">
+        <linear>
+          <min>1578.79</min>
+          <minResult>10.0</minResult>
+          <max>2680408.46</max>
+          <maxResult>100.0</maxResult>
+        </linear>
+      </conversion>
+    </mapping>
+    <mapping>
+      <source name="size" origin="customProperty" type="double"/>
+      <target name="geometryHeight" type="double">
+        <hints/>
+      </target>
+      <conversion type="linear">
+        <linear>
+          <min>1578.79</min>
+          <minResult>10.0</minResult>
+          <max>2680408.46</max>
+          <maxResult>100.0</maxResult>
+        </linear>
+      </conversion>
+    </mapping>
+  </style>
+  <style name="Term Attributes 3" scope="node" selectionOnly="false">
+    <mapping>
+      <source name="term_color" origin="customProperty" type="string"/>
+      <target name="fillColor" type="color">
+        <hints/>
+      </target>
+      <conversion type="discrete">
+        <discrete>
+          <value>blue</value>
+          <result>#3366ff</result>
+        </discrete>
+        <discrete>
+          <value>green</value>
+          <result>#00ff00</result>
+        </discrete>
+        <discrete>
+          <value>indigo</value>
+          <result>#333399</result>
+        </discrete>
+        <discrete>
+          <value>red</value>
+          <result>#ff0000</result>
+        </discrete>
+        <discrete>
+          <value>orange</value>
+          <result>#ff6600</result>
+        </discrete>
+        <discrete>
+          <value>yellow</value>
+          <result>#ffff00</result>
+        </discrete>
+        <discrete>
+          <value>violet</value>
+          <result>#800080</result>
+        </discrete>
+      </conversion>
+    </mapping>
+    <mapping>
+      <source name="size" origin="customProperty" type="double"/>
+      <target name="geometryWidth" type="double">
+        <hints/>
+      </target>
+      <conversion type="linear">
+        <linear>
+          <min>1578.79</min>
+          <minResult>10.0</minResult>
+          <max>2680408.46</max>
+          <maxResult>100.0</maxResult>
+        </linear>
+      </conversion>
+    </mapping>
+    <mapping>
+      <source name="size" origin="customProperty" type="double"/>
+      <target name="geometryHeight" type="double">
+        <hints/>
+      </target>
+      <conversion type="linear">
+        <linear>
+          <min>1578.79</min>
+          <minResult>10.0</minResult>
+          <max>2680408.46</max>
+          <maxResult>100.0</maxResult>
+        </linear>
+      </conversion>
+    </mapping>
+  </style>
+</styles>
