@@ -123,6 +123,7 @@ def get_sections(legislature, series, split=None):
       return [(chunk[0], chunk[-1]) for chunk in chunks(idxs, 12)]
 
 def main(legislatures, k, func, method='JS', series_type='default', split=None, presences=False, evaluate_clusters=False, save=False):
+
   if series_type == 'default':
     subquota_description = None
   elif series_type == 'flight':
@@ -135,7 +136,7 @@ def main(legislatures, k, func, method='JS', series_type='default', split=None, 
   profiler = Profiler(light=True)
   for legislature in legislatures:
     series = profiler.read_congressman_json(legislature, subquota_description=subquota_description, presences=presences)
-    clusters = merge_min_clusters(read_mstknn_dump(legislature, series_type, k, method), 3, legislature)
+    clusters = merge_min_clusters(read_mstknn_dump(legislature, 'default', k, method), 3, legislature)
     cluster_idx = 0
 
     # =========================================================================
@@ -178,6 +179,11 @@ def main(legislatures, k, func, method='JS', series_type='default', split=None, 
           # ===================================================================
           for congressman_id in cluster:
             if congressman_id in series.keys():
+              # if len([c for c in series.get(congressman_id)[4][section[0]:section[1]] if c > 200000]):
+              #   print("======================================================")
+              #   print("[DEBUG] Congressman={}".format(series.get(congressman_id)[0]))
+              #   print([x if x > 200000 else "N/A" for x in series.get(congressman_id)[4]])
+              #   print("======================================================")
               dfs = pd.DataFrame(series.get(congressman_id)[4][section[0]:section[1]], index=get_date_range(legislature, section))
               dfs.plot(ax=ax, legend=False, color="blue", alpha=0.1)
           # ===================================================================
@@ -250,4 +256,4 @@ if __name__ == '__main__':
     for itr_k in ks:
       for itr_func in funcs:
         print('[DEBUG] Running analysis for k={}, method={} and func={}'.format(itr_k, itr_method, itr_func))
-        main([54], itr_k, itr_func, itr_method, split=options.split, presences=options.presences, evaluate_clusters=options.evaluate_clusters, save=options.save)
+        main([54], itr_k, itr_func, itr_method, series_type=series_type, split=options.split, presences=options.presences, evaluate_clusters=options.evaluate_clusters, save=options.save)
