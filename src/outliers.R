@@ -1,5 +1,19 @@
 library(rjson)
 library(optparse)
+library(xml2)
+
+# Data caching
+data <- read_xml('../data/Deputados.xml')
+data_list <- as_list(data)
+
+is.holder <- function(congressman_id, legislature) {
+  for (congressman in data_list[[1]][[1]]){
+    if (congressman[['ideCadastro']] == congressman_id && congressman[['numLegislatura']] == legislature && congressman[['Condicao']] == 'Titular') {
+      return(TRUE)
+    }
+  }
+  return(FALSE)
+}
 
 date.range <- function(legislature) {
   if (legislature == 53) {
@@ -62,13 +76,16 @@ if(opt$detect) {
       congressman <- congressman_data[[name]]
       if (congressman[[4]][idx] && mean(congressman[[5]][range[1]:range[2]]) %in% outliers.expenses) {
         outliers <- c(outliers, name)
-      } else if (opt$cls && congressman[[4]][idx]) {
-        expenses_head <- head(congressman[[5]][range[1]:range[2]], valid_threshold)
-        expenses_tail <- tail(congressman[[5]][range[1]:range[2]], valid_threshold)
-        if(sum(expenses_head == 0) >= 4 || sum(expenses_tail == 0) >= 4){
-          outliers <- c(outliers, name)
-        }
+      } else if (!is.holder(name, legislature)) {
+        outliers <- c(outliers, name)
       }
+      # } else if (opt$cls && congressman[[4]][idx]) {
+      #   expenses_head <- head(congressman[[5]][range[1]:range[2]], valid_threshold)
+      #   expenses_tail <- tail(congressman[[5]][range[1]:range[2]], valid_threshold)
+      #   if(sum(expenses_head == 0) >= 4 || sum(expenses_tail == 0) >= 4){
+      #     outliers <- c(outliers, name)
+      #   }
+      # }
     }
 
     export <- toJSON(outliers)
