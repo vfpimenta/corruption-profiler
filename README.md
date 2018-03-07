@@ -5,15 +5,7 @@ The scripts used for this project are based on [Serenata de Amor](https://github
 
 ### Upcomimg changes
 
-1. ~~Cross reference presence and expenses~~
-1. ~~Calculate silhouete of each cluster~~
-1. ~~Generate dendogram of clusters~~
-1. Apply different expenses on the same cluster as general
-1. Normalize and apply to JS distance
-
-1. Proportional expense of each congressman as input
-1. Use other forms of cluster to divide (kmeans and such) and compute sihlluette
-
-1. Remove congressman that don't have data (presences+expenses) for long periods (see cluster 2)
-1. Analyse presences in 2014-dec vs. expenses (it seems that there is not enough presences for the expenses)
-1. Check if `num_matricula` is the same for the two congressman that occupy the same seat
+1. Remove any congressman that do not have a full series.
+  1. Evaluate vacation and how to apply it.
+1. Find which expenses hhave higher variance to use as clustering method.
+1. Apply normalization (mu and std for each month).
