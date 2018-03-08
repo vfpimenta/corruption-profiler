@@ -8,7 +8,7 @@ data_list <- as_list(data)
 
 is.holder <- function(congressman_id, legislature) {
   for (congressman in data_list[[1]][[1]]){
-    if (congressman[['ideCadastro']] == congressman_id && congressman[['numLegislatura']] == legislature && congressman[['Condicao']] == 'Titular') {
+    if (congressman[['ideCadastro']] == congressman_id && congressman[['numLegislatura']] == legislature && congressman[['Condicao']] == 'Titular' && congressman[['SiTuacaoMandato']] == 'Em Exercício') {
       return(TRUE)
     }
   }
