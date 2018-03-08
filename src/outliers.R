@@ -34,6 +34,25 @@ box.range <- function(data) {
   return(NULL)
 }
 
+detect.vacancies <- function(data, legislature, threshold){
+  range <- date.range(legislature)
+  watch.list <- data[[5]][range[1]:range[2]]
+  zeroes.count <- 0
+  zeroes.sequence <- 0
+  for (value in watch.list) {
+    if (value == 0){
+      zeroes.count <- zeroes.count + 1
+    } else {
+      if (zeroes.count > zeroes.sequence) {
+        zeroes.sequence <- zeroes.count
+      }
+      zeroes.count <- 0
+    }
+  }
+
+  return(zeroes.sequence == threshold)
+}
+
 # ################
 # Argument parsing
 # ################
@@ -77,6 +96,8 @@ if(opt$detect) {
       if (congressman[[4]][idx] && mean(congressman[[5]][range[1]:range[2]]) %in% outliers.expenses) {
         outliers <- c(outliers, name)
       } else if (!is.holder(name, legislature)) {
+        outliers <- c(outliers, name)
+      } else if (detect.vacancies(congressman, legislature, 1)) {
         outliers <- c(outliers, name)
       }
       # } else if (opt$cls && congressman[[4]][idx]) {
