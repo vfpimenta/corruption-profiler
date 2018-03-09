@@ -7,5 +7,5 @@ The scripts used for this project are based on [Serenata de Amor](https://github
 
 1. Remove any congressman that do not have a full series.
   1. Evaluate vacation and how to apply it.
-1. Find which expenses hhave higher variance to use as clustering method.
+1. Find which expenses have higher variance to use as clustering method.
 1. Apply normalization (mu and std for each month).
