@@ -50,7 +50,7 @@ detect.vacancies <- function(data, legislature, threshold){
     }
   }
 
-  return(zeroes.sequence == threshold)
+  return(zeroes.sequence >= threshold)
 }
 
 # ################
@@ -97,7 +97,7 @@ if(opt$detect) {
         outliers <- c(outliers, name)
       } else if (!is.holder(name, legislature)) {
         outliers <- c(outliers, name)
-      } else if (detect.vacancies(congressman, legislature, 1)) {
+      } else if (detect.vacancies(congressman, legislature, 3)) {
         outliers <- c(outliers, name)
       }
       # } else if (opt$cls && congressman[[4]][idx]) {

@@ -142,6 +142,10 @@ def main(legislatures, k, func, method='JS', series_type='default', split=None, 
     # =========================================================================
     # Cluster evaluation module
     if evaluate_clusters:
+      file = '../img/{}/silhouette/{}_k{}.png'.format(series_type, method, k)
+      if os.path.exists(file):
+        os.remove(file)
+
       cluster_eval._silhouette(clusters, method, k)
       return
     # =========================================================================
@@ -256,4 +260,8 @@ if __name__ == '__main__':
     for itr_k in ks:
       for itr_func in funcs:
         print('[DEBUG] Running analysis for k={}, method={} and func={}'.format(itr_k, itr_method, itr_func))
-        main([54], itr_k, itr_func, itr_method, series_type=series_type, split=options.split, presences=options.presences, evaluate_clusters=options.evaluate_clusters, save=options.save)
+        try:
+          main([54], itr_k, itr_func, itr_method, series_type=series_type, split=options.split, presences=options.presences, evaluate_clusters=options.evaluate_clusters, save=options.save)
+        except Exception as e:
+          print(util.bcolors.FAIL+'[ERROR] {}'.format(e)+util.bcolors.ENDC)
+          pass
