@@ -1,3 +1,5 @@
+#!/usr/bin/Rscript
+
 library(rjson)
 
 outliers.54 <- fromJSON(file='../data/congressman_54_outliers.json')

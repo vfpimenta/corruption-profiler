@@ -1,3 +1,5 @@
+#!/usr/bin/python3
+
 from collections import OrderedDict
 from profiler import Profiler
 from sklearn.cluster import KMeans

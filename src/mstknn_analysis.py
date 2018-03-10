@@ -1,3 +1,5 @@
+#!/usr/bin/python3
+
 from profiler import Profiler
 from optparse import OptionParser
 from scipy.stats import spearmanr, pearsonr

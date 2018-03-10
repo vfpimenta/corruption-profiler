@@ -1,3 +1,5 @@
+#!/usr/bin/Rscript
+
 library(cibm.utils)
 library(rjson)
 

@@ -1,3 +1,5 @@
+#!/usr/bin/Rscript
+
 library(rjson)
 library(cibm.utils)
 library(optparse)

@@ -1,3 +1,5 @@
+#!/usr/bin/Rscript
+
 library(rjson)
 
 date.range <- function(legislature) {

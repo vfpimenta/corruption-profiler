@@ -1,3 +1,5 @@
+#!/usr/bin/python3
+
 import xml.etree.ElementTree as ET
 
 print('Fetching info from xml...', end='\r')

@@ -1,3 +1,5 @@
+#!/usr/bin/python3
+
 from sklearn.metrics import pairwise
 from profiler import Profiler
 import pandas as pd

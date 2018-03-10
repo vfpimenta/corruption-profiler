@@ -1,7 +1,9 @@
+#!/usr/bin/python3
+
 from profiler import Profiler
 import csv
 
-max_subquota = 3
+max_subquota = 99
 
 p = Profiler()
 with open('../data/subquota.csv','r') as csvfile:
