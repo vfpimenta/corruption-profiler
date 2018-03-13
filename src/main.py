@@ -93,13 +93,26 @@ def main(n_clusters, legislatures, threshold=2.32, _plot=False, _fit=False, _log
         print('Running profiler for legislature {}...'.format(legislature))
         profiler = Profiler()
         series = profiler.read_congressman_json(legislature=legislature)
-        series_list = [x[-1] for x in series.values()]
+        if _dump:
+            series_list = [x[-1] for x in series.values()]
+        else:
+            with open('../data/congressman_{}_outliers.json'.format(legislature)) as jsonfile:    
+                file_outliers = json.load(jsonfile)
+            series_list = list()
+            keys_list = list()
+            for congressman_id in series.keys():
+                congressman = series.get(congressman_id)
+                if congressman_id not in file_outliers:
+                    keys_list.append(congressman_id)
+                    series_list.append(congressman[-1])
+
         kmeans = KMeans(n_clusters=n_clusters).fit(series_list)
         series_dist = kmeans.transform(series_list)
 
-        for i in range(len(series.keys())):
-            key = list(series.keys())[i]
-            series[key] = (series[key], series_dist[i], kmeans.labels_[i])
+        if _plot or _log:
+            for key in range(len(series_list)):
+                key = list(series.keys())[i]
+                series[key] = (series[key], series_dist[i], kmeans.labels_[i])
 
         # Plot the cluster curves
         if _plot:
@@ -112,23 +125,23 @@ def main(n_clusters, legislatures, threshold=2.32, _plot=False, _fit=False, _log
 
         # Dump clusters for evaluation
         if _dump:
-            dump(series.keys(), kmeans.labels_, n_clusters, legislature)
-
-        # Find outliers
-        outliers = []
-        for key in series.keys():
-            cluster_distances = list(map(lambda v: v[1][v[2]], 
-                list(filter(lambda el: el[2] == series[key][2], 
-                    series.values()))))
-            mu = np.mean(cluster_distances)
-            sd = np.std(cluster_distances)
-            d = series[key][1][series[key][2]]
-
-            if  d > (mu+threshold*sd) or d < (mu-threshold*sd):
-                outliers.append(key)
+            dump(keys_list, kmeans.labels_, n_clusters, legislature)
 
         # Log results
         if _log:
+            # Find outliers
+            outliers = []
+            for key in series.keys():
+                cluster_distances = list(map(lambda v: v[1][v[2]], 
+                    list(filter(lambda el: el[2] == series[key][2], 
+                        series.values()))))
+                mu = np.mean(cluster_distances)
+                sd = np.std(cluster_distances)
+                d = series[key][1][series[key][2]]
+
+                if  d > (mu+threshold*sd) or d < (mu-threshold*sd):
+                    outliers.append(key)
+
             print_outlier_log(n_clusters,threshold,series,outliers,legislature)
 
 if __name__ == '__main__':
