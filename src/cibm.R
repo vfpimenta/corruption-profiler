@@ -157,7 +157,7 @@ if (opt$dumpgml) {
 idx <- 53
 for (mat in list(mat.53, mat.54, mat.55)) {
   for (method in list("robust", "JS", "cosine")) {
-    for (k in list(3,4,5)) {
+    for (k in list(2,3,4,5)) {
       d <- distance(mat, method=method)
       gmstknn <- mstknn(d, k=k)
 
