@@ -21,6 +21,7 @@ sudo Rscript -e 'install.packages("optparse", repos="https://cran.rstudio.com")'
 sudo Rscript -e 'install.packages("tseries", repos="https://cran.rstudio.com")'
 sudo Rscript -e 'install.packages("forecast", repos="https://cran.rstudio.com")'
 sudo Rscript -e 'install.packages("xml2", repos="https://cran.rstudio.com")'
+sudo Rscript -e 'install.packages("Amelia", repos="https://cran.rstudio.com")'
 # ==
 sudo Rscript -e 'install.packages("devtools", repos="https://cran.rstudio.com")'
 sudo Rscript -e 'install.packages("plyr", repos="https://cran.rstudio.com")'

@@ -42,9 +42,11 @@ detect.vacancies <- function(data, legislature, threshold){
   return(zeroes.sequence >= threshold)
 }
 
-congressman.data <- fromJSON(file='../data/congressman_ts.json')
+congressman.data <- fromJSON(file='../data/congressman_ts_old.json')
 gap.threshold <- 9
 legislature <- 54
+
+range <- date.range(legislature)
 
 for (name in names(congressman.data)) {
   congressman <- congressman.data[[name]]
@@ -52,14 +54,14 @@ for (name in names(congressman.data)) {
   has.biggap <- detect.vacancies(congressman, legislature, gap.threshold)
 
   if (has.gap && !has.biggap) {
-    range <- date.range(legislature)
+
     congressman.list <- congressman[[5]][range[1]:range[2]]
     congressman.list[congressman.list == 0] <- NA
     congressman.date <- date.seq(legislature)
     congressman.df <- data.frame(congressman.list, congressman.date)
-    congressman.out <- amelia(congressman.df, m=5)
+    congressman.out <- amelia(congressman.df, m=1, bounds=rbind(c(1,0,999999), c(2,0,1)))
 
-    congressman[[5]][range[1]:range[2]] <- congressman.out$imputations[[3]]$congressman.list
+    congressman[[5]][range[1]:range[2]] <- congressman.out$imputations[[1]]$congressman.list
   }
 
   congressman.data[[name]] <- congressman
