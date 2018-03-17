@@ -53,7 +53,7 @@ norm.files <- list.files(path=gsub("standard","norm",path), pattern='.json')
 if (length(ts.files) - length(norm.files) >= 2) {
   for (file in ts.files) {
     print(paste("Running normalizer for ", file))
-    congressman_data <- fromJSON(file=paste('../data/JSON/standard/',file,sep=""))
+    congressman_data <- fromJSON(file=paste('../data/JSON/standard/', file, sep=""))
 
     mat.53 <- c()
     mat.54 <- c()
@@ -120,13 +120,13 @@ if (length(ts.files) - length(norm.files) >= 2) {
 
     print("Writing norm data")
     export <- toJSON(congressman_data)
-    write(export, gsub("/standard/", "/norm/", gsub(".json", "_NORM.json", paste('../data/JSON/standard/', file, sep=""))))
+    write(export, paste('../data/JSON/norm/', file, sep=""))
   }
 }
 
 norm.expenses <- list()
 for (file in norm.files) {
-  congressman_data <- fromJSON(file=paste('../data/JSON/norm/',file,sep=""))
+  congressman_data <- fromJSON(file=paste('../data/JSON/norm/', file, sep=""))
   for (name in names(congressman_data)){
     congressman <- congressman_data[[name]]
     if (name %in% names(norm.expenses)){
@@ -145,4 +145,4 @@ for (name in names(congressman_data)){
 }
 
 export <- toJSON(congressman_data)
-write(export, '../data/JSON/norm/congressman_ts_NORM.json')
+write(export, '../data/JSON/norm/congressman_ts.json')

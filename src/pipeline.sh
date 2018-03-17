@@ -1,6 +1,4 @@
-echo "========================================================================"
 echo "[PIPELINE] Starting pipeline"
-echo "========================================================================"
 echo "[PIPELINE] Building data"
 Rscript outliers.R -d
 Rscript cibm.R -c -g
