@@ -146,7 +146,7 @@ class CSVHandler:
 class JsonHandler:
 
     def __init__(self):
-        self.filepath = '../data/congressman_ts.json'
+        self.filepath = '../data/JSON/standard/congressman_ts.json'
 
     def dump(self, data, external=None):
         path = self.filepath if external == None else external

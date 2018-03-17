@@ -67,7 +67,7 @@ option_list <- list(
 opt_parser <- OptionParser(option_list=option_list);
 opt <- parse_args(opt_parser);
 
-congressman_data <- fromJSON(file='../data/congressman_ts.json')
+congressman_data <- fromJSON(file='../data/JSON/standard/congressman_ts.json')
 
 valid_threshold <- 5
 
@@ -110,7 +110,7 @@ if(opt$detect) {
     }
 
     export <- toJSON(outliers)
-    write(export, paste('../data/congressman_',legislature,'_outliers.json',sep=""))
+    write(export, paste('../data/JSON/congressman_',legislature,'_outliers.json',sep=""))
   }
 }
 

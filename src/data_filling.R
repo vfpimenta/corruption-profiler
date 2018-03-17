@@ -42,7 +42,7 @@ detect.vacancies <- function(data, legislature, threshold){
   return(zeroes.sequence >= threshold)
 }
 
-congressman.data <- fromJSON(file='../data/congressman_ts_old.json')
+congressman.data <- fromJSON(file='../data/JSON/standard/congressman_ts.json')
 gap.threshold <- 9
 legislature <- 54
 
@@ -68,4 +68,4 @@ for (name in names(congressman.data)) {
 }
 
 export <- toJSON(congressman.data)
-write(export, '../data/congressman_filled_ts.json')
+write(export, '../data/JSON/congressman_filled_ts.json')

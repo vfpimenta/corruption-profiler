@@ -81,23 +81,23 @@ opt <- parse_args(opt_parser);
 # Building expense matrixes
 # #########################
 
-congressman_data <- fromJSON(file='../data/congressman_ts.json')
+congressman_data <- fromJSON(file='../data/JSON/standard/congressman_ts.json')
 
 if (!is.null(opt$series)) {
   if (opt$series == 'flight') {
-    congressman_data <- fromJSON(file='../data/congressman_flight-ticket-issue_ts.json')
+    congressman_data <- fromJSON(file='../data/JSON/standard/congressman_flight-ticket-issue_ts.json')
   } else if (opt$series == 'publicity') {
-    congressman_data <- fromJSON(file='../data/congressman_publicity-of-parliamentary-activity_ts.json')
+    congressman_data <- fromJSON(file='../data/JSON/standard/congressman_publicity-of-parliamentary-activity_ts.json')
   } else if (opt$series == 'telecom') {
-    congressman_data <- fromJSON(file='../data/congressman_telecommunication_ts.json')
+    congressman_data <- fromJSON(file='../data/JSON/standard/congressman_telecommunication_ts.json')
   }
 } else {
   opt$series = 'default'
 }
 
-outliers.53 <- fromJSON(file='../data/congressman_53_outliers.json')
-outliers.54 <- fromJSON(file='../data/congressman_54_outliers.json')
-outliers.55 <- fromJSON(file='../data/congressman_55_outliers.json')
+outliers.53 <- fromJSON(file='../data/JSON/congressman_53_outliers.json')
+outliers.54 <- fromJSON(file='../data/JSON/congressman_54_outliers.json')
+outliers.55 <- fromJSON(file='../data/JSON/congressman_55_outliers.json')
 
 mat.53 <- c()
 mat.54 <- c()

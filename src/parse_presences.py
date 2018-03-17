@@ -203,7 +203,7 @@ def main():
         if row[10] == 'Present':
           congressman_json[gid][4][get_index(row[6])] += 1
 
-  with open('../data/congressman_presences.json','w') as jsonfile:
+  with open('../data/JSON/standard/congressman_presences.json','w') as jsonfile:
     json.dump(congressman_json, jsonfile)
 
 if __name__ == '__main__':

@@ -12,7 +12,7 @@ date.range <- function(legislature) {
   }
 }
 
-congressman_data <- fromJSON(file='../data/congressman_ts.json')
+congressman_data <- fromJSON(file='../data/JSON/standard/congressman_ts.json')
 proportional_data <- congressman_data
 
 for (name in names(congressman_data)){
@@ -42,5 +42,5 @@ for (name in names(congressman_data)){
 }
 
 export <- toJSON(proportional_data)
-file <- '../data/congressman_pts.json'
+file <- '../data/JSON/congressman_pts.json'
 write(export, file)

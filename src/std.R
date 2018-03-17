@@ -2,17 +2,18 @@
 
 library(rjson)
 
-outliers.54 <- fromJSON(file='../data/congressman_54_outliers.json')
+outliers.54 <- fromJSON(file='../data/JSON/congressman_54_outliers.json')
 
-ts.files <- list.files(path='../data', pattern='ts.json')
+ts.files <- list.files(path='../data/JSON/standard/', pattern='ts.json')
 for (file in ts.files){
-	congressman.data <- fromJSON(file=paste('../data/', file, sep=""))
+	congressman.data <- fromJSON(file=paste('../data/JSON/standard/', file, sep=""))
 	std.list <- list()
 
 	for (name in names(congressman.data)) {
 		congressman <- congressman.data[[name]]
-  		if (congressman[[4]][2] && !(name %in% outliers.54)) {
-  			std.list <- c(std.list, sd(congressman[[5]]))
+  		if (congressman[[4]][2] && !(name %in% outliers.54) & mean(congressman[[5]]) > 0) {
+        std.proprtion <- sd(congressman[[5]]) / mean(congressman[[5]])
+  			std.list <- c(std.list, std.proprtion)
   		}
 	}
 

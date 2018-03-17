@@ -96,7 +96,7 @@ def main(n_clusters, legislatures, threshold=2.32, _plot=False, _fit=False, _log
         if _dump:
             series_list = [x[-1] for x in series.values()]
         else:
-            with open('../data/congressman_{}_outliers.json'.format(legislature)) as jsonfile:    
+            with open('../data/JSON/congressman_{}_outliers.json'.format(legislature)) as jsonfile:    
                 file_outliers = json.load(jsonfile)
             series_list = list()
             keys_list = list()

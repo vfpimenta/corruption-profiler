@@ -17,9 +17,9 @@ normalize.vector <- function(vector) {
   (vector-min(vector))/(max(vector)-min(vector))
 }
 
-congressman_data <- fromJSON(file='../data/congressman_ts.json')
+congressman_data <- fromJSON(file='../data/JSON/standard/congressman_ts.json')
 
-outliers.54 <- fromJSON(file='../data/congressman_54_outliers.json')
+outliers.54 <- fromJSON(file='../data/JSON/congressman_54_outliers.json')
 mat.54 <- c()
 names.54 <- c()
 
