@@ -2,7 +2,8 @@ echo "[PIPELINE] Starting pipeline"
 echo "[PIPELINE] Building data"
 Rscript outliers.R -d
 Rscript cibm.R -c -g
-Rscript distance.R 
+Rscript distance.R
+python3 distance.py 
 python3 main.py -c 4 -d
 python3 main.py -c 6 -d
 python3 main.py -c 8 -d

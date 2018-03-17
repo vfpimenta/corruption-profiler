@@ -94,8 +94,6 @@ def main(n_clusters, legislatures, threshold=2.32, _plot=False, _fit=False, _log
         profiler = Profiler()
         series = profiler.read_congressman_json(legislature=legislature)
         if _dump:
-            series_list = [x[-1] for x in series.values()]
-        else:
             with open('../data/JSON/congressman_{}_outliers.json'.format(legislature)) as jsonfile:    
                 file_outliers = json.load(jsonfile)
             series_list = list()
@@ -105,6 +103,8 @@ def main(n_clusters, legislatures, threshold=2.32, _plot=False, _fit=False, _log
                 if congressman_id not in file_outliers:
                     keys_list.append(congressman_id)
                     series_list.append(congressman[-1])
+        else:
+            series_list = [x[-1] for x in series.values()]
 
         kmeans = KMeans(n_clusters=n_clusters).fit(series_list)
         series_dist = kmeans.transform(series_list)
