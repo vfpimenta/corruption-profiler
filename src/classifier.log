@@ -1,0 +1,36 @@
+Running classifier for series_type=default, k=2, method=robust
+Accuracy: 0.0326530612244898
+==============================================================
+Running classifier for series_type=default, k=2, method=JS
+Accuracy: 0.08979591836734693
+==============================================================
+Running classifier for series_type=default, k=2, method=cosine
+Accuracy: 0.05714285714285714
+==============================================================
+Running classifier for series_type=default, k=3, method=robust
+Accuracy: 0.1306122448979592
+==============================================================
+Running classifier for series_type=default, k=3, method=JS
+Accuracy: 0.2979591836734694
+==============================================================
+Running classifier for series_type=default, k=3, method=cosine
+Accuracy: 0.04897959183673469
+==============================================================
+Running classifier for series_type=default, k=4, method=robust
+Accuracy: 0.6163265306122448
+==============================================================
+Running classifier for series_type=default, k=4, method=JS
+Accuracy: 0.45714285714285713
+==============================================================
+Running classifier for series_type=default, k=4, method=cosine
+Accuracy: 0.6122448979591837
+==============================================================
+Running classifier for series_type=default, k=5, method=robust
+Accuracy: 0.6938775510204082
+==============================================================
+Running classifier for series_type=default, k=5, method=JS
+Accuracy: 0.9591836734693877
+==============================================================
+Running classifier for series_type=default, k=5, method=cosine
+Accuracy: 0.9795918367346939
+==============================================================
