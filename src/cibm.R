@@ -1,8 +1,8 @@
 #!/usr/bin/Rscript
 
-library(rjson)
-library(cibm.utils)
-library(optparse)
+suppressMessages(library(rjson))
+suppressMessages(library(cibm.utils))
+suppressMessages(library(optparse))
 
 date.range <- function(legislature) {
   if (legislature == 53) {
@@ -71,7 +71,7 @@ option_list <- list(
   make_option(c('-g','--dumpgml'), default=FALSE, action="store_true",
     dest="dumpgml", help="export cluster graphs"),
   make_option(c('-s','--series'), default=NULL, type="character",
-    dest="series" , help="selected series {'flight','publicity','telecom'}", metavar="character")
+    dest="series" , help="selected series {'flight','publicity','telecom','fuels'}", metavar="character")
 );
 
 opt_parser <- OptionParser(option_list=option_list);
@@ -90,10 +90,14 @@ if (!is.null(opt$series)) {
     congressman_data <- fromJSON(file='../data/JSON/standard/congressman_publicity-of-parliamentary-activity_ts.json')
   } else if (opt$series == 'telecom') {
     congressman_data <- fromJSON(file='../data/JSON/standard/congressman_telecommunication_ts.json')
+  } else if (opt$series == 'fuels') {
+    congressman_data <- fromJSON(file='../data/JSON/standard/congressman_fuels-and-lubricants_ts.json')
   }
 } else {
   opt$series = 'default'
 }
+
+print(paste("Using series:", opt$series))
 
 outliers.53 <- fromJSON(file='../data/JSON/congressman_53_outliers.json')
 outliers.54 <- fromJSON(file='../data/JSON/congressman_54_outliers.json')

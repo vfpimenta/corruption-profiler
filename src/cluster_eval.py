@@ -7,6 +7,7 @@ import matplotlib.cm as cm
 import numpy as np
 
 import csv
+import os
 
 def get_cluster_colors(cluster_labels):
   colors = list()
@@ -49,7 +50,7 @@ def distance_matrix(method):
 
   return distance, header
 
-def _silhouette(clusters, method, k):
+def _silhouette(clusters, method, k, series_type):
   fig, ax = plt.subplots()
 
   matrix, header = distance_matrix(method)
@@ -105,10 +106,14 @@ def _silhouette(clusters, method, k):
   ax.set_yticks([])  # Clear the yaxis labels / ticks
   ax.set_xticks([-0.1, 0, 0.2, 0.4, 0.6, 0.8, 1])
 
-  fig.savefig('../img/default/silhouette/{}_k{}.png'.format(method, k), bbox_inches='tight')
+  directory = '../img/{}/silhouette/'.format(series_type)
+  if not os.path.exists(directory):
+    os.makedirs(directory)
+
+  fig.savefig('../img/{}/silhouette/{}_k{}.png'.format(series_type, method, k), bbox_inches='tight')
   plt.close(fig)
 
-def _dendrogram(clusters, method, k):
+def _dendrogram(clusters, method, k, series_type):
   fig, ax = plt.subplots()
 
   matrix, header = distance_matrix()
@@ -127,5 +132,9 @@ def _dendrogram(clusters, method, k):
     truncate_mode='lastp', p=10,
     show_contracted=True)
 
-  fig.savefig('../img/default/dendrogram/{}.png'.format(method), bbox_inches='tight')
+  directory = '../img/{}/dendrogram/'.format(series_type)
+  if not os.path.exists(directory):
+    os.makedirs(directory)
+
+  fig.savefig('../img/{}/dendrogram/{}.png'.format(series_type, method), bbox_inches='tight')
   plt.close(fig)

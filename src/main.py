@@ -72,11 +72,11 @@ def print_outlier_log(n_clusters, threshold, series, outliers, legislature):
         for outlier in outliers:
             logfile.write('{}\t{}\n'.format(series[outlier][0][1], series[outlier][0][0]))
 
-def dump(congressman_ids, congressman_labels, n_clusters, legislature):
+def dump(series_type, congressman_ids, congressman_labels, n_clusters, legislature):
     clusters = list()
     for label in set(congressman_labels):
         clusters.append(list(compress(congressman_ids, list(congressman_labels == label))))
-    directory = "../data/default/dump/kmeans/k-{}".format(n_clusters)
+    directory = "../data/{}/dump/kmeans/k-{}".format(series_type,n_clusters)
     path = "{}/dump-clusters-{}.json".format(directory, legislature)
 
     if not os.path.exists(directory):
@@ -92,7 +92,7 @@ def main(n_clusters, legislatures, threshold=2.32, _plot=False, _fit=False, _log
     for legislature in legislatures:
         print('Running profiler for legislature {}...'.format(legislature))
         profiler = Profiler()
-        series = profiler.read_congressman_json(legislature=legislature)
+        series = profiler.read_congressman_json(legislature=legislature, subquota_description="Fuels and lubricants")
         if _dump:
             with open('../data/JSON/congressman_{}_outliers.json'.format(legislature)) as jsonfile:    
                 file_outliers = json.load(jsonfile)
@@ -125,7 +125,7 @@ def main(n_clusters, legislatures, threshold=2.32, _plot=False, _fit=False, _log
 
         # Dump clusters for evaluation
         if _dump:
-            dump(keys_list, kmeans.labels_, n_clusters, legislature)
+            dump('fuels', keys_list, kmeans.labels_, n_clusters, legislature)
 
         # Log results
         if _log:

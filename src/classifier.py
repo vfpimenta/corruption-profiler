@@ -1,4 +1,7 @@
+#!/usr/bin/python3
+
 from sklearn.neural_network import MLPClassifier
+from sklearn.ensemble import RandomForestClassifier
 from profiler import Profiler
 import numpy as np
 import json
@@ -64,7 +67,7 @@ def main():
   train_set, test_set = split_set(valid_series)
   print("Reading base data... Done")
 
-  for series_type in ['default']:
+  for series_type in ['fuels']:
     for k in [2, 3, 4, 5]:
       for method in ["robust", "JS", "cosine"]:
         print("Running classifier for series_type={}, k={}, method={}".format(series_type, k, method))
@@ -72,16 +75,19 @@ def main():
         clusters = read_mstknn_dump(legislature, series_type, k, method)
         train_labels, test_labels = split_labels(clusters, train_set, test_set)
 
-        classifier = MLPClassifier()
+        classifier = RandomForestClassifier(oob_score=True)
         classifier.fit([t[1] for t in train_set], train_labels)
 
-        hits = 0
-        for sample in zip(test_set, test_labels):
-          predicted_label = classifier.predict(sample[0][1])
-          if predicted_label == sample[1]:
-            hits += 1
+        hits = [0] * len(clusters)
+        for i in range(len(clusters)):
+          for sample in zip(test_set, test_labels):
+            if sample[1] == i:
+              predicted_label = classifier.predict(sample[0][1])
+              if predicted_label == sample[1]:
+                hits[i] += 1
+          hits[i] = hits[i] / test_labels.count(i) if test_labels.count(i) > 0 else 0
 
-        accuracy = hits / len(test_set)
+        accuracy = np.mean(hits)
         print("Accuracy: {}".format(accuracy))
         print("==============================================================")
 

@@ -7,7 +7,7 @@ import json
 
 def main():
     profiler = Profiler(light=True)
-    series = profiler.read_congressman_json(54)
+    series = profiler.read_congressman_json(54, subquota_description="Fuels and lubricants")
     with open('../data/JSON/congressman_54_outliers.json') as jsonfile:
         file_outliers = json.load(jsonfile)
     series_list = list()

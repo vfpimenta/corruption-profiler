@@ -17,7 +17,8 @@ normalize.vector <- function(vector) {
   (vector-min(vector))/(max(vector)-min(vector))
 }
 
-congressman_data <- fromJSON(file='../data/JSON/standard/congressman_ts.json')
+#congressman_data <- fromJSON(file='../data/JSON/standard/congressman_ts.json')
+congressman_data <- fromJSON(file='../data/JSON/standard/congressman_fuels-and-lubricants_ts.json')
 
 outliers.54 <- fromJSON(file='../data/JSON/congressman_54_outliers.json')
 mat.54 <- c()
@@ -43,7 +44,7 @@ colnames(mat.54) <- names.54
 
 for (method in list("robust", "JS", "cosine")){
   d <- distance(mat.54, method=method)
-  #d[is.na(d)] = 1
+  d[is.na(d)] = 1
   dm <- as.matrix(d)
 
   write.csv(dm, file=paste('distance-', method, '.csv', sep=""))

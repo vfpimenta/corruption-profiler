@@ -134,11 +134,13 @@ def main(legislatures, k, func, method='JS', series_type='default', split=None, 
     subquota_description = 'Publicity of parliamentary activity'
   elif series_type == 'telecom':
     subquota_description = 'Telecommunication'
+  elif series_type == 'fuels':
+    subquota_description = 'Fuels and lubricants'
 
   profiler = Profiler(light=True)
   for legislature in legislatures:
     series = profiler.read_congressman_json(legislature, subquota_description=subquota_description, presences=presences)
-    clusters = merge_min_clusters(read_mstknn_dump(legislature, 'default', k, method), 3, legislature)
+    clusters = merge_min_clusters(read_mstknn_dump(legislature, series_type, k, method), 3, legislature)
     cluster_idx = 0
 
     # =========================================================================
@@ -148,7 +150,7 @@ def main(legislatures, k, func, method='JS', series_type='default', split=None, 
       if os.path.exists(file):
         os.remove(file)
 
-      cluster_eval._silhouette(clusters, method, k)
+      cluster_eval._silhouette(clusters, method, k, series_type)
       return
     # =========================================================================
 
