@@ -3,9 +3,11 @@
 from sklearn.neural_network import MLPClassifier
 from sklearn.ensemble import RandomForestClassifier
 from profiler import Profiler
+from itertools import cycle
 import numpy as np
 import json
 import warnings
+import random
 warnings.filterwarnings("ignore")
 
 def read_mstknn_dump(legislature, series_type, k, method='JS'):
@@ -14,19 +16,26 @@ def read_mstknn_dump(legislature, series_type, k, method='JS'):
 
   return data
 
-def split_set(data, rate=(1,2)):
+def split_set(clusters, data, rate=(1,2)):
   train_set = list()
   test_set = list()
 
-  counter = 0
-  keys_list = list(data.keys())
-  np.random.shuffle(keys_list)
-  for key in keys_list:
-    if counter <= len(data.keys()) * rate[0] / (rate[0] + rate[1]):
-      train_set.append((key, data.get(key)[4]))
-    else:
-      test_set.append((key, data.get(key)[4]))
-    counter += 1
+  num_move = len(data.keys()) * rate[0] / (rate[0] + rate[1])
+  pool = cycle(range(len(clusters)))
+  buffer_list = list()
+
+  for label in pool:
+    to_move = random.choice(clusters[label])
+    if to_move not in buffer_list:
+      train_set.append((to_move, data[to_move][4]))
+      buffer_list.append(to_move)
+
+    if len(buffer_list) >= num_move:
+      break
+
+  for remainder in data.keys():
+    if remainder not in buffer_list:
+      test_set.append((remainder, data[remainder][4]))
 
   return train_set, test_set
 
@@ -54,7 +63,7 @@ def main():
 
   print("Reading base data...")
   profiler = Profiler()
-  series = profiler.read_congressman_json(legislature=legislature)
+  series = profiler.read_congressman_json(legislature=legislature, subquota_description='Fuels and lubricants')
   # ===========================================================================
   with open('../data/JSON/congressman_{}_outliers.json'.format(legislature)) as jsonfile:    
       file_outliers = json.load(jsonfile)
@@ -64,7 +73,6 @@ def main():
       if congressman_id not in file_outliers:
           valid_series[congressman_id] = congressman
   # ===========================================================================
-  train_set, test_set = split_set(valid_series)
   print("Reading base data... Done")
 
   for series_type in ['fuels']:
@@ -73,6 +81,7 @@ def main():
         print("Running classifier for series_type={}, k={}, method={}".format(series_type, k, method))
 
         clusters = read_mstknn_dump(legislature, series_type, k, method)
+        train_set, test_set = split_set(clusters, valid_series)
         train_labels, test_labels = split_labels(clusters, train_set, test_set)
 
         classifier = RandomForestClassifier(oob_score=True)
@@ -85,10 +94,11 @@ def main():
               predicted_label = classifier.predict(sample[0][1])
               if predicted_label == sample[1]:
                 hits[i] += 1
-          hits[i] = hits[i] / test_labels.count(i) if test_labels.count(i) > 0 else 0
+          hits[i] = hits[i] / test_labels.count(i) if test_labels.count(i) > 0 else 0.0
 
-        accuracy = np.mean(hits)
-        print("Accuracy: {}".format(accuracy))
+        for i in range(len(hits)):
+          hitrate = hits[i]
+          print("Cluster {}, Accuracy: {}".format(i, hitrate))
         print("==============================================================")
 
 if __name__ == '__main__':

@@ -2,6 +2,7 @@
 
 library(cibm.utils)
 library(rjson)
+suppressMessages(library(optparse))
 
 date.range <- function(legislature) {
   if (legislature == 53) {
@@ -17,10 +18,38 @@ normalize.vector <- function(vector) {
   (vector-min(vector))/(max(vector)-min(vector))
 }
 
-#congressman_data <- fromJSON(file='../data/JSON/standard/congressman_ts.json')
-congressman_data <- fromJSON(file='../data/JSON/standard/congressman_fuels-and-lubricants_ts.json')
+# ################
+# Argument parsing
+# ################
+option_list <- list(
+  make_option(c('-s','--series'), default=NULL, type="character",
+    dest="series" , help="selected series {'flight','publicity','telecom','fuels'}", metavar="character")
+);
 
-outliers.54 <- fromJSON(file='../data/JSON/congressman_54_outliers.json')
+opt_parser <- OptionParser(option_list=option_list);
+opt <- parse_args(opt_parser);
+
+congressman_data <- fromJSON(file='../data/JSON/standard/congressman_ts.json')
+
+if (!is.null(opt$series)) {
+  if (opt$series == 'flight') {
+    print("Using series: flight")
+    congressman_data <- fromJSON(file='../data/JSON/standard/congressman_flight-ticket-issue_ts.json')
+  } else if (opt$series == 'publicity') {
+    print("Using series: publicity")
+    congressman_data <- fromJSON(file='../data/JSON/standard/congressman_publicity-of-parliamentary-activity_ts.json')
+  } else if (opt$series == 'telecom') {
+    print("Using series: telecom")
+    congressman_data <- fromJSON(file='../data/JSON/standard/congressman_telecommunication_ts.json')
+  } else if (opt$series == 'fuels') {
+    print("Using series: fuels")
+    congressman_data <- fromJSON(file='../data/JSON/standard/congressman_fuels-and-lubricants_ts.json')
+  }
+} else {
+  print("Using series: default")
+  opt$series = 'default'
+}
+
 mat.54 <- c()
 names.54 <- c()
 

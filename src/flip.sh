@@ -10,10 +10,13 @@ unflip(){
   mv "../data/JSON/standard-tmp" "../data/JSON/standard" 
 }
 
-MODE=$1
+control_file=".fliprc"
+OPT=$1
 
-if [ "$MODE" == "-u" ]; then
-  unflip
-else
+if ! [ -e $control_file ] || [ "$(cat $control_file)" == "unfliped" ]; then
   flip
+  echo "fliped" > $control_file
+else
+  unflip
+  echo "unfliped" > $control_file
 fi

@@ -85,19 +85,22 @@ congressman_data <- fromJSON(file='../data/JSON/standard/congressman_ts.json')
 
 if (!is.null(opt$series)) {
   if (opt$series == 'flight') {
+    print("Using series: flight")
     congressman_data <- fromJSON(file='../data/JSON/standard/congressman_flight-ticket-issue_ts.json')
   } else if (opt$series == 'publicity') {
+    print("Using series: publicity")
     congressman_data <- fromJSON(file='../data/JSON/standard/congressman_publicity-of-parliamentary-activity_ts.json')
   } else if (opt$series == 'telecom') {
+    print("Using series: telecom")
     congressman_data <- fromJSON(file='../data/JSON/standard/congressman_telecommunication_ts.json')
   } else if (opt$series == 'fuels') {
+    print("Using series: fuels")
     congressman_data <- fromJSON(file='../data/JSON/standard/congressman_fuels-and-lubricants_ts.json')
   }
 } else {
+  print("Using series: default")
   opt$series = 'default'
 }
-
-print(paste("Using series:", opt$series))
 
 outliers.53 <- fromJSON(file='../data/JSON/congressman_53_outliers.json')
 outliers.54 <- fromJSON(file='../data/JSON/congressman_54_outliers.json')

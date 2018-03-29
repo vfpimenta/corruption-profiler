@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 
 from collections import OrderedDict
+from optparse import OptionParser
 from profiler import Profiler
 from sklearn.cluster import KMeans
 from scipy.spatial import distance
@@ -26,6 +27,8 @@ parser.add_option('-t', '--threshold', dest='opt_threshold', type='float',
     help='Threshold for outlier detection.', metavar='NUMBER')
 parser.add_option('-d', '--dump', dest='opt_dump', action='store_true',
     help='Dump clusters to data/ folder.', metavar='BOOLEAN')
+parser.add_option('-s', '--series-type', dest='series_type', type='str',
+    help='Input series [flight|publicity|telecom]', metavar='STRING')
 
 (options, args) = parser.parse_args()
 
@@ -86,13 +89,28 @@ def dump(series_type, congressman_ids, congressman_labels, n_clusters, legislatu
         json.dump(clusters, jsonfile)
 
 def main(n_clusters, legislatures, threshold=2.32, _plot=False, _fit=False, _log=False, _dump=False):
+    series_type = options.series_type
+    if not series_type:
+      series_type = 'default'
+
+    if series_type == 'default':
+      subquota_description = None
+    elif series_type == 'flight':
+      subquota_description = 'Flight ticket issue'
+    elif series_type == 'publicity':
+      subquota_description = 'Publicity of parliamentary activity'
+    elif series_type == 'telecom':
+      subquota_description = 'Telecommunication'
+    elif series_type == 'fuels':
+      subquota_description = 'Fuels and lubricants'
+
     if not threshold:
         threshold = 2.32
 
     for legislature in legislatures:
         print('Running profiler for legislature {}...'.format(legislature))
         profiler = Profiler()
-        series = profiler.read_congressman_json(legislature=legislature, subquota_description="Fuels and lubricants")
+        series = profiler.read_congressman_json(legislature=legislature, subquota_description=subquota_description)
         if _dump:
             with open('../data/JSON/congressman_{}_outliers.json'.format(legislature)) as jsonfile:    
                 file_outliers = json.load(jsonfile)
@@ -125,7 +143,7 @@ def main(n_clusters, legislatures, threshold=2.32, _plot=False, _fit=False, _log
 
         # Dump clusters for evaluation
         if _dump:
-            dump('fuels', keys_list, kmeans.labels_, n_clusters, legislature)
+            dump(series_type, keys_list, kmeans.labels_, n_clusters, legislature)
 
         # Log results
         if _log:
