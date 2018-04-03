@@ -17,4 +17,5 @@ python3 mstknn_analysis.py --series-type=$series -k 2,3,4,5 --method=all --funct
 ./flip.sh
 python3 mstknn_analysis.py --series-type=$series -k 2,3,4,5 --method=all --function=both -c
 python3 mstknn_analysis.py --series-type=$series -k 4,6,8 --method=kmeans --function=both -c
+python3 classifier.py --series-type=$series
 ./flip.sh

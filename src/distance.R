@@ -30,6 +30,7 @@ opt_parser <- OptionParser(option_list=option_list);
 opt <- parse_args(opt_parser);
 
 congressman_data <- fromJSON(file='../data/JSON/standard/congressman_ts.json')
+outliers.54 <- fromJSON(file='../data/JSON/congressman_54_outliers.json')
 
 if (!is.null(opt$series)) {
   if (opt$series == 'flight') {

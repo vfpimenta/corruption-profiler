@@ -2,6 +2,7 @@
 
 from sklearn.neural_network import MLPClassifier
 from sklearn.ensemble import RandomForestClassifier
+from optparse import OptionParser
 from profiler import Profiler
 from itertools import cycle
 import numpy as np
@@ -10,13 +11,19 @@ import warnings
 import random
 warnings.filterwarnings("ignore")
 
+parser = OptionParser()
+parser.add_option('-s', '--series-type', dest='series_type', type='str',
+    help='Input series [flight|publicity|telecom|fuels]', metavar='STRING')
+
+(options, args) = parser.parse_args()
+
 def read_mstknn_dump(legislature, series_type, k, method='JS'):
   with open('../data/{}/dump/{}/k-{}/dump-clusters-{}.json'.format(series_type, method, k, legislature)) as jsonfile:    
     data = json.load(jsonfile)
 
   return data
 
-def split_set(clusters, data, rate=(1,2)):
+def split_set(clusters, data, rate=(3,1)):
   train_set = list()
   test_set = list()
 
@@ -60,10 +67,24 @@ def split_labels(label_list, train_set, test_set):
 
 def main():
   legislature = 54
+  series_type = options.series_type
+  if not series_type:
+    series_type = 'default'
+
+  if series_type == 'default':
+    subquota_description = None
+  elif series_type == 'flight':
+    subquota_description = 'Flight ticket issue'
+  elif series_type == 'publicity':
+    subquota_description = 'Publicity of parliamentary activity'
+  elif series_type == 'telecom':
+    subquota_description = 'Telecommunication'
+  elif series_type == 'fuels':
+    subquota_description = 'Fuels and lubricants'
 
   print("Reading base data...")
-  profiler = Profiler()
-  series = profiler.read_congressman_json(legislature=legislature, subquota_description='Fuels and lubricants')
+  profiler = Profiler(light=True)
+  series = profiler.read_congressman_json(legislature=legislature, subquota_description=subquota_description)
   # ===========================================================================
   with open('../data/JSON/congressman_{}_outliers.json'.format(legislature)) as jsonfile:    
       file_outliers = json.load(jsonfile)
@@ -75,31 +96,31 @@ def main():
   # ===========================================================================
   print("Reading base data... Done")
 
-  for series_type in ['fuels']:
-    for k in [2, 3, 4, 5]:
-      for method in ["robust", "JS", "cosine"]:
-        print("Running classifier for series_type={}, k={}, method={}".format(series_type, k, method))
+  for k in [2, 3, 4, 5]:
+    for method in ["robust", "JS", "cosine"]:
+      print("Running classifier for series_type={}, k={}, method={}".format(series_type, k, method))
 
-        clusters = read_mstknn_dump(legislature, series_type, k, method)
-        train_set, test_set = split_set(clusters, valid_series)
-        train_labels, test_labels = split_labels(clusters, train_set, test_set)
+      clusters = read_mstknn_dump(legislature, series_type, k, method)
+      train_set, test_set = split_set(clusters, valid_series)
+      train_labels, test_labels = split_labels(clusters, train_set, test_set)
 
-        classifier = RandomForestClassifier(oob_score=True)
-        classifier.fit([t[1] for t in train_set], train_labels)
+      classifier = RandomForestClassifier(oob_score=True)
+      classifier.fit([t[1] for t in train_set], train_labels)
 
-        hits = [0] * len(clusters)
-        for i in range(len(clusters)):
-          for sample in zip(test_set, test_labels):
-            if sample[1] == i:
-              predicted_label = classifier.predict(sample[0][1])
-              if predicted_label == sample[1]:
-                hits[i] += 1
-          hits[i] = hits[i] / test_labels.count(i) if test_labels.count(i) > 0 else 0.0
+      hits = [0] * len(clusters)
+      for i in range(len(clusters)):
+        for sample in zip(test_set, test_labels):
+          if sample[1] == i:
+            predicted_label = classifier.predict(sample[0][1])
+            if predicted_label == sample[1]:
+              hits[i] += 1
+        hits[i] = hits[i] / test_labels.count(i) if test_labels.count(i) > 0 else 0.0
 
-        for i in range(len(hits)):
-          hitrate = hits[i]
-          print("Cluster {}, Accuracy: {}".format(i, hitrate))
-        print("==============================================================")
+      for i in range(len(hits)):
+        hitrate = hits[i]
+        print("Cluster {}, Accuracy: {}".format(i, hitrate))
+      print("Average: {}".format(np.mean(hits)))
+      print("==============================================================")
 
 if __name__ == '__main__':
   main()
