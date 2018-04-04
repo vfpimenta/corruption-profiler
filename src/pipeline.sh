@@ -12,10 +12,7 @@ python3 main.py -c 8 -d --series-type=$series
 echo "[PIPELINE] Data building finished"
 sleep 5
 echo "[PIPELINE] Running analysis"
-./flip.sh
 python3 mstknn_analysis.py --series-type=$series -k 2,3,4,5 --method=all --function=both -e
-./flip.sh
 python3 mstknn_analysis.py --series-type=$series -k 2,3,4,5 --method=all --function=both -c
 python3 mstknn_analysis.py --series-type=$series -k 4,6,8 --method=kmeans --function=both -c
-python3 classifier.py --series-type=$series
 ./flip.sh

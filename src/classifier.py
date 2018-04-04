@@ -11,12 +11,6 @@ import warnings
 import random
 warnings.filterwarnings("ignore")
 
-parser = OptionParser()
-parser.add_option('-s', '--series-type', dest='series_type', type='str',
-    help='Input series [flight|publicity|telecom|fuels]', metavar='STRING')
-
-(options, args) = parser.parse_args()
-
 def read_mstknn_dump(legislature, series_type, k, method='JS'):
   with open('../data/{}/dump/{}/k-{}/dump-clusters-{}.json'.format(series_type, method, k, legislature)) as jsonfile:    
     data = json.load(jsonfile)
@@ -65,7 +59,38 @@ def split_labels(label_list, train_set, test_set):
 
   return train_labels, test_labels
 
+def valid_data(series, legislature):
+  with open('../data/JSON/congressman_{}_outliers.json'.format(legislature)) as jsonfile:    
+      file_outliers = json.load(jsonfile)
+  valid_series = dict()
+  for congressman_id in series.keys():
+      congressman = series.get(congressman_id)
+      if congressman_id not in file_outliers:
+          valid_series[congressman_id] = congressman
+
+  return valid_series
+
+def get_features_importance(legislature, subquota_description, series_type, k, method):
+  profiler = Profiler(light=True)
+  series = profiler.read_congressman_json(legislature=legislature, subquota_description=subquota_description)
+
+  valid_series = valid_data(series, legislature)
+  clusters = read_mstknn_dump(legislature, series_type, k, method)
+  train_set, test_set = split_set(clusters, valid_series)
+  train_labels, test_labels = split_labels(clusters, train_set, test_set)
+
+  classifier = RandomForestClassifier(oob_score=True)
+  classifier.fit([t[1] for t in train_set], train_labels)
+
+  return classifier.feature_importances_
+
 def main():
+  parser = OptionParser()
+  parser.add_option('-s', '--series-type', dest='series_type', type='str',
+      help='Input series [flight|publicity|telecom|fuels]', metavar='STRING')
+
+  (options, args) = parser.parse_args()
+  
   legislature = 54
   series_type = options.series_type
   if not series_type:
@@ -85,21 +110,13 @@ def main():
   print("Reading base data...")
   profiler = Profiler(light=True)
   series = profiler.read_congressman_json(legislature=legislature, subquota_description=subquota_description)
-  # ===========================================================================
-  with open('../data/JSON/congressman_{}_outliers.json'.format(legislature)) as jsonfile:    
-      file_outliers = json.load(jsonfile)
-  valid_series = dict()
-  for congressman_id in series.keys():
-      congressman = series.get(congressman_id)
-      if congressman_id not in file_outliers:
-          valid_series[congressman_id] = congressman
-  # ===========================================================================
   print("Reading base data... Done")
 
   for k in [2, 3, 4, 5]:
     for method in ["robust", "JS", "cosine"]:
       print("Running classifier for series_type={}, k={}, method={}".format(series_type, k, method))
 
+      valid_series = valid_data(series, legislature)
       clusters = read_mstknn_dump(legislature, series_type, k, method)
       train_set, test_set = split_set(clusters, valid_series)
       train_labels, test_labels = split_labels(clusters, train_set, test_set)

@@ -17,6 +17,7 @@ import os
 
 import kde_joyplot
 import cluster_eval
+import classifier
 import util
 
 parser = OptionParser()
@@ -175,6 +176,7 @@ def main(legislatures, k, func, method='JS', series_type='default', split=None, 
       print("Average spearman score: {}".format(spearman_score))
     # =========================================================================
 
+    cluster_results = list()
     for cluster in clusters:
       cluster_idx += 1
       section_idx = 0
@@ -187,11 +189,6 @@ def main(legislatures, k, func, method='JS', series_type='default', split=None, 
           # ===================================================================
           for congressman_id in cluster:
             if congressman_id in series.keys():
-              # if len([c for c in series.get(congressman_id)[4][section[0]:section[1]] if c > 200000]):
-              #   print("======================================================")
-              #   print("[DEBUG] Congressman={}".format(series.get(congressman_id)[0]))
-              #   print([x if x > 200000 else "N/A" for x in series.get(congressman_id)[4]])
-              #   print("======================================================")
               dfs = pd.DataFrame(series.get(congressman_id)[4][section[0]:section[1]], index=get_date_range(legislature, section))
               dfs.plot(ax=ax, legend=False, color="blue", alpha=0.1)
           # ===================================================================
@@ -199,6 +196,7 @@ def main(legislatures, k, func, method='JS', series_type='default', split=None, 
           result = evaluate_avg(cluster, series, section, presences)
           df = pd.DataFrame(result, index=get_date_range(legislature, section))
           df.plot(ax=ax, legend=False, color="black")
+          cluster_results.append(result)
         elif func == 'dist':
           result = evaluate_dist(cluster, series, section, presences)
           if np.count_nonzero(result) == 0:
@@ -234,6 +232,14 @@ def main(legislatures, k, func, method='JS', series_type='default', split=None, 
         if not os.path.exists(directory):
             os.makedirs(directory)
         kde_joyplot.plot(df, path='../img/{}/graphs/{}/{}/k-{}/term-{}-groups/kde/kde-joyplot-group{}.png'.format(series_path, method, func, k, legislature, cluster_idx))
+
+    fig_, ax_ = plt.subplots(1,1)
+    means = [np.mean(l) for l in zip(*cluster_results)]
+    stds = [np.std(l) for l in zip(*cluster_results)]
+    ax_.errorbar(x=range(len(means)), y=means, yerr=stds)
+    features=classifier.get_features_importance(legislature, subquota_description, series_type, k, method)
+    ax_.plot(features)
+    fig_.show()
 
 if __name__ == '__main__':
   series_type = options.series_type
