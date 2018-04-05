@@ -102,17 +102,17 @@ if (length(ts.files) - length(norm.files) >= 2) {
       congressman <- congressman_data[[name]]
       if (congressman[[4]][1]) {
         range <- date.range(53)
-        norm <- mat.53[colnames(mat.53) == congressman[[1]]]
+        norm <- mat.53[,congressman[[1]]]
         congressman[[5]][range[1]:range[2]] <- norm
       } 
       if (congressman[[4]][2]) {
         range <- date.range(54)
-        norm <- mat.54[colnames(mat.54) == congressman[[1]]]
+        norm <- mat.54[,congressman[[1]]]
         congressman[[5]][range[1]:range[2]] <- norm
       } 
       if (congressman[[4]][3]) {
         range <- date.range(55)
-        norm <- mat.55[colnames(mat.55) == congressman[[1]]]
+        norm <- mat.55[,congressman[[1]]]
         congressman[[5]][range[1]:range[2]] <- norm
       }
       congressman_data[[name]] <- congressman
