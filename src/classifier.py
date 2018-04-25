@@ -44,19 +44,26 @@ def split_set(clusters, data, rate=(3, 1)):
     return train_set, test_set
 
 
-def split_labels(label_list, train_set, test_set):
+def split_labels(label_list, train_set, test_set, binary=False, selected_label=0):
     train_labels = list()
     test_labels = list()
     label_dict = dict()
 
     cluster_idx = 0
     for cluster in label_list:
+        cluster_idx += 1
         for label in cluster:
             label_dict[label] = cluster_idx
-        cluster_idx += 1
+
 
     for sample in train_set:
-        train_labels.append(label_dict[sample[0]])
+        if binary:
+            if label_dict[sample[0]] == selected_label:
+                train_labels.append(1)
+            else:
+                train_labels.append(0)
+        else:
+            train_labels.append(label_dict[sample[0]])
 
     for sample in test_set:
         test_labels.append(label_dict[sample[0]])
@@ -76,16 +83,16 @@ def valid_data(series, legislature):
     return valid_series
 
 
-def get_features_importance(legislature, subquota_description, series_type, k, method):
+def get_features_importance(legislature, subquota_description, series_type, k, method, cluster):
     profiler = Profiler(light=True)
     series = profiler.read_congressman_json(legislature=legislature, subquota_description=subquota_description)
 
     valid_series = valid_data(series, legislature)
     clusters = read_mstknn_dump(legislature, series_type, k, method)
-    train_set, test_set = split_set(clusters, valid_series)
-    train_labels, test_labels = split_labels(clusters, train_set, test_set)
+    train_set, test_set = split_set(clusters, valid_series, rate=(1, 0))
+    train_labels, test_labels = split_labels(clusters, train_set, test_set, binary=True, selected_label=cluster)
 
-    classifier = RandomForestClassifier(oob_score=True)
+    classifier = RandomForestClassifier(n_estimators=250, random_state=0)
     classifier.fit([t[1] for t in train_set], train_labels)
 
     return classifier.feature_importances_

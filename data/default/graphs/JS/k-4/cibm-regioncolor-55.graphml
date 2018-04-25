@@ -11,6 +11,7 @@
   <key id="v_term_color" for="node" attr.name="term_color" attr.type="string"/>
   <key id="v_region" for="node" attr.name="region" attr.type="string"/>
   <key id="v_size" for="node" attr.name="size" attr.type="double"/>
+  <key id="v_group" for="node" attr.name="group" attr.type="double"/>
   <key id="e_weight" for="edge" attr.name="weight" attr.type="double"/>
   <graph id="G" edgedefault="undirected">
     <node id="n0">
@@ -20,7 +21,8 @@
       <data key="v_state">SP</data>
       <data key="v_term_color">red</data>
       <data key="v_region">south-east</data>
-      <data key="v_size">1059.76553505864</data>
+      <data key="v_size">688765.74</data>
+      <data key="v_group">1</data>
     </node>
     <node id="n1">
       <data key="v_name">TEREZA CRISTINA</data>
@@ -29,7 +31,8 @@
       <data key="v_state">MS</data>
       <data key="v_term_color">red</data>
       <data key="v_region">center-west</data>
-      <data key="v_size">33.3970561848506</data>
+      <data key="v_size">728779.01</data>
+      <data key="v_group">1</data>
     </node>
     <node id="n2">
       <data key="v_name">ARNALDO FARIA DE SÁ</data>
@@ -38,7 +41,8 @@
       <data key="v_state">SP</data>
       <data key="v_term_color">violet</data>
       <data key="v_region">south-east</data>
-      <data key="v_size">126.696455320324</data>
+      <data key="v_size">2289971.72</data>
+      <data key="v_group">1</data>
     </node>
     <node id="n3">
       <data key="v_name">ANDRE MOURA</data>
@@ -47,7 +51,8 @@
       <data key="v_state">SE</data>
       <data key="v_term_color">yellow</data>
       <data key="v_region">north-east</data>
-      <data key="v_size">98.055433463865</data>
+      <data key="v_size">2351504.78</data>
+      <data key="v_group">2</data>
     </node>
     <node id="n4">
       <data key="v_name">RONALDO BENEDET</data>
@@ -56,7 +61,8 @@
       <data key="v_state">SC</data>
       <data key="v_term_color">yellow</data>
       <data key="v_region">south</data>
-      <data key="v_size">95.8178890952352</data>
+      <data key="v_size">2316674.29</data>
+      <data key="v_group">1</data>
     </node>
     <node id="n5">
       <data key="v_name">DELEGADO ÉDER MAURO</data>
@@ -65,7 +71,8 @@
       <data key="v_state">PA</data>
       <data key="v_term_color">red</data>
       <data key="v_region">north</data>
-      <data key="v_size">26.7011115180939</data>
+      <data key="v_size">787316.19</data>
+      <data key="v_group">2</data>
     </node>
     <node id="n6">
       <data key="v_name">EVAIR VIEIRA DE MELO</data>
@@ -74,7 +81,8 @@
       <data key="v_state">ES</data>
       <data key="v_term_color">red</data>
       <data key="v_region">south-east</data>
-      <data key="v_size">33.0303756013353</data>
+      <data key="v_size">653714.48</data>
+      <data key="v_group">1</data>
     </node>
     <node id="n7">
       <data key="v_name">SÉRGIO BRITO</data>
@@ -83,7 +91,8 @@
       <data key="v_state">BA</data>
       <data key="v_term_color">yellow</data>
       <data key="v_region">north-east</data>
-      <data key="v_size">129.613421571443</data>
+      <data key="v_size">2752221.5</data>
+      <data key="v_group">1</data>
     </node>
     <node id="n8">
       <data key="v_name">JOSÉ NUNES</data>
@@ -92,7 +101,8 @@
       <data key="v_state">BA</data>
       <data key="v_term_color">yellow</data>
       <data key="v_region">north-east</data>
-      <data key="v_size">99.6006202562453</data>
+      <data key="v_size">2429091.42</data>
+      <data key="v_group">1</data>
     </node>
     <node id="n9">
       <data key="v_name">JOSÉ REINALDO</data>
@@ -101,7 +111,8 @@
       <data key="v_state">MA</data>
       <data key="v_term_color">red</data>
       <data key="v_region">north-east</data>
-      <data key="v_size">33.3559875231632</data>
+      <data key="v_size">795966.15</data>
+      <data key="v_group">2</data>
     </node>
     <node id="n10">
       <data key="v_name">ZECA CAVALCANTI</data>
@@ -110,7 +121,8 @@
       <data key="v_state">PE</data>
       <data key="v_term_color">red</data>
       <data key="v_region">north-east</data>
-      <data key="v_size">34.4868029042846</data>
+      <data key="v_size">825668.58</data>
+      <data key="v_group">1</data>
     </node>
     <node id="n11">
       <data key="v_name">ZÉ SILVA</data>
@@ -119,7 +131,8 @@
       <data key="v_state">MG</data>
       <data key="v_term_color">yellow</data>
       <data key="v_region">south-east</data>
-      <data key="v_size">103.445453629458</data>
+      <data key="v_size">1691763.02</data>
+      <data key="v_group">2</data>
     </node>
     <node id="n12">
       <data key="v_name">JOÃO MARCELO SOUZA</data>
@@ -128,7 +141,8 @@
       <data key="v_state">MA</data>
       <data key="v_term_color">red</data>
       <data key="v_region">north-east</data>
-      <data key="v_size">32.1364708063144</data>
+      <data key="v_size">805613.26</data>
+      <data key="v_group">1</data>
     </node>
     <node id="n13">
       <data key="v_name">MARCOS MONTES</data>
@@ -137,7 +151,8 @@
       <data key="v_state">MG</data>
       <data key="v_term_color">yellow</data>
       <data key="v_region">south-east</data>
-      <data key="v_size">119.935443363955</data>
+      <data key="v_size">2705161.39</data>
+      <data key="v_group">1</data>
     </node>
     <node id="n14">
       <data key="v_name">ERIKA KOKAY</data>
@@ -146,7 +161,8 @@
       <data key="v_state">DF</data>
       <data key="v_term_color">yellow</data>
       <data key="v_region">center-west</data>
-      <data key="v_size">105.315563597964</data>
+      <data key="v_size">1285594.33</data>
+      <data key="v_group">1</data>
     </node>
     <node id="n15">
       <data key="v_name">CÉSAR MESSIAS</data>
@@ -155,7 +171,8 @@
       <data key="v_state">AC</data>
       <data key="v_term_color">red</data>
       <data key="v_region">north</data>
-      <data key="v_size">28.2388641828381</data>
+      <data key="v_size">690805.9</data>
+      <data key="v_group">1</data>
     </node>
     <node id="n16">
       <data key="v_name">EROS BIONDINI</data>
@@ -164,7 +181,8 @@
       <data key="v_state">MG</data>
       <data key="v_term_color">red</data>
       <data key="v_region">south-east</data>
-      <data key="v_size">84.8277392058678</data>
+      <data key="v_size">1607697.27</data>
+      <data key="v_group">1</data>
     </node>
     <node id="n17">
       <data key="v_name">LAERCIO OLIVEIRA</data>
@@ -173,7 +191,8 @@
       <data key="v_state">SE</data>
       <data key="v_term_color">yellow</data>
       <data key="v_region">north-east</data>
-      <data key="v_size">124.32039298902</data>
+      <data key="v_size">2168994.26</data>
+      <data key="v_group">1</data>
     </node>
     <node id="n18">
       <data key="v_name">GIUSEPPE VECCI</data>
@@ -182,7 +201,8 @@
       <data key="v_state">GO</data>
       <data key="v_term_color">red</data>
       <data key="v_region">center-west</data>
-      <data key="v_size">33.3559966224586</data>
+      <data key="v_size">572522.64</data>
+      <data key="v_group">1</data>
     </node>
     <node id="n19">
       <data key="v_name">RAQUEL MUNIZ</data>
@@ -191,7 +211,8 @@
       <data key="v_state">MG</data>
       <data key="v_term_color">red</data>
       <data key="v_region">south-east</data>
-      <data key="v_size">34.6162823218632</data>
+      <data key="v_size">739425.9</data>
+      <data key="v_group">1</data>
     </node>
     <node id="n20">
       <data key="v_name">HERÁCLITO FORTES</data>
@@ -200,7 +221,8 @@
       <data key="v_state">PI</data>
       <data key="v_term_color">red</data>
       <data key="v_region">north-east</data>
-      <data key="v_size">1629.12676213888</data>
+      <data key="v_size">620162.32</data>
+      <data key="v_group">1</data>
     </node>
     <node id="n21">
       <data key="v_name">CARLOS MELLES</data>
@@ -209,7 +231,8 @@
       <data key="v_state">MG</data>
       <data key="v_term_color">violet</data>
       <data key="v_region">south-east</data>
-      <data key="v_size">116.996269883177</data>
+      <data key="v_size">1600212.82</data>
+      <data key="v_group">2</data>
     </node>
     <node id="n22">
       <data key="v_name">IRAJÁ ABREU</data>
@@ -218,7 +241,8 @@
       <data key="v_state">TO</data>
       <data key="v_term_color">yellow</data>
       <data key="v_region">north</data>
-      <data key="v_size">100.703748996287</data>
+      <data key="v_size">2160506.43</data>
+      <data key="v_group">1</data>
     </node>
     <node id="n23">
       <data key="v_name">JEAN WYLLYS</data>
@@ -227,7 +251,8 @@
       <data key="v_state">RJ</data>
       <data key="v_term_color">yellow</data>
       <data key="v_region">south-east</data>
-      <data key="v_size">86.9967971426565</data>
+      <data key="v_size">1659748.09</data>
+      <data key="v_group">1</data>
     </node>
     <node id="n24">
       <data key="v_name">ZÉ GERALDO</data>
@@ -236,7 +261,8 @@
       <data key="v_state">PA</data>
       <data key="v_term_color">violet</data>
       <data key="v_region">north</data>
-      <data key="v_size">118.370032563374</data>
+      <data key="v_size">3234666.25</data>
+      <data key="v_group">1</data>
     </node>
     <node id="n25">
       <data key="v_name">PAULO FEIJÓ</data>
@@ -245,7 +271,8 @@
       <data key="v_state">RJ</data>
       <data key="v_term_color">yellow</data>
       <data key="v_region">south-east</data>
-      <data key="v_size">97.48222721385</data>
+      <data key="v_size">1970830.69</data>
+      <data key="v_group">1</data>
     </node>
     <node id="n26">
       <data key="v_name">CHICO D&apos;ANGELO</data>
@@ -254,7 +281,8 @@
       <data key="v_state">RJ</data>
       <data key="v_term_color">violet</data>
       <data key="v_region">south-east</data>
-      <data key="v_size">117.345231692096</data>
+      <data key="v_size">1853354.62</data>
+      <data key="v_group">2</data>
     </node>
     <node id="n27">
       <data key="v_name">JORGINHO MELLO</data>
@@ -263,7 +291,8 @@
       <data key="v_state">SC</data>
       <data key="v_term_color">yellow</data>
       <data key="v_region">south</data>
-      <data key="v_size">94.4131108282211</data>
+      <data key="v_size">2245374.72</data>
+      <data key="v_group">1</data>
     </node>
     <node id="n28">
       <data key="v_name">KEIKO OTA</data>
@@ -272,7 +301,8 @@
       <data key="v_state">SP</data>
       <data key="v_term_color">yellow</data>
       <data key="v_region">south-east</data>
-      <data key="v_size">331.296932426948</data>
+      <data key="v_size">2072380.53</data>
+      <data key="v_group">1</data>
     </node>
     <node id="n29">
       <data key="v_name">PEDRO FERNANDES</data>
@@ -281,7 +311,8 @@
       <data key="v_state">MA</data>
       <data key="v_term_color">violet</data>
       <data key="v_region">north-east</data>
-      <data key="v_size">126.93540433615</data>
+      <data key="v_size">1813349.01</data>
+      <data key="v_group">1</data>
     </node>
     <node id="n30">
       <data key="v_name">DILCEU SPERAFICO</data>
@@ -290,7 +321,8 @@
       <data key="v_state">PR</data>
       <data key="v_term_color">violet</data>
       <data key="v_region">south</data>
-      <data key="v_size">118.938312584019</data>
+      <data key="v_size">2477319.91</data>
+      <data key="v_group">2</data>
     </node>
     <node id="n31">
       <data key="v_name">CELSO MALDANER</data>
@@ -299,7 +331,8 @@
       <data key="v_state">SC</data>
       <data key="v_term_color">violet</data>
       <data key="v_region">south</data>
-      <data key="v_size">126.455934457194</data>
+      <data key="v_size">2969501.68</data>
+      <data key="v_group">2</data>
     </node>
     <node id="n32">
       <data key="v_name">VALMIR PRASCIDELLI</data>
@@ -308,7 +341,8 @@
       <data key="v_state">SP</data>
       <data key="v_term_color">red</data>
       <data key="v_region">south-east</data>
-      <data key="v_size">29.6616798862328</data>
+      <data key="v_size">707410.61</data>
+      <data key="v_group">1</data>
     </node>
     <node id="n33">
       <data key="v_name">AUGUSTO CARVALHO</data>
@@ -317,7 +351,8 @@
       <data key="v_state">DF</data>
       <data key="v_term_color">yellow</data>
       <data key="v_region">center-west</data>
-      <data key="v_size">135.143847279484</data>
+      <data key="v_size">1540683.63</data>
+      <data key="v_group">2</data>
     </node>
     <node id="n34">
       <data key="v_name">ALCEU MOREIRA</data>
@@ -326,7 +361,8 @@
       <data key="v_state">RS</data>
       <data key="v_term_color">yellow</data>
       <data key="v_region">south</data>
-      <data key="v_size">89.2267370324615</data>
+      <data key="v_size">2377583.91</data>
+      <data key="v_group">1</data>
     </node>
     <node id="n35">
       <data key="v_name">CRISTIANE BRASIL</data>
@@ -335,7 +371,8 @@
       <data key="v_state">RJ</data>
       <data key="v_term_color">red</data>
       <data key="v_region">south-east</data>
-      <data key="v_size">31.445727107904</data>
+      <data key="v_size">711013.37</data>
+      <data key="v_group">2</data>
     </node>
     <node id="n36">
       <data key="v_name">LELO COIMBRA</data>
@@ -344,7 +381,8 @@
       <data key="v_state">ES</data>
       <data key="v_term_color">violet</data>
       <data key="v_region">south-east</data>
-      <data key="v_size">121.344581150319</data>
+      <data key="v_size">2715336.64</data>
+      <data key="v_group">2</data>
     </node>
     <node id="n37">
       <data key="v_name">PAUDERNEY AVELINO</data>
@@ -353,7 +391,8 @@
       <data key="v_state">AM</data>
       <data key="v_term_color">yellow</data>
       <data key="v_region">north</data>
-      <data key="v_size">96.9397094905476</data>
+      <data key="v_size">1813807.72</data>
+      <data key="v_group">1</data>
     </node>
     <node id="n38">
       <data key="v_name">JOÃO DERLY</data>
@@ -362,7 +401,8 @@
       <data key="v_state">RS</data>
       <data key="v_term_color">red</data>
       <data key="v_region">south</data>
-      <data key="v_size">27.3636571140928</data>
+      <data key="v_size">769922.59</data>
+      <data key="v_group">1</data>
     </node>
     <node id="n39">
       <data key="v_name">IRACEMA PORTELLA</data>
@@ -371,7 +411,8 @@
       <data key="v_state">PI</data>
       <data key="v_term_color">yellow</data>
       <data key="v_region">north-east</data>
-      <data key="v_size">97.45323499279</data>
+      <data key="v_size">2334280.98</data>
+      <data key="v_group">1</data>
     </node>
     <node id="n40">
       <data key="v_name">JUSCELINO FILHO</data>
@@ -380,7 +421,8 @@
       <data key="v_state">MA</data>
       <data key="v_term_color">red</data>
       <data key="v_region">north-east</data>
-      <data key="v_size">34.7702378557728</data>
+      <data key="v_size">840145.74</data>
+      <data key="v_group">2</data>
     </node>
     <node id="n41">
       <data key="v_name">CARLOS GOMES</data>
@@ -389,7 +431,8 @@
       <data key="v_state">RS</data>
       <data key="v_term_color">red</data>
       <data key="v_region">south</data>
-      <data key="v_size">30.1643219573896</data>
+      <data key="v_size">662500.6</data>
+      <data key="v_group">1</data>
     </node>
     <node id="n42">
       <data key="v_name">LUIZ LAURO FILHO</data>
@@ -398,7 +441,8 @@
       <data key="v_state">SP</data>
       <data key="v_term_color">red</data>
       <data key="v_region">south-east</data>
-      <data key="v_size">34.1388504130459</data>
+      <data key="v_size">712099.83</data>
+      <data key="v_group">1</data>
     </node>
     <node id="n43">
       <data key="v_name">IRMÃO LAZARO</data>
@@ -407,7 +451,8 @@
       <data key="v_state">BA</data>
       <data key="v_term_color">red</data>
       <data key="v_region">north-east</data>
-      <data key="v_size">33.4218174717067</data>
+      <data key="v_size">558537.82</data>
+      <data key="v_group">2</data>
     </node>
     <node id="n44">
       <data key="v_name">HUGO LEAL</data>
@@ -416,7 +461,8 @@
       <data key="v_state">RJ</data>
       <data key="v_term_color">red</data>
       <data key="v_region">south-east</data>
-      <data key="v_size">122.390095356592</data>
+      <data key="v_size">2647641.21</data>
+      <data key="v_group">2</data>
     </node>
     <node id="n45">
       <data key="v_name">LUIZ CARLOS HAULY</data>
@@ -425,7 +471,8 @@
       <data key="v_state">PR</data>
       <data key="v_term_color">violet</data>
       <data key="v_region">south</data>
-      <data key="v_size">138.747925618205</data>
+      <data key="v_size">1679772.06</data>
+      <data key="v_group">2</data>
     </node>
     <node id="n46">
       <data key="v_name">PAULO AZI</data>
@@ -434,7 +481,8 @@
       <data key="v_state">BA</data>
       <data key="v_term_color">red</data>
       <data key="v_region">north-east</data>
-      <data key="v_size">32.4562242355308</data>
+      <data key="v_size">766071.56</data>
+      <data key="v_group">1</data>
     </node>
     <node id="n47">
       <data key="v_name">MARCOS ABRÃO</data>
@@ -443,7 +491,8 @@
       <data key="v_state">GO</data>
       <data key="v_term_color">red</data>
       <data key="v_region">center-west</data>
-      <data key="v_size">29.5239844987097</data>
+      <data key="v_size">693658.71</data>
+      <data key="v_group">2</data>
     </node>
     <node id="n48">
       <data key="v_name">EVANDRO GUSSI</data>
@@ -452,7 +501,8 @@
       <data key="v_state">SP</data>
       <data key="v_term_color">red</data>
       <data key="v_region">south-east</data>
-      <data key="v_size">31.1614358928859</data>
+      <data key="v_size">702055.86</data>
+      <data key="v_group">1</data>
     </node>
     <node id="n49">
       <data key="v_name">ANÍBAL GOMES</data>
@@ -461,7 +511,8 @@
       <data key="v_state">CE</data>
       <data key="v_term_color">violet</data>
       <data key="v_region">north-east</data>
-      <data key="v_size">123.904515829727</data>
+      <data key="v_size">2941395.65</data>
+      <data key="v_group">2</data>
     </node>
     <node id="n50">
       <data key="v_name">ALFREDO NASCIMENTO</data>
@@ -470,7 +521,8 @@
       <data key="v_state">AM</data>
       <data key="v_term_color">red</data>
       <data key="v_region">north</data>
-      <data key="v_size">32.8524330651527</data>
+      <data key="v_size">610117.57</data>
+      <data key="v_group">1</data>
     </node>
     <node id="n51">
       <data key="v_name">FRANCISCO FLORIANO</data>
@@ -479,7 +531,8 @@
       <data key="v_state">RJ</data>
       <data key="v_term_color">red</data>
       <data key="v_region">south-east</data>
-      <data key="v_size">93.7516888293353</data>
+      <data key="v_size">2139969.9</data>
+      <data key="v_group">2</data>
     </node>
     <node id="n52">
       <data key="v_name">CONCEIÇÃO SAMPAIO</data>
@@ -488,7 +541,8 @@
       <data key="v_state">AM</data>
       <data key="v_term_color">red</data>
       <data key="v_region">north</data>
-      <data key="v_size">29.7019316199796</data>
+      <data key="v_size">325592.05</data>
+      <data key="v_group">1</data>
     </node>
     <node id="n53">
       <data key="v_name">EDUARDO BARBOSA</data>
@@ -497,7 +551,8 @@
       <data key="v_state">MG</data>
       <data key="v_term_color">violet</data>
       <data key="v_region">south-east</data>
-      <data key="v_size">127.704329682733</data>
+      <data key="v_size">2551454.62</data>
+      <data key="v_group">2</data>
     </node>
     <node id="n54">
       <data key="v_name">DR. JORGE SILVA</data>
@@ -506,7 +561,8 @@
       <data key="v_state">ES</data>
       <data key="v_term_color">red</data>
       <data key="v_region">south-east</data>
-      <data key="v_size">94.3795105188061</data>
+      <data key="v_size">1968990.04</data>
+      <data key="v_group">1</data>
     </node>
     <node id="n55">
       <data key="v_name">GOULART</data>
@@ -515,7 +571,8 @@
       <data key="v_state">SP</data>
       <data key="v_term_color">red</data>
       <data key="v_region">south-east</data>
-      <data key="v_size">34.1510442154459</data>
+      <data key="v_size">689448.32</data>
+      <data key="v_group">1</data>
     </node>
     <node id="n56">
       <data key="v_name">FLAVINHO</data>
@@ -524,7 +581,8 @@
       <data key="v_state">SP</data>
       <data key="v_term_color">red</data>
       <data key="v_region">south-east</data>
-      <data key="v_size">31.4100439509031</data>
+      <data key="v_size">426491.51</data>
+      <data key="v_group">2</data>
     </node>
     <node id="n57">
       <data key="v_name">ALIEL MACHADO</data>
@@ -533,7 +591,8 @@
       <data key="v_state">PR</data>
       <data key="v_term_color">red</data>
       <data key="v_region">south</data>
-      <data key="v_size">32.4039314444077</data>
+      <data key="v_size">496225.27</data>
+      <data key="v_group">1</data>
     </node>
     <node id="n58">
       <data key="v_name">JEFFERSON CAMPOS</data>
@@ -542,7 +601,8 @@
       <data key="v_state">SP</data>
       <data key="v_term_color">yellow</data>
       <data key="v_region">south-east</data>
-      <data key="v_size">133.646020564512</data>
+      <data key="v_size">2699465.35</data>
+      <data key="v_group">1</data>
     </node>
     <node id="n59">
       <data key="v_name">DELEGADO WALDIR</data>
@@ -551,7 +611,8 @@
       <data key="v_state">GO</data>
       <data key="v_term_color">red</data>
       <data key="v_region">center-west</data>
-      <data key="v_size">97.6887296706109</data>
+      <data key="v_size">150802.6</data>
+      <data key="v_group">1</data>
     </node>
     <node id="n60">
       <data key="v_name">MARIA HELENA</data>
@@ -560,7 +621,8 @@
       <data key="v_state">RR</data>
       <data key="v_term_color">blue</data>
       <data key="v_region">north</data>
-      <data key="v_size">201.263477824643</data>
+      <data key="v_size">1491100.26</data>
+      <data key="v_group">2</data>
     </node>
     <node id="n61">
       <data key="v_name">RICARDO TRIPOLI</data>
@@ -569,7 +631,8 @@
       <data key="v_state">SP</data>
       <data key="v_term_color">violet</data>
       <data key="v_region">south-east</data>
-      <data key="v_size">116.401274098096</data>
+      <data key="v_size">2748347.12</data>
+      <data key="v_group">1</data>
     </node>
     <node id="n62">
       <data key="v_name">LUIZ NISHIMORI</data>
@@ -578,7 +641,8 @@
       <data key="v_state">PR</data>
       <data key="v_term_color">yellow</data>
       <data key="v_region">south</data>
-      <data key="v_size">97.3146814995678</data>
+      <data key="v_size">2259846.45</data>
+      <data key="v_group">1</data>
     </node>
     <node id="n63">
       <data key="v_name">ABEL MESQUITA JR.</data>
@@ -587,7 +651,8 @@
       <data key="v_state">RR</data>
       <data key="v_term_color">red</data>
       <data key="v_region">north</data>
-      <data key="v_size">33.9458081231471</data>
+      <data key="v_size">869918.75</data>
+      <data key="v_group">1</data>
     </node>
     <node id="n64">
       <data key="v_name">TENENTE LÚCIO</data>
@@ -596,7 +661,8 @@
       <data key="v_state">MG</data>
       <data key="v_term_color">red</data>
       <data key="v_region">south-east</data>
-      <data key="v_size">35.3226498197677</data>
+      <data key="v_size">674699.09</data>
+      <data key="v_group">1</data>
     </node>
     <node id="n65">
       <data key="v_name">DARCÍSIO PERONDI</data>
@@ -605,7 +671,8 @@
       <data key="v_state">RS</data>
       <data key="v_term_color">violet</data>
       <data key="v_region">south</data>
-      <data key="v_size">125.96558301422</data>
+      <data key="v_size">3056966.45</data>
+      <data key="v_group">1</data>
     </node>
     <node id="n66">
       <data key="v_name">ANTONIO BRITO</data>
@@ -614,7 +681,8 @@
       <data key="v_state">BA</data>
       <data key="v_term_color">red</data>
       <data key="v_region">north-east</data>
-      <data key="v_size">100.394485661459</data>
+      <data key="v_size">1970022</data>
+      <data key="v_group">2</data>
     </node>
     <node id="n67">
       <data key="v_name">CAIO NARCIO</data>
@@ -623,7 +691,8 @@
       <data key="v_state">MG</data>
       <data key="v_term_color">red</data>
       <data key="v_region">south-east</data>
-      <data key="v_size">32.5926056977907</data>
+      <data key="v_size">662091.65</data>
+      <data key="v_group">1</data>
     </node>
     <node id="n68">
       <data key="v_name">EDUARDO CURY</data>
@@ -632,7 +701,8 @@
       <data key="v_state">SP</data>
       <data key="v_term_color">red</data>
       <data key="v_region">south-east</data>
-      <data key="v_size">31.6493325477619</data>
+      <data key="v_size">537695.43</data>
+      <data key="v_group">1</data>
     </node>
     <node id="n69">
       <data key="v_name">MAURO MARIANI</data>
@@ -641,7 +711,8 @@
       <data key="v_state">SC</data>
       <data key="v_term_color">violet</data>
       <data key="v_region">south</data>
-      <data key="v_size">119.398077760631</data>
+      <data key="v_size">2408794.14</data>
+      <data key="v_group">1</data>
     </node>
     <node id="n70">
       <data key="v_name">GLAUBER BRAGA</data>
@@ -650,7 +721,8 @@
       <data key="v_state">RJ</data>
       <data key="v_term_color">red</data>
       <data key="v_region">south-east</data>
-      <data key="v_size">124.053245190991</data>
+      <data key="v_size">2324583.91</data>
+      <data key="v_group">2</data>
     </node>
     <node id="n71">
       <data key="v_name">SHÉRIDAN</data>
@@ -659,7 +731,8 @@
       <data key="v_state">RR</data>
       <data key="v_term_color">red</data>
       <data key="v_region">north</data>
-      <data key="v_size">26.1257710063309</data>
+      <data key="v_size">834290.2</data>
+      <data key="v_group">1</data>
     </node>
     <node id="n72">
       <data key="v_name">DOMINGOS NETO</data>
@@ -668,7 +741,8 @@
       <data key="v_state">CE</data>
       <data key="v_term_color">red</data>
       <data key="v_region">north-east</data>
-      <data key="v_size">90.8854940195076</data>
+      <data key="v_size">2148948.61</data>
+      <data key="v_group">2</data>
     </node>
     <node id="n73">
       <data key="v_name">LEANDRE</data>
@@ -677,7 +751,8 @@
       <data key="v_state">PR</data>
       <data key="v_term_color">red</data>
       <data key="v_region">south</data>
-      <data key="v_size">32.9905538279726</data>
+      <data key="v_size">641411.9</data>
+      <data key="v_group">2</data>
     </node>
     <node id="n74">
       <data key="v_name">SANDRO ALEX</data>
@@ -686,7 +761,8 @@
       <data key="v_state">PR</data>
       <data key="v_term_color">red</data>
       <data key="v_region">south</data>
-      <data key="v_size">667.390206220903</data>
+      <data key="v_size">2078299.99</data>
+      <data key="v_group">1</data>
     </node>
     <node id="n75">
       <data key="v_name">JORGE BOEIRA</data>
@@ -695,7 +771,8 @@
       <data key="v_state">SC</data>
       <data key="v_term_color">yellow</data>
       <data key="v_region">south</data>
-      <data key="v_size">127.945205631222</data>
+      <data key="v_size">1209963.19</data>
+      <data key="v_group">1</data>
     </node>
     <node id="n76">
       <data key="v_name">ANDRES SANCHEZ</data>
@@ -704,7 +781,8 @@
       <data key="v_state">SP</data>
       <data key="v_term_color">red</data>
       <data key="v_region">south-east</data>
-      <data key="v_size">31.8471252813822</data>
+      <data key="v_size">502210.44</data>
+      <data key="v_group">2</data>
     </node>
     <node id="n77">
       <data key="v_name">EXPEDITO NETTO</data>
@@ -713,7 +791,8 @@
       <data key="v_state">RO</data>
       <data key="v_term_color">red</data>
       <data key="v_region">north</data>
-      <data key="v_size">31.51453792616</data>
+      <data key="v_size">848305.23</data>
+      <data key="v_group">1</data>
     </node>
     <node id="n78">
       <data key="v_name">ROBERTO ALVES</data>
@@ -722,7 +801,8 @@
       <data key="v_state">SP</data>
       <data key="v_term_color">red</data>
       <data key="v_region">south-east</data>
-      <data key="v_size">504.460955178656</data>
+      <data key="v_size">1145240.96</data>
+      <data key="v_group">1</data>
     </node>
     <node id="n79">
       <data key="v_name">CELSO RUSSOMANNO</data>
@@ -731,7 +811,8 @@
       <data key="v_state">SP</data>
       <data key="v_term_color">red</data>
       <data key="v_region">south-east</data>
-      <data key="v_size">357.38517153854</data>
+      <data key="v_size">682006.05</data>
+      <data key="v_group">1</data>
     </node>
     <node id="n80">
       <data key="v_name">PAES LANDIM</data>
@@ -740,7 +821,8 @@
       <data key="v_state">PI</data>
       <data key="v_term_color">yellow</data>
       <data key="v_region">north-east</data>
-      <data key="v_size">126.608970294466</data>
+      <data key="v_size">3257958.37</data>
+      <data key="v_group">1</data>
     </node>
     <node id="n81">
       <data key="v_name">MÁRIO HERINGER</data>
@@ -749,7 +831,8 @@
       <data key="v_state">MG</data>
       <data key="v_term_color">violet</data>
       <data key="v_region">south-east</data>
-      <data key="v_size">119.711324450862</data>
+      <data key="v_size">1751306.78</data>
+      <data key="v_group">1</data>
     </node>
     <node id="n82">
       <data key="v_name">NELSON MARQUEZELLI</data>
@@ -758,7 +841,8 @@
       <data key="v_state">SP</data>
       <data key="v_term_color">violet</data>
       <data key="v_region">south-east</data>
-      <data key="v_size">117.943298139486</data>
+      <data key="v_size">2554640.84</data>
+      <data key="v_group">1</data>
     </node>
     <node id="n83">
       <data key="v_name">LEO DE BRITO</data>
@@ -767,7 +851,8 @@
       <data key="v_state">AC</data>
       <data key="v_term_color">red</data>
       <data key="v_region">north</data>
-      <data key="v_size">29.6593834946281</data>
+      <data key="v_size">856437.79</data>
+      <data key="v_group">1</data>
     </node>
     <node id="n84">
       <data key="v_name">JORGE CÔRTE REAL</data>
@@ -776,7 +861,8 @@
       <data key="v_state">PE</data>
       <data key="v_term_color">yellow</data>
       <data key="v_region">north-east</data>
-      <data key="v_size">89.4957089365153</data>
+      <data key="v_size">2427988.63</data>
+      <data key="v_group">1</data>
     </node>
     <node id="n85">
       <data key="v_name">GIACOBO</data>
@@ -785,7 +871,8 @@
       <data key="v_state">PR</data>
       <data key="v_term_color">violet</data>
       <data key="v_region">south</data>
-      <data key="v_size">120.152194602086</data>
+      <data key="v_size">2911784.76</data>
+      <data key="v_group">1</data>
     </node>
     <node id="n86">
       <data key="v_name">SORAYA SANTOS</data>
@@ -794,7 +881,8 @@
       <data key="v_state">RJ</data>
       <data key="v_term_color">red</data>
       <data key="v_region">south-east</data>
-      <data key="v_size">31.8246008394606</data>
+      <data key="v_size">758897.56</data>
+      <data key="v_group">1</data>
     </node>
     <node id="n87">
       <data key="v_name">JOSÉ MENTOR</data>
@@ -803,7 +891,8 @@
       <data key="v_state">SP</data>
       <data key="v_term_color">violet</data>
       <data key="v_region">south-east</data>
-      <data key="v_size">124.047134024991</data>
+      <data key="v_size">2800573.64</data>
+      <data key="v_group">1</data>
     </node>
     <node id="n88">
       <data key="v_name">NELSON MEURER</data>
@@ -812,7 +901,8 @@
       <data key="v_state">PR</data>
       <data key="v_term_color">violet</data>
       <data key="v_region">south</data>
-      <data key="v_size">129.244377276737</data>
+      <data key="v_size">2878239.86</data>
+      <data key="v_group">2</data>
     </node>
     <node id="n89">
       <data key="v_name">MISAEL VARELLA</data>
@@ -821,7 +911,8 @@
       <data key="v_state">MG</data>
       <data key="v_term_color">red</data>
       <data key="v_region">south-east</data>
-      <data key="v_size">32.7040818227428</data>
+      <data key="v_size">701742.01</data>
+      <data key="v_group">1</data>
     </node>
     <node id="n90">
       <data key="v_name">RODRIGO PACHECO</data>
@@ -830,7 +921,8 @@
       <data key="v_state">MG</data>
       <data key="v_term_color">red</data>
       <data key="v_region">south-east</data>
-      <data key="v_size">539.490419395344</data>
+      <data key="v_size">637457.95</data>
+      <data key="v_group">1</data>
     </node>
     <node id="n91">
       <data key="v_name">VITOR LIPPI</data>
@@ -839,7 +931,8 @@
       <data key="v_state">SP</data>
       <data key="v_term_color">red</data>
       <data key="v_region">south-east</data>
-      <data key="v_size">6650.55218504347</data>
+      <data key="v_size">583047.59</data>
+      <data key="v_group">1</data>
     </node>
     <node id="n92">
       <data key="v_name">GIOVANI CHERINI</data>
@@ -848,7 +941,8 @@
       <data key="v_state">RS</data>
       <data key="v_term_color">red</data>
       <data key="v_region">south</data>
-      <data key="v_size">93.7456423211192</data>
+      <data key="v_size">2452707.12</data>
+      <data key="v_group">2</data>
     </node>
     <node id="n93">
       <data key="v_name">PAULO PIMENTA</data>
@@ -857,7 +951,8 @@
       <data key="v_state">RS</data>
       <data key="v_term_color">violet</data>
       <data key="v_region">south</data>
-      <data key="v_size">118.37193531134</data>
+      <data key="v_size">3101537.41</data>
+      <data key="v_group">1</data>
     </node>
     <node id="n94">
       <data key="v_name">JÚLIO DELGADO</data>
@@ -866,7 +961,8 @@
       <data key="v_state">MG</data>
       <data key="v_term_color">violet</data>
       <data key="v_region">south-east</data>
-      <data key="v_size">129.182404362144</data>
+      <data key="v_size">2656940.13</data>
+      <data key="v_group">2</data>
     </node>
     <node id="n95">
       <data key="v_name">ASSIS CARVALHO</data>
@@ -875,7 +971,8 @@
       <data key="v_state">PI</data>
       <data key="v_term_color">yellow</data>
       <data key="v_region">north-east</data>
-      <data key="v_size">92.4646587704535</data>
+      <data key="v_size">2408423.27</data>
+      <data key="v_group">1</data>
     </node>
     <node id="n96">
       <data key="v_name">MARIANA CARVALHO</data>
@@ -884,7 +981,8 @@
       <data key="v_state">RO</data>
       <data key="v_term_color">red</data>
       <data key="v_region">north</data>
-      <data key="v_size">31.5574152738219</data>
+      <data key="v_size">503707.16</data>
+      <data key="v_group">2</data>
     </node>
     <node id="n97">
       <data key="v_name">CLAUDIO CAJADO</data>
@@ -893,7 +991,8 @@
       <data key="v_state">BA</data>
       <data key="v_term_color">violet</data>
       <data key="v_region">north-east</data>
-      <data key="v_size">115.949683925501</data>
+      <data key="v_size">2844516.77</data>
+      <data key="v_group">1</data>
     </node>
     <node id="n98">
       <data key="v_name">JULIO LOPES</data>
@@ -902,7 +1001,8 @@
       <data key="v_state">RJ</data>
       <data key="v_term_color">yellow</data>
       <data key="v_region">south-east</data>
-      <data key="v_size">93.7580567918061</data>
+      <data key="v_size">955792.08</data>
+      <data key="v_group">1</data>
     </node>
     <node id="n99">
       <data key="v_name">ZECA DIRCEU</data>
@@ -911,7 +1011,8 @@
       <data key="v_state">PR</data>
       <data key="v_term_color">yellow</data>
       <data key="v_region">south</data>
-      <data key="v_size">99.5561943340851</data>
+      <data key="v_size">2255325.8</data>
+      <data key="v_group">1</data>
     </node>
     <node id="n100">
       <data key="v_name">BETO SALAME</data>
@@ -920,7 +1021,8 @@
       <data key="v_state">PA</data>
       <data key="v_term_color">red</data>
       <data key="v_region">north</data>
-      <data key="v_size">32.0723621382863</data>
+      <data key="v_size">839187.46</data>
+      <data key="v_group">1</data>
     </node>
     <node id="n101">
       <data key="v_name">AGUINALDO RIBEIRO</data>
@@ -929,7 +1031,8 @@
       <data key="v_state">PB</data>
       <data key="v_term_color">yellow</data>
       <data key="v_region">north-east</data>
-      <data key="v_size">97.9600972223934</data>
+      <data key="v_size">1500556.68</data>
+      <data key="v_group">1</data>
     </node>
     <node id="n102">
       <data key="v_name">LUIZ FERNANDO FARIA</data>
@@ -938,7 +1041,8 @@
       <data key="v_state">MG</data>
       <data key="v_term_color">violet</data>
       <data key="v_region">south-east</data>
-      <data key="v_size">127.175588388454</data>
+      <data key="v_size">2639503.02</data>
+      <data key="v_group">1</data>
     </node>
     <node id="n103">
       <data key="v_name">BETO ROSADO</data>
@@ -947,7 +1051,8 @@
       <data key="v_state">RN</data>
       <data key="v_term_color">red</data>
       <data key="v_region">north-east</data>
-      <data key="v_size">33.7660844010409</data>
+      <data key="v_size">803411.03</data>
+      <data key="v_group">2</data>
     </node>
     <node id="n104">
       <data key="v_name">CABUÇU BORGES</data>
@@ -956,7 +1061,8 @@
       <data key="v_state">AP</data>
       <data key="v_term_color">red</data>
       <data key="v_region">north</data>
-      <data key="v_size">27.1555742496263</data>
+      <data key="v_size">839073.66</data>
+      <data key="v_group">1</data>
     </node>
     <node id="n105">
       <data key="v_name">MARCUS PESTANA</data>
@@ -965,7 +1071,8 @@
       <data key="v_state">MG</data>
       <data key="v_term_color">yellow</data>
       <data key="v_region">south-east</data>
-      <data key="v_size">96.7923916643139</data>
+      <data key="v_size">2022490.24</data>
+      <data key="v_group">1</data>
     </node>
     <node id="n106">
       <data key="v_name">RICARDO IZAR</data>
@@ -974,7 +1081,8 @@
       <data key="v_state">SP</data>
       <data key="v_term_color">red</data>
       <data key="v_region">south-east</data>
-      <data key="v_size">125.712227181324</data>
+      <data key="v_size">2126039.76</data>
+      <data key="v_group">1</data>
     </node>
     <node id="n107">
       <data key="v_name">LEONARDO MONTEIRO</data>
@@ -983,7 +1091,8 @@
       <data key="v_state">MG</data>
       <data key="v_term_color">violet</data>
       <data key="v_region">south-east</data>
-      <data key="v_size">120.501102039872</data>
+      <data key="v_size">2568547.27</data>
+      <data key="v_group">2</data>
     </node>
     <node id="n108">
       <data key="v_name">JANDIRA FEGHALI</data>
@@ -992,7 +1101,8 @@
       <data key="v_state">RJ</data>
       <data key="v_term_color">yellow</data>
       <data key="v_region">south-east</data>
-      <data key="v_size">548.221326784584</data>
+      <data key="v_size">2106707.29</data>
+      <data key="v_group">2</data>
     </node>
     <node id="n109">
       <data key="v_name">MARCELO MATOS</data>
@@ -1001,7 +1111,8 @@
       <data key="v_state">RJ</data>
       <data key="v_term_color">red</data>
       <data key="v_region">south-east</data>
-      <data key="v_size">99.4139550745375</data>
+      <data key="v_size">1906744.47</data>
+      <data key="v_group">2</data>
     </node>
     <node id="n110">
       <data key="v_name">RÔNEY NEMER</data>
@@ -1010,7 +1121,8 @@
       <data key="v_state">DF</data>
       <data key="v_term_color">red</data>
       <data key="v_region">center-west</data>
-      <data key="v_size">29.9154855371403</data>
+      <data key="v_size">555816.68</data>
+      <data key="v_group">2</data>
     </node>
     <node id="n111">
       <data key="v_name">JHONATAN DE JESUS</data>
@@ -1019,7 +1131,8 @@
       <data key="v_state">RR</data>
       <data key="v_term_color">yellow</data>
       <data key="v_region">north</data>
-      <data key="v_size">89.2384170516484</data>
+      <data key="v_size">2700900.25</data>
+      <data key="v_group">1</data>
     </node>
     <node id="n112">
       <data key="v_name">FABIO REIS</data>
@@ -1028,7 +1141,8 @@
       <data key="v_state">SE</data>
       <data key="v_term_color">yellow</data>
       <data key="v_region">north-east</data>
-      <data key="v_size">100.72310578099</data>
+      <data key="v_size">1441531.49</data>
+      <data key="v_group">2</data>
     </node>
     <node id="n113">
       <data key="v_name">ROBERTO BRITTO</data>
@@ -1037,7 +1151,8 @@
       <data key="v_state">BA</data>
       <data key="v_term_color">violet</data>
       <data key="v_region">north-east</data>
-      <data key="v_size">124.272540459833</data>
+      <data key="v_size">2787921.82</data>
+      <data key="v_group">2</data>
     </node>
     <node id="n114">
       <data key="v_name">DAMIÃO FELICIANO</data>
@@ -1046,7 +1161,8 @@
       <data key="v_state">PB</data>
       <data key="v_term_color">violet</data>
       <data key="v_region">north-east</data>
-      <data key="v_size">130.723603536056</data>
+      <data key="v_size">2735133.15</data>
+      <data key="v_group">2</data>
     </node>
     <node id="n115">
       <data key="v_name">ELI CORRÊA FILHO</data>
@@ -1055,7 +1171,8 @@
       <data key="v_state">SP</data>
       <data key="v_term_color">red</data>
       <data key="v_region">south-east</data>
-      <data key="v_size">92.7845372228913</data>
+      <data key="v_size">1719061.06</data>
+      <data key="v_group">2</data>
     </node>
     <node id="n116">
       <data key="v_name">ANDRÉ FUFUCA</data>
@@ -1064,7 +1181,8 @@
       <data key="v_state">MA</data>
       <data key="v_term_color">red</data>
       <data key="v_region">north-east</data>
-      <data key="v_size">29.3850057157117</data>
+      <data key="v_size">751062.61</data>
+      <data key="v_group">2</data>
     </node>
     <node id="n117">
       <data key="v_name">ALEXANDRE VALLE</data>
@@ -1073,7 +1191,8 @@
       <data key="v_state">RJ</data>
       <data key="v_term_color">red</data>
       <data key="v_region">south-east</data>
-      <data key="v_size">26.3044627696404</data>
+      <data key="v_size">643239.53</data>
+      <data key="v_group">2</data>
     </node>
     <node id="n118">
       <data key="v_name">JÚLIO CESAR</data>
@@ -1082,7 +1201,8 @@
       <data key="v_state">PI</data>
       <data key="v_term_color">yellow</data>
       <data key="v_region">north-east</data>
-      <data key="v_size">124.222248588892</data>
+      <data key="v_size">3126596.18</data>
+      <data key="v_group">1</data>
     </node>
     <node id="n119">
       <data key="v_name">RONALDO FONSECA</data>
@@ -1091,7 +1211,8 @@
       <data key="v_state">DF</data>
       <data key="v_term_color">yellow</data>
       <data key="v_region">center-west</data>
-      <data key="v_size">96.5134905001386</data>
+      <data key="v_size">1445716.07</data>
+      <data key="v_group">1</data>
     </node>
     <node id="n120">
       <data key="v_name">BENITO GAMA</data>
@@ -1100,7 +1221,8 @@
       <data key="v_state">BA</data>
       <data key="v_term_color">red</data>
       <data key="v_region">north-east</data>
-      <data key="v_size">24.7048821831012</data>
+      <data key="v_size">760789.84</data>
+      <data key="v_group">1</data>
     </node>
     <node id="n121">
       <data key="v_name">PROFESSOR VICTÓRIO GALLI</data>
@@ -1109,7 +1231,8 @@
       <data key="v_state">MT</data>
       <data key="v_term_color">red</data>
       <data key="v_region">center-west</data>
-      <data key="v_size">125.565827608073</data>
+      <data key="v_size">953159.46</data>
+      <data key="v_group">1</data>
     </node>
     <node id="n122">
       <data key="v_name">COVATTI FILHO</data>
@@ -1118,7 +1241,8 @@
       <data key="v_state">RS</data>
       <data key="v_term_color">red</data>
       <data key="v_region">south</data>
-      <data key="v_size">33.8988756878028</data>
+      <data key="v_size">840684.95</data>
+      <data key="v_group">1</data>
     </node>
     <node id="n123">
       <data key="v_name">HELDER SALOMÃO</data>
@@ -1127,7 +1251,8 @@
       <data key="v_state">ES</data>
       <data key="v_term_color">red</data>
       <data key="v_region">south-east</data>
-      <data key="v_size">34.0621792206905</data>
+      <data key="v_size">628864.8</data>
+      <data key="v_group">1</data>
     </node>
     <node id="n124">
       <data key="v_name">PEDRO UCZAI</data>
@@ -1136,7 +1261,8 @@
       <data key="v_state">SC</data>
       <data key="v_term_color">yellow</data>
       <data key="v_region">south</data>
-      <data key="v_size">89.8946390535011</data>
+      <data key="v_size">2129903.96</data>
+      <data key="v_group">2</data>
     </node>
     <node id="n125">
       <data key="v_name">RENATO MOLLING</data>
@@ -1145,7 +1271,8 @@
       <data key="v_state">RS</data>
       <data key="v_term_color">violet</data>
       <data key="v_region">south</data>
-      <data key="v_size">115.966631894194</data>
+      <data key="v_size">3100771.59</data>
+      <data key="v_group">1</data>
     </node>
     <node id="n126">
       <data key="v_name">LUIZ SÉRGIO</data>
@@ -1154,7 +1281,8 @@
       <data key="v_state">RJ</data>
       <data key="v_term_color">violet</data>
       <data key="v_region">south-east</data>
-      <data key="v_size">139.955958513246</data>
+      <data key="v_size">2230443.09</data>
+      <data key="v_group">1</data>
     </node>
     <node id="n127">
       <data key="v_name">ALEXANDRE LEITE</data>
@@ -1163,7 +1291,8 @@
       <data key="v_state">SP</data>
       <data key="v_term_color">yellow</data>
       <data key="v_region">south-east</data>
-      <data key="v_size">94.0554594742114</data>
+      <data key="v_size">1658797.41</data>
+      <data key="v_group">2</data>
     </node>
     <node id="n128">
       <data key="v_name">CAETANO</data>
@@ -1172,7 +1301,8 @@
       <data key="v_state">BA</data>
       <data key="v_term_color">red</data>
       <data key="v_region">north-east</data>
-      <data key="v_size">34.9802283635605</data>
+      <data key="v_size">708983.58</data>
+      <data key="v_group">2</data>
     </node>
     <node id="n129">
       <data key="v_name">BRUNNY</data>
@@ -1181,7 +1311,8 @@
       <data key="v_state">MG</data>
       <data key="v_term_color">red</data>
       <data key="v_region">south-east</data>
-      <data key="v_size">30.5988141690676</data>
+      <data key="v_size">738188.97</data>
+      <data key="v_group">1</data>
     </node>
     <node id="n130">
       <data key="v_name">ANDRÉ ABDON</data>
@@ -1190,7 +1321,8 @@
       <data key="v_state">AP</data>
       <data key="v_term_color">red</data>
       <data key="v_region">north</data>
-      <data key="v_size">32.4199100855163</data>
+      <data key="v_size">824060.29</data>
+      <data key="v_group">1</data>
     </node>
     <node id="n131">
       <data key="v_name">JOÃO FERNANDO COUTINHO</data>
@@ -1199,7 +1331,8 @@
       <data key="v_state">PE</data>
       <data key="v_term_color">red</data>
       <data key="v_region">north-east</data>
-      <data key="v_size">31.8472538654871</data>
+      <data key="v_size">826515.44</data>
+      <data key="v_group">1</data>
     </node>
     <node id="n132">
       <data key="v_name">JÚLIA MARINHO</data>
@@ -1208,7 +1341,8 @@
       <data key="v_state">PA</data>
       <data key="v_term_color">red</data>
       <data key="v_region">north</data>
-      <data key="v_size">33.8525374852671</data>
+      <data key="v_size">707176.45</data>
+      <data key="v_group">2</data>
     </node>
     <node id="n133">
       <data key="v_name">GERALDO RESENDE</data>
@@ -1217,7 +1351,8 @@
       <data key="v_state">MS</data>
       <data key="v_term_color">red</data>
       <data key="v_region">center-west</data>
-      <data key="v_size">123.558343459535</data>
+      <data key="v_size">2823395.93</data>
+      <data key="v_group">1</data>
     </node>
     <node id="n134">
       <data key="v_name">MARCOS ROGÉRIO</data>
@@ -1226,7 +1361,8 @@
       <data key="v_state">RO</data>
       <data key="v_term_color">red</data>
       <data key="v_region">north</data>
-      <data key="v_size">96.4226383890934</data>
+      <data key="v_size">2132348.51</data>
+      <data key="v_group">1</data>
     </node>
     <node id="n135">
       <data key="v_name">GORETE PEREIRA</data>
@@ -1235,7 +1371,8 @@
       <data key="v_state">CE</data>
       <data key="v_term_color">violet</data>
       <data key="v_region">north-east</data>
-      <data key="v_size">127.305167506302</data>
+      <data key="v_size">3194583.34</data>
+      <data key="v_group">1</data>
     </node>
     <node id="n136">
       <data key="v_name">VENEZIANO VITAL DO RÊGO</data>
@@ -1244,7 +1381,8 @@
       <data key="v_state">PB</data>
       <data key="v_term_color">red</data>
       <data key="v_region">north-east</data>
-      <data key="v_size">30.5164297133997</data>
+      <data key="v_size">785218.5</data>
+      <data key="v_group">2</data>
     </node>
     <node id="n137">
       <data key="v_name">JOVAIR ARANTES</data>
@@ -1253,7 +1391,8 @@
       <data key="v_state">GO</data>
       <data key="v_term_color">violet</data>
       <data key="v_region">center-west</data>
-      <data key="v_size">114.243582882049</data>
+      <data key="v_size">2634303.2</data>
+      <data key="v_group">1</data>
     </node>
     <node id="n138">
       <data key="v_name">PAULO MALUF</data>
@@ -1262,7 +1401,8 @@
       <data key="v_state">SP</data>
       <data key="v_term_color">violet</data>
       <data key="v_region">south-east</data>
-      <data key="v_size">116.723468410793</data>
+      <data key="v_size">1565350.5</data>
+      <data key="v_group">1</data>
     </node>
     <node id="n139">
       <data key="v_name">RÔMULO GOUVEIA</data>
@@ -1271,7 +1411,8 @@
       <data key="v_state">PB</data>
       <data key="v_term_color">red</data>
       <data key="v_region">north-east</data>
-      <data key="v_size">65.8830999689776</data>
+      <data key="v_size">1495046.9</data>
+      <data key="v_group">1</data>
     </node>
     <node id="n140">
       <data key="v_name">ALTINEU CÔRTES</data>
@@ -1280,7 +1421,8 @@
       <data key="v_state">RJ</data>
       <data key="v_term_color">red</data>
       <data key="v_region">south-east</data>
-      <data key="v_size">30.9724927824676</data>
+      <data key="v_size">591842.89</data>
+      <data key="v_group">1</data>
     </node>
     <node id="n141">
       <data key="v_name">JANETE CAPIBERIBE</data>
@@ -1289,7 +1431,8 @@
       <data key="v_state">AP</data>
       <data key="v_term_color">violet</data>
       <data key="v_region">north</data>
-      <data key="v_size">118.182894999583</data>
+      <data key="v_size">2709457.69</data>
+      <data key="v_group">1</data>
     </node>
     <node id="n142">
       <data key="v_name">JOSÉ CARLOS ARAÚJO</data>
@@ -1298,7 +1441,8 @@
       <data key="v_state">BA</data>
       <data key="v_term_color">red</data>
       <data key="v_region">north-east</data>
-      <data key="v_size">123.536150503151</data>
+      <data key="v_size">2984438.42</data>
+      <data key="v_group">1</data>
     </node>
     <node id="n143">
       <data key="v_name">LUIZA ERUNDINA</data>
@@ -1307,7 +1451,8 @@
       <data key="v_state">SP</data>
       <data key="v_term_color">red</data>
       <data key="v_region">south-east</data>
-      <data key="v_size">131.783056365006</data>
+      <data key="v_size">2326298.9</data>
+      <data key="v_group">1</data>
     </node>
     <node id="n144">
       <data key="v_name">LUIZ CLÁUDIO</data>
@@ -1316,7 +1461,8 @@
       <data key="v_state">RO</data>
       <data key="v_term_color">red</data>
       <data key="v_region">north</data>
-      <data key="v_size">33.9404518166903</data>
+      <data key="v_size">819218.2</data>
+      <data key="v_group">1</data>
     </node>
     <node id="n145">
       <data key="v_name">LUIS CARLOS HEINZE</data>
@@ -1325,7 +1471,8 @@
       <data key="v_state">RS</data>
       <data key="v_term_color">violet</data>
       <data key="v_region">south</data>
-      <data key="v_size">132.976715797028</data>
+      <data key="v_size">2823607.31</data>
+      <data key="v_group">1</data>
     </node>
     <node id="n146">
       <data key="v_name">LUCIANA SANTOS</data>
@@ -1334,7 +1481,8 @@
       <data key="v_state">PE</data>
       <data key="v_term_color">yellow</data>
       <data key="v_region">north-east</data>
-      <data key="v_size">84.9349024853795</data>
+      <data key="v_size">2550668.1</data>
+      <data key="v_group">1</data>
     </node>
     <node id="n147">
       <data key="v_name">MARCON</data>
@@ -1343,7 +1491,8 @@
       <data key="v_state">RS</data>
       <data key="v_term_color">yellow</data>
       <data key="v_region">south</data>
-      <data key="v_size">105.329487890609</data>
+      <data key="v_size">2383789.82</data>
+      <data key="v_group">1</data>
     </node>
     <node id="n148">
       <data key="v_name">JÔ MORAES</data>
@@ -1352,7 +1501,8 @@
       <data key="v_state">MG</data>
       <data key="v_term_color">violet</data>
       <data key="v_region">south-east</data>
-      <data key="v_size">115.653097311992</data>
+      <data key="v_size">2838081.22</data>
+      <data key="v_group">1</data>
     </node>
     <node id="n149">
       <data key="v_name">RONALDO MARTINS</data>
@@ -1361,7 +1511,8 @@
       <data key="v_state">CE</data>
       <data key="v_term_color">red</data>
       <data key="v_region">north-east</data>
-      <data key="v_size">30.7364939327619</data>
+      <data key="v_size">787338.97</data>
+      <data key="v_group">1</data>
     </node>
     <node id="n150">
       <data key="v_name">ROBERTO SALES</data>
@@ -1370,7 +1521,8 @@
       <data key="v_state">RJ</data>
       <data key="v_term_color">red</data>
       <data key="v_region">south-east</data>
-      <data key="v_size">33.5802862281391</data>
+      <data key="v_size">689920.33</data>
+      <data key="v_group">1</data>
     </node>
     <node id="n151">
       <data key="v_name">BETO MANSUR</data>
@@ -1379,7 +1531,8 @@
       <data key="v_state">SP</data>
       <data key="v_term_color">yellow</data>
       <data key="v_region">south-east</data>
-      <data key="v_size">124.977254991082</data>
+      <data key="v_size">2669163.42</data>
+      <data key="v_group">1</data>
     </node>
     <node id="n152">
       <data key="v_name">ALFREDO KAEFER</data>
@@ -1388,7 +1541,8 @@
       <data key="v_state">PR</data>
       <data key="v_term_color">red</data>
       <data key="v_region">south</data>
-      <data key="v_size">121.715789531647</data>
+      <data key="v_size">2867584.69</data>
+      <data key="v_group">1</data>
     </node>
     <node id="n153">
       <data key="v_name">TONINHO WANDSCHEER</data>
@@ -1397,7 +1551,8 @@
       <data key="v_state">PR</data>
       <data key="v_term_color">red</data>
       <data key="v_region">south</data>
-      <data key="v_size">35.180593788974</data>
+      <data key="v_size">714355.27</data>
+      <data key="v_group">1</data>
     </node>
     <node id="n154">
       <data key="v_name">JERÔNIMO GOERGEN</data>
@@ -1406,7 +1561,8 @@
       <data key="v_state">RS</data>
       <data key="v_term_color">yellow</data>
       <data key="v_region">south</data>
-      <data key="v_size">90.2604591508443</data>
+      <data key="v_size">2326578.43</data>
+      <data key="v_group">1</data>
     </node>
     <node id="n155">
       <data key="v_name">MARGARIDA SALOMÃO</data>
@@ -1415,7 +1571,8 @@
       <data key="v_state">MG</data>
       <data key="v_term_color">yellow</data>
       <data key="v_region">south-east</data>
-      <data key="v_size">98.2843644670315</data>
+      <data key="v_size">1340667.24</data>
+      <data key="v_group">1</data>
     </node>
     <node id="n156">
       <data key="v_name">JOSUÉ BENGTSON</data>
@@ -1424,7 +1581,8 @@
       <data key="v_state">PA</data>
       <data key="v_term_color">yellow</data>
       <data key="v_region">north</data>
-      <data key="v_size">89.3303456016103</data>
+      <data key="v_size">2383260.02</data>
+      <data key="v_group">2</data>
     </node>
     <node id="n157">
       <data key="v_name">SÓSTENES CAVALCANTE</data>
@@ -1433,7 +1591,8 @@
       <data key="v_state">RJ</data>
       <data key="v_term_color">red</data>
       <data key="v_region">south-east</data>
-      <data key="v_size">34.0428602866373</data>
+      <data key="v_size">657309.84</data>
+      <data key="v_group">1</data>
     </node>
     <node id="n158">
       <data key="v_name">FLÁVIA MORAIS</data>
@@ -1442,7 +1601,8 @@
       <data key="v_state">GO</data>
       <data key="v_term_color">yellow</data>
       <data key="v_region">center-west</data>
-      <data key="v_size">85.2068989366987</data>
+      <data key="v_size">2057235.98</data>
+      <data key="v_group">2</data>
     </node>
     <node id="n159">
       <data key="v_name">OSMAR SERRAGLIO</data>
@@ -1451,7 +1611,8 @@
       <data key="v_state">PR</data>
       <data key="v_term_color">violet</data>
       <data key="v_region">south</data>
-      <data key="v_size">132.651460190427</data>
+      <data key="v_size">2990950.82</data>
+      <data key="v_group">1</data>
     </node>
     <node id="n160">
       <data key="v_name">CARLOS SAMPAIO</data>
@@ -1460,7 +1621,8 @@
       <data key="v_state">SP</data>
       <data key="v_term_color">violet</data>
       <data key="v_region">south-east</data>
-      <data key="v_size">123.713944720174</data>
+      <data key="v_size">2125332.37</data>
+      <data key="v_group">1</data>
     </node>
     <node id="n161">
       <data key="v_name">JAIME MARTINS</data>
@@ -1469,7 +1631,8 @@
       <data key="v_state">MG</data>
       <data key="v_term_color">yellow</data>
       <data key="v_region">south-east</data>
-      <data key="v_size">121.26264976747</data>
+      <data key="v_size">2694180.84</data>
+      <data key="v_group">1</data>
     </node>
     <node id="n162">
       <data key="v_name">EDMILSON RODRIGUES</data>
@@ -1478,7 +1641,8 @@
       <data key="v_state">PA</data>
       <data key="v_term_color">red</data>
       <data key="v_region">north</data>
-      <data key="v_size">30.9091624872067</data>
+      <data key="v_size">772009.36</data>
+      <data key="v_group">2</data>
     </node>
     <node id="n163">
       <data key="v_name">FLAVIANO MELO</data>
@@ -1487,7 +1651,8 @@
       <data key="v_state">AC</data>
       <data key="v_term_color">violet</data>
       <data key="v_region">north</data>
-      <data key="v_size">123.989045939992</data>
+      <data key="v_size">2991834.36</data>
+      <data key="v_group">2</data>
     </node>
     <node id="n164">
       <data key="v_name">JOSI NUNES</data>
@@ -1496,7 +1661,8 @@
       <data key="v_state">TO</data>
       <data key="v_term_color">red</data>
       <data key="v_region">north</data>
-      <data key="v_size">30.5283703082448</data>
+      <data key="v_size">757300.2</data>
+      <data key="v_group">1</data>
     </node>
     <node id="n165">
       <data key="v_name">GIVALDO CARIMBÃO</data>
@@ -1505,7 +1671,8 @@
       <data key="v_state">AL</data>
       <data key="v_term_color">red</data>
       <data key="v_region">north-east</data>
-      <data key="v_size">114.012420936322</data>
+      <data key="v_size">2883676.21</data>
+      <data key="v_group">1</data>
     </node>
     <node id="n166">
       <data key="v_name">ULDURICO JUNIOR</data>
@@ -1514,7 +1681,8 @@
       <data key="v_state">BA</data>
       <data key="v_term_color">red</data>
       <data key="v_region">north-east</data>
-      <data key="v_size">32.9864343684318</data>
+      <data key="v_size">751344.72</data>
+      <data key="v_group">2</data>
     </node>
     <node id="n167">
       <data key="v_name">VALADARES FILHO</data>
@@ -1523,7 +1691,8 @@
       <data key="v_state">SE</data>
       <data key="v_term_color">violet</data>
       <data key="v_region">north-east</data>
-      <data key="v_size">123.361632701548</data>
+      <data key="v_size">2868980.57</data>
+      <data key="v_group">2</data>
     </node>
     <node id="n168">
       <data key="v_name">DELEY</data>
@@ -1532,7 +1701,8 @@
       <data key="v_state">RJ</data>
       <data key="v_term_color">yellow</data>
       <data key="v_region">south-east</data>
-      <data key="v_size">127.238725343703</data>
+      <data key="v_size">2119666.39</data>
+      <data key="v_group">1</data>
     </node>
     <node id="n169">
       <data key="v_name">ELCIONE BARBALHO</data>
@@ -1541,7 +1711,8 @@
       <data key="v_state">PA</data>
       <data key="v_term_color">violet</data>
       <data key="v_region">north</data>
-      <data key="v_size">121.430621037157</data>
+      <data key="v_size">3138688.29</data>
+      <data key="v_group">1</data>
     </node>
     <node id="n170">
       <data key="v_name">JUTAHY JUNIOR</data>
@@ -1550,7 +1721,8 @@
       <data key="v_state">BA</data>
       <data key="v_term_color">violet</data>
       <data key="v_region">north-east</data>
-      <data key="v_size">121.77436125843</data>
+      <data key="v_size">2602471.43</data>
+      <data key="v_group">1</data>
     </node>
     <node id="n171">
       <data key="v_name">RAFAEL MOTTA</data>
@@ -1559,7 +1731,8 @@
       <data key="v_state">RN</data>
       <data key="v_term_color">red</data>
       <data key="v_region">north-east</data>
-      <data key="v_size">34.2234391867503</data>
+      <data key="v_size">718205.13</data>
+      <data key="v_group">1</data>
     </node>
     <node id="n172">
       <data key="v_name">ÁTILA LIRA</data>
@@ -1568,7 +1741,8 @@
       <data key="v_state">PI</data>
       <data key="v_term_color">violet</data>
       <data key="v_region">north-east</data>
-      <data key="v_size">114.324904238283</data>
+      <data key="v_size">1529659.16</data>
+      <data key="v_group">1</data>
     </node>
     <node id="n173">
       <data key="v_name">JARBAS VASCONCELOS</data>
@@ -1577,7 +1751,8 @@
       <data key="v_state">PE</data>
       <data key="v_term_color">red</data>
       <data key="v_region">north-east</data>
-      <data key="v_size">33.9831973916186</data>
+      <data key="v_size">752069.15</data>
+      <data key="v_group">2</data>
     </node>
     <node id="n174">
       <data key="v_name">FAUSTO PINATO</data>
@@ -1586,7 +1761,8 @@
       <data key="v_state">SP</data>
       <data key="v_term_color">red</data>
       <data key="v_region">south-east</data>
-      <data key="v_size">28.4139344418946</data>
+      <data key="v_size">640560.26</data>
+      <data key="v_group">1</data>
     </node>
     <node id="n175">
       <data key="v_name">IVAN VALENTE</data>
@@ -1595,7 +1771,8 @@
       <data key="v_state">SP</data>
       <data key="v_term_color">violet</data>
       <data key="v_region">south-east</data>
-      <data key="v_size">123.325299478093</data>
+      <data key="v_size">2513117.42</data>
+      <data key="v_group">2</data>
     </node>
     <node id="n176">
       <data key="v_name">LUCIANO DUCCI</data>
@@ -1604,7 +1781,8 @@
       <data key="v_state">PR</data>
       <data key="v_term_color">red</data>
       <data key="v_region">south</data>
-      <data key="v_size">33.9999308343962</data>
+      <data key="v_size">728798.8</data>
+      <data key="v_group">2</data>
     </node>
     <node id="n177">
       <data key="v_name">MÁRCIO MARINHO</data>
@@ -1613,7 +1791,8 @@
       <data key="v_state">BA</data>
       <data key="v_term_color">violet</data>
       <data key="v_region">north-east</data>
-      <data key="v_size">121.837089549555</data>
+      <data key="v_size">2979775.03</data>
+      <data key="v_group">1</data>
     </node>
     <node id="n178">
       <data key="v_name">CLEBER VERDE</data>
@@ -1622,7 +1801,8 @@
       <data key="v_state">MA</data>
       <data key="v_term_color">violet</data>
       <data key="v_region">north-east</data>
-      <data key="v_size">120.074858250217</data>
+      <data key="v_size">2916515.23</data>
+      <data key="v_group">1</data>
     </node>
     <node id="n179">
       <data key="v_name">ROSANGELA GOMES</data>
@@ -1631,7 +1811,8 @@
       <data key="v_state">RJ</data>
       <data key="v_term_color">red</data>
       <data key="v_region">south-east</data>
-      <data key="v_size">31.4562068452917</data>
+      <data key="v_size">683815.58</data>
+      <data key="v_group">2</data>
     </node>
     <node id="n180">
       <data key="v_name">MANDETTA</data>
@@ -1640,7 +1821,8 @@
       <data key="v_state">MS</data>
       <data key="v_term_color">yellow</data>
       <data key="v_region">center-west</data>
-      <data key="v_size">93.1503991852919</data>
+      <data key="v_size">2297003.16</data>
+      <data key="v_group">2</data>
     </node>
     <node id="n181">
       <data key="v_name">TONINHO PINHEIRO</data>
@@ -1649,7 +1831,8 @@
       <data key="v_state">MG</data>
       <data key="v_term_color">yellow</data>
       <data key="v_region">south-east</data>
-      <data key="v_size">95.2864168504033</data>
+      <data key="v_size">2040591.33</data>
+      <data key="v_group">1</data>
     </node>
     <node id="n182">
       <data key="v_name">PROFESSORA DORINHA SEABRA REZENDE</data>
@@ -1658,7 +1841,8 @@
       <data key="v_state">TO</data>
       <data key="v_term_color">yellow</data>
       <data key="v_region">north</data>
-      <data key="v_size">92.430673105158</data>
+      <data key="v_size">2234392.74</data>
+      <data key="v_group">1</data>
     </node>
     <node id="n183">
       <data key="v_name">LÚCIO VALE</data>
@@ -1667,7 +1851,8 @@
       <data key="v_state">PA</data>
       <data key="v_term_color">violet</data>
       <data key="v_region">north</data>
-      <data key="v_size">129.561880917744</data>
+      <data key="v_size">2765506.81</data>
+      <data key="v_group">1</data>
     </node>
     <node id="n184">
       <data key="v_name">WALDENOR PEREIRA</data>
@@ -1676,7 +1861,8 @@
       <data key="v_state">BA</data>
       <data key="v_term_color">yellow</data>
       <data key="v_region">north-east</data>
-      <data key="v_size">79.7875398359652</data>
+      <data key="v_size">2248100.41</data>
+      <data key="v_group">1</data>
     </node>
     <node id="n185">
       <data key="v_name">ALEX CANZIANI</data>
@@ -1685,7 +1871,8 @@
       <data key="v_state">PR</data>
       <data key="v_term_color">violet</data>
       <data key="v_region">south</data>
-      <data key="v_size">117.949484073225</data>
+      <data key="v_size">2845046.98</data>
+      <data key="v_group">1</data>
     </node>
     <node id="n186">
       <data key="v_name">PAULÃO</data>
@@ -1694,7 +1881,8 @@
       <data key="v_state">AL</data>
       <data key="v_term_color">yellow</data>
       <data key="v_region">north-east</data>
-      <data key="v_size">92.9207638812796</data>
+      <data key="v_size">1646745.24</data>
+      <data key="v_group">1</data>
     </node>
     <node id="n187">
       <data key="v_name">MARCO MAIA</data>
@@ -1703,7 +1891,8 @@
       <data key="v_state">RS</data>
       <data key="v_term_color">violet</data>
       <data key="v_region">south</data>
-      <data key="v_size">124.439817019978</data>
+      <data key="v_size">2729485.36</data>
+      <data key="v_group">1</data>
     </node>
     <node id="n188">
       <data key="v_name">REMÍDIO MONAI</data>
@@ -1712,7 +1901,8 @@
       <data key="v_state">RR</data>
       <data key="v_term_color">red</data>
       <data key="v_region">north</data>
-      <data key="v_size">27.3685408172896</data>
+      <data key="v_size">860270.31</data>
+      <data key="v_group">2</data>
     </node>
     <node id="n189">
       <data key="v_name">PEDRO CHAVES</data>
@@ -1721,7 +1911,8 @@
       <data key="v_state">GO</data>
       <data key="v_term_color">violet</data>
       <data key="v_region">center-west</data>
-      <data key="v_size">125.675227057379</data>
+      <data key="v_size">1813428.01</data>
+      <data key="v_group">1</data>
     </node>
     <node id="n190">
       <data key="v_name">ÁTILA LINS</data>
@@ -1730,7 +1921,8 @@
       <data key="v_state">AM</data>
       <data key="v_term_color">yellow</data>
       <data key="v_region">north</data>
-      <data key="v_size">137.821311733939</data>
+      <data key="v_size">3148852.18</data>
+      <data key="v_group">1</data>
     </node>
     <node id="n191">
       <data key="v_name">ANGELIM</data>
@@ -1739,7 +1931,8 @@
       <data key="v_state">AC</data>
       <data key="v_term_color">red</data>
       <data key="v_region">north</data>
-      <data key="v_size">31.1962645265712</data>
+      <data key="v_size">726339.03</data>
+      <data key="v_group">1</data>
     </node>
     <node id="n192">
       <data key="v_name">HENRIQUE FONTANA</data>
@@ -1748,7 +1941,8 @@
       <data key="v_state">RS</data>
       <data key="v_term_color">violet</data>
       <data key="v_region">south</data>
-      <data key="v_size">132.299158082691</data>
+      <data key="v_size">3038671.54</data>
+      <data key="v_group">2</data>
     </node>
     <node id="n193">
       <data key="v_name">JOSÉ ROCHA</data>
@@ -1757,7 +1951,8 @@
       <data key="v_state">BA</data>
       <data key="v_term_color">violet</data>
       <data key="v_region">north-east</data>
-      <data key="v_size">125.603234647726</data>
+      <data key="v_size">2993728.05</data>
+      <data key="v_group">2</data>
     </node>
     <node id="n194">
       <data key="v_name">PROFESSORA MARCIVANIA</data>
@@ -1766,7 +1961,8 @@
       <data key="v_state">AP</data>
       <data key="v_term_color">red</data>
       <data key="v_region">north</data>
-      <data key="v_size">1309.92808100994</data>
+      <data key="v_size">966530.55</data>
+      <data key="v_group">1</data>
     </node>
     <node id="n195">
       <data key="v_name">DANIEL COELHO</data>
@@ -1775,7 +1971,8 @@
       <data key="v_state">PE</data>
       <data key="v_term_color">red</data>
       <data key="v_region">north-east</data>
-      <data key="v_size">35.1483216055724</data>
+      <data key="v_size">664165.38</data>
+      <data key="v_group">1</data>
     </node>
     <node id="n196">
       <data key="v_name">BENJAMIN MARANHÃO</data>
@@ -1784,7 +1981,8 @@
       <data key="v_state">PB</data>
       <data key="v_term_color">yellow</data>
       <data key="v_region">north-east</data>
-      <data key="v_size">1417.1135243801</data>
+      <data key="v_size">2185491.54</data>
+      <data key="v_group">1</data>
     </node>
     <node id="n197">
       <data key="v_name">ROCHA</data>
@@ -1793,7 +1991,8 @@
       <data key="v_state">AC</data>
       <data key="v_term_color">red</data>
       <data key="v_region">north</data>
-      <data key="v_size">33.3129404232592</data>
+      <data key="v_size">922520.34</data>
+      <data key="v_group">2</data>
     </node>
     <node id="n198">
       <data key="v_name">LUIZIANNE LINS</data>
@@ -1802,7 +2001,8 @@
       <data key="v_state">CE</data>
       <data key="v_term_color">red</data>
       <data key="v_region">north-east</data>
-      <data key="v_size">33.6023744026199</data>
+      <data key="v_size">801460.9</data>
+      <data key="v_group">2</data>
     </node>
     <node id="n199">
       <data key="v_name">FÉLIX MENDONÇA JÚNIOR</data>
@@ -1811,7 +2011,8 @@
       <data key="v_state">BA</data>
       <data key="v_term_color">yellow</data>
       <data key="v_region">north-east</data>
-      <data key="v_size">547.325237666982</data>
+      <data key="v_size">2210297.51</data>
+      <data key="v_group">1</data>
     </node>
     <node id="n200">
       <data key="v_name">CHICO LOPES</data>
@@ -1820,7 +2021,8 @@
       <data key="v_state">CE</data>
       <data key="v_term_color">violet</data>
       <data key="v_region">north-east</data>
-      <data key="v_size">123.745247409068</data>
+      <data key="v_size">3007612.93</data>
+      <data key="v_group">1</data>
     </node>
     <node id="n201">
       <data key="v_name">WELLINGTON ROBERTO</data>
@@ -1829,7 +2031,8 @@
       <data key="v_state">PB</data>
       <data key="v_term_color">violet</data>
       <data key="v_region">north-east</data>
-      <data key="v_size">118.771561705013</data>
+      <data key="v_size">3359629.43</data>
+      <data key="v_group">1</data>
     </node>
     <node id="n202">
       <data key="v_name">AFONSO MOTTA</data>
@@ -1838,7 +2041,8 @@
       <data key="v_state">RS</data>
       <data key="v_term_color">yellow</data>
       <data key="v_region">south</data>
-      <data key="v_size">93.5369228395735</data>
+      <data key="v_size">796729.66</data>
+      <data key="v_group">1</data>
     </node>
     <node id="n203">
       <data key="v_name">ARTHUR LIRA</data>
@@ -1847,7 +2051,8 @@
       <data key="v_state">AL</data>
       <data key="v_term_color">yellow</data>
       <data key="v_region">north-east</data>
-      <data key="v_size">102.78610319816</data>
+      <data key="v_size">1753131.93</data>
+      <data key="v_group">1</data>
     </node>
     <node id="n204">
       <data key="v_name">LAUDIVIO CARVALHO</data>
@@ -1856,7 +2061,8 @@
       <data key="v_state">MG</data>
       <data key="v_term_color">red</data>
       <data key="v_region">south-east</data>
-      <data key="v_size">30.9489514149019</data>
+      <data key="v_size">724085.73</data>
+      <data key="v_group">1</data>
     </node>
     <node id="n205">
       <data key="v_name">EZEQUIEL FONSECA</data>
@@ -1865,7 +2071,8 @@
       <data key="v_state">MT</data>
       <data key="v_term_color">red</data>
       <data key="v_region">center-west</data>
-      <data key="v_size">26.6639918102639</data>
+      <data key="v_size">582884.84</data>
+      <data key="v_group">1</data>
     </node>
     <node id="n206">
       <data key="v_name">FÁBIO FARIA</data>
@@ -1874,7 +2081,8 @@
       <data key="v_state">RN</data>
       <data key="v_term_color">yellow</data>
       <data key="v_region">north-east</data>
-      <data key="v_size">118.647152542181</data>
+      <data key="v_size">3017963.83</data>
+      <data key="v_group">1</data>
     </node>
     <node id="n207">
       <data key="v_name">LINDOMAR GARÇON</data>
@@ -1883,7 +2091,8 @@
       <data key="v_state">RO</data>
       <data key="v_term_color">red</data>
       <data key="v_region">north</data>
-      <data key="v_size">131.525809618242</data>
+      <data key="v_size">1763516.18</data>
+      <data key="v_group">2</data>
     </node>
     <node id="n208">
       <data key="v_name">DANRLEI DE DEUS HINTERHOLZ</data>
@@ -1892,7 +2101,8 @@
       <data key="v_state">RS</data>
       <data key="v_term_color">yellow</data>
       <data key="v_region">south</data>
-      <data key="v_size">102.819733954463</data>
+      <data key="v_size">1992878.89</data>
+      <data key="v_group">2</data>
     </node>
     <node id="n209">
       <data key="v_name">JORGE TADEU MUDALEN</data>
@@ -1901,7 +2111,8 @@
       <data key="v_state">SP</data>
       <data key="v_term_color">violet</data>
       <data key="v_region">south-east</data>
-      <data key="v_size">113.65639606801</data>
+      <data key="v_size">1930927.94</data>
+      <data key="v_group">1</data>
     </node>
     <node id="n210">
       <data key="v_name">JOSE STÉDILE</data>
@@ -1910,7 +2121,8 @@
       <data key="v_state">RS</data>
       <data key="v_term_color">yellow</data>
       <data key="v_region">south</data>
-      <data key="v_size">86.641186175968</data>
+      <data key="v_size">2364219.79</data>
+      <data key="v_group">2</data>
     </node>
     <node id="n211">
       <data key="v_name">MARCOS REATEGUI</data>
@@ -1919,7 +2131,8 @@
       <data key="v_state">AP</data>
       <data key="v_term_color">red</data>
       <data key="v_region">north</data>
-      <data key="v_size">35.0113441365172</data>
+      <data key="v_size">828289.74</data>
+      <data key="v_group">1</data>
     </node>
     <node id="n212">
       <data key="v_name">CABO SABINO</data>
@@ -1928,7 +2141,8 @@
       <data key="v_state">CE</data>
       <data key="v_term_color">red</data>
       <data key="v_region">north-east</data>
-      <data key="v_size">30.5277001097551</data>
+      <data key="v_size">782635.69</data>
+      <data key="v_group">1</data>
     </node>
     <node id="n213">
       <data key="v_name">JOÃO ARRUDA</data>
@@ -1937,7 +2151,8 @@
       <data key="v_state">PR</data>
       <data key="v_term_color">yellow</data>
       <data key="v_region">south</data>
-      <data key="v_size">88.8106652790864</data>
+      <data key="v_size">2254165.93</data>
+      <data key="v_group">1</data>
     </node>
     <node id="n214">
       <data key="v_name">GIVALDO VIEIRA</data>
@@ -1946,7 +2161,8 @@
       <data key="v_state">ES</data>
       <data key="v_term_color">red</data>
       <data key="v_region">south-east</data>
-      <data key="v_size">460.935622534031</data>
+      <data key="v_size">612781.96</data>
+      <data key="v_group">1</data>
     </node>
     <node id="n215">
       <data key="v_name">VICTOR MENDES</data>
@@ -1955,7 +2171,8 @@
       <data key="v_state">MA</data>
       <data key="v_term_color">red</data>
       <data key="v_region">north-east</data>
-      <data key="v_size">30.7934805500956</data>
+      <data key="v_size">813223.36</data>
+      <data key="v_group">2</data>
     </node>
     <node id="n216">
       <data key="v_name">ANDRÉ FIGUEIREDO</data>
@@ -1964,7 +2181,8 @@
       <data key="v_state">CE</data>
       <data key="v_term_color">yellow</data>
       <data key="v_region">north-east</data>
-      <data key="v_size">97.2184359890876</data>
+      <data key="v_size">2245609.74</data>
+      <data key="v_group">1</data>
     </node>
     <node id="n217">
       <data key="v_name">TIRIRICA</data>
@@ -1973,7 +2191,8 @@
       <data key="v_state">SP</data>
       <data key="v_term_color">yellow</data>
       <data key="v_region">south-east</data>
-      <data key="v_size">606.989816762418</data>
+      <data key="v_size">1225758.59</data>
+      <data key="v_group">1</data>
     </node>
     <node id="n218">
       <data key="v_name">SARAIVA FELIPE</data>
@@ -1982,7 +2201,8 @@
       <data key="v_state">MG</data>
       <data key="v_term_color">violet</data>
       <data key="v_region">south-east</data>
-      <data key="v_size">110.60619720284</data>
+      <data key="v_size">2457250.91</data>
+      <data key="v_group">1</data>
     </node>
     <node id="n219">
       <data key="v_name">JOSÉ GUIMARÃES</data>
@@ -1991,7 +2211,8 @@
       <data key="v_state">CE</data>
       <data key="v_term_color">violet</data>
       <data key="v_region">north-east</data>
-      <data key="v_size">122.720953604885</data>
+      <data key="v_size">3104524.03</data>
+      <data key="v_group">1</data>
     </node>
     <node id="n220">
       <data key="v_name">ONYX LORENZONI</data>
@@ -2000,7 +2221,8 @@
       <data key="v_state">RS</data>
       <data key="v_term_color">violet</data>
       <data key="v_region">south</data>
-      <data key="v_size">126.26990743898</data>
+      <data key="v_size">3030235.11</data>
+      <data key="v_group">1</data>
     </node>
     <node id="n221">
       <data key="v_name">MARCO TEBALDI</data>
@@ -2009,7 +2231,8 @@
       <data key="v_state">SC</data>
       <data key="v_term_color">yellow</data>
       <data key="v_region">south</data>
-      <data key="v_size">883.777769925156</data>
+      <data key="v_size">2003315.17</data>
+      <data key="v_group">2</data>
     </node>
     <node id="n222">
       <data key="v_name">ASSIS DO COUTO</data>
@@ -2018,7 +2241,8 @@
       <data key="v_state">PR</data>
       <data key="v_term_color">red</data>
       <data key="v_region">south</data>
-      <data key="v_size">110.408818080756</data>
+      <data key="v_size">2881960.1</data>
+      <data key="v_group">1</data>
     </node>
     <node id="n223">
       <data key="v_name">MACEDO</data>
@@ -2027,7 +2251,8 @@
       <data key="v_state">CE</data>
       <data key="v_term_color">red</data>
       <data key="v_region">north-east</data>
-      <data key="v_size">30.7251316213219</data>
+      <data key="v_size">784069.39</data>
+      <data key="v_group">1</data>
     </node>
     <node id="n224">
       <data key="v_name">DULCE MIRANDA</data>
@@ -2036,7 +2261,8 @@
       <data key="v_state">TO</data>
       <data key="v_term_color">red</data>
       <data key="v_region">north</data>
-      <data key="v_size">25.8205366851972</data>
+      <data key="v_size">867016.38</data>
+      <data key="v_group">1</data>
     </node>
     <node id="n225">
       <data key="v_name">WALTER ALVES</data>
@@ -2045,7 +2271,8 @@
       <data key="v_state">RN</data>
       <data key="v_term_color">red</data>
       <data key="v_region">north-east</data>
-      <data key="v_size">29.91416731671</data>
+      <data key="v_size">762265.01</data>
+      <data key="v_group">2</data>
     </node>
     <node id="n226">
       <data key="v_name">BALEIA ROSSI</data>
@@ -2054,7 +2281,8 @@
       <data key="v_state">SP</data>
       <data key="v_term_color">red</data>
       <data key="v_region">south-east</data>
-      <data key="v_size">29.695920300793</data>
+      <data key="v_size">598680.84</data>
+      <data key="v_group">1</data>
     </node>
     <node id="n227">
       <data key="v_name">JOSÉ AIRTON CIRILO</data>
@@ -2063,7 +2291,8 @@
       <data key="v_state">CE</data>
       <data key="v_term_color">blue</data>
       <data key="v_region">north-east</data>
-      <data key="v_size">129.198744230574</data>
+      <data key="v_size">3190016.04</data>
+      <data key="v_group">2</data>
     </node>
     <node id="n228">
       <data key="v_name">ROBERTO GÓES</data>
@@ -2072,7 +2301,8 @@
       <data key="v_state">AP</data>
       <data key="v_term_color">red</data>
       <data key="v_region">north</data>
-      <data key="v_size">31.3121531642133</data>
+      <data key="v_size">793331.66</data>
+      <data key="v_group">1</data>
     </node>
     <node id="n229">
       <data key="v_name">HEITOR SCHUCH</data>
@@ -2081,7 +2311,8 @@
       <data key="v_state">RS</data>
       <data key="v_term_color">red</data>
       <data key="v_region">south</data>
-      <data key="v_size">29.5289365310994</data>
+      <data key="v_size">725867.59</data>
+      <data key="v_group">1</data>
     </node>
     <node id="n230">
       <data key="v_name">OTAVIO LEITE</data>
@@ -2090,7 +2321,8 @@
       <data key="v_state">RJ</data>
       <data key="v_term_color">violet</data>
       <data key="v_region">south-east</data>
-      <data key="v_size">131.02862763592</data>
+      <data key="v_size">2583222.9</data>
+      <data key="v_group">2</data>
     </node>
     <node id="n231">
       <data key="v_name">MISSIONÁRIO JOSÉ OLIMPIO</data>
@@ -2099,7 +2331,8 @@
       <data key="v_state">SP</data>
       <data key="v_term_color">red</data>
       <data key="v_region">south-east</data>
-      <data key="v_size">100.239452199212</data>
+      <data key="v_size">2012727.76</data>
+      <data key="v_group">2</data>
     </node>
     <node id="n232">
       <data key="v_name">MARCELO ÁLVARO ANTÔNIO</data>
@@ -2108,7 +2341,8 @@
       <data key="v_state">MG</data>
       <data key="v_term_color">red</data>
       <data key="v_region">south-east</data>
-      <data key="v_size">33.9397642166705</data>
+      <data key="v_size">687029.26</data>
+      <data key="v_group">2</data>
     </node>
     <node id="n233">
       <data key="v_name">VINICIUS CARVALHO</data>
@@ -2117,7 +2351,8 @@
       <data key="v_state">SP</data>
       <data key="v_term_color">red</data>
       <data key="v_region">south-east</data>
-      <data key="v_size">167.548519482495</data>
+      <data key="v_size">1310200.84</data>
+      <data key="v_group">1</data>
     </node>
     <node id="n234">
       <data key="v_name">RUBENS BUENO</data>
@@ -2126,7 +2361,8 @@
       <data key="v_state">PR</data>
       <data key="v_term_color">yellow</data>
       <data key="v_region">south</data>
-      <data key="v_size">459.654514334958</data>
+      <data key="v_size">1766038.78</data>
+      <data key="v_group">1</data>
     </node>
     <node id="n235">
       <data key="v_name">LUCAS VERGILIO</data>
@@ -2135,7 +2371,8 @@
       <data key="v_state">GO</data>
       <data key="v_term_color">red</data>
       <data key="v_region">center-west</data>
-      <data key="v_size">33.0014324628312</data>
+      <data key="v_size">653226.19</data>
+      <data key="v_group">1</data>
     </node>
     <node id="n236">
       <data key="v_name">HISSA ABRAHÃO</data>
@@ -2144,7 +2381,8 @@
       <data key="v_state">AM</data>
       <data key="v_term_color">red</data>
       <data key="v_region">north</data>
-      <data key="v_size">33.2576483692315</data>
+      <data key="v_size">845950.06</data>
+      <data key="v_group">1</data>
     </node>
     <node id="n237">
       <data key="v_name">VICENTINHO JÚNIOR</data>
@@ -2153,7 +2391,8 @@
       <data key="v_state">TO</data>
       <data key="v_term_color">red</data>
       <data key="v_region">north</data>
-      <data key="v_size">30.3873105246495</data>
+      <data key="v_size">790252.63</data>
+      <data key="v_group">1</data>
     </node>
     <node id="n238">
       <data key="v_name">JOÃO DANIEL</data>
@@ -2162,7 +2401,8 @@
       <data key="v_state">SE</data>
       <data key="v_term_color">red</data>
       <data key="v_region">north-east</data>
-      <data key="v_size">33.2516320386491</data>
+      <data key="v_size">776361.73</data>
+      <data key="v_group">1</data>
     </node>
     <node id="n239">
       <data key="v_name">RODRIGO MARTINS</data>
@@ -2171,7 +2411,8 @@
       <data key="v_state">PI</data>
       <data key="v_term_color">red</data>
       <data key="v_region">north-east</data>
-      <data key="v_size">31.205880960346</data>
+      <data key="v_size">853876.31</data>
+      <data key="v_group">1</data>
     </node>
     <node id="n240">
       <data key="v_name">LÁZARO BOTELHO</data>
@@ -2180,7 +2421,8 @@
       <data key="v_state">TO</data>
       <data key="v_term_color">violet</data>
       <data key="v_region">north</data>
-      <data key="v_size">115.556499514638</data>
+      <data key="v_size">2776356.22</data>
+      <data key="v_group">1</data>
     </node>
     <node id="n241">
       <data key="v_name">ERIVELTON SANTANA</data>
@@ -2189,7 +2431,8 @@
       <data key="v_state">BA</data>
       <data key="v_term_color">red</data>
       <data key="v_region">north-east</data>
-      <data key="v_size">460.978943619776</data>
+      <data key="v_size">2181874.07</data>
+      <data key="v_group">1</data>
     </node>
     <node id="n242">
       <data key="v_name">SÉRGIO MORAES</data>
@@ -2198,7 +2441,8 @@
       <data key="v_state">RS</data>
       <data key="v_term_color">violet</data>
       <data key="v_region">south</data>
-      <data key="v_size">132.060047599605</data>
+      <data key="v_size">3010132.21</data>
+      <data key="v_group">2</data>
     </node>
     <node id="n243">
       <data key="v_name">CAPITÃO AUGUSTO</data>
@@ -2207,7 +2451,8 @@
       <data key="v_state">SP</data>
       <data key="v_term_color">red</data>
       <data key="v_region">south-east</data>
-      <data key="v_size">30.965451570882</data>
+      <data key="v_size">707241.53</data>
+      <data key="v_group">2</data>
     </node>
     <node id="n244">
       <data key="v_name">RONALDO LESSA</data>
@@ -2216,7 +2461,8 @@
       <data key="v_state">AL</data>
       <data key="v_term_color">red</data>
       <data key="v_region">north-east</data>
-      <data key="v_size">32.104355586285</data>
+      <data key="v_size">782813.57</data>
+      <data key="v_group">1</data>
     </node>
     <node id="n245">
       <data key="v_name">VALMIR ASSUNÇÃO</data>
@@ -2225,7 +2471,8 @@
       <data key="v_state">BA</data>
       <data key="v_term_color">yellow</data>
       <data key="v_region">north-east</data>
-      <data key="v_size">100.98627748734</data>
+      <data key="v_size">2297155.5</data>
+      <data key="v_group">1</data>
     </node>
     <node id="n246">
       <data key="v_name">CARLOS ANDRADE</data>
@@ -2234,7 +2481,8 @@
       <data key="v_state">RR</data>
       <data key="v_term_color">red</data>
       <data key="v_region">north</data>
-      <data key="v_size">34.4362055868427</data>
+      <data key="v_size">878312.1</data>
+      <data key="v_group">2</data>
     </node>
     <node id="n247">
       <data key="v_name">ALEX MANENTE</data>
@@ -2243,7 +2491,8 @@
       <data key="v_state">SP</data>
       <data key="v_term_color">red</data>
       <data key="v_region">south-east</data>
-      <data key="v_size">31.3432542708097</data>
+      <data key="v_size">646060.42</data>
+      <data key="v_group">1</data>
     </node>
     <node id="n248">
       <data key="v_name">SILVIO TORRES</data>
@@ -2252,7 +2501,8 @@
       <data key="v_state">SP</data>
       <data key="v_term_color">violet</data>
       <data key="v_region">south-east</data>
-      <data key="v_size">124.277946409467</data>
+      <data key="v_size">944201.84</data>
+      <data key="v_group">1</data>
     </node>
     <node id="n249">
       <data key="v_name">MARCUS VICENTE</data>
@@ -2261,7 +2511,8 @@
       <data key="v_state">ES</data>
       <data key="v_term_color">yellow</data>
       <data key="v_region">south-east</data>
-      <data key="v_size">85.2078376773154</data>
+      <data key="v_size">633445.32</data>
+      <data key="v_group">1</data>
     </node>
     <node id="n250">
       <data key="v_name">RODRIGO MAIA</data>
@@ -2270,7 +2521,8 @@
       <data key="v_state">RJ</data>
       <data key="v_term_color">violet</data>
       <data key="v_region">south-east</data>
-      <data key="v_size">132.301666898033</data>
+      <data key="v_size">2284504.26</data>
+      <data key="v_group">2</data>
     </node>
     <node id="n251">
       <data key="v_name">VANDER LOUBET</data>
@@ -2279,7 +2531,8 @@
       <data key="v_state">MS</data>
       <data key="v_term_color">violet</data>
       <data key="v_region">center-west</data>
-      <data key="v_size">122.149887042784</data>
+      <data key="v_size">3100485.64</data>
+      <data key="v_group">1</data>
     </node>
     <node id="n252">
       <data key="v_name">ADAIL CARNEIRO</data>
@@ -2288,7 +2541,8 @@
       <data key="v_state">CE</data>
       <data key="v_term_color">red</data>
       <data key="v_region">north-east</data>
-      <data key="v_size">34.7394763019557</data>
+      <data key="v_size">579921.58</data>
+      <data key="v_group">1</data>
     </node>
     <node id="n253">
       <data key="v_name">ALBERTO FRAGA</data>
@@ -2297,7 +2551,8 @@
       <data key="v_state">DF</data>
       <data key="v_term_color">blue</data>
       <data key="v_region">center-west</data>
-      <data key="v_size">64.9469472820956</data>
+      <data key="v_size">883135.84</data>
+      <data key="v_group">1</data>
     </node>
     <node id="n254">
       <data key="v_name">CARLOS BEZERRA</data>
@@ -2306,7 +2561,8 @@
       <data key="v_state">MT</data>
       <data key="v_term_color">violet</data>
       <data key="v_region">center-west</data>
-      <data key="v_size">123.892089028562</data>
+      <data key="v_size">2795088.52</data>
+      <data key="v_group">2</data>
     </node>
     <node id="n255">
       <data key="v_name">NILTO TATTO</data>
@@ -2315,7 +2571,8 @@
       <data key="v_state">SP</data>
       <data key="v_term_color">red</data>
       <data key="v_region">south-east</data>
-      <data key="v_size">35.1038270015826</data>
+      <data key="v_size">698972.26</data>
+      <data key="v_group">1</data>
     </node>
     <node id="n256">
       <data key="v_name">JOÃO CAMPOS</data>
@@ -2324,7 +2581,8 @@
       <data key="v_state">GO</data>
       <data key="v_term_color">red</data>
       <data key="v_region">center-west</data>
-      <data key="v_size">126.37651604895</data>
+      <data key="v_size">2549877.3</data>
+      <data key="v_group">1</data>
     </node>
     <node id="n257">
       <data key="v_name">HERCULANO PASSOS</data>
@@ -2333,7 +2591,8 @@
       <data key="v_state">SP</data>
       <data key="v_term_color">red</data>
       <data key="v_region">south-east</data>
-      <data key="v_size">32.9312511719106</data>
+      <data key="v_size">727584.12</data>
+      <data key="v_group">1</data>
     </node>
     <node id="n258">
       <data key="v_name">ANTONIO BULHÕES</data>
@@ -2342,7 +2601,8 @@
       <data key="v_state">SP</data>
       <data key="v_term_color">violet</data>
       <data key="v_region">south-east</data>
-      <data key="v_size">130.191533023889</data>
+      <data key="v_size">2671631.48</data>
+      <data key="v_group">2</data>
     </node>
     <node id="n259">
       <data key="v_name">GONZAGA PATRIOTA</data>
@@ -2351,7 +2611,8 @@
       <data key="v_state">PE</data>
       <data key="v_term_color">violet</data>
       <data key="v_region">north-east</data>
-      <data key="v_size">116.098013085486</data>
+      <data key="v_size">3049003.87</data>
+      <data key="v_group">1</data>
     </node>
     <node id="n260">
       <data key="v_name">ALEXANDRE SERFIOTIS</data>
@@ -2360,7 +2621,8 @@
       <data key="v_state">RJ</data>
       <data key="v_term_color">red</data>
       <data key="v_region">south-east</data>
-      <data key="v_size">34.3827841659759</data>
+      <data key="v_size">572140.86</data>
+      <data key="v_group">2</data>
     </node>
     <node id="n261">
       <data key="v_name">GABRIEL GUIMARÃES</data>
@@ -2369,7 +2631,8 @@
       <data key="v_state">MG</data>
       <data key="v_term_color">yellow</data>
       <data key="v_region">south-east</data>
-      <data key="v_size">98.0360974679566</data>
+      <data key="v_size">2040558.66</data>
+      <data key="v_group">2</data>
     </node>
     <node id="n262">
       <data key="v_name">ZECA DO PT</data>
@@ -2378,7 +2641,8 @@
       <data key="v_state">MS</data>
       <data key="v_term_color">red</data>
       <data key="v_region">center-west</data>
-      <data key="v_size">7628.64395868091</data>
+      <data key="v_size">783204.22</data>
+      <data key="v_group">1</data>
     </node>
     <node id="n263">
       <data key="v_name">ROGÉRIO MARINHO</data>
@@ -2387,7 +2651,8 @@
       <data key="v_state">RN</data>
       <data key="v_term_color">violet</data>
       <data key="v_region">north-east</data>
-      <data key="v_size">128.3828463752</data>
+      <data key="v_size">2096063.24</data>
+      <data key="v_group">1</data>
     </node>
     <node id="n264">
       <data key="v_name">BILAC PINTO</data>
@@ -2396,7 +2661,8 @@
       <data key="v_state">MG</data>
       <data key="v_term_color">violet</data>
       <data key="v_region">south-east</data>
-      <data key="v_size">127.544888758051</data>
+      <data key="v_size">1600850.55</data>
+      <data key="v_group">2</data>
     </node>
     <node id="n265">
       <data key="v_name">VITOR VALIM</data>
@@ -2405,7 +2671,8 @@
       <data key="v_state">CE</data>
       <data key="v_term_color">red</data>
       <data key="v_region">north-east</data>
-      <data key="v_size">32.1392769762399</data>
+      <data key="v_size">510307.83</data>
+      <data key="v_group">1</data>
     </node>
     <node id="n266">
       <data key="v_name">HÉLIO LEITE</data>
@@ -2414,7 +2681,8 @@
       <data key="v_state">PA</data>
       <data key="v_term_color">red</data>
       <data key="v_region">north</data>
-      <data key="v_size">11992.5041800916</data>
+      <data key="v_size">844815.04</data>
+      <data key="v_group">1</data>
     </node>
     <node id="n267">
       <data key="v_name">DOMINGOS SÁVIO</data>
@@ -2423,7 +2691,8 @@
       <data key="v_state">MG</data>
       <data key="v_term_color">yellow</data>
       <data key="v_region">south-east</data>
-      <data key="v_size">96.5659351072185</data>
+      <data key="v_size">2032454.78</data>
+      <data key="v_group">1</data>
     </node>
     <node id="n268">
       <data key="v_name">VANDERLEI MACRIS</data>
@@ -2432,7 +2701,8 @@
       <data key="v_state">SP</data>
       <data key="v_term_color">violet</data>
       <data key="v_region">south-east</data>
-      <data key="v_size">122.493228842144</data>
+      <data key="v_size">2816558.02</data>
+      <data key="v_group">1</data>
     </node>
     <node id="n269">
       <data key="v_name">EDIO LOPES</data>
@@ -2441,7 +2711,8 @@
       <data key="v_state">RR</data>
       <data key="v_term_color">red</data>
       <data key="v_region">north</data>
-      <data key="v_size">120.710960007111</data>
+      <data key="v_size">3614753.66</data>
+      <data key="v_group">2</data>
     </node>
     <node id="n270">
       <data key="v_name">JOÃO RODRIGUES</data>
@@ -2450,7 +2721,8 @@
       <data key="v_state">SC</data>
       <data key="v_term_color">yellow</data>
       <data key="v_region">south</data>
-      <data key="v_size">84.9864136322942</data>
+      <data key="v_size">1043430.73</data>
+      <data key="v_group">2</data>
     </node>
     <node id="n271">
       <data key="v_name">PAULO FREIRE</data>
@@ -2459,7 +2731,8 @@
       <data key="v_state">SP</data>
       <data key="v_term_color">yellow</data>
       <data key="v_region">south-east</data>
-      <data key="v_size">576.847703628673</data>
+      <data key="v_size">2132368.32</data>
+      <data key="v_group">1</data>
     </node>
     <node id="n272">
       <data key="v_name">ORLANDO SILVA</data>
@@ -2468,7 +2741,8 @@
       <data key="v_state">SP</data>
       <data key="v_term_color">red</data>
       <data key="v_region">south-east</data>
-      <data key="v_size">4829.96715704533</data>
+      <data key="v_size">770034.57</data>
+      <data key="v_group">1</data>
     </node>
     <node id="n273">
       <data key="v_name">TAKAYAMA</data>
@@ -2477,7 +2751,8 @@
       <data key="v_state">PR</data>
       <data key="v_term_color">violet</data>
       <data key="v_region">south</data>
-      <data key="v_size">131.153629224364</data>
+      <data key="v_size">2759368.58</data>
+      <data key="v_group">1</data>
     </node>
     <node id="n274">
       <data key="v_name">HUGO MOTTA</data>
@@ -2486,7 +2761,8 @@
       <data key="v_state">PB</data>
       <data key="v_term_color">yellow</data>
       <data key="v_region">north-east</data>
-      <data key="v_size">804.217058709825</data>
+      <data key="v_size">2361401.04</data>
+      <data key="v_group">2</data>
     </node>
     <node id="n275">
       <data key="v_name">MARCELO ARO</data>
@@ -2495,7 +2771,8 @@
       <data key="v_state">MG</data>
       <data key="v_term_color">red</data>
       <data key="v_region">south-east</data>
-      <data key="v_size">31.4011306347222</data>
+      <data key="v_size">432281.47</data>
+      <data key="v_group">2</data>
     </node>
     <node id="n276">
       <data key="v_name">MILTON MONTI</data>
@@ -2504,7 +2781,8 @@
       <data key="v_state">SP</data>
       <data key="v_term_color">violet</data>
       <data key="v_region">south-east</data>
-      <data key="v_size">118.031709268147</data>
+      <data key="v_size">2537611.51</data>
+      <data key="v_group">1</data>
     </node>
     <node id="n277">
       <data key="v_name">DANIEL ALMEIDA</data>
@@ -2513,7 +2791,8 @@
       <data key="v_state">BA</data>
       <data key="v_term_color">violet</data>
       <data key="v_region">north-east</data>
-      <data key="v_size">128.035537338113</data>
+      <data key="v_size">3036292.99</data>
+      <data key="v_group">2</data>
     </node>
     <node id="n278">
       <data key="v_name">JOSÉ CARLOS ALELUIA</data>
@@ -2522,7 +2801,8 @@
       <data key="v_state">BA</data>
       <data key="v_term_color">blue</data>
       <data key="v_region">north-east</data>
-      <data key="v_size">1578.20966681535</data>
+      <data key="v_size">1416310.18</data>
+      <data key="v_group">1</data>
     </node>
     <node id="n279">
       <data key="v_name">EDUARDO DA FONTE</data>
@@ -2531,7 +2811,8 @@
       <data key="v_state">PE</data>
       <data key="v_term_color">violet</data>
       <data key="v_region">north-east</data>
-      <data key="v_size">120.306264357466</data>
+      <data key="v_size">2769403.3</data>
+      <data key="v_group">1</data>
     </node>
     <node id="n280">
       <data key="v_name">GILBERTO NASCIMENTO</data>
@@ -2540,7 +2821,8 @@
       <data key="v_state">SP</data>
       <data key="v_term_color">red</data>
       <data key="v_region">south-east</data>
-      <data key="v_size">33.8176181796651</data>
+      <data key="v_size">392860.62</data>
+      <data key="v_group">1</data>
     </node>
     <node id="n281">
       <data key="v_name">MAJOR OLIMPIO</data>
@@ -2549,7 +2831,8 @@
       <data key="v_state">SP</data>
       <data key="v_term_color">red</data>
       <data key="v_region">south-east</data>
-      <data key="v_size">32.2783030098574</data>
+      <data key="v_size">651220.32</data>
+      <data key="v_group">1</data>
     </node>
     <node id="n282">
       <data key="v_name">NILTON CAPIXABA</data>
@@ -2558,7 +2841,8 @@
       <data key="v_state">RO</data>
       <data key="v_term_color">yellow</data>
       <data key="v_region">north</data>
-      <data key="v_size">99.4083953115138</data>
+      <data key="v_size">2559052.24</data>
+      <data key="v_group">1</data>
     </node>
     <node id="n283">
       <data key="v_name">ENIO VERRI</data>
@@ -2567,7 +2851,8 @@
       <data key="v_state">PR</data>
       <data key="v_term_color">red</data>
       <data key="v_region">south</data>
-      <data key="v_size">33.4029156197314</data>
+      <data key="v_size">732611.52</data>
+      <data key="v_group">1</data>
     </node>
     <node id="n284">
       <data key="v_name">AFONSO HAMM</data>
@@ -2576,7 +2861,8 @@
       <data key="v_state">RS</data>
       <data key="v_term_color">violet</data>
       <data key="v_region">south</data>
-      <data key="v_size">115.480999603619</data>
+      <data key="v_size">2926068.5</data>
+      <data key="v_group">2</data>
     </node>
     <node id="n285">
       <data key="v_name">LEONARDO QUINTÃO</data>
@@ -2585,7 +2871,8 @@
       <data key="v_state">MG</data>
       <data key="v_term_color">violet</data>
       <data key="v_region">south-east</data>
-      <data key="v_size">131.09517506491</data>
+      <data key="v_size">2592367.61</data>
+      <data key="v_group">1</data>
     </node>
     <node id="n286">
       <data key="v_name">SILAS CÂMARA</data>
@@ -2594,7 +2881,8 @@
       <data key="v_state">AM</data>
       <data key="v_term_color">red</data>
       <data key="v_region">north</data>
-      <data key="v_size">123.829389621593</data>
+      <data key="v_size">3341402.53</data>
+      <data key="v_group">2</data>
     </node>
     <node id="n287">
       <data key="v_name">POMPEO DE MATTOS</data>
@@ -2603,7 +2891,8 @@
       <data key="v_state">RS</data>
       <data key="v_term_color">blue</data>
       <data key="v_region">south</data>
-      <data key="v_size">723.264095323153</data>
+      <data key="v_size">1331232.71</data>
+      <data key="v_group">1</data>
     </node>
     <node id="n288">
       <data key="v_name">PASTOR EURICO</data>
@@ -2612,7 +2901,8 @@
       <data key="v_state">PE</data>
       <data key="v_term_color">red</data>
       <data key="v_region">north-east</data>
-      <data key="v_size">940.92679931171</data>
+      <data key="v_size">2352429.31</data>
+      <data key="v_group">1</data>
     </node>
     <node id="n289">
       <data key="v_name">MAGDA MOFATTO</data>
@@ -2621,7 +2911,8 @@
       <data key="v_state">GO</data>
       <data key="v_term_color">yellow</data>
       <data key="v_region">center-west</data>
-      <data key="v_size">91.5758863665318</data>
+      <data key="v_size">1878052.49</data>
+      <data key="v_group">1</data>
     </node>
     <node id="n290">
       <data key="v_name">SIMÃO SESSIM</data>
@@ -2630,7 +2921,8 @@
       <data key="v_state">RJ</data>
       <data key="v_term_color">violet</data>
       <data key="v_region">south-east</data>
-      <data key="v_size">114.28675675447</data>
+      <data key="v_size">2579382.07</data>
+      <data key="v_group">1</data>
     </node>
     <node id="n291">
       <data key="v_name">MÁRIO NEGROMONTE JR.</data>
@@ -2639,7 +2931,8 @@
       <data key="v_state">BA</data>
       <data key="v_term_color">red</data>
       <data key="v_region">north-east</data>
-      <data key="v_size">33.9329369966037</data>
+      <data key="v_size">783923.19</data>
+      <data key="v_group">1</data>
     </node>
     <node id="n292">
       <data key="v_name">JÉSSICA SALES</data>
@@ -2648,7 +2941,8 @@
       <data key="v_state">AC</data>
       <data key="v_term_color">red</data>
       <data key="v_region">north</data>
-      <data key="v_size">31.7068809708434</data>
+      <data key="v_size">877720.7</data>
+      <data key="v_group">1</data>
     </node>
     <node id="n293">
       <data key="v_name">MIRO TEIXEIRA</data>
@@ -2657,7 +2951,8 @@
       <data key="v_state">RJ</data>
       <data key="v_term_color">red</data>
       <data key="v_region">south-east</data>
-      <data key="v_size">121.521975425543</data>
+      <data key="v_size">1219943.29</data>
+      <data key="v_group">1</data>
     </node>
     <node id="n294">
       <data key="v_name">JOSÉ OTÁVIO GERMANO</data>
@@ -2666,7 +2961,8 @@
       <data key="v_state">RS</data>
       <data key="v_term_color">violet</data>
       <data key="v_region">south</data>
-      <data key="v_size">130.455601486583</data>
+      <data key="v_size">3011501.54</data>
+      <data key="v_group">1</data>
     </node>
     <node id="n295">
       <data key="v_name">RUBENS OTONI</data>
@@ -2675,7 +2971,8 @@
       <data key="v_state">GO</data>
       <data key="v_term_color">violet</data>
       <data key="v_region">center-west</data>
-      <data key="v_size">119.08620123846</data>
+      <data key="v_size">2382934.51</data>
+      <data key="v_group">1</data>
     </node>
     <node id="n296">
       <data key="v_name">BENEDITA DA SILVA</data>
@@ -2684,892 +2981,893 @@
       <data key="v_state">RJ</data>
       <data key="v_term_color">yellow</data>
       <data key="v_region">south-east</data>
-      <data key="v_size">96.4057626979231</data>
+      <data key="v_size">1967681.44</data>
+      <data key="v_group">2</data>
     </node>
-    <edge source="n0" target="n169">
-      <data key="e_weight">0.156382336231066</data>
+    <edge source="n0" target="n121">
+      <data key="e_weight">0.0809858427221841</data>
     </edge>
-    <edge source="n1" target="n9">
-      <data key="e_weight">0.137696856965406</data>
+    <edge source="n1" target="n71">
+      <data key="e_weight">0.122461811962658</data>
     </edge>
-    <edge source="n1" target="n84">
-      <data key="e_weight">0.156986353175478</data>
+    <edge source="n1" target="n233">
+      <data key="e_weight">0.0595136467167077</data>
     </edge>
-    <edge source="n2" target="n94">
-      <data key="e_weight">0.118506999041113</data>
+    <edge source="n1" target="n248">
+      <data key="e_weight">0.06379843455907</data>
     </edge>
-    <edge source="n2" target="n104">
-      <data key="e_weight">0.161982318157517</data>
+    <edge source="n2" target="n288">
+      <data key="e_weight">0.182016650974247</data>
     </edge>
-    <edge source="n3" target="n11">
-      <data key="e_weight">0.127910792393045</data>
+    <edge source="n3" target="n36">
+      <data key="e_weight">0.140700085641736</data>
     </edge>
-    <edge source="n3" target="n92">
-      <data key="e_weight">0.137748049488393</data>
+    <edge source="n4" target="n131">
+      <data key="e_weight">0.0678357105892971</data>
     </edge>
-    <edge source="n3" target="n256">
-      <data key="e_weight">0.127557307122151</data>
+    <edge source="n4" target="n271">
+      <data key="e_weight">0.0946592530212829</data>
     </edge>
-    <edge source="n4" target="n207">
-      <data key="e_weight">0.134008633490357</data>
+    <edge source="n5" target="n158">
+      <data key="e_weight">0.0780074921932042</data>
     </edge>
-    <edge source="n5" target="n226">
-      <data key="e_weight">0.13060955202847</data>
+    <edge source="n5" target="n193">
+      <data key="e_weight">0.137876836564734</data>
     </edge>
-    <edge source="n5" target="n282">
-      <data key="e_weight">0.13238732612472</data>
+    <edge source="n5" target="n286">
+      <data key="e_weight">0.150040496463089</data>
     </edge>
-    <edge source="n6" target="n245">
-      <data key="e_weight">0.126828134407947</data>
+    <edge source="n6" target="n272">
+      <data key="e_weight">0.0788877213818976</data>
     </edge>
-    <edge source="n7" target="n161">
-      <data key="e_weight">0.141017941518272</data>
+    <edge source="n7" target="n105">
+      <data key="e_weight">0.105690725418111</data>
     </edge>
-    <edge source="n8" target="n56">
-      <data key="e_weight">0.124134173207117</data>
+    <edge source="n8" target="n34">
+      <data key="e_weight">0.0646622078691675</data>
     </edge>
-    <edge source="n8" target="n99">
-      <data key="e_weight">0.125299422041938</data>
+    <edge source="n8" target="n120">
+      <data key="e_weight">0.0801877713539222</data>
     </edge>
-    <edge source="n8" target="n257">
-      <data key="e_weight">0.0990378113908081</data>
+    <edge source="n9" target="n188">
+      <data key="e_weight">0.136639274466551</data>
     </edge>
-    <edge source="n9" target="n193">
-      <data key="e_weight">0.130151955491392</data>
+    <edge source="n10" target="n177">
+      <data key="e_weight">0.111993312447326</data>
     </edge>
-    <edge source="n10" target="n65">
-      <data key="e_weight">0.132953694130956</data>
+    <edge source="n10" target="n294">
+      <data key="e_weight">0.0806682517461151</data>
     </edge>
-    <edge source="n10" target="n150">
-      <data key="e_weight">0.124282434295706</data>
+    <edge source="n11" target="n44">
+      <data key="e_weight">0.0713955953251667</data>
     </edge>
-    <edge source="n11" target="n38">
-      <data key="e_weight">0.135830553589574</data>
+    <edge source="n12" target="n147">
+      <data key="e_weight">0.128308758010843</data>
     </edge>
-    <edge source="n11" target="n185">
-      <data key="e_weight">0.128861358028146</data>
+    <edge source="n13" target="n121">
+      <data key="e_weight">0.0780148056086986</data>
     </edge>
-    <edge source="n12" target="n25">
-      <data key="e_weight">0.117203573042443</data>
+    <edge source="n13" target="n237">
+      <data key="e_weight">0.0759999920076034</data>
     </edge>
-    <edge source="n12" target="n265">
-      <data key="e_weight">0.151020312566398</data>
+    <edge source="n14" target="n151">
+      <data key="e_weight">0.122284189390849</data>
     </edge>
-    <edge source="n13" target="n225">
-      <data key="e_weight">0.150810168008031</data>
+    <edge source="n14" target="n295">
+      <data key="e_weight">0.0705656226149676</data>
     </edge>
-    <edge source="n13" target="n238">
-      <data key="e_weight">0.139743563337617</data>
+    <edge source="n15" target="n276">
+      <data key="e_weight">0.115638296938192</data>
     </edge>
-    <edge source="n13" target="n259">
-      <data key="e_weight">0.143092720380674</data>
+    <edge source="n16" target="n54">
+      <data key="e_weight">0.0711094901384453</data>
     </edge>
-    <edge source="n14" target="n223">
-      <data key="e_weight">0.168474741307545</data>
+    <edge source="n16" target="n273">
+      <data key="e_weight">0.0848151904450938</data>
     </edge>
-    <edge source="n15" target="n213">
-      <data key="e_weight">0.151388042428934</data>
+    <edge source="n16" target="n285">
+      <data key="e_weight">0.0810020302284917</data>
     </edge>
-    <edge source="n16" target="n21">
-      <data key="e_weight">0.160882343556653</data>
+    <edge source="n17" target="n78">
+      <data key="e_weight">0.109229918318505</data>
     </edge>
-    <edge source="n17" target="n224">
-      <data key="e_weight">0.130857354132341</data>
+    <edge source="n17" target="n205">
+      <data key="e_weight">0.256905523841642</data>
     </edge>
-    <edge source="n18" target="n60">
-      <data key="e_weight">0.161568623820791</data>
+    <edge source="n17" target="n252">
+      <data key="e_weight">0.279610822695567</data>
     </edge>
-    <edge source="n18" target="n238">
-      <data key="e_weight">0.140155351794533</data>
+    <edge source="n18" target="n155">
+      <data key="e_weight">0.0493202022242045</data>
     </edge>
-    <edge source="n19" target="n129">
-      <data key="e_weight">0.142568638017159</data>
+    <edge source="n18" target="n174">
+      <data key="e_weight">0.0643705239560409</data>
     </edge>
-    <edge source="n19" target="n168">
-      <data key="e_weight">0.142315909751549</data>
+    <edge source="n19" target="n38">
+      <data key="e_weight">0.119744416011057</data>
     </edge>
-    <edge source="n20" target="n181">
-      <data key="e_weight">0.122256431534748</data>
+    <edge source="n20" target="n257">
+      <data key="e_weight">0.0875878939848493</data>
     </edge>
     <edge source="n20" target="n288">
-      <data key="e_weight">0.127304326103099</data>
+      <data key="e_weight">0.125438205054853</data>
     </edge>
-    <edge source="n21" target="n58">
-      <data key="e_weight">0.11379065486828</data>
+    <edge source="n21" target="n103">
+      <data key="e_weight">0.13862446215322</data>
     </edge>
-    <edge source="n21" target="n83">
-      <data key="e_weight">0.112855380779942</data>
+    <edge source="n22" target="n159">
+      <data key="e_weight">0.146286541744791</data>
     </edge>
-    <edge source="n22" target="n52">
-      <data key="e_weight">0.102751131665722</data>
+    <edge source="n23" target="n154">
+      <data key="e_weight">0.0716918753029304</data>
     </edge>
-    <edge source="n22" target="n127">
-      <data key="e_weight">0.146245103596797</data>
+    <edge source="n24" target="n58">
+      <data key="e_weight">0.12517615721659</data>
     </edge>
-    <edge source="n22" target="n167">
-      <data key="e_weight">0.148865971067873</data>
+    <edge source="n25" target="n125">
+      <data key="e_weight">0.107388270821386</data>
     </edge>
-    <edge source="n22" target="n230">
-      <data key="e_weight">0.157942553708771</data>
+    <edge source="n25" target="n241">
+      <data key="e_weight">0.0809386446262485</data>
     </edge>
-    <edge source="n22" target="n232">
-      <data key="e_weight">0.139728730968228</data>
+    <edge source="n26" target="n163">
+      <data key="e_weight">0.127739204716468</data>
     </edge>
-    <edge source="n22" target="n262">
-      <data key="e_weight">0.134762094807968</data>
+    <edge source="n26" target="n176">
+      <data key="e_weight">0.0870417524470513</data>
     </edge>
-    <edge source="n23" target="n56">
-      <data key="e_weight">0.117392741305182</data>
+    <edge source="n26" target="n225">
+      <data key="e_weight">0.0756305033216493</data>
     </edge>
-    <edge source="n23" target="n152">
-      <data key="e_weight">0.140522968908235</data>
+    <edge source="n27" target="n55">
+      <data key="e_weight">0.062450488944978</data>
     </edge>
-    <edge source="n23" target="n261">
-      <data key="e_weight">0.119502117485861</data>
+    <edge source="n27" target="n152">
+      <data key="e_weight">0.0638780104378555</data>
     </edge>
-    <edge source="n24" target="n216">
-      <data key="e_weight">0.164082040679924</data>
-    </edge>
-    <edge source="n24" target="n236">
-      <data key="e_weight">0.1380854357894</data>
-    </edge>
-    <edge source="n25" target="n250">
-      <data key="e_weight">0.118220737019301</data>
-    </edge>
-    <edge source="n26" target="n75">
-      <data key="e_weight">0.122933649976091</data>
+    <edge source="n27" target="n290">
+      <data key="e_weight">0.04886973082265</data>
     </edge>
     <edge source="n27" target="n291">
-      <data key="e_weight">0.114641613237948</data>
+      <data key="e_weight">0.102347534548313</data>
     </edge>
-    <edge source="n28" target="n78">
-      <data key="e_weight">0.106865729819927</data>
+    <edge source="n28" target="n195">
+      <data key="e_weight">0.127935430434596</data>
     </edge>
-    <edge source="n28" target="n191">
-      <data key="e_weight">0.114922948582868</data>
+    <edge source="n29" target="n150">
+      <data key="e_weight">0.101672550057136</data>
     </edge>
-    <edge source="n28" target="n250">
-      <data key="e_weight">0.127719061006554</data>
+    <edge source="n29" target="n240">
+      <data key="e_weight">0.150694539345773</data>
     </edge>
-    <edge source="n29" target="n56">
-      <data key="e_weight">0.114950049927335</data>
+    <edge source="n30" target="n66">
+      <data key="e_weight">0.0654103529506002</data>
     </edge>
-    <edge source="n30" target="n133">
-      <data key="e_weight">0.181888121715087</data>
+    <edge source="n30" target="n158">
+      <data key="e_weight">0.0751248577717638</data>
     </edge>
-    <edge source="n31" target="n113">
-      <data key="e_weight">0.146892324355464</data>
+    <edge source="n30" target="n188">
+      <data key="e_weight">0.0683366794323357</data>
     </edge>
-    <edge source="n32" target="n110">
-      <data key="e_weight">0.129704583153293</data>
+    <edge source="n31" target="n230">
+      <data key="e_weight">0.0611739439029791</data>
     </edge>
-    <edge source="n33" target="n158">
-      <data key="e_weight">0.124818751218131</data>
+    <edge source="n32" target="n122">
+      <data key="e_weight">0.0984385988002393</data>
     </edge>
-    <edge source="n33" target="n229">
-      <data key="e_weight">0.154995811842529</data>
+    <edge source="n33" target="n230">
+      <data key="e_weight">0.115764481175643</data>
     </edge>
-    <edge source="n34" target="n48">
-      <data key="e_weight">0.149694525605953</data>
+    <edge source="n34" target="n122">
+      <data key="e_weight">0.0491719161120915</data>
     </edge>
-    <edge source="n35" target="n198">
-      <data key="e_weight">0.158513226950307</data>
+    <edge source="n34" target="n268">
+      <data key="e_weight">0.0468127463255182</data>
     </edge>
-    <edge source="n36" target="n75">
-      <data key="e_weight">0.136618878136114</data>
+    <edge source="n35" target="n246">
+      <data key="e_weight">0.125664747188002</data>
     </edge>
-    <edge source="n37" target="n79">
-      <data key="e_weight">0.163446154370995</data>
+    <edge source="n36" target="n242">
+      <data key="e_weight">0.11479232180827</data>
     </edge>
-    <edge source="n37" target="n128">
-      <data key="e_weight">0.10491788299233</data>
+    <edge source="n37" target="n69">
+      <data key="e_weight">0.105628835938676</data>
     </edge>
-    <edge source="n37" target="n182">
-      <data key="e_weight">0.127218763772159</data>
+    <edge source="n38" target="n217">
+      <data key="e_weight">0.0926990593238454</data>
     </edge>
-    <edge source="n37" target="n252">
-      <data key="e_weight">0.127751189121265</data>
+    <edge source="n38" target="n241">
+      <data key="e_weight">0.0725653125064118</data>
     </edge>
-    <edge source="n38" target="n124">
-      <data key="e_weight">0.130295848391009</data>
+    <edge source="n39" target="n206">
+      <data key="e_weight">0.122047463602254</data>
     </edge>
-    <edge source="n39" target="n214">
-      <data key="e_weight">0.100970783296042</data>
+    <edge source="n40" target="n215">
+      <data key="e_weight">0.11197530369366</data>
     </edge>
-    <edge source="n39" target="n278">
-      <data key="e_weight">0.109874262758748</data>
+    <edge source="n41" target="n191">
+      <data key="e_weight">0.097030489667759</data>
     </edge>
-    <edge source="n40" target="n185">
-      <data key="e_weight">0.112743043552889</data>
+    <edge source="n41" target="n224">
+      <data key="e_weight">0.111979150422642</data>
     </edge>
-    <edge source="n40" target="n284">
-      <data key="e_weight">0.149309570321215</data>
+    <edge source="n42" target="n104">
+      <data key="e_weight">0.0988952862799748</data>
     </edge>
-    <edge source="n41" target="n76">
-      <data key="e_weight">0.149003111579166</data>
+    <edge source="n42" target="n168">
+      <data key="e_weight">0.0678972312730748</data>
     </edge>
-    <edge source="n42" target="n97">
-      <data key="e_weight">0.166753511002059</data>
+    <edge source="n42" target="n228">
+      <data key="e_weight">0.0843313141998875</data>
     </edge>
-    <edge source="n42" target="n107">
-      <data key="e_weight">0.178276356628451</data>
+    <edge source="n43" target="n296">
+      <data key="e_weight">0.270812331885347</data>
     </edge>
-    <edge source="n42" target="n119">
-      <data key="e_weight">0.142405646736798</data>
+    <edge source="n44" target="n47">
+      <data key="e_weight">0.0588653290508149</data>
     </edge>
-    <edge source="n42" target="n120">
-      <data key="e_weight">0.179235252041765</data>
+    <edge source="n44" target="n60">
+      <data key="e_weight">0.0615278728221162</data>
     </edge>
-    <edge source="n42" target="n155">
-      <data key="e_weight">0.149190089903656</data>
+    <edge source="n44" target="n88">
+      <data key="e_weight">0.0529854548552534</data>
     </edge>
-    <edge source="n42" target="n243">
-      <data key="e_weight">0.14092484531415</data>
+    <edge source="n44" target="n108">
+      <data key="e_weight">0.0550388436630523</data>
     </edge>
-    <edge source="n43" target="n246">
-      <data key="e_weight">0.135228499821218</data>
+    <edge source="n44" target="n173">
+      <data key="e_weight">0.0607416998383509</data>
     </edge>
-    <edge source="n44" target="n141">
-      <data key="e_weight">0.127259330609001</data>
+    <edge source="n44" target="n230">
+      <data key="e_weight">0.0576580307078732</data>
     </edge>
-    <edge source="n44" target="n203">
-      <data key="e_weight">0.150683550298711</data>
+    <edge source="n45" target="n107">
+      <data key="e_weight">0.0669323079081556</data>
     </edge>
-    <edge source="n44" target="n248">
-      <data key="e_weight">0.133953103439436</data>
+    <edge source="n45" target="n175">
+      <data key="e_weight">0.0797296329552714</data>
     </edge>
-    <edge source="n44" target="n271">
-      <data key="e_weight">0.11780324890913</data>
+    <edge source="n45" target="n264">
+      <data key="e_weight">0.0695975968298684</data>
     </edge>
-    <edge source="n45" target="n50">
-      <data key="e_weight">0.14240809315573</data>
+    <edge source="n45" target="n270">
+      <data key="e_weight">0.075083090838848</data>
     </edge>
-    <edge source="n45" target="n129">
-      <data key="e_weight">0.126967873678377</data>
+    <edge source="n46" target="n262">
+      <data key="e_weight">0.0979285083900387</data>
     </edge>
-    <edge source="n45" target="n192">
-      <data key="e_weight">0.118928742409238</data>
+    <edge source="n47" target="n215">
+      <data key="e_weight">0.0756711816389361</data>
     </edge>
-    <edge source="n45" target="n285">
-      <data key="e_weight">0.130562916587208</data>
+    <edge source="n47" target="n227">
+      <data key="e_weight">0.0906986738582416</data>
     </edge>
-    <edge source="n45" target="n296">
-      <data key="e_weight">0.114967634337245</data>
+    <edge source="n48" target="n82">
+      <data key="e_weight">0.0610215593869297</data>
     </edge>
-    <edge source="n46" target="n111">
-      <data key="e_weight">0.121445432449813</data>
+    <edge source="n48" target="n90">
+      <data key="e_weight">0.0805525074900657</data>
     </edge>
-    <edge source="n46" target="n121">
-      <data key="e_weight">0.103616609570523</data>
+    <edge source="n48" target="n211">
+      <data key="e_weight">0.0669091168201726</data>
     </edge>
-    <edge source="n46" target="n234">
-      <data key="e_weight">0.126682756309766</data>
+    <edge source="n48" target="n212">
+      <data key="e_weight">0.0646412620094603</data>
     </edge>
-    <edge source="n46" target="n235">
-      <data key="e_weight">0.10137519602456</data>
+    <edge source="n48" target="n263">
+      <data key="e_weight">0.0703638103668286</data>
     </edge>
-    <edge source="n47" target="n244">
-      <data key="e_weight">0.122714422941361</data>
+    <edge source="n49" target="n296">
+      <data key="e_weight">0.212267783770862</data>
     </edge>
-    <edge source="n47" target="n295">
-      <data key="e_weight">0.175369946109196</data>
+    <edge source="n50" target="n184">
+      <data key="e_weight">0.0871492990001575</data>
     </edge>
-    <edge source="n48" target="n64">
-      <data key="e_weight">0.143281045043142</data>
+    <edge source="n50" target="n187">
+      <data key="e_weight">0.104166531155551</data>
     </edge>
-    <edge source="n48" target="n150">
-      <data key="e_weight">0.108717174541383</data>
+    <edge source="n51" target="n92">
+      <data key="e_weight">0.069482851034308</data>
     </edge>
-    <edge source="n48" target="n178">
-      <data key="e_weight">0.133176293890655</data>
+    <edge source="n51" target="n162">
+      <data key="e_weight">0.098609948880867</data>
     </edge>
-    <edge source="n48" target="n194">
-      <data key="e_weight">0.120849297924324</data>
+    <edge source="n51" target="n173">
+      <data key="e_weight">0.0634057770978006</data>
     </edge>
-    <edge source="n49" target="n231">
-      <data key="e_weight">0.142949117585012</data>
+    <edge source="n51" target="n269">
+      <data key="e_weight">0.0771826016883845</data>
     </edge>
-    <edge source="n49" target="n255">
-      <data key="e_weight">0.134304005738595</data>
+    <edge source="n52" target="n91">
+      <data key="e_weight">0.132100743220364</data>
     </edge>
-    <edge source="n51" target="n75">
-      <data key="e_weight">0.109531902341828</data>
+    <edge source="n53" target="n73">
+      <data key="e_weight">0.0678403341850987</data>
     </edge>
-    <edge source="n51" target="n158">
-      <data key="e_weight">0.112907749743843</data>
+    <edge source="n53" target="n108">
+      <data key="e_weight">0.0660034632189245</data>
     </edge>
-    <edge source="n52" target="n156">
-      <data key="e_weight">0.128562243986359</data>
+    <edge source="n53" target="n180">
+      <data key="e_weight">0.0787240394946862</data>
     </edge>
-    <edge source="n52" target="n184">
-      <data key="e_weight">0.128092382799013</data>
+    <edge source="n54" target="n165">
+      <data key="e_weight">0.116664840795165</data>
     </edge>
-    <edge source="n53" target="n65">
-      <data key="e_weight">0.132569757960257</data>
+    <edge source="n54" target="n202">
+      <data key="e_weight">0.0917885995909016</data>
     </edge>
-    <edge source="n53" target="n255">
-      <data key="e_weight">0.141568436964703</data>
+    <edge source="n54" target="n276">
+      <data key="e_weight">0.067457379364671</data>
     </edge>
-    <edge source="n53" target="n258">
-      <data key="e_weight">0.151992946399633</data>
+    <edge source="n55" target="n78">
+      <data key="e_weight">0.0805615715229223</data>
     </edge>
-    <edge source="n53" target="n277">
-      <data key="e_weight">0.154537393811658</data>
+    <edge source="n55" target="n150">
+      <data key="e_weight">0.0634737821381303</data>
     </edge>
-    <edge source="n54" target="n176">
-      <data key="e_weight">0.127602100995073</data>
+    <edge source="n56" target="n225">
+      <data key="e_weight">0.0625658680483198</data>
     </edge>
-    <edge source="n55" target="n151">
-      <data key="e_weight">0.141700217449936</data>
+    <edge source="n56" target="n232">
+      <data key="e_weight">0.0539133904708973</data>
     </edge>
-    <edge source="n56" target="n202">
-      <data key="e_weight">0.114929348474674</data>
+    <edge source="n56" target="n275">
+      <data key="e_weight">0.0671215265339587</data>
     </edge>
-    <edge source="n56" target="n208">
-      <data key="e_weight">0.136186821423403</data>
+    <edge source="n57" target="n101">
+      <data key="e_weight">0.153763205776538</data>
     </edge>
-    <edge source="n56" target="n294">
-      <data key="e_weight">0.129634165227417</data>
+    <edge source="n58" target="n160">
+      <data key="e_weight">0.0686733533710486</data>
     </edge>
-    <edge source="n57" target="n282">
-      <data key="e_weight">0.122782164584464</data>
+    <edge source="n59" target="n280">
+      <data key="e_weight">0.115740206964131</data>
     </edge>
-    <edge source="n58" target="n91">
-      <data key="e_weight">0.15756318428956</data>
+    <edge source="n61" target="n196">
+      <data key="e_weight">0.15849540387685</data>
     </edge>
-    <edge source="n58" target="n101">
-      <data key="e_weight">0.14182974290813</data>
+    <edge source="n61" target="n241">
+      <data key="e_weight">0.0695890432985933</data>
     </edge>
-    <edge source="n58" target="n204">
-      <data key="e_weight">0.121348421090485</data>
+    <edge source="n62" target="n228">
+      <data key="e_weight">0.10977288239622</data>
     </edge>
-    <edge source="n59" target="n183">
-      <data key="e_weight">0.154029780781798</data>
+    <edge source="n63" target="n195">
+      <data key="e_weight">0.156074534110574</data>
     </edge>
-    <edge source="n61" target="n271">
-      <data key="e_weight">0.130915956598121</data>
+    <edge source="n63" target="n223">
+      <data key="e_weight">0.195843660273161</data>
     </edge>
-    <edge source="n62" target="n183">
-      <data key="e_weight">0.172828478242701</data>
+    <edge source="n64" target="n91">
+      <data key="e_weight">0.0780208605262017</data>
     </edge>
-    <edge source="n63" target="n156">
-      <data key="e_weight">0.125290615841397</data>
+    <edge source="n64" target="n276">
+      <data key="e_weight">0.0658107567979076</data>
     </edge>
-    <edge source="n64" target="n73">
-      <data key="e_weight">0.151474007939692</data>
+    <edge source="n65" target="n289">
+      <data key="e_weight">0.0868683245327113</data>
     </edge>
-    <edge source="n64" target="n241">
-      <data key="e_weight">0.180531608634078</data>
+    <edge source="n66" target="n70">
+      <data key="e_weight">0.0579257000501225</data>
     </edge>
-    <edge source="n66" target="n289">
-      <data key="e_weight">0.139851134426385</data>
+    <edge source="n66" target="n94">
+      <data key="e_weight">0.0611661684471876</data>
     </edge>
-    <edge source="n67" target="n173">
-      <data key="e_weight">0.15485009973643</data>
+    <edge source="n66" target="n107">
+      <data key="e_weight">0.0556456491085617</data>
     </edge>
-    <edge source="n68" target="n128">
-      <data key="e_weight">0.120969168000807</data>
+    <edge source="n66" target="n179">
+      <data key="e_weight">0.0826154184531013</data>
     </edge>
-    <edge source="n68" target="n143">
-      <data key="e_weight">0.149808644258219</data>
+    <edge source="n66" target="n208">
+      <data key="e_weight">0.0728782023067447</data>
     </edge>
-    <edge source="n69" target="n217">
-      <data key="e_weight">0.144183128945715</data>
+    <edge source="n67" target="n82">
+      <data key="e_weight">0.0944508187555324</data>
     </edge>
-    <edge source="n70" target="n166">
-      <data key="e_weight">0.105459911431277</data>
+    <edge source="n68" target="n213">
+      <data key="e_weight">0.0760996231599956</data>
     </edge>
-    <edge source="n70" target="n181">
-      <data key="e_weight">0.131607676811582</data>
+    <edge source="n68" target="n276">
+      <data key="e_weight">0.0822174358004373</data>
     </edge>
-    <edge source="n70" target="n195">
-      <data key="e_weight">0.11441477299982</data>
+    <edge source="n69" target="n145">
+      <data key="e_weight">0.0700706744877516</data>
     </edge>
-    <edge source="n71" target="n293">
-      <data key="e_weight">0.163153047524502</data>
+    <edge source="n69" target="n209">
+      <data key="e_weight">0.107356074981511</data>
     </edge>
-    <edge source="n72" target="n143">
-      <data key="e_weight">0.124046657906775</data>
+    <edge source="n70" target="n261">
+      <data key="e_weight">0.0576177057228678</data>
     </edge>
-    <edge source="n74" target="n98">
-      <data key="e_weight">0.148311980683501</data>
+    <edge source="n72" target="n76">
+      <data key="e_weight">0.0806410779641695</data>
     </edge>
-    <edge source="n74" target="n272">
-      <data key="e_weight">0.127854739693219</data>
+    <edge source="n72" target="n158">
+      <data key="e_weight">0.0777411785085246</data>
     </edge>
-    <edge source="n75" target="n197">
-      <data key="e_weight">0.12155379716037</data>
+    <edge source="n72" target="n221">
+      <data key="e_weight">0.0764081647657574</data>
     </edge>
-    <edge source="n76" target="n116">
-      <data key="e_weight">0.153842802770406</data>
+    <edge source="n73" target="n197">
+      <data key="e_weight">0.0796126387250372</data>
     </edge>
-    <edge source="n76" target="n178">
-      <data key="e_weight">0.134534106688782</data>
+    <edge source="n73" target="n243">
+      <data key="e_weight">0.0751119228193395</data>
     </edge>
-    <edge source="n77" target="n128">
-      <data key="e_weight">0.123321609114826</data>
+    <edge source="n73" target="n260">
+      <data key="e_weight">0.0903894297943528</data>
     </edge>
-    <edge source="n78" target="n114">
-      <data key="e_weight">0.142172167841717</data>
+    <edge source="n74" target="n241">
+      <data key="e_weight">0.0872552384518428</data>
     </edge>
-    <edge source="n80" target="n132">
-      <data key="e_weight">0.161680006491953</data>
+    <edge source="n75" target="n201">
+      <data key="e_weight">0.30128624596693</data>
     </edge>
-    <edge source="n80" target="n244">
-      <data key="e_weight">0.161661795693181</data>
+    <edge source="n77" target="n130">
+      <data key="e_weight">0.0850881772486582</data>
     </edge>
-    <edge source="n81" target="n169">
-      <data key="e_weight">0.155855254736477</data>
+    <edge source="n78" target="n81">
+      <data key="e_weight">0.0831390106953552</data>
     </edge>
-    <edge source="n82" target="n225">
-      <data key="e_weight">0.152181306210697</data>
+    <edge source="n78" target="n86">
+      <data key="e_weight">0.0871079377914561</data>
     </edge>
-    <edge source="n83" target="n261">
-      <data key="e_weight">0.113825033762045</data>
+    <edge source="n79" target="n239">
+      <data key="e_weight">0.105619396763106</data>
     </edge>
-    <edge source="n84" target="n268">
-      <data key="e_weight">0.145719003675747</data>
+    <edge source="n80" target="n146">
+      <data key="e_weight">0.0807071079774106</data>
     </edge>
-    <edge source="n85" target="n202">
-      <data key="e_weight">0.143974777454741</data>
+    <edge source="n80" target="n272">
+      <data key="e_weight">0.066839903416537</data>
     </edge>
-    <edge source="n86" target="n144">
-      <data key="e_weight">0.147808884168975</data>
+    <edge source="n81" target="n280">
+      <data key="e_weight">0.108306496705257</data>
     </edge>
-    <edge source="n86" target="n289">
-      <data key="e_weight">0.133064931682431</data>
+    <edge source="n82" target="n194">
+      <data key="e_weight">0.121685730451251</data>
     </edge>
-    <edge source="n87" target="n171">
-      <data key="e_weight">0.158727493142327</data>
+    <edge source="n82" target="n255">
+      <data key="e_weight">0.062794619553762</data>
     </edge>
-    <edge source="n87" target="n269">
-      <data key="e_weight">0.149486722792213</data>
+    <edge source="n83" target="n139">
+      <data key="e_weight">0.0705044552175282</data>
     </edge>
-    <edge source="n88" target="n196">
-      <data key="e_weight">0.149383791493317</data>
+    <edge source="n83" target="n154">
+      <data key="e_weight">0.0573721082722695</data>
     </edge>
-    <edge source="n89" target="n133">
-      <data key="e_weight">0.150961176148832</data>
+    <edge source="n83" target="n206">
+      <data key="e_weight">0.0657926192591799</data>
     </edge>
-    <edge source="n89" target="n259">
-      <data key="e_weight">0.123425372933951</data>
+    <edge source="n84" target="n142">
+      <data key="e_weight">0.0671091176742719</data>
     </edge>
-    <edge source="n90" target="n271">
-      <data key="e_weight">0.145167699075591</data>
+    <edge source="n85" target="n93">
+      <data key="e_weight">0.147211639578695</data>
     </edge>
-    <edge source="n92" target="n103">
-      <data key="e_weight">0.169665116653248</data>
+    <edge source="n87" target="n185">
+      <data key="e_weight">0.130022095378697</data>
     </edge>
-    <edge source="n92" target="n159">
-      <data key="e_weight">0.137035270416774</data>
+    <edge source="n87" target="n247">
+      <data key="e_weight">0.150801203193156</data>
     </edge>
-    <edge source="n93" target="n205">
-      <data key="e_weight">0.140481652859705</data>
+    <edge source="n88" target="n128">
+      <data key="e_weight">0.0922766667340524</data>
     </edge>
-    <edge source="n94" target="n213">
-      <data key="e_weight">0.132352933082929</data>
+    <edge source="n89" target="n130">
+      <data key="e_weight">0.105800192269779</data>
     </edge>
-    <edge source="n94" target="n291">
-      <data key="e_weight">0.104647093752086</data>
+    <edge source="n91" target="n140">
+      <data key="e_weight">0.0983119142144581</data>
     </edge>
-    <edge source="n95" target="n102">
-      <data key="e_weight">0.142935610068392</data>
+    <edge source="n91" target="n195">
+      <data key="e_weight">0.0920555488566512</data>
     </edge>
-    <edge source="n95" target="n108">
-      <data key="e_weight">0.152491628586848</data>
+    <edge source="n91" target="n279">
+      <data key="e_weight">0.124630025290576</data>
     </edge>
-    <edge source="n95" target="n115">
-      <data key="e_weight">0.149542838667743</data>
+    <edge source="n92" target="n166">
+      <data key="e_weight">0.120308984584995</data>
     </edge>
-    <edge source="n96" target="n195">
-      <data key="e_weight">0.139850733145993</data>
+    <edge source="n93" target="n105">
+      <data key="e_weight">0.0630242194129041</data>
     </edge>
-    <edge source="n100" target="n130">
-      <data key="e_weight">0.161957222285384</data>
+    <edge source="n93" target="n137">
+      <data key="e_weight">0.0724122390716473</data>
     </edge>
-    <edge source="n100" target="n204">
-      <data key="e_weight">0.146182453140623</data>
+    <edge source="n95" target="n131">
+      <data key="e_weight">0.0545203792612867</data>
     </edge>
-    <edge source="n102" target="n233">
-      <data key="e_weight">0.155331587288904</data>
+    <edge source="n95" target="n142">
+      <data key="e_weight">0.0570277740002276</data>
     </edge>
-    <edge source="n105" target="n271">
-      <data key="e_weight">0.129546141604306</data>
+    <edge source="n96" target="n176">
+      <data key="e_weight">0.132709141745338</data>
     </edge>
-    <edge source="n106" target="n198">
-      <data key="e_weight">0.160281904396487</data>
+    <edge source="n97" target="n121">
+      <data key="e_weight">0.092314360893798</data>
     </edge>
-    <edge source="n108" target="n134">
-      <data key="e_weight">0.134112648215988</data>
+    <edge source="n98" target="n248">
+      <data key="e_weight">0.083057522111297</data>
     </edge>
-    <edge source="n108" target="n287">
-      <data key="e_weight">0.137989804712452</data>
+    <edge source="n99" target="n142">
+      <data key="e_weight">0.0525218554325304</data>
     </edge>
-    <edge source="n109" target="n140">
-      <data key="e_weight">0.154612348202598</data>
+    <edge source="n99" target="n244">
+      <data key="e_weight">0.0603922071783823</data>
     </edge>
-    <edge source="n110" target="n226">
-      <data key="e_weight">0.141700783193531</data>
+    <edge source="n100" target="n104">
+      <data key="e_weight">0.0994847353057158</data>
     </edge>
-    <edge source="n111" target="n217">
-      <data key="e_weight">0.140412785921147</data>
+    <edge source="n101" target="n214">
+      <data key="e_weight">0.0941292944665578</data>
     </edge>
-    <edge source="n112" target="n228">
-      <data key="e_weight">0.152958357857612</data>
+    <edge source="n101" target="n257">
+      <data key="e_weight">0.0871065863147059</data>
     </edge>
-    <edge source="n113" target="n236">
-      <data key="e_weight">0.147990229428832</data>
+    <edge source="n101" target="n276">
+      <data key="e_weight">0.0753288206540047</data>
     </edge>
-    <edge source="n116" target="n198">
-      <data key="e_weight">0.141781251613352</data>
+    <edge source="n102" target="n220">
+      <data key="e_weight">0.0742202533634503</data>
     </edge>
-    <edge source="n117" target="n134">
-      <data key="e_weight">0.191551571134927</data>
+    <edge source="n102" target="n226">
+      <data key="e_weight">0.0746374894510705</data>
     </edge>
-    <edge source="n118" target="n210">
-      <data key="e_weight">0.13000291385366</data>
+    <edge source="n103" target="n107">
+      <data key="e_weight">0.0870369275579766</data>
     </edge>
-    <edge source="n120" target="n131">
-      <data key="e_weight">0.12114200617185</data>
+    <edge source="n105" target="n142">
+      <data key="e_weight">0.0494927001156402</data>
     </edge>
-    <edge source="n121" target="n185">
-      <data key="e_weight">0.130429627948602</data>
+    <edge source="n105" target="n185">
+      <data key="e_weight">0.0726890044669723</data>
     </edge>
-    <edge source="n121" target="n186">
-      <data key="e_weight">0.139059933771835</data>
+    <edge source="n105" target="n276">
+      <data key="e_weight">0.0719411571766228</data>
     </edge>
-    <edge source="n121" target="n187">
-      <data key="e_weight">0.0742351436097597</data>
+    <edge source="n106" target="n265">
+      <data key="e_weight">0.130127668896211</data>
     </edge>
-    <edge source="n121" target="n271">
-      <data key="e_weight">0.0901305248252322</data>
+    <edge source="n107" target="n156">
+      <data key="e_weight">0.102601648285011</data>
     </edge>
-    <edge source="n122" target="n191">
-      <data key="e_weight">0.151901967775502</data>
+    <edge source="n107" target="n242">
+      <data key="e_weight">0.0781727923027989</data>
     </edge>
-    <edge source="n123" target="n199">
-      <data key="e_weight">0.141435712711881</data>
+    <edge source="n107" target="n250">
+      <data key="e_weight">0.0728651444006164</data>
     </edge>
-    <edge source="n125" target="n251">
-      <data key="e_weight">0.133904949312781</data>
+    <edge source="n107" target="n274">
+      <data key="e_weight">0.0770872717296837</data>
     </edge>
-    <edge source="n125" target="n294">
-      <data key="e_weight">0.133216314417752</data>
+    <edge source="n107" target="n284">
+      <data key="e_weight">0.0626105629656439</data>
     </edge>
-    <edge source="n126" target="n292">
-      <data key="e_weight">0.168984684024548</data>
+    <edge source="n108" target="n192">
+      <data key="e_weight">0.0642026545151786</data>
     </edge>
-    <edge source="n128" target="n156">
-      <data key="e_weight">0.0990673409358184</data>
+    <edge source="n109" target="n230">
+      <data key="e_weight">0.0718244307485684</data>
     </edge>
-    <edge source="n128" target="n183">
-      <data key="e_weight">0.129523288140462</data>
+    <edge source="n110" target="n275">
+      <data key="e_weight">0.109739923489484</data>
     </edge>
-    <edge source="n128" target="n193">
-      <data key="e_weight">0.126869124316165</data>
+    <edge source="n111" target="n195">
+      <data key="e_weight">0.181540109586855</data>
     </edge>
-    <edge source="n128" target="n278">
-      <data key="e_weight">0.121252316029008</data>
+    <edge source="n112" target="n277">
+      <data key="e_weight">0.0966789739710844</data>
     </edge>
-    <edge source="n129" target="n145">
-      <data key="e_weight">0.128027414190942</data>
+    <edge source="n113" target="n197">
+      <data key="e_weight">0.122153129242495</data>
     </edge>
-    <edge source="n135" target="n147">
-      <data key="e_weight">0.132858462133467</data>
+    <edge source="n114" target="n221">
+      <data key="e_weight">0.142814689628568</data>
     </edge>
-    <edge source="n136" target="n202">
-      <data key="e_weight">0.157323446852811</data>
+    <edge source="n115" target="n117">
+      <data key="e_weight">0.0974913685373777</data>
     </edge>
-    <edge source="n137" target="n199">
-      <data key="e_weight">0.219393896842302</data>
+    <edge source="n116" target="n167">
+      <data key="e_weight">0.167743474176945</data>
     </edge>
-    <edge source="n138" target="n283">
-      <data key="e_weight">0.156137090449949</data>
+    <edge source="n116" target="n296">
+      <data key="e_weight">0.171712698795663</data>
     </edge>
-    <edge source="n139" target="n256">
-      <data key="e_weight">0.130333360168317</data>
+    <edge source="n117" target="n136">
+      <data key="e_weight">0.135295002290521</data>
     </edge>
-    <edge source="n140" target="n289">
-      <data key="e_weight">0.143912781288582</data>
+    <edge source="n117" target="n198">
+      <data key="e_weight">0.102577175908061</data>
     </edge>
-    <edge source="n142" target="n173">
-      <data key="e_weight">0.152117420151552</data>
+    <edge source="n117" target="n230">
+      <data key="e_weight">0.0586849587395114</data>
     </edge>
-    <edge source="n142" target="n179">
-      <data key="e_weight">0.0886242369702711</data>
+    <edge source="n118" target="n142">
+      <data key="e_weight">0.0706019657061306</data>
     </edge>
-    <edge source="n146" target="n259">
-      <data key="e_weight">0.139089354310682</data>
+    <edge source="n119" target="n292">
+      <data key="e_weight">0.167790486183497</data>
     </edge>
-    <edge source="n147" target="n186">
-      <data key="e_weight">0.148281369689719</data>
+    <edge source="n120" target="n245">
+      <data key="e_weight">0.0626307128688912</data>
     </edge>
-    <edge source="n147" target="n279">
-      <data key="e_weight">0.157183247819281</data>
+    <edge source="n122" target="n130">
+      <data key="e_weight">0.0643983282498019</data>
     </edge>
-    <edge source="n148" target="n174">
-      <data key="e_weight">0.171249355567526</data>
+    <edge source="n122" target="n238">
+      <data key="e_weight">0.0537881172088182</data>
     </edge>
-    <edge source="n149" target="n184">
-      <data key="e_weight">0.156845660686313</data>
+    <edge source="n122" target="n251">
+      <data key="e_weight">0.0719957048147064</data>
     </edge>
-    <edge source="n150" target="n238">
-      <data key="e_weight">0.123466690534864</data>
+    <edge source="n122" target="n262">
+      <data key="e_weight">0.0501395091539065</data>
     </edge>
-    <edge source="n150" target="n250">
-      <data key="e_weight">0.123262021711619</data>
+    <edge source="n123" target="n206">
+      <data key="e_weight">0.0845076228273173</data>
     </edge>
-    <edge source="n151" target="n272">
-      <data key="e_weight">0.143552851197163</data>
+    <edge source="n124" target="n225">
+      <data key="e_weight">0.0673248113297412</data>
     </edge>
-    <edge source="n152" target="n165">
-      <data key="e_weight">0.103253395545698</data>
+    <edge source="n124" target="n277">
+      <data key="e_weight">0.0912957227650237</data>
     </edge>
-    <edge source="n153" target="n185">
-      <data key="e_weight">0.140023286334971</data>
+    <edge source="n125" target="n201">
+      <data key="e_weight">0.239461792946464</data>
     </edge>
-    <edge source="n154" target="n221">
-      <data key="e_weight">0.123617573223937</data>
+    <edge source="n126" target="n145">
+      <data key="e_weight">0.0834981603611697</data>
     </edge>
-    <edge source="n155" target="n254">
-      <data key="e_weight">0.150230975767614</data>
+    <edge source="n126" target="n181">
+      <data key="e_weight">0.15785811553274</data>
     </edge>
-    <edge source="n156" target="n157">
-      <data key="e_weight">0.141265714672166</data>
+    <edge source="n127" target="n284">
+      <data key="e_weight">0.102511334770215</data>
     </edge>
-    <edge source="n156" target="n239">
-      <data key="e_weight">0.110936713258595</data>
+    <edge source="n129" target="n226">
+      <data key="e_weight">0.0847419140399411</data>
     </edge>
-    <edge source="n157" target="n263">
-      <data key="e_weight">0.14396734748021</data>
+    <edge source="n130" target="n255">
+      <data key="e_weight">0.0585162860786717</data>
     </edge>
-    <edge source="n158" target="n243">
-      <data key="e_weight">0.130236731160346</data>
+    <edge source="n131" target="n248">
+      <data key="e_weight">0.0608923677580065</data>
     </edge>
-    <edge source="n158" target="n281">
-      <data key="e_weight">0.15688683699556</data>
+    <edge source="n132" target="n162">
+      <data key="e_weight">0.159696236816522</data>
     </edge>
-    <edge source="n160" target="n186">
-      <data key="e_weight">0.14369567539893</data>
+    <edge source="n133" target="n160">
+      <data key="e_weight">0.0934801548440081</data>
     </edge>
-    <edge source="n161" target="n287">
-      <data key="e_weight">0.133868756403947</data>
+    <edge source="n134" target="n160">
+      <data key="e_weight">0.0897756877759032</data>
     </edge>
-    <edge source="n162" target="n205">
-      <data key="e_weight">0.147447315589339</data>
+    <edge source="n135" target="n290">
+      <data key="e_weight">0.0766194562484663</data>
     </edge>
-    <edge source="n163" target="n272">
-      <data key="e_weight">0.154517787733852</data>
+    <edge source="n136" target="n167">
+      <data key="e_weight">0.126386687346338</data>
     </edge>
-    <edge source="n164" target="n199">
-      <data key="e_weight">0.131483004406627</data>
+    <edge source="n137" target="n267">
+      <data key="e_weight">0.158996688198833</data>
     </edge>
-    <edge source="n164" target="n247">
-      <data key="e_weight">0.120017251191053</data>
+    <edge source="n138" target="n248">
+      <data key="e_weight">0.0749408073943506</data>
     </edge>
-    <edge source="n166" target="n244">
-      <data key="e_weight">0.111492140331154</data>
+    <edge source="n141" target="n186">
+      <data key="e_weight">0.0975578352327341</data>
     </edge>
-    <edge source="n169" target="n210">
-      <data key="e_weight">0.153451285806063</data>
+    <edge source="n142" target="n171">
+      <data key="e_weight">0.0563167593347373</data>
     </edge>
-    <edge source="n170" target="n181">
-      <data key="e_weight">0.144834932994022</data>
+    <edge source="n142" target="n187">
+      <data key="e_weight">0.0740898904714286</data>
     </edge>
-    <edge source="n171" target="n240">
-      <data key="e_weight">0.142794754367677</data>
+    <edge source="n142" target="n218">
+      <data key="e_weight">0.0713771454214672</data>
     </edge>
-    <edge source="n171" target="n275">
-      <data key="e_weight">0.142637830979001</data>
+    <edge source="n142" target="n237">
+      <data key="e_weight">0.0497674772952926</data>
     </edge>
-    <edge source="n171" target="n276">
-      <data key="e_weight">0.134388580610772</data>
+    <edge source="n142" target="n290">
+      <data key="e_weight">0.0535835144987161</data>
     </edge>
-    <edge source="n172" target="n209">
-      <data key="e_weight">0.150827577239887</data>
+    <edge source="n143" target="n241">
+      <data key="e_weight">0.0794330493267539</data>
     </edge>
-    <edge source="n174" target="n225">
-      <data key="e_weight">0.145863046501563</data>
+    <edge source="n144" target="n295">
+      <data key="e_weight">0.100826624849509</data>
     </edge>
-    <edge source="n175" target="n243">
-      <data key="e_weight">0.104824092746444</data>
+    <edge source="n145" target="n290">
+      <data key="e_weight">0.0725332349502665</data>
     </edge>
-    <edge source="n175" target="n270">
-      <data key="e_weight">0.117550238876142</data>
+    <edge source="n147" target="n206">
+      <data key="e_weight">0.103789637283239</data>
     </edge>
-    <edge source="n176" target="n180">
-      <data key="e_weight">0.134485665175113</data>
+    <edge source="n148" target="n268">
+      <data key="e_weight">0.065669388906382</data>
     </edge>
-    <edge source="n176" target="n296">
-      <data key="e_weight">0.132879333269237</data>
+    <edge source="n149" target="n281">
+      <data key="e_weight">0.0873990558805378</data>
     </edge>
-    <edge source="n177" target="n203">
-      <data key="e_weight">0.15514622756767</data>
+    <edge source="n153" target="n255">
+      <data key="e_weight">0.0822819751263446</data>
     </edge>
-    <edge source="n178" target="n189">
-      <data key="e_weight">0.126890013062865</data>
+    <edge source="n154" target="n248">
+      <data key="e_weight">0.0628067865209515</data>
     </edge>
-    <edge source="n178" target="n228">
-      <data key="e_weight">0.117868300405821</data>
+    <edge source="n155" target="n266">
+      <data key="e_weight">0.0944321086252447</data>
     </edge>
-    <edge source="n179" target="n280">
-      <data key="e_weight">0.139043502298917</data>
+    <edge source="n155" target="n294">
+      <data key="e_weight">0.0633316916552919</data>
     </edge>
-    <edge source="n181" target="n196">
-      <data key="e_weight">0.130430894285254</data>
+    <edge source="n157" target="n268">
+      <data key="e_weight">0.0765698701939417</data>
     </edge>
-    <edge source="n181" target="n206">
-      <data key="e_weight">0.132883837406931</data>
+    <edge source="n158" target="n258">
+      <data key="e_weight">0.123568628186124</data>
     </edge>
-    <edge source="n182" target="n240">
-      <data key="e_weight">0.144603433433496</data>
+    <edge source="n159" target="n171">
+      <data key="e_weight">0.093697644773432</data>
     </edge>
-    <edge source="n183" target="n273">
-      <data key="e_weight">0.132043161132541</data>
+    <edge source="n160" target="n200">
+      <data key="e_weight">0.0895461648879695</data>
     </edge>
-    <edge source="n183" target="n282">
-      <data key="e_weight">0.137675751931171</data>
+    <edge source="n160" target="n295">
+      <data key="e_weight">0.0731063871684325</data>
     </edge>
-    <edge source="n184" target="n283">
-      <data key="e_weight">0.145934694555027</data>
+    <edge source="n161" target="n199">
+      <data key="e_weight">0.192710147246064</data>
     </edge>
-    <edge source="n185" target="n207">
-      <data key="e_weight">0.127348506544198</data>
+    <edge source="n161" target="n206">
+      <data key="e_weight">0.0701637043169127</data>
     </edge>
-    <edge source="n186" target="n242">
-      <data key="e_weight">0.154547724624458</data>
+    <edge source="n164" target="n272">
+      <data key="e_weight">0.0598288822616967</data>
     </edge>
-    <edge source="n188" target="n272">
-      <data key="e_weight">0.155683822405893</data>
+    <edge source="n168" target="n204">
+      <data key="e_weight">0.0749407595989373</data>
     </edge>
-    <edge source="n189" target="n246">
-      <data key="e_weight">0.119450276523806</data>
+    <edge source="n168" target="n238">
+      <data key="e_weight">0.05256565883508</data>
     </edge>
-    <edge source="n190" target="n227">
-      <data key="e_weight">0.182462168270643</data>
+    <edge source="n168" target="n249">
+      <data key="e_weight">0.097274059962307</data>
     </edge>
-    <edge source="n193" target="n220">
-      <data key="e_weight">0.142187202421014</data>
+    <edge source="n169" target="n191">
+      <data key="e_weight">0.172691445160496</data>
     </edge>
-    <edge source="n194" target="n234">
-      <data key="e_weight">0.124632970047088</data>
+    <edge source="n170" target="n217">
+      <data key="e_weight">0.119090761209669</data>
     </edge>
-    <edge source="n194" target="n243">
-      <data key="e_weight">0.126083793180543</data>
+    <edge source="n172" target="n248">
+      <data key="e_weight">0.0840908170452047</data>
     </edge>
-    <edge source="n196" target="n211">
-      <data key="e_weight">0.142288755272303</data>
+    <edge source="n173" target="n231">
+      <data key="e_weight">0.0687733902950482</data>
     </edge>
-    <edge source="n196" target="n293">
-      <data key="e_weight">0.136783248639842</data>
+    <edge source="n178" target="n279">
+      <data key="e_weight">0.181401651402513</data>
     </edge>
-    <edge source="n199" target="n202">
-      <data key="e_weight">0.121001992364033</data>
+    <edge source="n182" target="n203">
+      <data key="e_weight">0.143390945916388</data>
     </edge>
-    <edge source="n200" target="n210">
-      <data key="e_weight">0.141075037843836</data>
+    <edge source="n182" target="n285">
+      <data key="e_weight">0.108653588102077</data>
     </edge>
-    <edge source="n201" target="n272">
-      <data key="e_weight">0.168334906510933</data>
+    <edge source="n183" target="n268">
+      <data key="e_weight">0.0788104140446586</data>
     </edge>
-    <edge source="n202" target="n210">
-      <data key="e_weight">0.123871929058197</data>
+    <edge source="n186" target="n251">
+      <data key="e_weight">0.0777285413027336</data>
     </edge>
-    <edge source="n202" target="n236">
-      <data key="e_weight">0.141120197197492</data>
+    <edge source="n188" target="n207">
+      <data key="e_weight">0.115007567261924</data>
     </edge>
-    <edge source="n202" target="n286">
-      <data key="e_weight">0.123669666013226</data>
+    <edge source="n189" target="n244">
+      <data key="e_weight">0.104672787519007</data>
     </edge>
-    <edge source="n204" target="n280">
-      <data key="e_weight">0.138302401002386</data>
+    <edge source="n190" target="n245">
+      <data key="e_weight">0.115245692820892</data>
     </edge>
-    <edge source="n205" target="n240">
-      <data key="e_weight">0.156874281221252</data>
+    <edge source="n191" target="n241">
+      <data key="e_weight">0.0819060869068964</data>
     </edge>
-    <edge source="n209" target="n238">
-      <data key="e_weight">0.149900668071645</data>
+    <edge source="n198" target="n210">
+      <data key="e_weight">0.140247526081473</data>
     </edge>
-    <edge source="n212" target="n262">
-      <data key="e_weight">0.128437942925041</data>
+    <edge source="n212" target="n235">
+      <data key="e_weight">0.130722247250485</data>
     </edge>
-    <edge source="n212" target="n292">
-      <data key="e_weight">0.12564417471089</data>
+    <edge source="n213" target="n253">
+      <data key="e_weight">0.140045495890056</data>
     </edge>
-    <edge source="n215" target="n256">
-      <data key="e_weight">0.137767533211049</data>
+    <edge source="n213" target="n293">
+      <data key="e_weight">0.0916103293576698</data>
     </edge>
-    <edge source="n218" target="n261">
-      <data key="e_weight">0.138748120891383</data>
+    <edge source="n216" target="n252">
+      <data key="e_weight">0.142251616959349</data>
     </edge>
-    <edge source="n218" target="n274">
-      <data key="e_weight">0.137850870853601</data>
+    <edge source="n219" target="n268">
+      <data key="e_weight">0.0812678085761865</data>
     </edge>
-    <edge source="n219" target="n289">
-      <data key="e_weight">0.121707230857901</data>
+    <edge source="n222" target="n239">
+      <data key="e_weight">0.0963875233893109</data>
     </edge>
-    <edge source="n221" target="n234">
-      <data key="e_weight">0.124829762660845</data>
+    <edge source="n225" target="n230">
+      <data key="e_weight">0.0585774632936014</data>
     </edge>
-    <edge source="n222" target="n238">
-      <data key="e_weight">0.150180677711535</data>
+    <edge source="n226" target="n268">
+      <data key="e_weight">0.0483119005480974</data>
     </edge>
-    <edge source="n223" target="n237">
-      <data key="e_weight">0.140912324399883</data>
+    <edge source="n226" target="n282">
+      <data key="e_weight">0.0770046804347993</data>
     </edge>
-    <edge source="n223" target="n266">
-      <data key="e_weight">0.156678915828673</data>
+    <edge source="n226" target="n289">
+      <data key="e_weight">0.0706887054104974</data>
     </edge>
-    <edge source="n224" target="n292">
-      <data key="e_weight">0.114293509067779</data>
+    <edge source="n226" target="n294">
+      <data key="e_weight">0.0593370718416062</data>
     </edge>
-    <edge source="n227" target="n261">
-      <data key="e_weight">0.130371624140774</data>
+    <edge source="n226" target="n295">
+      <data key="e_weight">0.0528489625283428</data>
     </edge>
-    <edge source="n234" target="n239">
-      <data key="e_weight">0.124787977297312</data>
+    <edge source="n229" target="n263">
+      <data key="e_weight">0.122288599957078</data>
     </edge>
-    <edge source="n234" target="n249">
-      <data key="e_weight">0.134010798204309</data>
+    <edge source="n230" target="n261">
+      <data key="e_weight">0.0453610332867812</data>
     </edge>
-    <edge source="n234" target="n272">
-      <data key="e_weight">0.129151764821972</data>
+    <edge source="n233" target="n236">
+      <data key="e_weight">0.104949225717623</data>
     </edge>
-    <edge source="n237" target="n273">
-      <data key="e_weight">0.149381478785783</data>
+    <edge source="n234" target="n268">
+      <data key="e_weight">0.0680757060530944</data>
     </edge>
-    <edge source="n237" target="n290">
-      <data key="e_weight">0.147176991580787</data>
+    <edge source="n239" target="n244">
+      <data key="e_weight">0.0649413374349411</data>
     </edge>
-    <edge source="n238" target="n288">
-      <data key="e_weight">0.111598026731934</data>
+    <edge source="n239" target="n256">
+      <data key="e_weight">0.122333158429333</data>
     </edge>
-    <edge source="n245" target="n250">
-      <data key="e_weight">0.140262853586855</data>
+    <edge source="n241" target="n276">
+      <data key="e_weight">0.0702724725913321</data>
     </edge>
-    <edge source="n246" target="n260">
-      <data key="e_weight">0.158629400855463</data>
+    <edge source="n243" target="n246">
+      <data key="e_weight">0.110089712264848</data>
     </edge>
-    <edge source="n246" target="n264">
-      <data key="e_weight">0.156477806648067</data>
+    <edge source="n254" target="n264">
+      <data key="e_weight">0.125254544386442</data>
     </edge>
-    <edge source="n246" target="n291">
-      <data key="e_weight">0.126616618834613</data>
+    <edge source="n255" target="n278">
+      <data key="e_weight">0.107983894045867</data>
     </edge>
-    <edge source="n247" target="n253">
-      <data key="e_weight">0.149485081747376</data>
+    <edge source="n256" target="n292">
+      <data key="e_weight">0.122684728277214</data>
     </edge>
-    <edge source="n250" target="n287">
-      <data key="e_weight">0.102243981122873</data>
+    <edge source="n257" target="n287">
+      <data key="e_weight">0.149804508833126</data>
     </edge>
-    <edge source="n261" target="n267">
-      <data key="e_weight">0.150549485341472</data>
+    <edge source="n259" target="n266">
+      <data key="e_weight">0.172495166055732</data>
     </edge>
-    <edge source="n278" target="n296">
-      <data key="e_weight">0.0987214110016528</data>
+    <edge source="n265" target="n293">
+      <data key="e_weight">0.105243787217127</data>
     </edge>
-    <edge source="n287" target="n289">
-      <data key="e_weight">0.108193890817884</data>
+    <edge source="n268" target="n272">
+      <data key="e_weight">0.0603183609159797</data>
+    </edge>
+    <edge source="n272" target="n281">
+      <data key="e_weight">0.0747705050729069</data>
+    </edge>
+    <edge source="n283" target="n294">
+      <data key="e_weight">0.0784056064310339</data>
+    </edge>
+    <edge source="n290" target="n295">
+      <data key="e_weight">0.0481289133299174</data>
     </edge>
   </graph>
 </graphml>

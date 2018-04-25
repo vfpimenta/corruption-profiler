@@ -167,9 +167,9 @@ for (mat in list(mat.53, mat.54, mat.55)) {
     for (k in list(2,3,4,5)) {
       d <- distance(mat, method=method)
       gmstknn <- mstknn(d, k=k)
+      cls <- clusters(gmstknn)
 
       if (opt$dumpcl) {
-        cls <- clusters(gmstknn)
         cluster.list <- list()
         for (i in 1:length(congressman_data)) {
           congressman <- congressman_data[[i]]
@@ -201,6 +201,7 @@ for (mat in list(mat.53, mat.54, mat.55)) {
           V(gmstknn)[congressman[[1]]]$term_color <- color.term.node(congressman[[4]])
           V(gmstknn)[congressman[[1]]]$region <- region.node(congressman[[2]])
           V(gmstknn)[congressman[[1]]]$size <- sum(congressman[[5]])
+          V(gmstknn)[congressman[[1]]]$group <- cls$membership[[congressman[[1]]]]
         }
       }
 
