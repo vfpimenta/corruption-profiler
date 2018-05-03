@@ -233,15 +233,6 @@ def main(legislatures, k, func, method='JS', series_type='default', split=None, 
             os.makedirs(directory)
         kde_joyplot.plot(df, path='../img/{}/graphs/{}/{}/k-{}/term-{}-groups/kde/kde-joyplot-group{}.png'.format(series_path, method, func, k, legislature, cluster_idx))
 
-      fig_, ax_ = plt.subplots(1, 1)
-      #means = [np.mean(l) for l in zip(*cluster_results)]
-      #stds = [np.std(l) for l in zip(*cluster_results)]
-      #ax_.errorbar(x=range(len(means)), y=means, yerr=stds)
-      features = classifier.get_features_importance(legislature, subquota_description, series_type, k, method,
-                                                    cluster_idx)
-      ax_.plot(features)
-      fig_.show()
-
 if __name__ == '__main__':
   series_type = options.series_type
   if not series_type:
