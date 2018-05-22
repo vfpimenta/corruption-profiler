@@ -1,23 +1,23 @@
-"Subquota",                                                     "Total expenses", "Average std"
-"Flight ticket issue",                                          315203626.049731, 1.36085489361258
-"Publicity of parliamentary activity",                          276399266.9,      2.30418885507338
-"Telecommunication",                                            147873853.040009, 1.33813506934306
-"Maintenance of office supporting parliamentary activity",      140486442.190006, 1.6223519704269
-"Consultancy, research and technical work",                     129988577.52,     2.77989571379417
-"Fuels and lubricants",                                         127601936.940044, 1.15764728563339
-"Automotive vehicle renting or watercraft charter",             94768803.0300073, 2.4113274614897
-"Automotive vehicle renting or charter",                        64150710.2699999, 3.3043282950552
-"Postal services",                                              40476971.4199971, 2.81000431875428
-"Flight tickets",                                               34802045.8299994, 4.93761152039075
-"Lodging, except for congressperson from Distrito Federal",     13915299.31,      3.13999297122286
-"Congressperson meal",                                          12583822.1700029, 2.5898567160856
-"Aircraft renting or charter of aircraft",                      11463577.25,      8.41149672459396
-"Security service provided by specialized company",             9908693.68,       5.68169285449221
-"Locomotion, meal and lodging",                                 5410239.87000002, 4.70131703838445
-"Taxi, toll and parking",                                       2224660.88000019, 5.30696543909424
-"Publication subscriptions",                                    1671290.99999998, 6.61978838205222
-"Software purchase or renting; Postal services; Subscriptions", 949440.460000004, 5.71358097740307
-"Purchase of office supplies",                                  545640.830000001, 6.52164705644133
-"Watercraft renting or charter",                                403675.17,        9.17377580521311
-"Terrestrial, maritime and fluvial tickets",                    242866.14,        8.48881635925387
-"Participation in course, talk or similar event",               192131.05,        9.4339811320566
+"Subquota", "Shortname","Total expenses", "Average std"
+"Flight ticket issue","flight", 315203626.049731, 0.223240291395718
+"Publicity of parliamentary activity","publicity",276399266.9,0.0686090644964018
+"Telecommunication","telecom",147873853.040009, 0.237513573070402
+"Maintenance of office supporting parliamentary activity","maintenance",140486442.190006, 0.156387494825049
+"Consultancy, research and technical work", "consultancy",129988577.52, 0.0212171142940171
+"Fuels and lubricants", "fuels",127601936.940044, 0.80854922440946
+"Automotive vehicle renting or watercraft charter", "auto-watercraft",94768803.0300073, 0.106888768849182
+"Automotive vehicle renting or charter","auto", 64150710.2699999, 0
+"Postal services","postal", 40476971.4199971, 0.0215195049269717
+"Flight tickets", "flight-ticket",34802045.8299994, 0
+"Lodging, except for congressperson from Distrito Federal", "lodging",13915299.31,0.0123060650649486
+"Congressperson meal","meal", 12583822.1700029, 0.0413945295295451
+"Aircraft renting or charter of aircraft","aircraft", 11463577.25,0
+"Security service provided by specialized company", "security", 9908693.68, 0
+"Locomotion, meal and lodging", "locomotion", 5410239.87000002, 0.000534907407407408
+"Taxi, toll and parking", "taxi", 2224660.88000019, 0
+"Publication subscriptions","publication",1671290.99999998, 0
+"Software purchase or renting; Postal services; Subscriptions", "software", 949440.460000004, 0
+"Purchase of office supplies","office", 545640.830000001, 0
+"Watercraft renting or charter","watercraft", 403675.17,0
+"Terrestrial, maritime and fluvial tickets","maritme",242866.14,0
+"Participation in course, talk or similar event", "course", 192131.05,0 

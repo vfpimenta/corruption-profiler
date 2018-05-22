@@ -83,74 +83,20 @@ opt <- parse_args(opt_parser);
 
 congressman_data <- fromJSON(file='../data/JSON/standard/congressman_ts.json')
 
+match = FALSE
 if (!is.null(opt$series)) {
-  if (opt$series == 'flight') {
-    print("Using series: flight")
-    congressman_data <- fromJSON(file='../data/JSON/standard/congressman_flight-ticket-issue_ts.json')
-  } else if (opt$series == 'publicity') {
-    print("Using series: publicity")
-    congressman_data <- fromJSON(file='../data/JSON/standard/congressman_publicity-of-parliamentary-activity_ts.json')
-  } else if (opt$series == 'telecom') {
-    print("Using series: telecom")
-    congressman_data <- fromJSON(file='../data/JSON/standard/congressman_telecommunication_ts.json')
-  } else if (opt$series == 'fuels') {
-    print("Using series: fuels")
-    congressman_data <- fromJSON(file='../data/JSON/standard/congressman_fuels-and-lubricants_ts.json')
-  } else if (opt$series == 'maintenance') {
-    print("Using series: maintenance")
-    congressman_data <- fromJSON(file='../data/JSON/standard/congressman_maintenance-of-office-supporting-parliamentary-activity_ts.json')
-  } else if (opt$series == 'consultancy') {
-    print("Using series: consultancy")
-    congressman_data <- fromJSON(file='../data/JSON/standard/congressman_consultancy,-research-and-technical-work_ts.json')
-  } else if (opt$series == 'auto-watercraft') {
-    print("Using series: auto-watercraft")
-    congressman_data <- fromJSON(file='../data/JSON/standard/congressman_automotive-vehicle-renting-or-watercraft-charter_ts.json')
-  } else if (opt$series == 'auto') {
-    print("Using series: auto")
-    congressman_data <- fromJSON(file='../data/JSON/standard/congressman_automotive-vehicle-renting-or-charter_ts.json')
-  } else if (opt$series == 'postal') {
-    print("Using series: postal")
-    congressman_data <- fromJSON(file='../data/JSON/standard/congressman_postal-services_ts.json')
-  } else if (opt$series == 'flight-ticket') {
-    print("Using series: flight-ticket")
-    congressman_data <- fromJSON(file='../data/JSON/standard/congressman_flight-tickets_ts.json')
-  } else if (opt$series == 'lodging') {
-    print("Using series: lodging")
-    congressman_data <- fromJSON(file='../data/JSON/standard/congressman_lodging,-except-for-congressperson-from-distrito-federal_ts.json')
-  } else if (opt$series == 'meal') {
-    print("Using series: meal")
-    congressman_data <- fromJSON(file='../data/JSON/standard/congressman_congressperson-meal_ts.json')
-  } else if (opt$series == 'aircraft') {
-    print("Using series: aircraft")
-    congressman_data <- fromJSON(file='../data/JSON/standard/congressman_aircraft-renting-or-charter-of-aircraft_ts.json')
-  } else if (opt$series == 'security') {
-    print("Using series: security")
-    congressman_data <- fromJSON(file='../data/JSON/standard/congressman_security-service-provided-by-specialized-company_ts.json')
-  } else if (opt$series == 'locomotion') {
-    print("Using series: locomotion")
-    congressman_data <- fromJSON(file='../data/JSON/standard/congressman_locomotion,-meal-and-lodging_ts.json')
-  } else if (opt$series == 'taxi') {
-    print("Using series: taxi")
-    congressman_data <- fromJSON(file='../data/JSON/standard/congressman_taxi,-toll-and-parking_ts.json')
-  } else if (opt$series == 'publication') {
-    print("Using series: publication")
-    congressman_data <- fromJSON(file='../data/JSON/standard/congressman_publication-subscriptions_ts.json')
-  } else if (opt$series == 'software') {
-    print("Using series: software")
-    congressman_data <- fromJSON(file='../data/JSON/standard/congressman_software-purchase-or-renting;-postal-services;-subscriptions_ts.json')
-  } else if (opt$series == 'office') {
-    print("Using series: office")
-    congressman_data <- fromJSON(file='../data/JSON/standard/congressman_purchase-of-office-supplies_ts.json')
-  } else if (opt$series == 'watercraft') {
-    print("Using series: watercraft")
-    congressman_data <- fromJSON(file='../data/JSON/standard/congressman_watercraft-renting-or-charter_ts.json')
-  } else if (opt$series == 'maritme') {
-    print("Using series: maritme")
-    congressman_data <- fromJSON(file='../data/JSON/standard/congressman_terrestrial,-maritime-and-fluvial-tickets_ts.json')
-  } else if (opt$series == 'course') {
-    print("Using series: course")
-    congressman_data <- fromJSON(file='../data/JSON/standard/congressman_participation-in-course,-talk-or-similar-event_ts.json')
-  }  
+  subquota = read.csv('../data/subquota.csv')
+  for (i in 1:dim(subquota)[1]){
+    if (opt$series == subquota[i,2]) {
+      print(paste("Using series:",subquota[i,2]))
+      congressman_data <- fromJSON(file=paste('../data/JSON/standard/congressman_',chartr(' ','-',tolower(subquota[i,1])),'_ts.json',sep=""))
+      match = TRUE
+    }
+  }
+
+  if (!match){
+    stop('Series not found!')
+  }
 } else {
   print("Using series: default")
   opt$series = 'default'
