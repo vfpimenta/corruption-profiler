@@ -14,7 +14,7 @@ G=nx.read_graphml(options.source, str)
 data = json_graph.node_link_data(G)
 
 for i in range(len(data['nodes'])):
-	data['nodes'][i]['id'] = i
+  data['nodes'][i]['id'] = i
 
 # for node in data['nodes']:
 #   str=node['id']

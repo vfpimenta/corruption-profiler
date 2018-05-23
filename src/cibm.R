@@ -196,7 +196,7 @@ for (mat in list(mat.53, mat.54, mat.55)) {
       for (congressman.id in names(congressman_data)) {
         congressman <- congressman_data[[congressman.id]]
         if (congressman[[1]] %in% colnames(mat)) {
-          V(gmstknn)[congressman[[1]]]$id <- congressman.id
+          V(gmstknn)[congressman[[1]]]$congressman_id <- congressman.id
           V(gmstknn)[congressman[[1]]]$state <- congressman[[2]]
           V(gmstknn)[congressman[[1]]]$term_color <- color.term.node(congressman[[4]])
           V(gmstknn)[congressman[[1]]]$region <- region.node(congressman[[2]])

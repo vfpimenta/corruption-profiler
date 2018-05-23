@@ -1,6 +1,6 @@
 #!/bin/bash
  
-expenses=("flight" "publicity" "telecom" "fuels" "maintenance" "consultancy" "auto-watercraft" "auto" "postal" "flight-ticket" "lodging" "meal" "aircraft" "security" "locomotion" "taxi" "publication" "software" "office" "watercraft" "maritme" "course")
+expenses=("default" "flight" "publicity" "telecom" "fuels" "maintenance" "consultancy" "auto-watercraft" "auto" "postal" "flight-ticket" "lodging" "meal" "aircraft" "security" "locomotion" "taxi" "publication" "software" "office" "watercraft" "maritme" "course")
 distances=("JS" "cosine" "robust")
 ks=(2 3 4 5)
 legislatures=(53 54 55)
@@ -15,6 +15,7 @@ for expense in ${expenses[@]}; do
 
 				mkdir -p $target_path
 
+				echo "Running for ($expense,$distance,$k,$legislature)"
 				python3 graphml2json.py --source $source_file --target $target_path/$target_file
 			done
 		done

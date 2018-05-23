@@ -78,7 +78,7 @@ valid_threshold <- 5
 if(opt$detect) {
   avg.expenses <- c()
   idx <- 0
-  for (legislature in c(53,54,55)){
+  for (legislature in c(54)){
     idx <- idx + 1
     range <- date.range(legislature)
 
@@ -94,10 +94,13 @@ if(opt$detect) {
     for (name in names(congressman_data)) {
       congressman <- congressman_data[[name]]
       if (congressman[[4]][idx] && mean(congressman[[5]][range[1]:range[2]]) %in% outliers.expenses) {
+        print(paste('Congressman',name,'was considered a outlier for being out of the boxplot'))
         outliers <- c(outliers, name)
       } else if (!is.holder(name, legislature)) {
+        print(paste('Congressman',name,'was considered a outlier given its current condition'))
         outliers <- c(outliers, name)
       } else if (detect.vacancies(congressman, legislature, 3)) {
+        print(paste('Congressman',name,'was considered a outlier for having too many zeroes'))
         outliers <- c(outliers, name)
       }
       # } else if (opt$cls && congressman[[4]][idx]) {
