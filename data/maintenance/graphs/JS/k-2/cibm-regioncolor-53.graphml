@@ -125,16 +125,6 @@
       <data key="v_group">11</data>
     </node>
     <node id="n11">
-      <data key="v_name">MAURO MARIANI</data>
-      <data key="v_label">MAURO MARIANI</data>
-      <data key="v_congressman_id">141507</data>
-      <data key="v_state">SC</data>
-      <data key="v_term_color">violet</data>
-      <data key="v_region">south</data>
-      <data key="v_size">336005.93</data>
-      <data key="v_group">12</data>
-    </node>
-    <node id="n12">
       <data key="v_name">LUCIANO CASTRO</data>
       <data key="v_label">LUCIANO CASTRO</data>
       <data key="v_congressman_id">73982</data>
@@ -142,9 +132,9 @@
       <data key="v_term_color">indigo</data>
       <data key="v_region">north</data>
       <data key="v_size">235809.72</data>
-      <data key="v_group">13</data>
+      <data key="v_group">12</data>
     </node>
-    <node id="n13">
+    <node id="n12">
       <data key="v_name">ROSE DE FREITAS</data>
       <data key="v_label">ROSE DE FREITAS</data>
       <data key="v_congressman_id">73507</data>
@@ -152,9 +142,9 @@
       <data key="v_term_color">indigo</data>
       <data key="v_region">south-east</data>
       <data key="v_size">143474.16</data>
-      <data key="v_group">14</data>
+      <data key="v_group">13</data>
     </node>
-    <node id="n14">
+    <node id="n13">
       <data key="v_name">REGINALDO LOPES</data>
       <data key="v_label">REGINALDO LOPES</data>
       <data key="v_congressman_id">74161</data>
@@ -162,9 +152,9 @@
       <data key="v_term_color">violet</data>
       <data key="v_region">south-east</data>
       <data key="v_size">227710.34</data>
-      <data key="v_group">15</data>
+      <data key="v_group">14</data>
     </node>
-    <node id="n15">
+    <node id="n14">
       <data key="v_name">FRANCISCO TENÓRIO</data>
       <data key="v_label">FRANCISCO TENÓRIO</data>
       <data key="v_congressman_id">141467</data>
@@ -172,9 +162,9 @@
       <data key="v_term_color">indigo</data>
       <data key="v_region">north-east</data>
       <data key="v_size">117860.31</data>
-      <data key="v_group">16</data>
+      <data key="v_group">15</data>
     </node>
-    <node id="n16">
+    <node id="n15">
       <data key="v_name">HUGO LEAL</data>
       <data key="v_label">HUGO LEAL</data>
       <data key="v_congressman_id">141450</data>
@@ -182,19 +172,9 @@
       <data key="v_term_color">violet</data>
       <data key="v_region">south-east</data>
       <data key="v_size">515010.52</data>
-      <data key="v_group">17</data>
+      <data key="v_group">16</data>
     </node>
-    <node id="n17">
-      <data key="v_name">OSMAR TERRA</data>
-      <data key="v_label">OSMAR TERRA</data>
-      <data key="v_congressman_id">73692</data>
-      <data key="v_state">RS</data>
-      <data key="v_term_color">violet</data>
-      <data key="v_region">south</data>
-      <data key="v_size">324730.16</data>
-      <data key="v_group">18</data>
-    </node>
-    <node id="n18">
+    <node id="n16">
       <data key="v_name">FLÁVIO DINO</data>
       <data key="v_label">FLÁVIO DINO</data>
       <data key="v_congressman_id">141436</data>
@@ -202,9 +182,9 @@
       <data key="v_term_color">green</data>
       <data key="v_region">north-east</data>
       <data key="v_size">45500.64</data>
-      <data key="v_group">19</data>
+      <data key="v_group">17</data>
     </node>
-    <node id="n19">
+    <node id="n17">
       <data key="v_name">JANETE CAPIBERIBE</data>
       <data key="v_label">JANETE CAPIBERIBE</data>
       <data key="v_congressman_id">73926</data>
@@ -212,9 +192,9 @@
       <data key="v_term_color">violet</data>
       <data key="v_region">north</data>
       <data key="v_size">118048.83</data>
-      <data key="v_group">20</data>
+      <data key="v_group">18</data>
     </node>
-    <node id="n20">
+    <node id="n18">
       <data key="v_name">RIBAMAR ALVES</data>
       <data key="v_label">RIBAMAR ALVES</data>
       <data key="v_congressman_id">74027</data>
@@ -222,9 +202,9 @@
       <data key="v_term_color">indigo</data>
       <data key="v_region">north-east</data>
       <data key="v_size">65869.27</data>
-      <data key="v_group">21</data>
+      <data key="v_group">19</data>
     </node>
-    <node id="n21">
+    <node id="n19">
       <data key="v_name">RICARDO TRIPOLI</data>
       <data key="v_label">RICARDO TRIPOLI</data>
       <data key="v_congressman_id">141472</data>
@@ -232,9 +212,9 @@
       <data key="v_term_color">violet</data>
       <data key="v_region">south-east</data>
       <data key="v_size">268100.66</data>
-      <data key="v_group">22</data>
+      <data key="v_group">20</data>
     </node>
-    <node id="n22">
+    <node id="n20">
       <data key="v_name">REBECCA GARCIA</data>
       <data key="v_label">REBECCA GARCIA</data>
       <data key="v_congressman_id">141525</data>
@@ -242,9 +222,9 @@
       <data key="v_term_color">indigo</data>
       <data key="v_region">north</data>
       <data key="v_size">106334.79</data>
-      <data key="v_group">23</data>
+      <data key="v_group">21</data>
     </node>
-    <node id="n23">
+    <node id="n21">
       <data key="v_name">LÁZARO BOTELHO</data>
       <data key="v_label">LÁZARO BOTELHO</data>
       <data key="v_congressman_id">141480</data>
@@ -252,9 +232,9 @@
       <data key="v_term_color">violet</data>
       <data key="v_region">north</data>
       <data key="v_size">2417.33</data>
-      <data key="v_group">24</data>
+      <data key="v_group">22</data>
     </node>
-    <node id="n24">
+    <node id="n22">
       <data key="v_name">MÁRIO HERINGER</data>
       <data key="v_label">MÁRIO HERINGER</data>
       <data key="v_congressman_id">74158</data>
@@ -262,9 +242,19 @@
       <data key="v_term_color">violet</data>
       <data key="v_region">south-east</data>
       <data key="v_size">143424.64</data>
-      <data key="v_group">25</data>
+      <data key="v_group">23</data>
     </node>
-    <node id="n25">
+    <node id="n23">
+      <data key="v_name">JOSÉ MENDONÇA BEZERRA</data>
+      <data key="v_label">JOSÉ MENDONÇA BEZERRA</data>
+      <data key="v_congressman_id">74425</data>
+      <data key="v_state">PE</data>
+      <data key="v_term_color">green</data>
+      <data key="v_region">north-east</data>
+      <data key="v_size">0</data>
+      <data key="v_group">24</data>
+    </node>
+    <node id="n24">
       <data key="v_name">MARCO MAIA</data>
       <data key="v_label">MARCO MAIA</data>
       <data key="v_congressman_id">133373</data>
@@ -272,9 +262,9 @@
       <data key="v_term_color">violet</data>
       <data key="v_region">south</data>
       <data key="v_size">331062.53</data>
-      <data key="v_group">26</data>
+      <data key="v_group">25</data>
     </node>
-    <node id="n26">
+    <node id="n25">
       <data key="v_name">CIRO GOMES</data>
       <data key="v_label">CIRO GOMES</data>
       <data key="v_congressman_id">141406</data>
@@ -282,9 +272,9 @@
       <data key="v_term_color">green</data>
       <data key="v_region">north-east</data>
       <data key="v_size">47078.4</data>
-      <data key="v_group">27</data>
+      <data key="v_group">26</data>
     </node>
-    <node id="n27">
+    <node id="n26">
       <data key="v_name">RENATO MOLLING</data>
       <data key="v_label">RENATO MOLLING</data>
       <data key="v_congressman_id">141527</data>
@@ -292,9 +282,9 @@
       <data key="v_term_color">violet</data>
       <data key="v_region">south</data>
       <data key="v_size">307837.76</data>
-      <data key="v_group">28</data>
+      <data key="v_group">27</data>
     </node>
-    <node id="n28">
+    <node id="n27">
       <data key="v_name">MARCOS ANTONIO</data>
       <data key="v_label">MARCOS ANTONIO</data>
       <data key="v_congressman_id">141499</data>
@@ -302,6 +292,16 @@
       <data key="v_term_color">green</data>
       <data key="v_region">north-east</data>
       <data key="v_size">0</data>
+      <data key="v_group">28</data>
+    </node>
+    <node id="n28">
+      <data key="v_name">AFONSO HAMM</data>
+      <data key="v_label">AFONSO HAMM</data>
+      <data key="v_congressman_id">136811</data>
+      <data key="v_state">RS</data>
+      <data key="v_term_color">violet</data>
+      <data key="v_region">south</data>
+      <data key="v_size">223850.43</data>
       <data key="v_group">29</data>
     </node>
     <node id="n29">
@@ -315,6 +315,16 @@
       <data key="v_group">30</data>
     </node>
     <node id="n30">
+      <data key="v_name">ANGELA PORTELA</data>
+      <data key="v_label">ANGELA PORTELA</data>
+      <data key="v_congressman_id">141380</data>
+      <data key="v_state">RR</data>
+      <data key="v_term_color">green</data>
+      <data key="v_region">north</data>
+      <data key="v_size">46787.13</data>
+      <data key="v_group">31</data>
+    </node>
+    <node id="n31">
       <data key="v_name">ROGERIO LISBOA</data>
       <data key="v_label">ROGERIO LISBOA</data>
       <data key="v_congressman_id">141534</data>
@@ -322,9 +332,9 @@
       <data key="v_term_color">green</data>
       <data key="v_region">south-east</data>
       <data key="v_size">50940.11</data>
-      <data key="v_group">31</data>
+      <data key="v_group">32</data>
     </node>
-    <node id="n31">
+    <node id="n32">
       <data key="v_name">LUIZ COUTO</data>
       <data key="v_label">LUIZ COUTO</data>
       <data key="v_congressman_id">74041</data>
@@ -332,9 +342,9 @@
       <data key="v_term_color">violet</data>
       <data key="v_region">north-east</data>
       <data key="v_size">328491.26</data>
-      <data key="v_group">32</data>
+      <data key="v_group">33</data>
     </node>
-    <node id="n32">
+    <node id="n33">
       <data key="v_name">WILSON BRAGA</data>
       <data key="v_label">WILSON BRAGA</data>
       <data key="v_congressman_id">74414</data>
@@ -342,9 +352,9 @@
       <data key="v_term_color">green</data>
       <data key="v_region">north-east</data>
       <data key="v_size">28600</data>
-      <data key="v_group">33</data>
+      <data key="v_group">34</data>
     </node>
-    <node id="n33">
+    <node id="n34">
       <data key="v_name">ARLINDO CHINAGLIA</data>
       <data key="v_label">ARLINDO CHINAGLIA</data>
       <data key="v_congressman_id">73433</data>
@@ -352,9 +362,9 @@
       <data key="v_term_color">violet</data>
       <data key="v_region">south-east</data>
       <data key="v_size">229509.4</data>
-      <data key="v_group">34</data>
+      <data key="v_group">35</data>
     </node>
-    <node id="n34">
+    <node id="n35">
       <data key="v_name">FÉLIX MENDONÇA</data>
       <data key="v_label">FÉLIX MENDONÇA</data>
       <data key="v_congressman_id">74542</data>
@@ -362,9 +372,9 @@
       <data key="v_term_color">green</data>
       <data key="v_region">north-east</data>
       <data key="v_size">30284.82</data>
-      <data key="v_group">35</data>
+      <data key="v_group">36</data>
     </node>
-    <node id="n35">
+    <node id="n36">
       <data key="v_name">ANTONIO CARLOS PANNUNZIO</data>
       <data key="v_label">ANTONIO CARLOS PANNUNZIO</data>
       <data key="v_congressman_id">73431</data>
@@ -372,9 +382,9 @@
       <data key="v_term_color">green</data>
       <data key="v_region">south-east</data>
       <data key="v_size">49089.28</data>
-      <data key="v_group">36</data>
+      <data key="v_group">37</data>
     </node>
-    <node id="n36">
+    <node id="n37">
       <data key="v_name">JOSÉ GENOÍNO</data>
       <data key="v_label">JOSÉ GENOÍNO</data>
       <data key="v_congressman_id">73540</data>
@@ -382,9 +392,9 @@
       <data key="v_term_color">indigo</data>
       <data key="v_region">south-east</data>
       <data key="v_size">88616.19</data>
-      <data key="v_group">37</data>
+      <data key="v_group">38</data>
     </node>
-    <node id="n37">
+    <node id="n38">
       <data key="v_name">LUIZ FERNANDO FARIA</data>
       <data key="v_label">LUIZ FERNANDO FARIA</data>
       <data key="v_congressman_id">141487</data>
@@ -392,9 +402,9 @@
       <data key="v_term_color">violet</data>
       <data key="v_region">south-east</data>
       <data key="v_size">562719.07</data>
-      <data key="v_group">38</data>
+      <data key="v_group">39</data>
     </node>
-    <node id="n38">
+    <node id="n39">
       <data key="v_name">FÁBIO RAMALHO</data>
       <data key="v_label">FÁBIO RAMALHO</data>
       <data key="v_congressman_id">141427</data>
@@ -402,9 +412,9 @@
       <data key="v_term_color">violet</data>
       <data key="v_region">south-east</data>
       <data key="v_size">496974.99</data>
-      <data key="v_group">39</data>
+      <data key="v_group">40</data>
     </node>
-    <node id="n39">
+    <node id="n40">
       <data key="v_name">ROBERTO MAGALHÃES</data>
       <data key="v_label">ROBERTO MAGALHÃES</data>
       <data key="v_congressman_id">74433</data>
@@ -412,9 +422,9 @@
       <data key="v_term_color">green</data>
       <data key="v_region">north-east</data>
       <data key="v_size">34095.19</data>
-      <data key="v_group">40</data>
+      <data key="v_group">41</data>
     </node>
-    <node id="n40">
+    <node id="n41">
       <data key="v_name">VINICIUS CARVALHO</data>
       <data key="v_label">VINICIUS CARVALHO</data>
       <data key="v_congressman_id">141555</data>
@@ -422,9 +432,19 @@
       <data key="v_term_color">blue</data>
       <data key="v_region">south-east</data>
       <data key="v_size">156286.66</data>
-      <data key="v_group">41</data>
+      <data key="v_group">42</data>
     </node>
-    <node id="n41">
+    <node id="n42">
+      <data key="v_name">MARIA LÚCIA CARDOSO</data>
+      <data key="v_label">MARIA LÚCIA CARDOSO</data>
+      <data key="v_congressman_id">74587</data>
+      <data key="v_state">MG</data>
+      <data key="v_term_color">green</data>
+      <data key="v_region">south-east</data>
+      <data key="v_size">46044.9</data>
+      <data key="v_group">43</data>
+    </node>
+    <node id="n43">
       <data key="v_name">SÉRGIO MORAES</data>
       <data key="v_label">SÉRGIO MORAES</data>
       <data key="v_congressman_id">141542</data>
@@ -432,9 +452,9 @@
       <data key="v_term_color">violet</data>
       <data key="v_region">south</data>
       <data key="v_size">145871.25</data>
-      <data key="v_group">42</data>
+      <data key="v_group">44</data>
     </node>
-    <node id="n42">
+    <node id="n44">
       <data key="v_name">CARLOS SAMPAIO</data>
       <data key="v_label">CARLOS SAMPAIO</data>
       <data key="v_congressman_id">74262</data>
@@ -442,9 +462,9 @@
       <data key="v_term_color">violet</data>
       <data key="v_region">south-east</data>
       <data key="v_size">225426.81</data>
-      <data key="v_group">43</data>
+      <data key="v_group">45</data>
     </node>
-    <node id="n43">
+    <node id="n45">
       <data key="v_name">GORETE PEREIRA</data>
       <data key="v_label">GORETE PEREIRA</data>
       <data key="v_congressman_id">129618</data>
@@ -452,9 +472,9 @@
       <data key="v_term_color">violet</data>
       <data key="v_region">north-east</data>
       <data key="v_size">60496.39</data>
-      <data key="v_group">44</data>
+      <data key="v_group">46</data>
     </node>
-    <node id="n44">
+    <node id="n46">
       <data key="v_name">JOÃO PAULO CUNHA</data>
       <data key="v_label">JOÃO PAULO CUNHA</data>
       <data key="v_congressman_id">73534</data>
@@ -462,9 +482,9 @@
       <data key="v_term_color">indigo</data>
       <data key="v_region">south-east</data>
       <data key="v_size">263316.74</data>
-      <data key="v_group">45</data>
+      <data key="v_group">47</data>
     </node>
-    <node id="n45">
+    <node id="n47">
       <data key="v_name">SANDRO MABEL</data>
       <data key="v_label">SANDRO MABEL</data>
       <data key="v_congressman_id">73676</data>
@@ -472,9 +492,9 @@
       <data key="v_term_color">indigo</data>
       <data key="v_region">center-west</data>
       <data key="v_size">185759.87</data>
-      <data key="v_group">46</data>
+      <data key="v_group">48</data>
     </node>
-    <node id="n46">
+    <node id="n48">
       <data key="v_name">EDUARDO DA FONTE</data>
       <data key="v_label">EDUARDO DA FONTE</data>
       <data key="v_congressman_id">141421</data>
@@ -482,9 +502,9 @@
       <data key="v_term_color">violet</data>
       <data key="v_region">north-east</data>
       <data key="v_size">685.58</data>
-      <data key="v_group">47</data>
+      <data key="v_group">49</data>
     </node>
-    <node id="n47">
+    <node id="n49">
       <data key="v_name">ALICE PORTUGAL</data>
       <data key="v_label">ALICE PORTUGAL</data>
       <data key="v_congressman_id">74057</data>
@@ -492,9 +512,9 @@
       <data key="v_term_color">violet</data>
       <data key="v_region">north-east</data>
       <data key="v_size">311696.72</data>
-      <data key="v_group">32</data>
+      <data key="v_group">50</data>
     </node>
-    <node id="n48">
+    <node id="n50">
       <data key="v_name">JOSÉ CHAVES</data>
       <data key="v_label">JOSÉ CHAVES</data>
       <data key="v_congressman_id">74423</data>
@@ -502,9 +522,9 @@
       <data key="v_term_color">indigo</data>
       <data key="v_region">north-east</data>
       <data key="v_size">241437.53</data>
-      <data key="v_group">38</data>
+      <data key="v_group">51</data>
     </node>
-    <node id="n49">
+    <node id="n51">
       <data key="v_name">FELIPE MAIA</data>
       <data key="v_label">FELIPE MAIA</data>
       <data key="v_congressman_id">141429</data>
@@ -512,9 +532,9 @@
       <data key="v_term_color">violet</data>
       <data key="v_region">north-east</data>
       <data key="v_size">33121.6</data>
-      <data key="v_group">48</data>
+      <data key="v_group">52</data>
     </node>
-    <node id="n50">
+    <node id="n52">
       <data key="v_name">GERALDO PUDIM</data>
       <data key="v_label">GERALDO PUDIM</data>
       <data key="v_congressman_id">141442</data>
@@ -522,9 +542,9 @@
       <data key="v_term_color">green</data>
       <data key="v_region">south-east</data>
       <data key="v_size">30677.84</data>
-      <data key="v_group">49</data>
+      <data key="v_group">53</data>
     </node>
-    <node id="n51">
+    <node id="n53">
       <data key="v_name">PAES LANDIM</data>
       <data key="v_label">PAES LANDIM</data>
       <data key="v_congressman_id">74319</data>
@@ -532,9 +552,9 @@
       <data key="v_term_color">violet</data>
       <data key="v_region">north-east</data>
       <data key="v_size">549</data>
-      <data key="v_group">50</data>
+      <data key="v_group">54</data>
     </node>
-    <node id="n52">
+    <node id="n54">
       <data key="v_name">RUBENS OTONI</data>
       <data key="v_label">RUBENS OTONI</data>
       <data key="v_congressman_id">74371</data>
@@ -542,9 +562,9 @@
       <data key="v_term_color">violet</data>
       <data key="v_region">center-west</data>
       <data key="v_size">531783.57</data>
-      <data key="v_group">26</data>
+      <data key="v_group">55</data>
     </node>
-    <node id="n53">
+    <node id="n55">
       <data key="v_name">PAULO PIAU</data>
       <data key="v_label">PAULO PIAU</data>
       <data key="v_congressman_id">141519</data>
@@ -552,9 +572,9 @@
       <data key="v_term_color">indigo</data>
       <data key="v_region">south-east</data>
       <data key="v_size">180109.53</data>
-      <data key="v_group">51</data>
+      <data key="v_group">56</data>
     </node>
-    <node id="n54">
+    <node id="n56">
       <data key="v_name">MARCELO ORTIZ</data>
       <data key="v_label">MARCELO ORTIZ</data>
       <data key="v_congressman_id">74278</data>
@@ -562,19 +582,9 @@
       <data key="v_term_color">green</data>
       <data key="v_region">south-east</data>
       <data key="v_size">35865.91</data>
-      <data key="v_group">52</data>
+      <data key="v_group">57</data>
     </node>
-    <node id="n55">
-      <data key="v_name">LUCIANA GENRO</data>
-      <data key="v_label">LUCIANA GENRO</data>
-      <data key="v_congressman_id">74397</data>
-      <data key="v_state">RS</data>
-      <data key="v_term_color">green</data>
-      <data key="v_region">south</data>
-      <data key="v_size">48730.52</data>
-      <data key="v_group">53</data>
-    </node>
-    <node id="n56">
+    <node id="n57">
       <data key="v_name">DIMAS RAMALHO</data>
       <data key="v_label">DIMAS RAMALHO</data>
       <data key="v_congressman_id">74265</data>
@@ -582,9 +592,9 @@
       <data key="v_term_color">indigo</data>
       <data key="v_region">south-east</data>
       <data key="v_size">151115.61</data>
-      <data key="v_group">54</data>
+      <data key="v_group">58</data>
     </node>
-    <node id="n57">
+    <node id="n58">
       <data key="v_name">JOÃO BITTAR</data>
       <data key="v_label">JOÃO BITTAR</data>
       <data key="v_congressman_id">141457</data>
@@ -592,9 +602,9 @@
       <data key="v_term_color">indigo</data>
       <data key="v_region">south-east</data>
       <data key="v_size">226116.07</data>
-      <data key="v_group">55</data>
+      <data key="v_group">59</data>
     </node>
-    <node id="n58">
+    <node id="n59">
       <data key="v_name">PROFESSOR SETIMO</data>
       <data key="v_label">PROFESSOR SETIMO</data>
       <data key="v_congressman_id">141543</data>
@@ -602,9 +612,9 @@
       <data key="v_term_color">indigo</data>
       <data key="v_region">north-east</data>
       <data key="v_size">217095.64</data>
-      <data key="v_group">56</data>
+      <data key="v_group">60</data>
     </node>
-    <node id="n59">
+    <node id="n60">
       <data key="v_name">IVAN VALENTE</data>
       <data key="v_label">IVAN VALENTE</data>
       <data key="v_congressman_id">73531</data>
@@ -612,9 +622,19 @@
       <data key="v_term_color">violet</data>
       <data key="v_region">south-east</data>
       <data key="v_size">556681.77</data>
-      <data key="v_group">57</data>
+      <data key="v_group">61</data>
     </node>
-    <node id="n60">
+    <node id="n61">
+      <data key="v_name">JANETE ROCHA PIETÁ</data>
+      <data key="v_label">JANETE ROCHA PIETÁ</data>
+      <data key="v_congressman_id">141455</data>
+      <data key="v_state">SP</data>
+      <data key="v_term_color">indigo</data>
+      <data key="v_region">south-east</data>
+      <data key="v_size">715413.71</data>
+      <data key="v_group">62</data>
+    </node>
+    <node id="n62">
       <data key="v_name">NILSON MOURAO</data>
       <data key="v_label">NILSON MOURAO</data>
       <data key="v_congressman_id">74365</data>
@@ -622,9 +642,9 @@
       <data key="v_term_color">green</data>
       <data key="v_region">north</data>
       <data key="v_size">55829.78</data>
-      <data key="v_group">58</data>
+      <data key="v_group">63</data>
     </node>
-    <node id="n61">
+    <node id="n63">
       <data key="v_name">PINTO ITAMARATY</data>
       <data key="v_label">PINTO ITAMARATY</data>
       <data key="v_congressman_id">141465</data>
@@ -632,9 +652,9 @@
       <data key="v_term_color">indigo</data>
       <data key="v_region">north-east</data>
       <data key="v_size">7799.2</data>
-      <data key="v_group">59</data>
+      <data key="v_group">64</data>
     </node>
-    <node id="n62">
+    <node id="n64">
       <data key="v_name">JOSÉ OTÁVIO GERMANO</data>
       <data key="v_label">JOSÉ OTÁVIO GERMANO</data>
       <data key="v_congressman_id">74395</data>
@@ -642,9 +662,9 @@
       <data key="v_term_color">violet</data>
       <data key="v_region">south</data>
       <data key="v_size">396466.71</data>
-      <data key="v_group">60</data>
+      <data key="v_group">65</data>
     </node>
-    <node id="n63">
+    <node id="n65">
       <data key="v_name">JÚLIO CESAR</data>
       <data key="v_label">JÚLIO CESAR</data>
       <data key="v_congressman_id">74317</data>
@@ -652,9 +672,9 @@
       <data key="v_term_color">violet</data>
       <data key="v_region">north-east</data>
       <data key="v_size">29894.47</data>
-      <data key="v_group">61</data>
+      <data key="v_group">66</data>
     </node>
-    <node id="n64">
+    <node id="n66">
       <data key="v_name">CÂNDIDO VACCAREZZA</data>
       <data key="v_label">CÂNDIDO VACCAREZZA</data>
       <data key="v_congressman_id">141396</data>
@@ -662,9 +682,9 @@
       <data key="v_term_color">indigo</data>
       <data key="v_region">south-east</data>
       <data key="v_size">426676.47</data>
-      <data key="v_group">62</data>
+      <data key="v_group">67</data>
     </node>
-    <node id="n65">
+    <node id="n67">
       <data key="v_name">SÉRGIO PETECÃO</data>
       <data key="v_label">SÉRGIO PETECÃO</data>
       <data key="v_congressman_id">141541</data>
@@ -672,9 +692,9 @@
       <data key="v_term_color">green</data>
       <data key="v_region">north</data>
       <data key="v_size">102210.2</data>
-      <data key="v_group">63</data>
+      <data key="v_group">68</data>
     </node>
-    <node id="n66">
+    <node id="n68">
       <data key="v_name">JAIR BOLSONARO</data>
       <data key="v_label">JAIR BOLSONARO</data>
       <data key="v_congressman_id">74847</data>
@@ -682,9 +702,9 @@
       <data key="v_term_color">violet</data>
       <data key="v_region">south-east</data>
       <data key="v_size">236734.08</data>
-      <data key="v_group">64</data>
+      <data key="v_group">69</data>
     </node>
-    <node id="n67">
+    <node id="n69">
       <data key="v_name">LAERTE BESSA</data>
       <data key="v_label">LAERTE BESSA</data>
       <data key="v_congressman_id">141478</data>
@@ -692,9 +712,9 @@
       <data key="v_term_color">blue</data>
       <data key="v_region">center-west</data>
       <data key="v_size">170691.47</data>
-      <data key="v_group">65</data>
+      <data key="v_group">70</data>
     </node>
-    <node id="n68">
+    <node id="n70">
       <data key="v_name">PERPÉTUA ALMEIDA</data>
       <data key="v_label">PERPÉTUA ALMEIDA</data>
       <data key="v_congressman_id">73943</data>
@@ -702,19 +722,9 @@
       <data key="v_term_color">indigo</data>
       <data key="v_region">north</data>
       <data key="v_size">173448.23</data>
-      <data key="v_group">51</data>
+      <data key="v_group">71</data>
     </node>
-    <node id="n69">
-      <data key="v_name">EDSON SANTOS</data>
-      <data key="v_label">EDSON SANTOS</data>
-      <data key="v_congressman_id">141419</data>
-      <data key="v_state">RJ</data>
-      <data key="v_term_color">indigo</data>
-      <data key="v_region">south-east</data>
-      <data key="v_size">135060.75</data>
-      <data key="v_group">66</data>
-    </node>
-    <node id="n70">
+    <node id="n71">
       <data key="v_name">HUMBERTO SOUTO</data>
       <data key="v_label">HUMBERTO SOUTO</data>
       <data key="v_congressman_id">74662</data>
@@ -722,9 +732,9 @@
       <data key="v_term_color">indigo</data>
       <data key="v_region">south-east</data>
       <data key="v_size">28730.19</data>
-      <data key="v_group">67</data>
+      <data key="v_group">72</data>
     </node>
-    <node id="n71">
+    <node id="n72">
       <data key="v_name">SUELI VIDIGAL</data>
       <data key="v_label">SUELI VIDIGAL</data>
       <data key="v_congressman_id">141548</data>
@@ -732,9 +742,9 @@
       <data key="v_term_color">indigo</data>
       <data key="v_region">south-east</data>
       <data key="v_size">200684.85</data>
-      <data key="v_group">68</data>
+      <data key="v_group">73</data>
     </node>
-    <node id="n72">
+    <node id="n73">
       <data key="v_name">SOLANGE ALMEIDA</data>
       <data key="v_label">SOLANGE ALMEIDA</data>
       <data key="v_congressman_id">141547</data>
@@ -742,9 +752,9 @@
       <data key="v_term_color">indigo</data>
       <data key="v_region">south-east</data>
       <data key="v_size">45694.07</data>
-      <data key="v_group">69</data>
+      <data key="v_group">74</data>
     </node>
-    <node id="n73">
+    <node id="n74">
       <data key="v_name">GERMANO BONOW</data>
       <data key="v_label">GERMANO BONOW</data>
       <data key="v_congressman_id">141443</data>
@@ -752,9 +762,9 @@
       <data key="v_term_color">green</data>
       <data key="v_region">south</data>
       <data key="v_size">57417.65</data>
-      <data key="v_group">32</data>
+      <data key="v_group">50</data>
     </node>
-    <node id="n74">
+    <node id="n75">
       <data key="v_name">FRANCISCO PRACIANO</data>
       <data key="v_label">FRANCISCO PRACIANO</data>
       <data key="v_congressman_id">141438</data>
@@ -762,9 +772,9 @@
       <data key="v_term_color">indigo</data>
       <data key="v_region">north</data>
       <data key="v_size">140010.68</data>
-      <data key="v_group">70</data>
+      <data key="v_group">75</data>
     </node>
-    <node id="n75">
+    <node id="n76">
       <data key="v_name">MANOEL SALVIANO</data>
       <data key="v_label">MANOEL SALVIANO</data>
       <data key="v_congressman_id">74456</data>
@@ -772,9 +782,9 @@
       <data key="v_term_color">indigo</data>
       <data key="v_region">north-east</data>
       <data key="v_size">133432.31</data>
-      <data key="v_group">71</data>
+      <data key="v_group">76</data>
     </node>
-    <node id="n76">
+    <node id="n77">
       <data key="v_name">PAULO TEIXEIRA</data>
       <data key="v_label">PAULO TEIXEIRA</data>
       <data key="v_congressman_id">141488</data>
@@ -782,9 +792,9 @@
       <data key="v_term_color">violet</data>
       <data key="v_region">south-east</data>
       <data key="v_size">313443.44</data>
-      <data key="v_group">72</data>
+      <data key="v_group">77</data>
     </node>
-    <node id="n77">
+    <node id="n78">
       <data key="v_name">LUIZ PAULO VELLOZO LUCAS</data>
       <data key="v_label">LUIZ PAULO VELLOZO LUCAS</data>
       <data key="v_congressman_id">141489</data>
@@ -792,17 +802,7 @@
       <data key="v_term_color">green</data>
       <data key="v_region">south-east</data>
       <data key="v_size">55447.95</data>
-      <data key="v_group">73</data>
-    </node>
-    <node id="n78">
-      <data key="v_name">REINHOLD STEPHANES</data>
-      <data key="v_label">REINHOLD STEPHANES</data>
-      <data key="v_congressman_id">73786</data>
-      <data key="v_state">PR</data>
-      <data key="v_term_color">violet</data>
-      <data key="v_region">south</data>
-      <data key="v_size">283973.28</data>
-      <data key="v_group">74</data>
+      <data key="v_group">78</data>
     </node>
     <node id="n79">
       <data key="v_name">DAGOBERTO</data>
@@ -812,7 +812,7 @@
       <data key="v_term_color">blue</data>
       <data key="v_region">center-west</data>
       <data key="v_size">242851.54</data>
-      <data key="v_group">75</data>
+      <data key="v_group">79</data>
     </node>
     <node id="n80">
       <data key="v_name">JOÃO CAMPOS</data>
@@ -822,19 +822,9 @@
       <data key="v_term_color">violet</data>
       <data key="v_region">center-west</data>
       <data key="v_size">218314.9</data>
-      <data key="v_group">40</data>
+      <data key="v_group">80</data>
     </node>
     <node id="n81">
-      <data key="v_name">JOÃO LEÃO</data>
-      <data key="v_label">JOÃO LEÃO</data>
-      <data key="v_congressman_id">74550</data>
-      <data key="v_state">BA</data>
-      <data key="v_term_color">indigo</data>
-      <data key="v_region">north-east</data>
-      <data key="v_size">319893.49</data>
-      <data key="v_group">76</data>
-    </node>
-    <node id="n82">
       <data key="v_name">FERNANDO MELO</data>
       <data key="v_label">FERNANDO MELO</data>
       <data key="v_congressman_id">141432</data>
@@ -842,9 +832,9 @@
       <data key="v_term_color">green</data>
       <data key="v_region">north</data>
       <data key="v_size">45064.71</data>
-      <data key="v_group">77</data>
+      <data key="v_group">81</data>
     </node>
-    <node id="n83">
+    <node id="n82">
       <data key="v_name">WILLIAM WOO</data>
       <data key="v_label">WILLIAM WOO</data>
       <data key="v_congressman_id">141563</data>
@@ -852,9 +842,9 @@
       <data key="v_term_color">blue</data>
       <data key="v_region">south-east</data>
       <data key="v_size">157131.95</data>
-      <data key="v_group">78</data>
+      <data key="v_group">56</data>
     </node>
-    <node id="n84">
+    <node id="n83">
       <data key="v_name">JOÃO CARLOS BACELAR</data>
       <data key="v_label">JOÃO CARLOS BACELAR</data>
       <data key="v_congressman_id">141458</data>
@@ -862,7 +852,17 @@
       <data key="v_term_color">violet</data>
       <data key="v_region">north-east</data>
       <data key="v_size">30395.51</data>
-      <data key="v_group">79</data>
+      <data key="v_group">82</data>
+    </node>
+    <node id="n84">
+      <data key="v_name">NEILTON MULIM</data>
+      <data key="v_label">NEILTON MULIM</data>
+      <data key="v_congressman_id">141510</data>
+      <data key="v_state">RJ</data>
+      <data key="v_term_color">indigo</data>
+      <data key="v_region">south-east</data>
+      <data key="v_size">124271</data>
+      <data key="v_group">83</data>
     </node>
     <node id="n85">
       <data key="v_name">OSMAR SERRAGLIO</data>
@@ -872,7 +872,7 @@
       <data key="v_term_color">violet</data>
       <data key="v_region">south</data>
       <data key="v_size">175954.49</data>
-      <data key="v_group">80</data>
+      <data key="v_group">84</data>
     </node>
     <node id="n86">
       <data key="v_name">EDUARDO SCIARRA</data>
@@ -882,9 +882,19 @@
       <data key="v_term_color">indigo</data>
       <data key="v_region">south</data>
       <data key="v_size">421556.91</data>
-      <data key="v_group">81</data>
+      <data key="v_group">85</data>
     </node>
     <node id="n87">
+      <data key="v_name">ANTÔNIO ANDRADE</data>
+      <data key="v_label">ANTÔNIO ANDRADE</data>
+      <data key="v_congressman_id">141387</data>
+      <data key="v_state">MG</data>
+      <data key="v_term_color">indigo</data>
+      <data key="v_region">south-east</data>
+      <data key="v_size">218234.94</data>
+      <data key="v_group">86</data>
+    </node>
+    <node id="n88">
       <data key="v_name">ARNALDO JARDIM</data>
       <data key="v_label">ARNALDO JARDIM</data>
       <data key="v_congressman_id">141391</data>
@@ -892,9 +902,9 @@
       <data key="v_term_color">violet</data>
       <data key="v_region">south-east</data>
       <data key="v_size">1028364.6</data>
-      <data key="v_group">32</data>
+      <data key="v_group">87</data>
     </node>
-    <node id="n88">
+    <node id="n89">
       <data key="v_name">MAURO LOPES</data>
       <data key="v_label">MAURO LOPES</data>
       <data key="v_congressman_id">74749</data>
@@ -902,9 +912,9 @@
       <data key="v_term_color">violet</data>
       <data key="v_region">south-east</data>
       <data key="v_size">337752.68</data>
-      <data key="v_group">43</data>
+      <data key="v_group">88</data>
     </node>
-    <node id="n89">
+    <node id="n90">
       <data key="v_name">CARLOS ALBERTO LERÉIA</data>
       <data key="v_label">CARLOS ALBERTO LERÉIA</data>
       <data key="v_congressman_id">74290</data>
@@ -912,17 +922,7 @@
       <data key="v_term_color">indigo</data>
       <data key="v_region">center-west</data>
       <data key="v_size">287576.33</data>
-      <data key="v_group">68</data>
-    </node>
-    <node id="n90">
-      <data key="v_name">JOSÉ PIMENTEL</data>
-      <data key="v_label">JOSÉ PIMENTEL</data>
-      <data key="v_congressman_id">74298</data>
-      <data key="v_state">CE</data>
-      <data key="v_term_color">green</data>
-      <data key="v_region">north-east</data>
-      <data key="v_size">56584.26</data>
-      <data key="v_group">82</data>
+      <data key="v_group">89</data>
     </node>
     <node id="n91">
       <data key="v_name">LAUREZ MOREIRA</data>
@@ -932,7 +932,7 @@
       <data key="v_term_color">indigo</data>
       <data key="v_region">north</data>
       <data key="v_size">123968.33</data>
-      <data key="v_group">83</data>
+      <data key="v_group">90</data>
     </node>
     <node id="n92">
       <data key="v_name">JOSÉ CARLOS ALELUIA</data>
@@ -942,7 +942,7 @@
       <data key="v_term_color">blue</data>
       <data key="v_region">north-east</data>
       <data key="v_size">9517.03</data>
-      <data key="v_group">84</data>
+      <data key="v_group">91</data>
     </node>
     <node id="n93">
       <data key="v_name">DÉCIO LIMA</data>
@@ -952,7 +952,7 @@
       <data key="v_term_color">violet</data>
       <data key="v_region">south</data>
       <data key="v_size">170438.55</data>
-      <data key="v_group">85</data>
+      <data key="v_group">92</data>
     </node>
     <node id="n94">
       <data key="v_name">VIGNATTI</data>
@@ -962,7 +962,7 @@
       <data key="v_term_color">green</data>
       <data key="v_region">south</data>
       <data key="v_size">85924.58</data>
-      <data key="v_group">58</data>
+      <data key="v_group">93</data>
     </node>
     <node id="n95">
       <data key="v_name">MARCELO MELO</data>
@@ -972,7 +972,7 @@
       <data key="v_term_color">green</data>
       <data key="v_region">center-west</data>
       <data key="v_size">7411.62</data>
-      <data key="v_group">86</data>
+      <data key="v_group">94</data>
     </node>
     <node id="n96">
       <data key="v_name">ALEX CANZIANI</data>
@@ -982,7 +982,7 @@
       <data key="v_term_color">violet</data>
       <data key="v_region">south</data>
       <data key="v_size">242788.68</data>
-      <data key="v_group">38</data>
+      <data key="v_group">95</data>
     </node>
     <node id="n97">
       <data key="v_name">VALDEMAR COSTA NETO</data>
@@ -992,7 +992,7 @@
       <data key="v_term_color">indigo</data>
       <data key="v_region">south-east</data>
       <data key="v_size">540396.17</data>
-      <data key="v_group">87</data>
+      <data key="v_group">96</data>
     </node>
     <node id="n98">
       <data key="v_name">TONHA MAGALHÃES</data>
@@ -1002,7 +1002,7 @@
       <data key="v_term_color">green</data>
       <data key="v_region">north-east</data>
       <data key="v_size">78412.16</data>
-      <data key="v_group">38</data>
+      <data key="v_group">97</data>
     </node>
     <node id="n99">
       <data key="v_name">LINDOMAR GARÇON</data>
@@ -1012,7 +1012,7 @@
       <data key="v_term_color">violet</data>
       <data key="v_region">north</data>
       <data key="v_size">120093.67</data>
-      <data key="v_group">88</data>
+      <data key="v_group">98</data>
     </node>
     <node id="n100">
       <data key="v_name">SUELY</data>
@@ -1022,7 +1022,7 @@
       <data key="v_term_color">green</data>
       <data key="v_region">south-east</data>
       <data key="v_size">16479.92</data>
-      <data key="v_group">89</data>
+      <data key="v_group">99</data>
     </node>
     <node id="n101">
       <data key="v_name">IBSEN PINHEIRO</data>
@@ -1032,7 +1032,7 @@
       <data key="v_term_color">green</data>
       <data key="v_region">south</data>
       <data key="v_size">127908.51</data>
-      <data key="v_group">90</data>
+      <data key="v_group">100</data>
     </node>
     <node id="n102">
       <data key="v_name">RODRIGO ROLLEMBERG</data>
@@ -1042,7 +1042,7 @@
       <data key="v_term_color">green</data>
       <data key="v_region">center-west</data>
       <data key="v_size">54187.84</data>
-      <data key="v_group">19</data>
+      <data key="v_group">101</data>
     </node>
     <node id="n103">
       <data key="v_name">EDUARDO GOMES</data>
@@ -1052,7 +1052,7 @@
       <data key="v_term_color">indigo</data>
       <data key="v_region">north</data>
       <data key="v_size">11399.9</data>
-      <data key="v_group">91</data>
+      <data key="v_group">102</data>
     </node>
     <node id="n104">
       <data key="v_name">EDGAR MOURY</data>
@@ -1062,7 +1062,7 @@
       <data key="v_term_color">green</data>
       <data key="v_region">north-east</data>
       <data key="v_size">60479.24</data>
-      <data key="v_group">92</data>
+      <data key="v_group">103</data>
     </node>
     <node id="n105">
       <data key="v_name">FERNANDO GABEIRA</data>
@@ -1072,7 +1072,7 @@
       <data key="v_term_color">green</data>
       <data key="v_region">south-east</data>
       <data key="v_size">123534.34</data>
-      <data key="v_group">38</data>
+      <data key="v_group">104</data>
     </node>
     <node id="n106">
       <data key="v_name">ZEZÉU RIBEIRO</data>
@@ -1082,7 +1082,7 @@
       <data key="v_term_color">indigo</data>
       <data key="v_region">north-east</data>
       <data key="v_size">126318.66</data>
-      <data key="v_group">93</data>
+      <data key="v_group">105</data>
     </node>
     <node id="n107">
       <data key="v_name">MAURÍCIO TRINDADE</data>
@@ -1092,7 +1092,7 @@
       <data key="v_term_color">indigo</data>
       <data key="v_region">north-east</data>
       <data key="v_size">3238.2</data>
-      <data key="v_group">94</data>
+      <data key="v_group">106</data>
     </node>
     <node id="n108">
       <data key="v_name">GERSON PERES</data>
@@ -1102,7 +1102,7 @@
       <data key="v_term_color">green</data>
       <data key="v_region">north</data>
       <data key="v_size">46581.17</data>
-      <data key="v_group">57</data>
+      <data key="v_group">107</data>
     </node>
     <node id="n109">
       <data key="v_name">ANÍBAL GOMES</data>
@@ -1112,7 +1112,7 @@
       <data key="v_term_color">violet</data>
       <data key="v_region">north-east</data>
       <data key="v_size">3368</data>
-      <data key="v_group">95</data>
+      <data key="v_group">108</data>
     </node>
     <node id="n110">
       <data key="v_name">ANTONIO CARLOS MENDES THAME</data>
@@ -1122,7 +1122,7 @@
       <data key="v_term_color">violet</data>
       <data key="v_region">south-east</data>
       <data key="v_size">317531.35</data>
-      <data key="v_group">96</data>
+      <data key="v_group">109</data>
     </node>
     <node id="n111">
       <data key="v_name">HENRIQUE AFONSO</data>
@@ -1132,7 +1132,7 @@
       <data key="v_term_color">indigo</data>
       <data key="v_region">north</data>
       <data key="v_size">260989.62</data>
-      <data key="v_group">97</data>
+      <data key="v_group">110</data>
     </node>
     <node id="n112">
       <data key="v_name">JAIME MARTINS</data>
@@ -1142,7 +1142,7 @@
       <data key="v_term_color">violet</data>
       <data key="v_region">south-east</data>
       <data key="v_size">205151.47</data>
-      <data key="v_group">45</data>
+      <data key="v_group">111</data>
     </node>
     <node id="n113">
       <data key="v_name">SÉRGIO BRITO</data>
@@ -1152,9 +1152,19 @@
       <data key="v_term_color">violet</data>
       <data key="v_region">north-east</data>
       <data key="v_size">293967.98</data>
-      <data key="v_group">98</data>
+      <data key="v_group">112</data>
     </node>
     <node id="n114">
+      <data key="v_name">BONIFÁCIO DE ANDRADA</data>
+      <data key="v_label">BONIFÁCIO DE ANDRADA</data>
+      <data key="v_congressman_id">74650</data>
+      <data key="v_state">MG</data>
+      <data key="v_term_color">violet</data>
+      <data key="v_region">south-east</data>
+      <data key="v_size">4540.32</data>
+      <data key="v_group">113</data>
+    </node>
+    <node id="n115">
       <data key="v_name">RÉGIS DE OLIVEIRA</data>
       <data key="v_label">RÉGIS DE OLIVEIRA</data>
       <data key="v_congressman_id">73556</data>
@@ -1162,9 +1172,9 @@
       <data key="v_term_color">green</data>
       <data key="v_region">south-east</data>
       <data key="v_size">55692.5</data>
-      <data key="v_group">99</data>
+      <data key="v_group">114</data>
     </node>
-    <node id="n115">
+    <node id="n116">
       <data key="v_name">EDINHO BEZ</data>
       <data key="v_label">EDINHO BEZ</data>
       <data key="v_congressman_id">73793</data>
@@ -1172,9 +1182,9 @@
       <data key="v_term_color">violet</data>
       <data key="v_region">south</data>
       <data key="v_size">59287.95</data>
-      <data key="v_group">40</data>
+      <data key="v_group">115</data>
     </node>
-    <node id="n116">
+    <node id="n117">
       <data key="v_name">DR. ADILSON SOARES</data>
       <data key="v_label">DR. ADILSON SOARES</data>
       <data key="v_congressman_id">141371</data>
@@ -1182,9 +1192,9 @@
       <data key="v_term_color">indigo</data>
       <data key="v_region">south-east</data>
       <data key="v_size">337755.48</data>
-      <data key="v_group">32</data>
+      <data key="v_group">116</data>
     </node>
-    <node id="n117">
+    <node id="n118">
       <data key="v_name">DELEY</data>
       <data key="v_label">DELEY</data>
       <data key="v_congressman_id">74172</data>
@@ -1192,9 +1202,9 @@
       <data key="v_term_color">violet</data>
       <data key="v_region">south-east</data>
       <data key="v_size">397420.86</data>
-      <data key="v_group">32</data>
+      <data key="v_group">50</data>
     </node>
-    <node id="n118">
+    <node id="n119">
       <data key="v_name">MARCIO JUNQUEIRA</data>
       <data key="v_label">MARCIO JUNQUEIRA</data>
       <data key="v_congressman_id">141496</data>
@@ -1202,9 +1212,9 @@
       <data key="v_term_color">indigo</data>
       <data key="v_region">north</data>
       <data key="v_size">37165.8</data>
-      <data key="v_group">100</data>
+      <data key="v_group">117</data>
     </node>
-    <node id="n119">
+    <node id="n120">
       <data key="v_name">EUGÊNIO RABELO</data>
       <data key="v_label">EUGÊNIO RABELO</data>
       <data key="v_congressman_id">141426</data>
@@ -1212,9 +1222,9 @@
       <data key="v_term_color">green</data>
       <data key="v_region">north-east</data>
       <data key="v_size">43852.39</data>
-      <data key="v_group">101</data>
+      <data key="v_group">118</data>
     </node>
-    <node id="n120">
+    <node id="n121">
       <data key="v_name">JOAQUIM BELTRÃO</data>
       <data key="v_label">JOAQUIM BELTRÃO</data>
       <data key="v_congressman_id">141461</data>
@@ -1222,9 +1232,9 @@
       <data key="v_term_color">indigo</data>
       <data key="v_region">north-east</data>
       <data key="v_size">126966.95</data>
-      <data key="v_group">102</data>
+      <data key="v_group">119</data>
     </node>
-    <node id="n121">
+    <node id="n122">
       <data key="v_name">TAKAYAMA</data>
       <data key="v_label">TAKAYAMA</data>
       <data key="v_congressman_id">74385</data>
@@ -1232,9 +1242,9 @@
       <data key="v_term_color">violet</data>
       <data key="v_region">south</data>
       <data key="v_size">125175.72</data>
-      <data key="v_group">103</data>
+      <data key="v_group">120</data>
     </node>
-    <node id="n122">
+    <node id="n123">
       <data key="v_name">GIOVANNI QUEIROZ</data>
       <data key="v_label">GIOVANNI QUEIROZ</data>
       <data key="v_congressman_id">74077</data>
@@ -1242,9 +1252,9 @@
       <data key="v_term_color">indigo</data>
       <data key="v_region">north</data>
       <data key="v_size">198451.73</data>
-      <data key="v_group">51</data>
+      <data key="v_group">121</data>
     </node>
-    <node id="n123">
+    <node id="n124">
       <data key="v_name">MENDES RIBEIRO FILHO</data>
       <data key="v_label">MENDES RIBEIRO FILHO</data>
       <data key="v_congressman_id">73904</data>
@@ -1252,9 +1262,9 @@
       <data key="v_term_color">indigo</data>
       <data key="v_region">south</data>
       <data key="v_size">98636.27</data>
-      <data key="v_group">104</data>
+      <data key="v_group">122</data>
     </node>
-    <node id="n124">
+    <node id="n125">
       <data key="v_name">EDUARDO AMORIM</data>
       <data key="v_label">EDUARDO AMORIM</data>
       <data key="v_congressman_id">141420</data>
@@ -1262,9 +1272,9 @@
       <data key="v_term_color">green</data>
       <data key="v_region">north-east</data>
       <data key="v_size">9734.95</data>
-      <data key="v_group">105</data>
+      <data key="v_group">123</data>
     </node>
-    <node id="n125">
+    <node id="n126">
       <data key="v_name">LÚCIO VALE</data>
       <data key="v_label">LÚCIO VALE</data>
       <data key="v_congressman_id">141484</data>
@@ -1272,9 +1282,9 @@
       <data key="v_term_color">violet</data>
       <data key="v_region">north</data>
       <data key="v_size">87332.49</data>
-      <data key="v_group">106</data>
+      <data key="v_group">124</data>
     </node>
-    <node id="n126">
+    <node id="n127">
       <data key="v_name">JOSÉ LINHARES</data>
       <data key="v_label">JOSÉ LINHARES</data>
       <data key="v_congressman_id">74297</data>
@@ -1282,9 +1292,9 @@
       <data key="v_term_color">indigo</data>
       <data key="v_region">north-east</data>
       <data key="v_size">304068.7</data>
-      <data key="v_group">48</data>
+      <data key="v_group">125</data>
     </node>
-    <node id="n127">
+    <node id="n128">
       <data key="v_name">PEPE VARGAS</data>
       <data key="v_label">PEPE VARGAS</data>
       <data key="v_congressman_id">141445</data>
@@ -1292,9 +1302,29 @@
       <data key="v_term_color">violet</data>
       <data key="v_region">south</data>
       <data key="v_size">322027.21</data>
-      <data key="v_group">92</data>
+      <data key="v_group">103</data>
     </node>
-    <node id="n128">
+    <node id="n129">
+      <data key="v_name">PROFESSORA RAQUEL TEIXEIRA</data>
+      <data key="v_label">PROFESSORA RAQUEL TEIXEIRA</data>
+      <data key="v_congressman_id">74370</data>
+      <data key="v_state">GO</data>
+      <data key="v_term_color">green</data>
+      <data key="v_region">center-west</data>
+      <data key="v_size">33879.8</data>
+      <data key="v_group">126</data>
+    </node>
+    <node id="n130">
+      <data key="v_name">ODAIR CUNHA</data>
+      <data key="v_label">ODAIR CUNHA</data>
+      <data key="v_congressman_id">74159</data>
+      <data key="v_state">MG</data>
+      <data key="v_term_color">violet</data>
+      <data key="v_region">south-east</data>
+      <data key="v_size">99684.5</data>
+      <data key="v_group">127</data>
+    </node>
+    <node id="n131">
       <data key="v_name">ZENALDO COUTINHO</data>
       <data key="v_label">ZENALDO COUTINHO</data>
       <data key="v_congressman_id">74354</data>
@@ -1302,9 +1332,9 @@
       <data key="v_term_color">indigo</data>
       <data key="v_region">north</data>
       <data key="v_size">55744.46</data>
-      <data key="v_group">57</data>
+      <data key="v_group">107</data>
     </node>
-    <node id="n129">
+    <node id="n132">
       <data key="v_name">JOÃO MAGALHÃES</data>
       <data key="v_label">JOÃO MAGALHÃES</data>
       <data key="v_congressman_id">74120</data>
@@ -1312,9 +1342,9 @@
       <data key="v_term_color">indigo</data>
       <data key="v_region">south-east</data>
       <data key="v_size">50870.29</data>
-      <data key="v_group">107</data>
+      <data key="v_group">128</data>
     </node>
-    <node id="n130">
+    <node id="n133">
       <data key="v_name">LEONARDO QUINTÃO</data>
       <data key="v_label">LEONARDO QUINTÃO</data>
       <data key="v_congressman_id">141482</data>
@@ -1322,9 +1352,9 @@
       <data key="v_term_color">violet</data>
       <data key="v_region">south-east</data>
       <data key="v_size">608377.14</data>
-      <data key="v_group">108</data>
+      <data key="v_group">129</data>
     </node>
-    <node id="n131">
+    <node id="n134">
       <data key="v_name">LUIZA ERUNDINA</data>
       <data key="v_label">LUIZA ERUNDINA</data>
       <data key="v_congressman_id">74784</data>
@@ -1332,9 +1362,9 @@
       <data key="v_term_color">violet</data>
       <data key="v_region">south-east</data>
       <data key="v_size">283118.55</data>
-      <data key="v_group">68</data>
+      <data key="v_group">73</data>
     </node>
-    <node id="n132">
+    <node id="n135">
       <data key="v_name">HENRIQUE FONTANA</data>
       <data key="v_label">HENRIQUE FONTANA</data>
       <data key="v_congressman_id">73482</data>
@@ -1342,9 +1372,9 @@
       <data key="v_term_color">violet</data>
       <data key="v_region">south</data>
       <data key="v_size">285525.82</data>
-      <data key="v_group">109</data>
+      <data key="v_group">130</data>
     </node>
-    <node id="n133">
+    <node id="n136">
       <data key="v_name">NELSON GOETTEN</data>
       <data key="v_label">NELSON GOETTEN</data>
       <data key="v_congressman_id">141511</data>
@@ -1352,9 +1382,19 @@
       <data key="v_term_color">green</data>
       <data key="v_region">south</data>
       <data key="v_size">89246.52</data>
-      <data key="v_group">110</data>
+      <data key="v_group">131</data>
     </node>
-    <node id="n134">
+    <node id="n137">
+      <data key="v_name">OTAVIO LEITE</data>
+      <data key="v_label">OTAVIO LEITE</data>
+      <data key="v_congressman_id">141515</data>
+      <data key="v_state">RJ</data>
+      <data key="v_term_color">violet</data>
+      <data key="v_region">south-east</data>
+      <data key="v_size">711460.19</data>
+      <data key="v_group">132</data>
+    </node>
+    <node id="n138">
       <data key="v_name">JOSÉ FERNANDO APARECIDO DE OLI</data>
       <data key="v_label">JOSÉ FERNANDO APARECIDO DE OLI</data>
       <data key="v_congressman_id">141466</data>
@@ -1362,9 +1402,9 @@
       <data key="v_term_color">green</data>
       <data key="v_region">south-east</data>
       <data key="v_size">121004.05</data>
-      <data key="v_group">51</data>
+      <data key="v_group">133</data>
     </node>
-    <node id="n135">
+    <node id="n139">
       <data key="v_name">ARIOSTO HOLANDA</data>
       <data key="v_label">ARIOSTO HOLANDA</data>
       <data key="v_congressman_id">74103</data>
@@ -1372,9 +1412,9 @@
       <data key="v_term_color">violet</data>
       <data key="v_region">north-east</data>
       <data key="v_size">245340.49</data>
-      <data key="v_group">58</data>
+      <data key="v_group">134</data>
     </node>
-    <node id="n136">
+    <node id="n140">
       <data key="v_name">EDSON DUARTE</data>
       <data key="v_label">EDSON DUARTE</data>
       <data key="v_congressman_id">74061</data>
@@ -1382,9 +1422,9 @@
       <data key="v_term_color">green</data>
       <data key="v_region">north-east</data>
       <data key="v_size">8326.03</data>
-      <data key="v_group">111</data>
+      <data key="v_group">135</data>
     </node>
-    <node id="n137">
+    <node id="n141">
       <data key="v_name">ÁTILA LINS</data>
       <data key="v_label">ÁTILA LINS</data>
       <data key="v_congressman_id">74090</data>
@@ -1392,9 +1432,19 @@
       <data key="v_term_color">violet</data>
       <data key="v_region">north</data>
       <data key="v_size">1652.06</data>
-      <data key="v_group">112</data>
+      <data key="v_group">136</data>
     </node>
-    <node id="n138">
+    <node id="n142">
+      <data key="v_name">ZONTA</data>
+      <data key="v_label">ZONTA</data>
+      <data key="v_congressman_id">74392</data>
+      <data key="v_state">SC</data>
+      <data key="v_term_color">indigo</data>
+      <data key="v_region">south</data>
+      <data key="v_size">16692.58</data>
+      <data key="v_group">137</data>
+    </node>
+    <node id="n143">
       <data key="v_name">CAMILO COLA</data>
       <data key="v_label">CAMILO COLA</data>
       <data key="v_congressman_id">141395</data>
@@ -1402,19 +1452,9 @@
       <data key="v_term_color">indigo</data>
       <data key="v_region">south-east</data>
       <data key="v_size">593.6</data>
-      <data key="v_group">113</data>
+      <data key="v_group">138</data>
     </node>
-    <node id="n139">
-      <data key="v_name">ALBERTO FRAGA</data>
-      <data key="v_label">ALBERTO FRAGA</data>
-      <data key="v_congressman_id">73579</data>
-      <data key="v_state">DF</data>
-      <data key="v_term_color">blue</data>
-      <data key="v_region">center-west</data>
-      <data key="v_size">20586.52</data>
-      <data key="v_group">114</data>
-    </node>
-    <node id="n140">
+    <node id="n144">
       <data key="v_name">DR. NECHAR</data>
       <data key="v_label">DR. NECHAR</data>
       <data key="v_congressman_id">141540</data>
@@ -1422,9 +1462,9 @@
       <data key="v_term_color">green</data>
       <data key="v_region">south-east</data>
       <data key="v_size">32238.18</data>
-      <data key="v_group">115</data>
+      <data key="v_group">139</data>
     </node>
-    <node id="n141">
+    <node id="n145">
       <data key="v_name">HERMES PARCIANELLO</data>
       <data key="v_label">HERMES PARCIANELLO</data>
       <data key="v_congressman_id">73772</data>
@@ -1432,9 +1472,9 @@
       <data key="v_term_color">violet</data>
       <data key="v_region">south</data>
       <data key="v_size">319711.76</data>
-      <data key="v_group">116</data>
+      <data key="v_group">140</data>
     </node>
-    <node id="n142">
+    <node id="n146">
       <data key="v_name">LEONARDO VILELA</data>
       <data key="v_label">LEONARDO VILELA</data>
       <data key="v_congressman_id">74368</data>
@@ -1442,9 +1482,9 @@
       <data key="v_term_color">indigo</data>
       <data key="v_region">center-west</data>
       <data key="v_size">55767.15</data>
-      <data key="v_group">26</data>
+      <data key="v_group">141</data>
     </node>
-    <node id="n143">
+    <node id="n147">
       <data key="v_name">ERNANDES AMORIM</data>
       <data key="v_label">ERNANDES AMORIM</data>
       <data key="v_congressman_id">141425</data>
@@ -1452,9 +1492,19 @@
       <data key="v_term_color">green</data>
       <data key="v_region">north</data>
       <data key="v_size">37754.23</data>
-      <data key="v_group">117</data>
+      <data key="v_group">142</data>
     </node>
-    <node id="n144">
+    <node id="n148">
+      <data key="v_name">VICENTINHO ALVES</data>
+      <data key="v_label">VICENTINHO ALVES</data>
+      <data key="v_congressman_id">141554</data>
+      <data key="v_state">TO</data>
+      <data key="v_term_color">green</data>
+      <data key="v_region">north</data>
+      <data key="v_size">568.94</data>
+      <data key="v_group">143</data>
+    </node>
+    <node id="n149">
       <data key="v_name">NELSON BORNIER</data>
       <data key="v_label">NELSON BORNIER</data>
       <data key="v_congressman_id">73416</data>
@@ -1462,9 +1512,19 @@
       <data key="v_term_color">indigo</data>
       <data key="v_region">south-east</data>
       <data key="v_size">28318.82</data>
-      <data key="v_group">118</data>
+      <data key="v_group">144</data>
     </node>
-    <node id="n145">
+    <node id="n150">
+      <data key="v_name">ANGELO VANHONI</data>
+      <data key="v_label">ANGELO VANHONI</data>
+      <data key="v_congressman_id">141381</data>
+      <data key="v_state">PR</data>
+      <data key="v_term_color">indigo</data>
+      <data key="v_region">south</data>
+      <data key="v_size">240062.92</data>
+      <data key="v_group">145</data>
+    </node>
+    <node id="n151">
       <data key="v_name">ARNALDO VIANNA</data>
       <data key="v_label">ARNALDO VIANNA</data>
       <data key="v_congressman_id">141392</data>
@@ -1472,9 +1532,9 @@
       <data key="v_term_color">green</data>
       <data key="v_region">south-east</data>
       <data key="v_size">19996.61</data>
-      <data key="v_group">119</data>
+      <data key="v_group">146</data>
     </node>
-    <node id="n146">
+    <node id="n152">
       <data key="v_name">RODRIGO ROCHA LOURES</data>
       <data key="v_label">RODRIGO ROCHA LOURES</data>
       <data key="v_congressman_id">141532</data>
@@ -1482,9 +1542,9 @@
       <data key="v_term_color">green</data>
       <data key="v_region">south</data>
       <data key="v_size">123045.16</data>
-      <data key="v_group">81</data>
+      <data key="v_group">147</data>
     </node>
-    <node id="n147">
+    <node id="n153">
       <data key="v_name">DAMIÃO FELICIANO</data>
       <data key="v_label">DAMIÃO FELICIANO</data>
       <data key="v_congressman_id">74467</data>
@@ -1492,9 +1552,19 @@
       <data key="v_term_color">violet</data>
       <data key="v_region">north-east</data>
       <data key="v_size">169572.02</data>
-      <data key="v_group">120</data>
+      <data key="v_group">148</data>
     </node>
-    <node id="n148">
+    <node id="n154">
+      <data key="v_name">HENRIQUE EDUARDO ALVES</data>
+      <data key="v_label">HENRIQUE EDUARDO ALVES</data>
+      <data key="v_congressman_id">74324</data>
+      <data key="v_state">RN</data>
+      <data key="v_term_color">indigo</data>
+      <data key="v_region">north-east</data>
+      <data key="v_size">0</data>
+      <data key="v_group">149</data>
+    </node>
+    <node id="n155">
       <data key="v_name">NELSON MEURER</data>
       <data key="v_label">NELSON MEURER</data>
       <data key="v_congressman_id">73781</data>
@@ -1502,9 +1572,19 @@
       <data key="v_term_color">violet</data>
       <data key="v_region">south</data>
       <data key="v_size">248596.88</data>
-      <data key="v_group">92</data>
+      <data key="v_group">103</data>
     </node>
-    <node id="n149">
+    <node id="n156">
+      <data key="v_name">JOSÉ CARLOS MACHADO</data>
+      <data key="v_label">JOSÉ CARLOS MACHADO</data>
+      <data key="v_congressman_id">74055</data>
+      <data key="v_state">SE</data>
+      <data key="v_term_color">green</data>
+      <data key="v_region">north-east</data>
+      <data key="v_size">25800.9</data>
+      <data key="v_group">150</data>
+    </node>
+    <node id="n157">
       <data key="v_name">RODRIGO MAIA</data>
       <data key="v_label">RODRIGO MAIA</data>
       <data key="v_congressman_id">74693</data>
@@ -1512,9 +1592,9 @@
       <data key="v_term_color">violet</data>
       <data key="v_region">south-east</data>
       <data key="v_size">340088.09</data>
-      <data key="v_group">121</data>
+      <data key="v_group">151</data>
     </node>
-    <node id="n150">
+    <node id="n158">
       <data key="v_name">OSVALDO REIS</data>
       <data key="v_label">OSVALDO REIS</data>
       <data key="v_congressman_id">74191</data>
@@ -1522,9 +1602,9 @@
       <data key="v_term_color">indigo</data>
       <data key="v_region">north</data>
       <data key="v_size">23349.6</data>
-      <data key="v_group">122</data>
+      <data key="v_group">152</data>
     </node>
-    <node id="n151">
+    <node id="n159">
       <data key="v_name">MOREIRA MENDES</data>
       <data key="v_label">MOREIRA MENDES</data>
       <data key="v_congressman_id">141537</data>
@@ -1532,9 +1612,9 @@
       <data key="v_term_color">indigo</data>
       <data key="v_region">north</data>
       <data key="v_size">183512.62</data>
-      <data key="v_group">26</data>
+      <data key="v_group">55</data>
     </node>
-    <node id="n152">
+    <node id="n160">
       <data key="v_name">LOBBE NETO</data>
       <data key="v_label">LOBBE NETO</data>
       <data key="v_congressman_id">74277</data>
@@ -1542,9 +1622,9 @@
       <data key="v_term_color">blue</data>
       <data key="v_region">south-east</data>
       <data key="v_size">59683.15</data>
-      <data key="v_group">123</data>
+      <data key="v_group">153</data>
     </node>
-    <node id="n153">
+    <node id="n161">
       <data key="v_name">VICENTINHO</data>
       <data key="v_label">VICENTINHO</data>
       <data key="v_congressman_id">74283</data>
@@ -1552,9 +1632,9 @@
       <data key="v_term_color">violet</data>
       <data key="v_region">south-east</data>
       <data key="v_size">292012.36</data>
-      <data key="v_group">124</data>
+      <data key="v_group">154</data>
     </node>
-    <node id="n154">
+    <node id="n162">
       <data key="v_name">PAULO ABI-ACKEL</data>
       <data key="v_label">PAULO ABI-ACKEL</data>
       <data key="v_congressman_id">141516</data>
@@ -1562,9 +1642,9 @@
       <data key="v_term_color">violet</data>
       <data key="v_region">south-east</data>
       <data key="v_size">133494.37</data>
-      <data key="v_group">125</data>
+      <data key="v_group">155</data>
     </node>
-    <node id="n155">
+    <node id="n163">
       <data key="v_name">SARNEY FILHO</data>
       <data key="v_label">SARNEY FILHO</data>
       <data key="v_congressman_id">74210</data>
@@ -1572,9 +1652,9 @@
       <data key="v_term_color">violet</data>
       <data key="v_region">north-east</data>
       <data key="v_size">145550.62</data>
-      <data key="v_group">51</data>
+      <data key="v_group">156</data>
     </node>
-    <node id="n156">
+    <node id="n164">
       <data key="v_name">VELOSO</data>
       <data key="v_label">VELOSO</data>
       <data key="v_congressman_id">141524</data>
@@ -1582,9 +1662,9 @@
       <data key="v_term_color">green</data>
       <data key="v_region">north-east</data>
       <data key="v_size">180546.91</data>
-      <data key="v_group">126</data>
+      <data key="v_group">157</data>
     </node>
-    <node id="n157">
+    <node id="n165">
       <data key="v_name">FERNANDO CORUJA</data>
       <data key="v_label">FERNANDO CORUJA</data>
       <data key="v_congressman_id">73471</data>
@@ -1592,9 +1672,19 @@
       <data key="v_term_color">green</data>
       <data key="v_region">south</data>
       <data key="v_size">17458.69</data>
-      <data key="v_group">127</data>
+      <data key="v_group">158</data>
     </node>
-    <node id="n158">
+    <node id="n166">
+      <data key="v_name">EDUARDO CUNHA</data>
+      <data key="v_label">EDUARDO CUNHA</data>
+      <data key="v_congressman_id">74173</data>
+      <data key="v_state">RJ</data>
+      <data key="v_term_color">violet</data>
+      <data key="v_region">south-east</data>
+      <data key="v_size">429535.66</data>
+      <data key="v_group">159</data>
+    </node>
+    <node id="n167">
       <data key="v_name">JOSÉ CARLOS ARAÚJO</data>
       <data key="v_label">JOSÉ CARLOS ARAÚJO</data>
       <data key="v_congressman_id">74140</data>
@@ -1602,9 +1692,9 @@
       <data key="v_term_color">violet</data>
       <data key="v_region">north-east</data>
       <data key="v_size">279174.58</data>
-      <data key="v_group">128</data>
+      <data key="v_group">160</data>
     </node>
-    <node id="n159">
+    <node id="n168">
       <data key="v_name">DAVI ALVES SILVA JÚNIOR</data>
       <data key="v_label">DAVI ALVES SILVA JÚNIOR</data>
       <data key="v_congressman_id">141412</data>
@@ -1612,9 +1702,19 @@
       <data key="v_term_color">indigo</data>
       <data key="v_region">north-east</data>
       <data key="v_size">112073.24</data>
-      <data key="v_group">129</data>
+      <data key="v_group">161</data>
     </node>
-    <node id="n160">
+    <node id="n169">
+      <data key="v_name">SANDES JÚNIOR</data>
+      <data key="v_label">SANDES JÚNIOR</data>
+      <data key="v_congressman_id">74372</data>
+      <data key="v_state">GO</data>
+      <data key="v_term_color">violet</data>
+      <data key="v_region">center-west</data>
+      <data key="v_size">133098.03</data>
+      <data key="v_group">162</data>
+    </node>
+    <node id="n170">
       <data key="v_name">JOSÉ ROCHA</data>
       <data key="v_label">JOSÉ ROCHA</data>
       <data key="v_congressman_id">74554</data>
@@ -1622,9 +1722,9 @@
       <data key="v_term_color">violet</data>
       <data key="v_region">north-east</data>
       <data key="v_size">98305.78</data>
-      <data key="v_group">130</data>
+      <data key="v_group">163</data>
     </node>
-    <node id="n161">
+    <node id="n171">
       <data key="v_name">ALCENI GUERRA</data>
       <data key="v_label">ALCENI GUERRA</data>
       <data key="v_congressman_id">139133</data>
@@ -1632,9 +1732,9 @@
       <data key="v_term_color">green</data>
       <data key="v_region">south</data>
       <data key="v_size">0</data>
-      <data key="v_group">131</data>
+      <data key="v_group">164</data>
     </node>
-    <node id="n162">
+    <node id="n172">
       <data key="v_name">LUIS CARLOS HEINZE</data>
       <data key="v_label">LUIS CARLOS HEINZE</data>
       <data key="v_congressman_id">73483</data>
@@ -1642,9 +1742,9 @@
       <data key="v_term_color">violet</data>
       <data key="v_region">south</data>
       <data key="v_size">78622.77</data>
-      <data key="v_group">132</data>
+      <data key="v_group">165</data>
     </node>
-    <node id="n163">
+    <node id="n173">
       <data key="v_name">COLBERT MARTINS</data>
       <data key="v_label">COLBERT MARTINS</data>
       <data key="v_congressman_id">74230</data>
@@ -1652,9 +1752,9 @@
       <data key="v_term_color">indigo</data>
       <data key="v_region">north-east</data>
       <data key="v_size">39880.82</data>
-      <data key="v_group">38</data>
+      <data key="v_group">166</data>
     </node>
-    <node id="n164">
+    <node id="n174">
       <data key="v_name">DANIEL ALMEIDA</data>
       <data key="v_label">DANIEL ALMEIDA</data>
       <data key="v_congressman_id">74060</data>
@@ -1662,9 +1762,9 @@
       <data key="v_term_color">violet</data>
       <data key="v_region">north-east</data>
       <data key="v_size">303760.93</data>
-      <data key="v_group">133</data>
+      <data key="v_group">167</data>
     </node>
-    <node id="n165">
+    <node id="n175">
       <data key="v_name">ANTONIO BULHÕES</data>
       <data key="v_label">ANTONIO BULHÕES</data>
       <data key="v_congressman_id">141383</data>
@@ -1672,9 +1772,9 @@
       <data key="v_term_color">violet</data>
       <data key="v_region">south-east</data>
       <data key="v_size">242307.83</data>
-      <data key="v_group">134</data>
+      <data key="v_group">168</data>
     </node>
-    <node id="n166">
+    <node id="n176">
       <data key="v_name">EDUARDO BARBOSA</data>
       <data key="v_label">EDUARDO BARBOSA</data>
       <data key="v_congressman_id">74655</data>
@@ -1682,9 +1782,9 @@
       <data key="v_term_color">violet</data>
       <data key="v_region">south-east</data>
       <data key="v_size">294023.63</data>
-      <data key="v_group">38</data>
+      <data key="v_group">169</data>
     </node>
-    <node id="n167">
+    <node id="n177">
       <data key="v_name">DARCÍSIO PERONDI</data>
       <data key="v_label">DARCÍSIO PERONDI</data>
       <data key="v_congressman_id">73891</data>
@@ -1692,9 +1792,9 @@
       <data key="v_term_color">violet</data>
       <data key="v_region">south</data>
       <data key="v_size">34477.07</data>
-      <data key="v_group">135</data>
+      <data key="v_group">170</data>
     </node>
-    <node id="n168">
+    <node id="n178">
       <data key="v_name">NILSON PINTO</data>
       <data key="v_label">NILSON PINTO</data>
       <data key="v_congressman_id">74352</data>
@@ -1702,9 +1802,9 @@
       <data key="v_term_color">violet</data>
       <data key="v_region">north</data>
       <data key="v_size">387730.79</data>
-      <data key="v_group">68</data>
+      <data key="v_group">171</data>
     </node>
-    <node id="n169">
+    <node id="n179">
       <data key="v_name">JOSÉ AIRTON CIRILO</data>
       <data key="v_label">JOSÉ AIRTON CIRILO</data>
       <data key="v_congressman_id">141464</data>
@@ -1712,9 +1812,9 @@
       <data key="v_term_color">violet</data>
       <data key="v_region">north-east</data>
       <data key="v_size">55419.34</data>
-      <data key="v_group">136</data>
+      <data key="v_group">172</data>
     </node>
-    <node id="n170">
+    <node id="n180">
       <data key="v_name">FELIPE BORNIER</data>
       <data key="v_label">FELIPE BORNIER</data>
       <data key="v_congressman_id">141430</data>
@@ -1722,9 +1822,9 @@
       <data key="v_term_color">violet</data>
       <data key="v_region">south-east</data>
       <data key="v_size">149235.34</data>
-      <data key="v_group">137</data>
+      <data key="v_group">173</data>
     </node>
-    <node id="n171">
+    <node id="n181">
       <data key="v_name">MANUELA D&apos;ÁVILA</data>
       <data key="v_label">MANUELA D&apos;ÁVILA</data>
       <data key="v_congressman_id">141492</data>
@@ -1732,9 +1832,9 @@
       <data key="v_term_color">indigo</data>
       <data key="v_region">south</data>
       <data key="v_size">216557.66</data>
-      <data key="v_group">138</data>
+      <data key="v_group">174</data>
     </node>
-    <node id="n172">
+    <node id="n182">
       <data key="v_name">PROFESSOR RUY PAULETTI</data>
       <data key="v_label">PROFESSOR RUY PAULETTI</data>
       <data key="v_congressman_id">141538</data>
@@ -1742,9 +1842,9 @@
       <data key="v_term_color">green</data>
       <data key="v_region">south</data>
       <data key="v_size">76905.64</data>
-      <data key="v_group">139</data>
+      <data key="v_group">175</data>
     </node>
-    <node id="n173">
+    <node id="n183">
       <data key="v_name">ANDRE VARGAS</data>
       <data key="v_label">ANDRE VARGAS</data>
       <data key="v_congressman_id">141378</data>
@@ -1752,9 +1852,9 @@
       <data key="v_term_color">indigo</data>
       <data key="v_region">south</data>
       <data key="v_size">286427.09</data>
-      <data key="v_group">55</data>
+      <data key="v_group">176</data>
     </node>
-    <node id="n174">
+    <node id="n184">
       <data key="v_name">ANTONIO CARLOS MAGALHÃES NETO</data>
       <data key="v_label">ANTONIO CARLOS MAGALHÃES NETO</data>
       <data key="v_congressman_id">74058</data>
@@ -1762,9 +1862,9 @@
       <data key="v_term_color">indigo</data>
       <data key="v_region">north-east</data>
       <data key="v_size">345857.09</data>
-      <data key="v_group">40</data>
+      <data key="v_group">177</data>
     </node>
-    <node id="n175">
+    <node id="n185">
       <data key="v_name">CHICO ALENCAR</data>
       <data key="v_label">CHICO ALENCAR</data>
       <data key="v_congressman_id">74171</data>
@@ -1772,9 +1872,9 @@
       <data key="v_term_color">violet</data>
       <data key="v_region">south-east</data>
       <data key="v_size">389035.78</data>
-      <data key="v_group">35</data>
+      <data key="v_group">178</data>
     </node>
-    <node id="n176">
+    <node id="n186">
       <data key="v_name">DOMINGOS DUTRA</data>
       <data key="v_label">DOMINGOS DUTRA</data>
       <data key="v_congressman_id">74197</data>
@@ -1782,9 +1882,9 @@
       <data key="v_term_color">indigo</data>
       <data key="v_region">north-east</data>
       <data key="v_size">133892.79</data>
-      <data key="v_group">140</data>
+      <data key="v_group">179</data>
     </node>
-    <node id="n177">
+    <node id="n187">
       <data key="v_name">VALDIR COLATTO</data>
       <data key="v_label">VALDIR COLATTO</data>
       <data key="v_congressman_id">74010</data>
@@ -1792,9 +1892,9 @@
       <data key="v_term_color">violet</data>
       <data key="v_region">south</data>
       <data key="v_size">257568.9</data>
-      <data key="v_group">32</data>
+      <data key="v_group">180</data>
     </node>
-    <node id="n178">
+    <node id="n188">
       <data key="v_name">FLÁVIO BEZERRA</data>
       <data key="v_label">FLÁVIO BEZERRA</data>
       <data key="v_congressman_id">141435</data>
@@ -1802,9 +1902,9 @@
       <data key="v_term_color">green</data>
       <data key="v_region">north-east</data>
       <data key="v_size">81693.05</data>
-      <data key="v_group">141</data>
+      <data key="v_group">181</data>
     </node>
-    <node id="n179">
+    <node id="n189">
       <data key="v_name">GUSTAVO FRUET</data>
       <data key="v_label">GUSTAVO FRUET</data>
       <data key="v_congressman_id">73460</data>
@@ -1812,9 +1912,9 @@
       <data key="v_term_color">green</data>
       <data key="v_region">south</data>
       <data key="v_size">15365.16</data>
-      <data key="v_group">142</data>
+      <data key="v_group">182</data>
     </node>
-    <node id="n180">
+    <node id="n190">
       <data key="v_name">CHICO DA PRINCESA</data>
       <data key="v_label">CHICO DA PRINCESA</data>
       <data key="v_congressman_id">74000</data>
@@ -1822,9 +1922,9 @@
       <data key="v_term_color">green</data>
       <data key="v_region">south</data>
       <data key="v_size">5373.99</data>
-      <data key="v_group">100</data>
+      <data key="v_group">183</data>
     </node>
-    <node id="n181">
+    <node id="n191">
       <data key="v_name">ALFREDO KAEFER</data>
       <data key="v_label">ALFREDO KAEFER</data>
       <data key="v_congressman_id">141454</data>
@@ -1832,9 +1932,9 @@
       <data key="v_term_color">violet</data>
       <data key="v_region">south</data>
       <data key="v_size">34521.52</data>
-      <data key="v_group">143</data>
+      <data key="v_group">184</data>
     </node>
-    <node id="n182">
+    <node id="n192">
       <data key="v_name">CARLOS ABICALIL</data>
       <data key="v_label">CARLOS ABICALIL</data>
       <data key="v_congressman_id">74285</data>
@@ -1842,9 +1942,9 @@
       <data key="v_term_color">green</data>
       <data key="v_region">center-west</data>
       <data key="v_size">57994.98</data>
-      <data key="v_group">144</data>
+      <data key="v_group">185</data>
     </node>
-    <node id="n183">
+    <node id="n193">
       <data key="v_name">CIRO NOGUEIRA</data>
       <data key="v_label">CIRO NOGUEIRA</data>
       <data key="v_congressman_id">74313</data>
@@ -1852,19 +1952,9 @@
       <data key="v_term_color">green</data>
       <data key="v_region">north-east</data>
       <data key="v_size">190.84</data>
-      <data key="v_group">145</data>
+      <data key="v_group">186</data>
     </node>
-    <node id="n184">
-      <data key="v_name">ANTONIO JOSÉ MEDEIROS</data>
-      <data key="v_label">ANTONIO JOSÉ MEDEIROS</data>
-      <data key="v_congressman_id">141388</data>
-      <data key="v_state">PI</data>
-      <data key="v_term_color">green</data>
-      <data key="v_region">north-east</data>
-      <data key="v_size">7141.67</data>
-      <data key="v_group">146</data>
-    </node>
-    <node id="n185">
+    <node id="n194">
       <data key="v_name">ANTONIO CRUZ</data>
       <data key="v_label">ANTONIO CRUZ</data>
       <data key="v_congressman_id">73817</data>
@@ -1872,9 +1962,9 @@
       <data key="v_term_color">green</data>
       <data key="v_region">center-west</data>
       <data key="v_size">37.62</data>
-      <data key="v_group">147</data>
+      <data key="v_group">187</data>
     </node>
-    <node id="n186">
+    <node id="n195">
       <data key="v_name">GIVALDO CARIMBÃO</data>
       <data key="v_label">GIVALDO CARIMBÃO</data>
       <data key="v_congressman_id">74558</data>
@@ -1882,9 +1972,9 @@
       <data key="v_term_color">violet</data>
       <data key="v_region">north-east</data>
       <data key="v_size">28.63</data>
-      <data key="v_group">148</data>
+      <data key="v_group">188</data>
     </node>
-    <node id="n187">
+    <node id="n196">
       <data key="v_name">ANDRÉ DE PAULA</data>
       <data key="v_label">ANDRÉ DE PAULA</data>
       <data key="v_congressman_id">74471</data>
@@ -1892,9 +1982,9 @@
       <data key="v_term_color">violet</data>
       <data key="v_region">north-east</data>
       <data key="v_size">245320.85</data>
-      <data key="v_group">149</data>
+      <data key="v_group">189</data>
     </node>
-    <node id="n188">
+    <node id="n197">
       <data key="v_name">CARLOS BRANDÃO</data>
       <data key="v_label">CARLOS BRANDÃO</data>
       <data key="v_congressman_id">141402</data>
@@ -1902,9 +1992,9 @@
       <data key="v_term_color">indigo</data>
       <data key="v_region">north-east</data>
       <data key="v_size">31570.75</data>
-      <data key="v_group">150</data>
+      <data key="v_group">190</data>
     </node>
-    <node id="n189">
+    <node id="n198">
       <data key="v_name">PAULO MAGALHÃES</data>
       <data key="v_label">PAULO MAGALHÃES</data>
       <data key="v_congressman_id">74574</data>
@@ -1912,9 +2002,9 @@
       <data key="v_term_color">violet</data>
       <data key="v_region">north-east</data>
       <data key="v_size">248651.12</data>
-      <data key="v_group">38</data>
+      <data key="v_group">191</data>
     </node>
-    <node id="n190">
+    <node id="n199">
       <data key="v_name">GERALDO SIMÕES</data>
       <data key="v_label">GERALDO SIMÕES</data>
       <data key="v_congressman_id">74566</data>
@@ -1922,9 +2012,9 @@
       <data key="v_term_color">indigo</data>
       <data key="v_region">north-east</data>
       <data key="v_size">251457.62</data>
-      <data key="v_group">151</data>
+      <data key="v_group">192</data>
     </node>
-    <node id="n191">
+    <node id="n200">
       <data key="v_name">PAULO PEREIRA DA SILVA</data>
       <data key="v_label">PAULO PEREIRA DA SILVA</data>
       <data key="v_congressman_id">141518</data>
@@ -1932,9 +2022,9 @@
       <data key="v_term_color">violet</data>
       <data key="v_region">south-east</data>
       <data key="v_size">47930.57</data>
-      <data key="v_group">71</data>
+      <data key="v_group">76</data>
     </node>
-    <node id="n192">
+    <node id="n201">
       <data key="v_name">CARLOS MELLES</data>
       <data key="v_label">CARLOS MELLES</data>
       <data key="v_congressman_id">74651</data>
@@ -1942,9 +2032,9 @@
       <data key="v_term_color">violet</data>
       <data key="v_region">south-east</data>
       <data key="v_size">220723.44</data>
-      <data key="v_group">152</data>
+      <data key="v_group">193</data>
     </node>
-    <node id="n193">
+    <node id="n202">
       <data key="v_name">ARMANDO ABÍLIO</data>
       <data key="v_label">ARMANDO ABÍLIO</data>
       <data key="v_congressman_id">74405</data>
@@ -1952,9 +2042,9 @@
       <data key="v_term_color">indigo</data>
       <data key="v_region">north-east</data>
       <data key="v_size">32713.67</data>
-      <data key="v_group">153</data>
+      <data key="v_group">194</data>
     </node>
-    <node id="n194">
+    <node id="n203">
       <data key="v_name">SARAIVA FELIPE</data>
       <data key="v_label">SARAIVA FELIPE</data>
       <data key="v_congressman_id">74762</data>
@@ -1962,9 +2052,9 @@
       <data key="v_term_color">violet</data>
       <data key="v_region">south-east</data>
       <data key="v_size">342902.3</data>
-      <data key="v_group">32</data>
+      <data key="v_group">50</data>
     </node>
-    <node id="n195">
+    <node id="n204">
       <data key="v_name">ARACELY DE PAULA</data>
       <data key="v_label">ARACELY DE PAULA</data>
       <data key="v_congressman_id">74648</data>
@@ -1972,9 +2062,9 @@
       <data key="v_term_color">indigo</data>
       <data key="v_region">south-east</data>
       <data key="v_size">69254.3</data>
-      <data key="v_group">154</data>
+      <data key="v_group">195</data>
     </node>
-    <node id="n196">
+    <node id="n205">
       <data key="v_name">LIRA MAIA</data>
       <data key="v_label">LIRA MAIA</data>
       <data key="v_congressman_id">141462</data>
@@ -1982,9 +2072,9 @@
       <data key="v_term_color">indigo</data>
       <data key="v_region">north</data>
       <data key="v_size">10032.17</data>
-      <data key="v_group">155</data>
+      <data key="v_group">196</data>
     </node>
-    <node id="n197">
+    <node id="n206">
       <data key="v_name">ALINE CORRÊA</data>
       <data key="v_label">ALINE CORRÊA</data>
       <data key="v_congressman_id">141375</data>
@@ -1992,9 +2082,9 @@
       <data key="v_term_color">indigo</data>
       <data key="v_region">south-east</data>
       <data key="v_size">181634.43</data>
-      <data key="v_group">156</data>
+      <data key="v_group">197</data>
     </node>
-    <node id="n198">
+    <node id="n207">
       <data key="v_name">LUIZ BITTENCOURT</data>
       <data key="v_label">LUIZ BITTENCOURT</data>
       <data key="v_congressman_id">74810</data>
@@ -2002,9 +2092,9 @@
       <data key="v_term_color">green</data>
       <data key="v_region">center-west</data>
       <data key="v_size">0</data>
-      <data key="v_group">157</data>
+      <data key="v_group">198</data>
     </node>
-    <node id="n199">
+    <node id="n208">
       <data key="v_name">OSMAR JÚNIOR</data>
       <data key="v_label">OSMAR JÚNIOR</data>
       <data key="v_congressman_id">141514</data>
@@ -2012,9 +2102,9 @@
       <data key="v_term_color">indigo</data>
       <data key="v_region">north-east</data>
       <data key="v_size">18018.1</data>
-      <data key="v_group">158</data>
+      <data key="v_group">199</data>
     </node>
-    <node id="n200">
+    <node id="n209">
       <data key="v_name">MARIA HELENA</data>
       <data key="v_label">MARIA HELENA</data>
       <data key="v_congressman_id">64960</data>
@@ -2022,9 +2112,9 @@
       <data key="v_term_color">blue</data>
       <data key="v_region">north</data>
       <data key="v_size">68748.54</data>
-      <data key="v_group">68</data>
+      <data key="v_group">200</data>
     </node>
-    <node id="n201">
+    <node id="n210">
       <data key="v_name">MAURO NAZIF</data>
       <data key="v_label">MAURO NAZIF</data>
       <data key="v_congressman_id">141508</data>
@@ -2032,9 +2122,9 @@
       <data key="v_term_color">indigo</data>
       <data key="v_region">north</data>
       <data key="v_size">5985.2</data>
-      <data key="v_group">159</data>
+      <data key="v_group">201</data>
     </node>
-    <node id="n202">
+    <node id="n211">
       <data key="v_name">DALVA FIGUEIREDO</data>
       <data key="v_label">DALVA FIGUEIREDO</data>
       <data key="v_congressman_id">141502</data>
@@ -2042,9 +2132,9 @@
       <data key="v_term_color">indigo</data>
       <data key="v_region">north</data>
       <data key="v_size">134928.55</data>
-      <data key="v_group">160</data>
+      <data key="v_group">202</data>
     </node>
-    <node id="n203">
+    <node id="n212">
       <data key="v_name">EDMILSON VALENTIM</data>
       <data key="v_label">EDMILSON VALENTIM</data>
       <data key="v_congressman_id">139187</data>
@@ -2052,9 +2142,9 @@
       <data key="v_term_color">green</data>
       <data key="v_region">south-east</data>
       <data key="v_size">114408.32</data>
-      <data key="v_group">51</data>
+      <data key="v_group">203</data>
     </node>
-    <node id="n204">
+    <node id="n213">
       <data key="v_name">CLEBER VERDE</data>
       <data key="v_label">CLEBER VERDE</data>
       <data key="v_congressman_id">141408</data>
@@ -2062,9 +2152,9 @@
       <data key="v_term_color">violet</data>
       <data key="v_region">north-east</data>
       <data key="v_size">148393.2</data>
-      <data key="v_group">161</data>
+      <data key="v_group">204</data>
     </node>
-    <node id="n205">
+    <node id="n214">
       <data key="v_name">EDSON EZEQUIEL</data>
       <data key="v_label">EDSON EZEQUIEL</data>
       <data key="v_congressman_id">74838</data>
@@ -2072,9 +2162,9 @@
       <data key="v_term_color">indigo</data>
       <data key="v_region">south-east</data>
       <data key="v_size">555334.97</data>
-      <data key="v_group">26</data>
+      <data key="v_group">205</data>
     </node>
-    <node id="n206">
+    <node id="n215">
       <data key="v_name">FERNANDO CHUCRE</data>
       <data key="v_label">FERNANDO CHUCRE</data>
       <data key="v_congressman_id">141344</data>
@@ -2082,9 +2172,9 @@
       <data key="v_term_color">green</data>
       <data key="v_region">south-east</data>
       <data key="v_size">60919.89</data>
-      <data key="v_group">162</data>
+      <data key="v_group">206</data>
     </node>
-    <node id="n207">
+    <node id="n216">
       <data key="v_name">RAIMUNDO GOMES DE MATOS</data>
       <data key="v_label">RAIMUNDO GOMES DE MATOS</data>
       <data key="v_congressman_id">74216</data>
@@ -2092,9 +2182,9 @@
       <data key="v_term_color">violet</data>
       <data key="v_region">north-east</data>
       <data key="v_size">640129.49</data>
-      <data key="v_group">26</data>
+      <data key="v_group">207</data>
     </node>
-    <node id="n208">
+    <node id="n217">
       <data key="v_name">MIGUEL MARTINI</data>
       <data key="v_label">MIGUEL MARTINI</data>
       <data key="v_congressman_id">141469</data>
@@ -2102,9 +2192,9 @@
       <data key="v_term_color">green</data>
       <data key="v_region">south-east</data>
       <data key="v_size">73871.99</data>
-      <data key="v_group">142</data>
+      <data key="v_group">208</data>
     </node>
-    <node id="n209">
+    <node id="n218">
       <data key="v_name">WOLNEY QUEIROZ</data>
       <data key="v_label">WOLNEY QUEIROZ</data>
       <data key="v_congressman_id">74439</data>
@@ -2112,9 +2202,9 @@
       <data key="v_term_color">violet</data>
       <data key="v_region">north-east</data>
       <data key="v_size">261941.44</data>
-      <data key="v_group">163</data>
+      <data key="v_group">209</data>
     </node>
-    <node id="n210">
+    <node id="n219">
       <data key="v_name">FRANCISCO ROSSI</data>
       <data key="v_label">FRANCISCO ROSSI</data>
       <data key="v_congressman_id">139212</data>
@@ -2122,9 +2212,9 @@
       <data key="v_term_color">green</data>
       <data key="v_region">south-east</data>
       <data key="v_size">44380.63</data>
-      <data key="v_group">149</data>
+      <data key="v_group">210</data>
     </node>
-    <node id="n211">
+    <node id="n220">
       <data key="v_name">GEORGE HILTON</data>
       <data key="v_label">GEORGE HILTON</data>
       <data key="v_congressman_id">141441</data>
@@ -2132,9 +2222,9 @@
       <data key="v_term_color">violet</data>
       <data key="v_region">south-east</data>
       <data key="v_size">253062.87</data>
-      <data key="v_group">164</data>
+      <data key="v_group">211</data>
     </node>
-    <node id="n212">
+    <node id="n221">
       <data key="v_name">BETO MANSUR</data>
       <data key="v_label">BETO MANSUR</data>
       <data key="v_congressman_id">73437</data>
@@ -2142,9 +2232,9 @@
       <data key="v_term_color">violet</data>
       <data key="v_region">south-east</data>
       <data key="v_size">197917.23</data>
-      <data key="v_group">165</data>
+      <data key="v_group">212</data>
     </node>
-    <node id="n213">
+    <node id="n222">
       <data key="v_name">NELSON TRAD</data>
       <data key="v_label">NELSON TRAD</data>
       <data key="v_congressman_id">73761</data>
@@ -2152,9 +2242,19 @@
       <data key="v_term_color">green</data>
       <data key="v_region">center-west</data>
       <data key="v_size">25917.09</data>
-      <data key="v_group">166</data>
+      <data key="v_group">213</data>
     </node>
-    <node id="n214">
+    <node id="n223">
+      <data key="v_name">BEL MESQUITA</data>
+      <data key="v_label">BEL MESQUITA</data>
+      <data key="v_congressman_id">141376</data>
+      <data key="v_state">PA</data>
+      <data key="v_term_color">green</data>
+      <data key="v_region">north</data>
+      <data key="v_size">31504.83</data>
+      <data key="v_group">214</data>
+    </node>
+    <node id="n224">
       <data key="v_name">MARCELO ITAGIBA</data>
       <data key="v_label">MARCELO ITAGIBA</data>
       <data key="v_congressman_id">141495</data>
@@ -2162,9 +2262,9 @@
       <data key="v_term_color">green</data>
       <data key="v_region">south-east</data>
       <data key="v_size">57326.22</data>
-      <data key="v_group">167</data>
+      <data key="v_group">215</data>
     </node>
-    <node id="n215">
+    <node id="n225">
       <data key="v_name">RAFAEL GUERRA</data>
       <data key="v_label">RAFAEL GUERRA</data>
       <data key="v_congressman_id">74590</data>
@@ -2172,19 +2272,19 @@
       <data key="v_term_color">green</data>
       <data key="v_region">south-east</data>
       <data key="v_size">149909.08</data>
-      <data key="v_group">57</data>
+      <data key="v_group">107</data>
     </node>
-    <node id="n216">
-      <data key="v_name">WALDIR MARANHÃO</data>
-      <data key="v_label">WALDIR MARANHÃO</data>
-      <data key="v_congressman_id">141558</data>
-      <data key="v_state">MA</data>
-      <data key="v_term_color">violet</data>
+    <node id="n226">
+      <data key="v_name">IRAN BARBOSA</data>
+      <data key="v_label">IRAN BARBOSA</data>
+      <data key="v_congressman_id">141468</data>
+      <data key="v_state">SE</data>
+      <data key="v_term_color">green</data>
       <data key="v_region">north-east</data>
-      <data key="v_size">64766.45</data>
-      <data key="v_group">168</data>
+      <data key="v_size">127691.62</data>
+      <data key="v_group">216</data>
     </node>
-    <node id="n217">
+    <node id="n227">
       <data key="v_name">CARLOS ZARATTINI</data>
       <data key="v_label">CARLOS ZARATTINI</data>
       <data key="v_congressman_id">141398</data>
@@ -2192,9 +2292,9 @@
       <data key="v_term_color">violet</data>
       <data key="v_region">south-east</data>
       <data key="v_size">874805.34</data>
-      <data key="v_group">169</data>
+      <data key="v_group">217</data>
     </node>
-    <node id="n218">
+    <node id="n228">
       <data key="v_name">ONYX LORENZONI</data>
       <data key="v_label">ONYX LORENZONI</data>
       <data key="v_congressman_id">74399</data>
@@ -2202,9 +2302,9 @@
       <data key="v_term_color">violet</data>
       <data key="v_region">south</data>
       <data key="v_size">237128.39</data>
-      <data key="v_group">170</data>
+      <data key="v_group">218</data>
     </node>
-    <node id="n219">
+    <node id="n229">
       <data key="v_name">NICE LOBÃO</data>
       <data key="v_label">NICE LOBÃO</data>
       <data key="v_congressman_id">74447</data>
@@ -2212,9 +2312,9 @@
       <data key="v_term_color">indigo</data>
       <data key="v_region">north-east</data>
       <data key="v_size">24319.49</data>
-      <data key="v_group">171</data>
+      <data key="v_group">219</data>
     </node>
-    <node id="n220">
+    <node id="n230">
       <data key="v_name">ZÉ GERARDO</data>
       <data key="v_label">ZÉ GERARDO</data>
       <data key="v_congressman_id">74309</data>
@@ -2222,9 +2322,9 @@
       <data key="v_term_color">green</data>
       <data key="v_region">north-east</data>
       <data key="v_size">84031.43</data>
-      <data key="v_group">172</data>
+      <data key="v_group">220</data>
     </node>
-    <node id="n221">
+    <node id="n231">
       <data key="v_name">SILVIO LOPES</data>
       <data key="v_label">SILVIO LOPES</data>
       <data key="v_congressman_id">73998</data>
@@ -2232,9 +2332,9 @@
       <data key="v_term_color">green</data>
       <data key="v_region">south-east</data>
       <data key="v_size">31557.05</data>
-      <data key="v_group">173</data>
+      <data key="v_group">221</data>
     </node>
-    <node id="n222">
+    <node id="n232">
       <data key="v_name">JOVAIR ARANTES</data>
       <data key="v_label">JOVAIR ARANTES</data>
       <data key="v_congressman_id">73666</data>
@@ -2242,9 +2342,9 @@
       <data key="v_term_color">violet</data>
       <data key="v_region">center-west</data>
       <data key="v_size">639426.21</data>
-      <data key="v_group">174</data>
+      <data key="v_group">222</data>
     </node>
-    <node id="n223">
+    <node id="n233">
       <data key="v_name">RONALDO CAIADO</data>
       <data key="v_label">RONALDO CAIADO</data>
       <data key="v_congressman_id">74813</data>
@@ -2252,9 +2352,9 @@
       <data key="v_term_color">indigo</data>
       <data key="v_region">center-west</data>
       <data key="v_size">351595.32</data>
-      <data key="v_group">175</data>
+      <data key="v_group">223</data>
     </node>
-    <node id="n224">
+    <node id="n234">
       <data key="v_name">LEANDRO VILELA</data>
       <data key="v_label">LEANDRO VILELA</data>
       <data key="v_congressman_id">74367</data>
@@ -2262,9 +2362,19 @@
       <data key="v_term_color">indigo</data>
       <data key="v_region">center-west</data>
       <data key="v_size">577.75</data>
-      <data key="v_group">176</data>
+      <data key="v_group">224</data>
     </node>
-    <node id="n225">
+    <node id="n235">
+      <data key="v_name">CLAUDIO CAJADO</data>
+      <data key="v_label">CLAUDIO CAJADO</data>
+      <data key="v_congressman_id">74537</data>
+      <data key="v_state">BA</data>
+      <data key="v_term_color">violet</data>
+      <data key="v_region">north-east</data>
+      <data key="v_size">94.54</data>
+      <data key="v_group">225</data>
+    </node>
+    <node id="n236">
       <data key="v_name">AROLDE DE OLIVEIRA</data>
       <data key="v_label">AROLDE DE OLIVEIRA</data>
       <data key="v_congressman_id">74833</data>
@@ -2272,9 +2382,9 @@
       <data key="v_term_color">violet</data>
       <data key="v_region">south-east</data>
       <data key="v_size">580889.27</data>
-      <data key="v_group">177</data>
+      <data key="v_group">226</data>
     </node>
-    <node id="n226">
+    <node id="n237">
       <data key="v_name">LUIZ CARLOS BUSATO</data>
       <data key="v_label">LUIZ CARLOS BUSATO</data>
       <data key="v_congressman_id">141485</data>
@@ -2282,9 +2392,9 @@
       <data key="v_term_color">violet</data>
       <data key="v_region">south</data>
       <data key="v_size">232772.26</data>
-      <data key="v_group">178</data>
+      <data key="v_group">227</data>
     </node>
-    <node id="n227">
+    <node id="n238">
       <data key="v_name">EVANDRO MILHOMEN</data>
       <data key="v_label">EVANDRO MILHOMEN</data>
       <data key="v_congressman_id">74345</data>
@@ -2292,9 +2402,9 @@
       <data key="v_term_color">indigo</data>
       <data key="v_region">north</data>
       <data key="v_size">101486.54</data>
-      <data key="v_group">179</data>
+      <data key="v_group">228</data>
     </node>
-    <node id="n228">
+    <node id="n239">
       <data key="v_name">BERNARDO ARISTON</data>
       <data key="v_label">BERNARDO ARISTON</data>
       <data key="v_congressman_id">74169</data>
@@ -2302,9 +2412,9 @@
       <data key="v_term_color">green</data>
       <data key="v_region">south-east</data>
       <data key="v_size">68047.82</data>
-      <data key="v_group">40</data>
+      <data key="v_group">41</data>
     </node>
-    <node id="n229">
+    <node id="n240">
       <data key="v_name">CHICO D&apos;ANGELO</data>
       <data key="v_label">CHICO D&apos;ANGELO</data>
       <data key="v_congressman_id">141439</data>
@@ -2312,19 +2422,9 @@
       <data key="v_term_color">violet</data>
       <data key="v_region">south-east</data>
       <data key="v_size">326925.16</data>
-      <data key="v_group">65</data>
+      <data key="v_group">229</data>
     </node>
-    <node id="n230">
-      <data key="v_name">GASTÃO VIEIRA</data>
-      <data key="v_label">GASTÃO VIEIRA</data>
-      <data key="v_congressman_id">74200</data>
-      <data key="v_state">MA</data>
-      <data key="v_term_color">indigo</data>
-      <data key="v_region">north-east</data>
-      <data key="v_size">1234.6</data>
-      <data key="v_group">180</data>
-    </node>
-    <node id="n231">
+    <node id="n241">
       <data key="v_name">LELO COIMBRA</data>
       <data key="v_label">LELO COIMBRA</data>
       <data key="v_congressman_id">141562</data>
@@ -2332,9 +2432,9 @@
       <data key="v_term_color">violet</data>
       <data key="v_region">south-east</data>
       <data key="v_size">218428.05</data>
-      <data key="v_group">181</data>
+      <data key="v_group">230</data>
     </node>
-    <node id="n232">
+    <node id="n242">
       <data key="v_name">AFFONSO CAMARGO</data>
       <data key="v_label">AFFONSO CAMARGO</data>
       <data key="v_congressman_id">73765</data>
@@ -2342,19 +2442,9 @@
       <data key="v_term_color">green</data>
       <data key="v_region">south</data>
       <data key="v_size">140003.99</data>
-      <data key="v_group">182</data>
+      <data key="v_group">231</data>
     </node>
-    <node id="n233">
-      <data key="v_name">NELSON PELLEGRINO</data>
-      <data key="v_label">NELSON PELLEGRINO</data>
-      <data key="v_congressman_id">74571</data>
-      <data key="v_state">BA</data>
-      <data key="v_term_color">violet</data>
-      <data key="v_region">north-east</data>
-      <data key="v_size">178967.56</data>
-      <data key="v_group">183</data>
-    </node>
-    <node id="n234">
+    <node id="n243">
       <data key="v_name">SEBASTIÃO BALA ROCHA</data>
       <data key="v_label">SEBASTIÃO BALA ROCHA</data>
       <data key="v_congressman_id">141539</data>
@@ -2362,19 +2452,9 @@
       <data key="v_term_color">indigo</data>
       <data key="v_region">north</data>
       <data key="v_size">46636.05</data>
-      <data key="v_group">184</data>
+      <data key="v_group">232</data>
     </node>
-    <node id="n235">
-      <data key="v_name">AUGUSTO CARVALHO</data>
-      <data key="v_label">AUGUSTO CARVALHO</data>
-      <data key="v_congressman_id">73655</data>
-      <data key="v_state">DF</data>
-      <data key="v_term_color">violet</data>
-      <data key="v_region">center-west</data>
-      <data key="v_size">305019.02</data>
-      <data key="v_group">185</data>
-    </node>
-    <node id="n236">
+    <node id="n244">
       <data key="v_name">VITOR PENIDO</data>
       <data key="v_label">VITOR PENIDO</data>
       <data key="v_congressman_id">141557</data>
@@ -2382,9 +2462,9 @@
       <data key="v_term_color">indigo</data>
       <data key="v_region">south-east</data>
       <data key="v_size">107762.78</data>
-      <data key="v_group">186</data>
+      <data key="v_group">233</data>
     </node>
-    <node id="n237">
+    <node id="n245">
       <data key="v_name">ANTÔNIO ROBERTO</data>
       <data key="v_label">ANTÔNIO ROBERTO</data>
       <data key="v_congressman_id">141390</data>
@@ -2392,9 +2472,9 @@
       <data key="v_term_color">indigo</data>
       <data key="v_region">south-east</data>
       <data key="v_size">219158.52</data>
-      <data key="v_group">28</data>
+      <data key="v_group">234</data>
     </node>
-    <node id="n238">
+    <node id="n246">
       <data key="v_name">FERNANDO LOPES</data>
       <data key="v_label">FERNANDO LOPES</data>
       <data key="v_congressman_id">74843</data>
@@ -2402,9 +2482,9 @@
       <data key="v_term_color">indigo</data>
       <data key="v_region">south-east</data>
       <data key="v_size">0</data>
-      <data key="v_group">187</data>
+      <data key="v_group">235</data>
     </node>
-    <node id="n239">
+    <node id="n247">
       <data key="v_name">JOSÉ MENTOR</data>
       <data key="v_label">JOSÉ MENTOR</data>
       <data key="v_congressman_id">74275</data>
@@ -2412,9 +2492,9 @@
       <data key="v_term_color">violet</data>
       <data key="v_region">south-east</data>
       <data key="v_size">154340.11</data>
-      <data key="v_group">188</data>
+      <data key="v_group">236</data>
     </node>
-    <node id="n240">
+    <node id="n248">
       <data key="v_name">RICARDO BERZOINI</data>
       <data key="v_label">RICARDO BERZOINI</data>
       <data key="v_congressman_id">74793</data>
@@ -2422,9 +2502,9 @@
       <data key="v_term_color">indigo</data>
       <data key="v_region">south-east</data>
       <data key="v_size">575919.56</data>
-      <data key="v_group">26</data>
+      <data key="v_group">237</data>
     </node>
-    <node id="n241">
+    <node id="n249">
       <data key="v_name">EDIO LOPES</data>
       <data key="v_label">EDIO LOPES</data>
       <data key="v_congressman_id">141417</data>
@@ -2432,9 +2512,9 @@
       <data key="v_term_color">violet</data>
       <data key="v_region">north</data>
       <data key="v_size">338629.44</data>
-      <data key="v_group">189</data>
+      <data key="v_group">238</data>
     </node>
-    <node id="n242">
+    <node id="n250">
       <data key="v_name">MILTON MONTI</data>
       <data key="v_label">MILTON MONTI</data>
       <data key="v_congressman_id">74787</data>
@@ -2442,9 +2522,9 @@
       <data key="v_term_color">violet</data>
       <data key="v_region">south-east</data>
       <data key="v_size">996919.94</data>
-      <data key="v_group">190</data>
+      <data key="v_group">239</data>
     </node>
-    <node id="n243">
+    <node id="n251">
       <data key="v_name">POMPEO DE MATTOS</data>
       <data key="v_label">POMPEO DE MATTOS</data>
       <data key="v_congressman_id">73486</data>
@@ -2452,9 +2532,9 @@
       <data key="v_term_color">blue</data>
       <data key="v_region">south</data>
       <data key="v_size">64722.71</data>
-      <data key="v_group">148</data>
+      <data key="v_group">240</data>
     </node>
-    <node id="n244">
+    <node id="n252">
       <data key="v_name">VIC PIRES FRANCO</data>
       <data key="v_label">VIC PIRES FRANCO</data>
       <data key="v_congressman_id">74087</data>
@@ -2462,19 +2542,19 @@
       <data key="v_term_color">green</data>
       <data key="v_region">north</data>
       <data key="v_size">658.5</data>
-      <data key="v_group">191</data>
+      <data key="v_group">241</data>
     </node>
-    <node id="n245">
-      <data key="v_name">EDUARDO VALVERDE</data>
-      <data key="v_label">EDUARDO VALVERDE</data>
-      <data key="v_congressman_id">73938</data>
-      <data key="v_state">RO</data>
-      <data key="v_term_color">green</data>
-      <data key="v_region">north</data>
-      <data key="v_size">61420.06</data>
-      <data key="v_group">129</data>
+    <node id="n253">
+      <data key="v_name">PAULO PIMENTA</data>
+      <data key="v_label">PAULO PIMENTA</data>
+      <data key="v_congressman_id">74400</data>
+      <data key="v_state">RS</data>
+      <data key="v_term_color">violet</data>
+      <data key="v_region">south</data>
+      <data key="v_size">504809.41</data>
+      <data key="v_group">242</data>
     </node>
-    <node id="n246">
+    <node id="n254">
       <data key="v_name">DR.TALMIR</data>
       <data key="v_label">DR.TALMIR</data>
       <data key="v_congressman_id">141550</data>
@@ -2482,9 +2562,9 @@
       <data key="v_term_color">green</data>
       <data key="v_region">south-east</data>
       <data key="v_size">55461.29</data>
-      <data key="v_group">192</data>
+      <data key="v_group">243</data>
     </node>
-    <node id="n247">
+    <node id="n255">
       <data key="v_name">MARCIO REINALDO MOREIRA</data>
       <data key="v_label">MARCIO REINALDO MOREIRA</data>
       <data key="v_congressman_id">74744</data>
@@ -2492,9 +2572,9 @@
       <data key="v_term_color">indigo</data>
       <data key="v_region">south-east</data>
       <data key="v_size">64442.25</data>
-      <data key="v_group">193</data>
+      <data key="v_group">244</data>
     </node>
-    <node id="n248">
+    <node id="n256">
       <data key="v_name">JOSÉ GUIMARÃES</data>
       <data key="v_label">JOSÉ GUIMARÃES</data>
       <data key="v_congressman_id">141470</data>
@@ -2502,9 +2582,29 @@
       <data key="v_term_color">violet</data>
       <data key="v_region">north-east</data>
       <data key="v_size">624320.59</data>
-      <data key="v_group">51</data>
+      <data key="v_group">56</data>
     </node>
-    <node id="n249">
+    <node id="n257">
+      <data key="v_name">JOFRAN FREJAT</data>
+      <data key="v_label">JOFRAN FREJAT</data>
+      <data key="v_congressman_id">73658</data>
+      <data key="v_state">DF</data>
+      <data key="v_term_color">green</data>
+      <data key="v_region">center-west</data>
+      <data key="v_size">0</data>
+      <data key="v_group">245</data>
+    </node>
+    <node id="n258">
+      <data key="v_name">DR. UBIALI</data>
+      <data key="v_label">DR. UBIALI</data>
+      <data key="v_congressman_id">141498</data>
+      <data key="v_state">SP</data>
+      <data key="v_term_color">indigo</data>
+      <data key="v_region">south-east</data>
+      <data key="v_size">104560.55</data>
+      <data key="v_group">246</data>
+    </node>
+    <node id="n259">
       <data key="v_name">GUILHERME CAMPOS</data>
       <data key="v_label">GUILHERME CAMPOS</data>
       <data key="v_congressman_id">141447</data>
@@ -2512,9 +2612,9 @@
       <data key="v_term_color">indigo</data>
       <data key="v_region">south-east</data>
       <data key="v_size">151490.47</data>
-      <data key="v_group">194</data>
+      <data key="v_group">247</data>
     </node>
-    <node id="n250">
+    <node id="n260">
       <data key="v_name">LEANDRO SAMPAIO</data>
       <data key="v_label">LEANDRO SAMPAIO</data>
       <data key="v_congressman_id">141481</data>
@@ -2522,9 +2622,9 @@
       <data key="v_term_color">green</data>
       <data key="v_region">south-east</data>
       <data key="v_size">6223.5</data>
-      <data key="v_group">195</data>
+      <data key="v_group">248</data>
     </node>
-    <node id="n251">
+    <node id="n261">
       <data key="v_name">MARCELO SERAFIM</data>
       <data key="v_label">MARCELO SERAFIM</data>
       <data key="v_congressman_id">141493</data>
@@ -2532,9 +2632,9 @@
       <data key="v_term_color">green</data>
       <data key="v_region">north</data>
       <data key="v_size">75370.2</data>
-      <data key="v_group">196</data>
+      <data key="v_group">249</data>
     </node>
-    <node id="n252">
+    <node id="n262">
       <data key="v_name">ELISMAR PRADO</data>
       <data key="v_label">ELISMAR PRADO</data>
       <data key="v_congressman_id">141424</data>
@@ -2542,9 +2642,9 @@
       <data key="v_term_color">green</data>
       <data key="v_region">south-east</data>
       <data key="v_size">123642.67</data>
-      <data key="v_group">51</data>
+      <data key="v_group">250</data>
     </node>
-    <node id="n253">
+    <node id="n263">
       <data key="v_name">WILSON SANTIAGO</data>
       <data key="v_label">WILSON SANTIAGO</data>
       <data key="v_congressman_id">74044</data>
@@ -2552,9 +2652,9 @@
       <data key="v_term_color">green</data>
       <data key="v_region">north-east</data>
       <data key="v_size">1090.41</data>
-      <data key="v_group">197</data>
+      <data key="v_group">251</data>
     </node>
-    <node id="n254">
+    <node id="n264">
       <data key="v_name">AELTON FREITAS</data>
       <data key="v_label">AELTON FREITAS</data>
       <data key="v_congressman_id">141372</data>
@@ -2562,9 +2662,9 @@
       <data key="v_term_color">violet</data>
       <data key="v_region">south-east</data>
       <data key="v_size">219482.56</data>
-      <data key="v_group">55</data>
+      <data key="v_group">252</data>
     </node>
-    <node id="n255">
+    <node id="n265">
       <data key="v_name">ODÍLIO BALBINOTTI</data>
       <data key="v_label">ODÍLIO BALBINOTTI</data>
       <data key="v_congressman_id">73782</data>
@@ -2572,9 +2672,9 @@
       <data key="v_term_color">indigo</data>
       <data key="v_region">south</data>
       <data key="v_size">58956.02</data>
-      <data key="v_group">198</data>
+      <data key="v_group">253</data>
     </node>
-    <node id="n256">
+    <node id="n266">
       <data key="v_name">ZEQUINHA MARINHO</data>
       <data key="v_label">ZEQUINHA MARINHO</data>
       <data key="v_congressman_id">73933</data>
@@ -2582,9 +2682,9 @@
       <data key="v_term_color">indigo</data>
       <data key="v_region">north</data>
       <data key="v_size">141442.99</data>
-      <data key="v_group">92</data>
+      <data key="v_group">254</data>
     </node>
-    <node id="n257">
+    <node id="n267">
       <data key="v_name">FÁBIO SOUTO</data>
       <data key="v_label">FÁBIO SOUTO</data>
       <data key="v_congressman_id">74062</data>
@@ -2592,9 +2692,9 @@
       <data key="v_term_color">indigo</data>
       <data key="v_region">north-east</data>
       <data key="v_size">70833.01</data>
-      <data key="v_group">38</data>
+      <data key="v_group">255</data>
     </node>
-    <node id="n258">
+    <node id="n268">
       <data key="v_name">JORGE KHOURY</data>
       <data key="v_label">JORGE KHOURY</data>
       <data key="v_congressman_id">74552</data>
@@ -2602,9 +2702,9 @@
       <data key="v_term_color">green</data>
       <data key="v_region">north-east</data>
       <data key="v_size">39191.88</data>
-      <data key="v_group">199</data>
+      <data key="v_group">42</data>
     </node>
-    <node id="n259">
+    <node id="n269">
       <data key="v_name">WLADIMIR COSTA</data>
       <data key="v_label">WLADIMIR COSTA</data>
       <data key="v_congressman_id">73930</data>
@@ -2612,9 +2712,9 @@
       <data key="v_term_color">violet</data>
       <data key="v_region">north</data>
       <data key="v_size">310500</data>
-      <data key="v_group">200</data>
+      <data key="v_group">256</data>
     </node>
-    <node id="n260">
+    <node id="n270">
       <data key="v_name">WALTER IHOSHI</data>
       <data key="v_label">WALTER IHOSHI</data>
       <data key="v_congressman_id">141560</data>
@@ -2622,9 +2722,9 @@
       <data key="v_term_color">violet</data>
       <data key="v_region">south-east</data>
       <data key="v_size">319344.25</data>
-      <data key="v_group">201</data>
+      <data key="v_group">257</data>
     </node>
-    <node id="n261">
+    <node id="n271">
       <data key="v_name">LUIZ CARREIRA</data>
       <data key="v_label">LUIZ CARREIRA</data>
       <data key="v_congressman_id">74142</data>
@@ -2632,9 +2732,9 @@
       <data key="v_term_color">green</data>
       <data key="v_region">north-east</data>
       <data key="v_size">67820.87</data>
-      <data key="v_group">68</data>
+      <data key="v_group">258</data>
     </node>
-    <node id="n262">
+    <node id="n272">
       <data key="v_name">CARLOS SANTANA</data>
       <data key="v_label">CARLOS SANTANA</data>
       <data key="v_congressman_id">74835</data>
@@ -2642,9 +2742,9 @@
       <data key="v_term_color">green</data>
       <data key="v_region">south-east</data>
       <data key="v_size">69686.84</data>
-      <data key="v_group">202</data>
+      <data key="v_group">259</data>
     </node>
-    <node id="n263">
+    <node id="n273">
       <data key="v_name">MARINA MAGGESSI</data>
       <data key="v_label">MARINA MAGGESSI</data>
       <data key="v_congressman_id">141505</data>
@@ -2652,9 +2752,9 @@
       <data key="v_term_color">green</data>
       <data key="v_region">south-east</data>
       <data key="v_size">270329.81</data>
-      <data key="v_group">68</data>
+      <data key="v_group">223</data>
     </node>
-    <node id="n264">
+    <node id="n274">
       <data key="v_name">VILSON COVATTI</data>
       <data key="v_label">VILSON COVATTI</data>
       <data key="v_congressman_id">141870</data>
@@ -2662,9 +2762,9 @@
       <data key="v_term_color">indigo</data>
       <data key="v_region">south</data>
       <data key="v_size">154032.34</data>
-      <data key="v_group">203</data>
+      <data key="v_group">260</data>
     </node>
-    <node id="n265">
+    <node id="n275">
       <data key="v_name">HOMERO PEREIRA</data>
       <data key="v_label">HOMERO PEREIRA</data>
       <data key="v_congressman_id">141448</data>
@@ -2672,9 +2772,9 @@
       <data key="v_term_color">indigo</data>
       <data key="v_region">center-west</data>
       <data key="v_size">90235.31</data>
-      <data key="v_group">133</data>
+      <data key="v_group">261</data>
     </node>
-    <node id="n266">
+    <node id="n276">
       <data key="v_name">MOISES AVELINO</data>
       <data key="v_label">MOISES AVELINO</data>
       <data key="v_congressman_id">139311</data>
@@ -2682,9 +2782,9 @@
       <data key="v_term_color">green</data>
       <data key="v_region">north</data>
       <data key="v_size">14132.34</data>
-      <data key="v_group">40</data>
+      <data key="v_group">262</data>
     </node>
-    <node id="n267">
+    <node id="n277">
       <data key="v_name">PAULO ROBERTO PEREIRA</data>
       <data key="v_label">PAULO ROBERTO PEREIRA</data>
       <data key="v_congressman_id">141521</data>
@@ -2692,9 +2792,9 @@
       <data key="v_term_color">green</data>
       <data key="v_region">south</data>
       <data key="v_size">77768.56</data>
-      <data key="v_group">204</data>
+      <data key="v_group">263</data>
     </node>
-    <node id="n268">
+    <node id="n278">
       <data key="v_name">CARLOS EDUARDO CADOCA</data>
       <data key="v_label">CARLOS EDUARDO CADOCA</data>
       <data key="v_congressman_id">74474</data>
@@ -2702,9 +2802,9 @@
       <data key="v_term_color">violet</data>
       <data key="v_region">north-east</data>
       <data key="v_size">408835.08</data>
-      <data key="v_group">205</data>
+      <data key="v_group">264</data>
     </node>
-    <node id="n269">
+    <node id="n279">
       <data key="v_name">VIEIRA DA CUNHA</data>
       <data key="v_label">VIEIRA DA CUNHA</data>
       <data key="v_congressman_id">141400</data>
@@ -2712,9 +2812,9 @@
       <data key="v_term_color">indigo</data>
       <data key="v_region">south</data>
       <data key="v_size">263938.37</data>
-      <data key="v_group">32</data>
+      <data key="v_group">265</data>
     </node>
-    <node id="n270">
+    <node id="n280">
       <data key="v_name">FERNANDO DE FABINHO</data>
       <data key="v_label">FERNANDO DE FABINHO</data>
       <data key="v_congressman_id">74063</data>
@@ -2722,9 +2822,19 @@
       <data key="v_term_color">green</data>
       <data key="v_region">north-east</data>
       <data key="v_size">17734.72</data>
-      <data key="v_group">206</data>
+      <data key="v_group">266</data>
     </node>
-    <node id="n271">
+    <node id="n281">
+      <data key="v_name">MARCONDES GADELHA</data>
+      <data key="v_label">MARCONDES GADELHA</data>
+      <data key="v_congressman_id">74470</data>
+      <data key="v_state">PB</data>
+      <data key="v_term_color">green</data>
+      <data key="v_region">north-east</data>
+      <data key="v_size">34827.95</data>
+      <data key="v_group">267</data>
+    </node>
+    <node id="n282">
       <data key="v_name">PAULO ROCHA</data>
       <data key="v_label">PAULO ROCHA</data>
       <data key="v_congressman_id">74082</data>
@@ -2732,9 +2842,9 @@
       <data key="v_term_color">green</data>
       <data key="v_region">north</data>
       <data key="v_size">100610</data>
-      <data key="v_group">207</data>
+      <data key="v_group">268</data>
     </node>
-    <node id="n272">
+    <node id="n283">
       <data key="v_name">MIGUEL CORRÊA</data>
       <data key="v_label">MIGUEL CORRÊA</data>
       <data key="v_congressman_id">141509</data>
@@ -2742,9 +2852,9 @@
       <data key="v_term_color">violet</data>
       <data key="v_region">south-east</data>
       <data key="v_size">392314.57</data>
-      <data key="v_group">78</data>
+      <data key="v_group">269</data>
     </node>
-    <node id="n273">
+    <node id="n284">
       <data key="v_name">CARLOS BEZERRA</data>
       <data key="v_label">CARLOS BEZERRA</data>
       <data key="v_congressman_id">141401</data>
@@ -2752,19 +2862,9 @@
       <data key="v_term_color">violet</data>
       <data key="v_region">center-west</data>
       <data key="v_size">105884.81</data>
-      <data key="v_group">208</data>
+      <data key="v_group">270</data>
     </node>
-    <node id="n274">
-      <data key="v_name">GEDDEL VIEIRA LIMA</data>
-      <data key="v_label">GEDDEL VIEIRA LIMA</data>
-      <data key="v_congressman_id">74544</data>
-      <data key="v_state">BA</data>
-      <data key="v_term_color">green</data>
-      <data key="v_region">north-east</data>
-      <data key="v_size">0</data>
-      <data key="v_group">209</data>
-    </node>
-    <node id="n275">
+    <node id="n285">
       <data key="v_name">ELCIONE BARBALHO</data>
       <data key="v_label">ELCIONE BARBALHO</data>
       <data key="v_congressman_id">74075</data>
@@ -2772,9 +2872,9 @@
       <data key="v_term_color">violet</data>
       <data key="v_region">north</data>
       <data key="v_size">168216.92</data>
-      <data key="v_group">210</data>
+      <data key="v_group">85</data>
     </node>
-    <node id="n276">
+    <node id="n286">
       <data key="v_name">SÉRGIO BARRADAS CARNEIRO</data>
       <data key="v_label">SÉRGIO BARRADAS CARNEIRO</data>
       <data key="v_congressman_id">74533</data>
@@ -2782,9 +2882,19 @@
       <data key="v_term_color">indigo</data>
       <data key="v_region">north-east</data>
       <data key="v_size">80237.69</data>
-      <data key="v_group">32</data>
+      <data key="v_group">271</data>
     </node>
-    <node id="n277">
+    <node id="n287">
+      <data key="v_name">ARNON BEZERRA</data>
+      <data key="v_label">ARNON BEZERRA</data>
+      <data key="v_congressman_id">74291</data>
+      <data key="v_state">CE</data>
+      <data key="v_term_color">violet</data>
+      <data key="v_region">north-east</data>
+      <data key="v_size">1937.95</data>
+      <data key="v_group">272</data>
+    </node>
+    <node id="n288">
       <data key="v_name">MAURÍCIO RANDS</data>
       <data key="v_label">MAURÍCIO RANDS</data>
       <data key="v_congressman_id">74045</data>
@@ -2792,9 +2902,9 @@
       <data key="v_term_color">indigo</data>
       <data key="v_region">north-east</data>
       <data key="v_size">32379.53</data>
-      <data key="v_group">211</data>
+      <data key="v_group">273</data>
     </node>
-    <node id="n278">
+    <node id="n289">
       <data key="v_name">PEDRO WILSON</data>
       <data key="v_label">PEDRO WILSON</data>
       <data key="v_congressman_id">73673</data>
@@ -2802,9 +2912,9 @@
       <data key="v_term_color">green</data>
       <data key="v_region">center-west</data>
       <data key="v_size">135706.77</data>
-      <data key="v_group">212</data>
+      <data key="v_group">274</data>
     </node>
-    <node id="n279">
+    <node id="n290">
       <data key="v_name">CIRO PEDROSA</data>
       <data key="v_label">CIRO PEDROSA</data>
       <data key="v_congressman_id">141407</data>
@@ -2812,9 +2922,9 @@
       <data key="v_term_color">green</data>
       <data key="v_region">south-east</data>
       <data key="v_size">67791.69</data>
-      <data key="v_group">213</data>
+      <data key="v_group">275</data>
     </node>
-    <node id="n280">
+    <node id="n291">
       <data key="v_name">MAURÍCIO QUINTELLA LESSA</data>
       <data key="v_label">MAURÍCIO QUINTELLA LESSA</data>
       <data key="v_congressman_id">74050</data>
@@ -2822,9 +2932,9 @@
       <data key="v_term_color">violet</data>
       <data key="v_region">north-east</data>
       <data key="v_size">3980.63</data>
-      <data key="v_group">214</data>
+      <data key="v_group">276</data>
     </node>
-    <node id="n281">
+    <node id="n292">
       <data key="v_name">LINCOLN PORTELA</data>
       <data key="v_label">LINCOLN PORTELA</data>
       <data key="v_congressman_id">74585</data>
@@ -2832,9 +2942,9 @@
       <data key="v_term_color">violet</data>
       <data key="v_region">south-east</data>
       <data key="v_size">225096.1</data>
-      <data key="v_group">215</data>
+      <data key="v_group">277</data>
     </node>
-    <node id="n282">
+    <node id="n293">
       <data key="v_name">DR. ROSINHA</data>
       <data key="v_label">DR. ROSINHA</data>
       <data key="v_congressman_id">73459</data>
@@ -2842,9 +2952,9 @@
       <data key="v_term_color">indigo</data>
       <data key="v_region">south</data>
       <data key="v_size">282235.91</data>
-      <data key="v_group">216</data>
+      <data key="v_group">278</data>
     </node>
-    <node id="n283">
+    <node id="n294">
       <data key="v_name">JOÃO PIZZOLATTI</data>
       <data key="v_label">JOÃO PIZZOLATTI</data>
       <data key="v_congressman_id">73874</data>
@@ -2852,9 +2962,9 @@
       <data key="v_term_color">indigo</data>
       <data key="v_region">south</data>
       <data key="v_size">243228.91</data>
-      <data key="v_group">217</data>
+      <data key="v_group">279</data>
     </node>
-    <node id="n284">
+    <node id="n295">
       <data key="v_name">RAUL HENRY</data>
       <data key="v_label">RAUL HENRY</data>
       <data key="v_congressman_id">141523</data>
@@ -2862,9 +2972,9 @@
       <data key="v_term_color">indigo</data>
       <data key="v_region">north-east</data>
       <data key="v_size">141718.83</data>
-      <data key="v_group">218</data>
+      <data key="v_group">280</data>
     </node>
-    <node id="n285">
+    <node id="n296">
       <data key="v_name">VITAL DO REGO FILHO</data>
       <data key="v_label">VITAL DO REGO FILHO</data>
       <data key="v_congressman_id">141556</data>
@@ -2872,9 +2982,9 @@
       <data key="v_term_color">green</data>
       <data key="v_region">north-east</data>
       <data key="v_size">32339.68</data>
-      <data key="v_group">219</data>
+      <data key="v_group">281</data>
     </node>
-    <node id="n286">
+    <node id="n297">
       <data key="v_name">ELISEU PADILHA</data>
       <data key="v_label">ELISEU PADILHA</data>
       <data key="v_congressman_id">73892</data>
@@ -2882,9 +2992,9 @@
       <data key="v_term_color">indigo</data>
       <data key="v_region">south</data>
       <data key="v_size">170997.75</data>
-      <data key="v_group">220</data>
+      <data key="v_group">282</data>
     </node>
-    <node id="n287">
+    <node id="n298">
       <data key="v_name">MARINHA RAUPP</data>
       <data key="v_label">MARINHA RAUPP</data>
       <data key="v_congressman_id">74177</data>
@@ -2892,9 +3002,9 @@
       <data key="v_term_color">violet</data>
       <data key="v_region">north</data>
       <data key="v_size">174061.08</data>
-      <data key="v_group">221</data>
+      <data key="v_group">283</data>
     </node>
-    <node id="n288">
+    <node id="n299">
       <data key="v_name">ÁTILA LIRA</data>
       <data key="v_label">ÁTILA LIRA</data>
       <data key="v_congressman_id">74459</data>
@@ -2902,19 +3012,9 @@
       <data key="v_term_color">violet</data>
       <data key="v_region">north-east</data>
       <data key="v_size">52184.03</data>
-      <data key="v_group">222</data>
+      <data key="v_group">284</data>
     </node>
-    <node id="n289">
-      <data key="v_name">JORGE TADEU MUDALEN</data>
-      <data key="v_label">JORGE TADEU MUDALEN</data>
-      <data key="v_congressman_id">73535</data>
-      <data key="v_state">SP</data>
-      <data key="v_term_color">violet</data>
-      <data key="v_region">south-east</data>
-      <data key="v_size">221372.26</data>
-      <data key="v_group">223</data>
-    </node>
-    <node id="n290">
+    <node id="n300">
       <data key="v_name">ROBERTO BRITTO</data>
       <data key="v_label">ROBERTO BRITTO</data>
       <data key="v_congressman_id">141529</data>
@@ -2922,9 +3022,9 @@
       <data key="v_term_color">violet</data>
       <data key="v_region">north-east</data>
       <data key="v_size">108804.82</data>
-      <data key="v_group">224</data>
+      <data key="v_group">285</data>
     </node>
-    <node id="n291">
+    <node id="n301">
       <data key="v_name">CARLOS WILLIAN</data>
       <data key="v_label">CARLOS WILLIAN</data>
       <data key="v_congressman_id">74148</data>
@@ -2932,9 +3032,9 @@
       <data key="v_term_color">green</data>
       <data key="v_region">south-east</data>
       <data key="v_size">51223.98</data>
-      <data key="v_group">225</data>
+      <data key="v_group">286</data>
     </node>
-    <node id="n292">
+    <node id="n302">
       <data key="v_name">MARCOS MONTES</data>
       <data key="v_label">MARCOS MONTES</data>
       <data key="v_congressman_id">141500</data>
@@ -2942,9 +3042,9 @@
       <data key="v_term_color">violet</data>
       <data key="v_region">south-east</data>
       <data key="v_size">291834.89</data>
-      <data key="v_group">226</data>
+      <data key="v_group">287</data>
     </node>
-    <node id="n293">
+    <node id="n303">
       <data key="v_name">CELSO MALDANER</data>
       <data key="v_label">CELSO MALDANER</data>
       <data key="v_congressman_id">141405</data>
@@ -2952,9 +3052,9 @@
       <data key="v_term_color">violet</data>
       <data key="v_region">south</data>
       <data key="v_size">294028.64</data>
-      <data key="v_group">227</data>
+      <data key="v_group">288</data>
     </node>
-    <node id="n294">
+    <node id="n304">
       <data key="v_name">NELSON MARQUEZELLI</data>
       <data key="v_label">NELSON MARQUEZELLI</data>
       <data key="v_congressman_id">73553</data>
@@ -2962,9 +3062,9 @@
       <data key="v_term_color">violet</data>
       <data key="v_region">south-east</data>
       <data key="v_size">45050.54</data>
-      <data key="v_group">228</data>
+      <data key="v_group">289</data>
     </node>
-    <node id="n295">
+    <node id="n305">
       <data key="v_name">INOCÊNCIO OLIVEIRA</data>
       <data key="v_label">INOCÊNCIO OLIVEIRA</data>
       <data key="v_congressman_id">74421</data>
@@ -2972,9 +3072,9 @@
       <data key="v_term_color">indigo</data>
       <data key="v_region">north-east</data>
       <data key="v_size">1827.29</data>
-      <data key="v_group">229</data>
+      <data key="v_group">290</data>
     </node>
-    <node id="n296">
+    <node id="n306">
       <data key="v_name">JURANDY LOUREIRO</data>
       <data key="v_label">JURANDY LOUREIRO</data>
       <data key="v_congressman_id">141475</data>
@@ -2982,9 +3082,9 @@
       <data key="v_term_color">green</data>
       <data key="v_region">south-east</data>
       <data key="v_size">78085.21</data>
-      <data key="v_group">134</data>
+      <data key="v_group">223</data>
     </node>
-    <node id="n297">
+    <node id="n307">
       <data key="v_name">VALTENIR PEREIRA</data>
       <data key="v_label">VALTENIR PEREIRA</data>
       <data key="v_congressman_id">141552</data>
@@ -2992,9 +3092,9 @@
       <data key="v_term_color">violet</data>
       <data key="v_region">center-west</data>
       <data key="v_size">529491.82</data>
-      <data key="v_group">38</data>
+      <data key="v_group">291</data>
     </node>
-    <node id="n298">
+    <node id="n308">
       <data key="v_name">TATICO</data>
       <data key="v_label">TATICO</data>
       <data key="v_congressman_id">74289</data>
@@ -3002,9 +3102,9 @@
       <data key="v_term_color">green</data>
       <data key="v_region">center-west</data>
       <data key="v_size">0</data>
-      <data key="v_group">230</data>
+      <data key="v_group">292</data>
     </node>
-    <node id="n299">
+    <node id="n309">
       <data key="v_name">PAULO MALUF</data>
       <data key="v_label">PAULO MALUF</data>
       <data key="v_congressman_id">132056</data>
@@ -3012,9 +3112,9 @@
       <data key="v_term_color">violet</data>
       <data key="v_region">south-east</data>
       <data key="v_size">144484.3</data>
-      <data key="v_group">231</data>
+      <data key="v_group">293</data>
     </node>
-    <node id="n300">
+    <node id="n310">
       <data key="v_name">GERALDO RESENDE</data>
       <data key="v_label">GERALDO RESENDE</data>
       <data key="v_congressman_id">74374</data>
@@ -3022,9 +3122,9 @@
       <data key="v_term_color">violet</data>
       <data key="v_region">center-west</data>
       <data key="v_size">442168.51</data>
-      <data key="v_group">232</data>
+      <data key="v_group">294</data>
     </node>
-    <node id="n301">
+    <node id="n311">
       <data key="v_name">ÍRIS DE ARAÚJO</data>
       <data key="v_label">ÍRIS DE ARAÚJO</data>
       <data key="v_congressman_id">141453</data>
@@ -3032,9 +3132,9 @@
       <data key="v_term_color">indigo</data>
       <data key="v_region">center-west</data>
       <data key="v_size">51269.41</data>
-      <data key="v_group">233</data>
+      <data key="v_group">295</data>
     </node>
-    <node id="n302">
+    <node id="n312">
       <data key="v_name">LUIZ BASSUMA</data>
       <data key="v_label">LUIZ BASSUMA</data>
       <data key="v_congressman_id">74059</data>
@@ -3042,9 +3142,19 @@
       <data key="v_term_color">green</data>
       <data key="v_region">north-east</data>
       <data key="v_size">45372.72</data>
-      <data key="v_group">234</data>
+      <data key="v_group">296</data>
     </node>
-    <node id="n303">
+    <node id="n313">
+      <data key="v_name">PAULO RUBEM SANTIAGO</data>
+      <data key="v_label">PAULO RUBEM SANTIAGO</data>
+      <data key="v_congressman_id">74047</data>
+      <data key="v_state">PE</data>
+      <data key="v_term_color">indigo</data>
+      <data key="v_region">north-east</data>
+      <data key="v_size">304922.54</data>
+      <data key="v_group">297</data>
+    </node>
+    <node id="n314">
       <data key="v_name">ENIO BACCI</data>
       <data key="v_label">ENIO BACCI</data>
       <data key="v_congressman_id">73893</data>
@@ -3052,9 +3162,9 @@
       <data key="v_term_color">indigo</data>
       <data key="v_region">south</data>
       <data key="v_size">30420.1</data>
-      <data key="v_group">235</data>
+      <data key="v_group">298</data>
     </node>
-    <node id="n304">
+    <node id="n315">
       <data key="v_name">ANGELA AMIN</data>
       <data key="v_label">ANGELA AMIN</data>
       <data key="v_congressman_id">73696</data>
@@ -3062,9 +3172,9 @@
       <data key="v_term_color">green</data>
       <data key="v_region">south</data>
       <data key="v_size">64057.79</data>
-      <data key="v_group">236</data>
+      <data key="v_group">283</data>
     </node>
-    <node id="n305">
+    <node id="n316">
       <data key="v_name">ALEXANDRE SANTOS</data>
       <data key="v_label">ALEXANDRE SANTOS</data>
       <data key="v_congressman_id">74830</data>
@@ -3072,19 +3182,9 @@
       <data key="v_term_color">indigo</data>
       <data key="v_region">south-east</data>
       <data key="v_size">116414.9</data>
-      <data key="v_group">237</data>
+      <data key="v_group">299</data>
     </node>
-    <node id="n306">
-      <data key="v_name">PASTOR MANOEL FERREIRA</data>
-      <data key="v_label">PASTOR MANOEL FERREIRA</data>
-      <data key="v_congressman_id">141491</data>
-      <data key="v_state">RJ</data>
-      <data key="v_term_color">green</data>
-      <data key="v_region">south-east</data>
-      <data key="v_size">25165.52</data>
-      <data key="v_group">238</data>
-    </node>
-    <node id="n307">
+    <node id="n317">
       <data key="v_name">WALDEMIR MOKA</data>
       <data key="v_label">WALDEMIR MOKA</data>
       <data key="v_congressman_id">73456</data>
@@ -3092,9 +3192,9 @@
       <data key="v_term_color">green</data>
       <data key="v_region">center-west</data>
       <data key="v_size">53765.66</data>
-      <data key="v_group">40</data>
+      <data key="v_group">300</data>
     </node>
-    <node id="n308">
+    <node id="n318">
       <data key="v_name">LAEL VARELLA</data>
       <data key="v_label">LAEL VARELLA</data>
       <data key="v_congressman_id">74742</data>
@@ -3102,9 +3202,9 @@
       <data key="v_term_color">indigo</data>
       <data key="v_region">south-east</data>
       <data key="v_size">504200.42</data>
-      <data key="v_group">205</data>
+      <data key="v_group">301</data>
     </node>
-    <node id="n309">
+    <node id="n319">
       <data key="v_name">JILMAR TATTO</data>
       <data key="v_label">JILMAR TATTO</data>
       <data key="v_congressman_id">141456</data>
@@ -3112,9 +3212,9 @@
       <data key="v_term_color">indigo</data>
       <data key="v_region">south-east</data>
       <data key="v_size">311067.9</data>
-      <data key="v_group">51</data>
+      <data key="v_group">302</data>
     </node>
-    <node id="n310">
+    <node id="n320">
       <data key="v_name">DILCEU SPERAFICO</data>
       <data key="v_label">DILCEU SPERAFICO</data>
       <data key="v_congressman_id">73768</data>
@@ -3122,9 +3222,9 @@
       <data key="v_term_color">violet</data>
       <data key="v_region">south</data>
       <data key="v_size">258226.1</data>
-      <data key="v_group">232</data>
+      <data key="v_group">294</data>
     </node>
-    <node id="n311">
+    <node id="n321">
       <data key="v_name">PEDRO EUGÊNIO</data>
       <data key="v_label">PEDRO EUGÊNIO</data>
       <data key="v_congressman_id">74556</data>
@@ -3132,9 +3232,9 @@
       <data key="v_term_color">indigo</data>
       <data key="v_region">north-east</data>
       <data key="v_size">440716.17</data>
-      <data key="v_group">26</data>
+      <data key="v_group">303</data>
     </node>
-    <node id="n312">
+    <node id="n322">
       <data key="v_name">RITA CAMATA</data>
       <data key="v_label">RITA CAMATA</data>
       <data key="v_congressman_id">74777</data>
@@ -3142,9 +3242,9 @@
       <data key="v_term_color">green</data>
       <data key="v_region">south-east</data>
       <data key="v_size">268.22</data>
-      <data key="v_group">239</data>
+      <data key="v_group">304</data>
     </node>
-    <node id="n313">
+    <node id="n323">
       <data key="v_name">PEDRO CHAVES</data>
       <data key="v_label">PEDRO CHAVES</data>
       <data key="v_congressman_id">74812</data>
@@ -3152,9 +3252,9 @@
       <data key="v_term_color">violet</data>
       <data key="v_region">center-west</data>
       <data key="v_size">231646.73</data>
-      <data key="v_group">87</data>
+      <data key="v_group">305</data>
     </node>
-    <node id="n314">
+    <node id="n324">
       <data key="v_name">NILMAR RUIZ</data>
       <data key="v_label">NILMAR RUIZ</data>
       <data key="v_congressman_id">73594</data>
@@ -3162,9 +3262,19 @@
       <data key="v_term_color">indigo</data>
       <data key="v_region">north</data>
       <data key="v_size">79505.44</data>
-      <data key="v_group">142</data>
+      <data key="v_group">208</data>
     </node>
-    <node id="n315">
+    <node id="n325">
+      <data key="v_name">MENDONÇA PRADO</data>
+      <data key="v_label">MENDONÇA PRADO</data>
+      <data key="v_congressman_id">74056</data>
+      <data key="v_state">SE</data>
+      <data key="v_term_color">indigo</data>
+      <data key="v_region">north-east</data>
+      <data key="v_size">49630.84</data>
+      <data key="v_group">306</data>
+    </node>
+    <node id="n326">
       <data key="v_name">MOACIR MICHELETTO</data>
       <data key="v_label">MOACIR MICHELETTO</data>
       <data key="v_congressman_id">74238</data>
@@ -3172,9 +3282,9 @@
       <data key="v_term_color">indigo</data>
       <data key="v_region">south</data>
       <data key="v_size">32985.01</data>
-      <data key="v_group">240</data>
+      <data key="v_group">307</data>
     </node>
-    <node id="n316">
+    <node id="n327">
       <data key="v_name">SEVERIANO ALVES</data>
       <data key="v_label">SEVERIANO ALVES</data>
       <data key="v_congressman_id">74641</data>
@@ -3182,9 +3292,9 @@
       <data key="v_term_color">green</data>
       <data key="v_region">north-east</data>
       <data key="v_size">3089.3</data>
-      <data key="v_group">241</data>
+      <data key="v_group">308</data>
     </node>
-    <node id="n317">
+    <node id="n328">
       <data key="v_name">ARNALDO FARIA DE SÁ</data>
       <data key="v_label">ARNALDO FARIA DE SÁ</data>
       <data key="v_congressman_id">73434</data>
@@ -3192,9 +3302,19 @@
       <data key="v_term_color">violet</data>
       <data key="v_region">south-east</data>
       <data key="v_size">16119.37</data>
-      <data key="v_group">242</data>
+      <data key="v_group">309</data>
     </node>
-    <node id="n318">
+    <node id="n329">
+      <data key="v_name">JOÃO ALMEIDA</data>
+      <data key="v_label">JOÃO ALMEIDA</data>
+      <data key="v_congressman_id">74549</data>
+      <data key="v_state">BA</data>
+      <data key="v_term_color">green</data>
+      <data key="v_region">north-east</data>
+      <data key="v_size">53717.12</data>
+      <data key="v_group">310</data>
+    </node>
+    <node id="n330">
       <data key="v_name">VIRGILIO GUIMARAES</data>
       <data key="v_label">VIRGILIO GUIMARAES</data>
       <data key="v_congressman_id">74593</data>
@@ -3202,9 +3322,9 @@
       <data key="v_term_color">green</data>
       <data key="v_region">south-east</data>
       <data key="v_size">54287.63</data>
-      <data key="v_group">243</data>
+      <data key="v_group">311</data>
     </node>
-    <node id="n319">
+    <node id="n331">
       <data key="v_name">JOÃO MATOS</data>
       <data key="v_label">JOÃO MATOS</data>
       <data key="v_congressman_id">73873</data>
@@ -3212,9 +3332,9 @@
       <data key="v_term_color">green</data>
       <data key="v_region">south</data>
       <data key="v_size">73655.11</data>
-      <data key="v_group">142</data>
+      <data key="v_group">208</data>
     </node>
-    <node id="n320">
+    <node id="n332">
       <data key="v_name">OLAVO CALHEIROS</data>
       <data key="v_label">OLAVO CALHEIROS</data>
       <data key="v_congressman_id">74005</data>
@@ -3222,9 +3342,9 @@
       <data key="v_term_color">green</data>
       <data key="v_region">north-east</data>
       <data key="v_size">37839.98</data>
-      <data key="v_group">244</data>
+      <data key="v_group">312</data>
     </node>
-    <node id="n321">
+    <node id="n333">
       <data key="v_name">WANDENKOLK GONÇALVES</data>
       <data key="v_label">WANDENKOLK GONÇALVES</data>
       <data key="v_congressman_id">141561</data>
@@ -3232,9 +3352,9 @@
       <data key="v_term_color">indigo</data>
       <data key="v_region">north</data>
       <data key="v_size">12060.01</data>
-      <data key="v_group">245</data>
+      <data key="v_group">313</data>
     </node>
-    <node id="n322">
+    <node id="n334">
       <data key="v_name">JÚLIO DELGADO</data>
       <data key="v_label">JÚLIO DELGADO</data>
       <data key="v_congressman_id">73586</data>
@@ -3242,9 +3362,9 @@
       <data key="v_term_color">violet</data>
       <data key="v_region">south-east</data>
       <data key="v_size">406429.85</data>
-      <data key="v_group">38</data>
+      <data key="v_group">314</data>
     </node>
-    <node id="n323">
+    <node id="n335">
       <data key="v_name">BIFFI</data>
       <data key="v_label">BIFFI</data>
       <data key="v_congressman_id">74373</data>
@@ -3252,9 +3372,9 @@
       <data key="v_term_color">indigo</data>
       <data key="v_region">center-west</data>
       <data key="v_size">364514.38</data>
-      <data key="v_group">246</data>
+      <data key="v_group">315</data>
     </node>
-    <node id="n324">
+    <node id="n336">
       <data key="v_name">ASDRUBAL BENTES</data>
       <data key="v_label">ASDRUBAL BENTES</data>
       <data key="v_congressman_id">74222</data>
@@ -3262,9 +3382,9 @@
       <data key="v_term_color">indigo</data>
       <data key="v_region">north</data>
       <data key="v_size">53930</data>
-      <data key="v_group">247</data>
+      <data key="v_group">316</data>
     </node>
-    <node id="n325">
+    <node id="n337">
       <data key="v_name">ALDO REBELO</data>
       <data key="v_label">ALDO REBELO</data>
       <data key="v_congressman_id">73428</data>
@@ -3272,9 +3392,9 @@
       <data key="v_term_color">indigo</data>
       <data key="v_region">south-east</data>
       <data key="v_size">54255.39</data>
-      <data key="v_group">248</data>
+      <data key="v_group">317</data>
     </node>
-    <node id="n326">
+    <node id="n338">
       <data key="v_name">MARCELO CASTRO</data>
       <data key="v_label">MARCELO CASTRO</data>
       <data key="v_congressman_id">74460</data>
@@ -3282,9 +3402,9 @@
       <data key="v_term_color">violet</data>
       <data key="v_region">north-east</data>
       <data key="v_size">76307.38</data>
-      <data key="v_group">38</data>
+      <data key="v_group">318</data>
     </node>
-    <node id="n327">
+    <node id="n339">
       <data key="v_name">CELSO RUSSOMANNO</data>
       <data key="v_label">CELSO RUSSOMANNO</data>
       <data key="v_congressman_id">73441</data>
@@ -3292,9 +3412,9 @@
       <data key="v_term_color">blue</data>
       <data key="v_region">south-east</data>
       <data key="v_size">70800.57</data>
-      <data key="v_group">249</data>
+      <data key="v_group">319</data>
     </node>
-    <node id="n328">
+    <node id="n340">
       <data key="v_name">GERALDO THADEU</data>
       <data key="v_label">GERALDO THADEU</data>
       <data key="v_congressman_id">74151</data>
@@ -3302,9 +3422,19 @@
       <data key="v_term_color">indigo</data>
       <data key="v_region">south-east</data>
       <data key="v_size">175563.28</data>
-      <data key="v_group">38</data>
+      <data key="v_group">320</data>
     </node>
-    <node id="n329">
+    <node id="n341">
+      <data key="v_name">LÉO VIVAS</data>
+      <data key="v_label">LÉO VIVAS</data>
+      <data key="v_congressman_id">141452</data>
+      <data key="v_state">RJ</data>
+      <data key="v_term_color">green</data>
+      <data key="v_region">south-east</data>
+      <data key="v_size">10160.41</data>
+      <data key="v_group">224</data>
+    </node>
+    <node id="n342">
       <data key="v_name">CARLOS MANATO</data>
       <data key="v_label">CARLOS MANATO</data>
       <data key="v_congressman_id">74163</data>
@@ -3312,9 +3442,9 @@
       <data key="v_term_color">violet</data>
       <data key="v_region">south-east</data>
       <data key="v_size">124494.04</data>
-      <data key="v_group">250</data>
+      <data key="v_group">321</data>
     </node>
-    <node id="n330">
+    <node id="n343">
       <data key="v_name">ILDERLEI CORDEIRO</data>
       <data key="v_label">ILDERLEI CORDEIRO</data>
       <data key="v_congressman_id">141451</data>
@@ -3322,9 +3452,9 @@
       <data key="v_term_color">green</data>
       <data key="v_region">north</data>
       <data key="v_size">0</data>
-      <data key="v_group">251</data>
+      <data key="v_group">322</data>
     </node>
-    <node id="n331">
+    <node id="n344">
       <data key="v_name">SOLANGE AMARAL</data>
       <data key="v_label">SOLANGE AMARAL</data>
       <data key="v_congressman_id">141546</data>
@@ -3332,9 +3462,9 @@
       <data key="v_term_color">green</data>
       <data key="v_region">south-east</data>
       <data key="v_size">45942.94</data>
-      <data key="v_group">252</data>
+      <data key="v_group">323</data>
     </node>
-    <node id="n332">
+    <node id="n345">
       <data key="v_name">BRUNO RODRIGUES</data>
       <data key="v_label">BRUNO RODRIGUES</data>
       <data key="v_congressman_id">141393</data>
@@ -3342,9 +3472,9 @@
       <data key="v_term_color">indigo</data>
       <data key="v_region">north-east</data>
       <data key="v_size">44685.92</data>
-      <data key="v_group">253</data>
+      <data key="v_group">324</data>
     </node>
-    <node id="n333">
+    <node id="n346">
       <data key="v_name">FÁTIMA BEZERRA</data>
       <data key="v_label">FÁTIMA BEZERRA</data>
       <data key="v_congressman_id">74037</data>
@@ -3352,9 +3482,9 @@
       <data key="v_term_color">indigo</data>
       <data key="v_region">north-east</data>
       <data key="v_size">228812.28</data>
-      <data key="v_group">254</data>
+      <data key="v_group">325</data>
     </node>
-    <node id="n334">
+    <node id="n347">
       <data key="v_name">EUNICIO OLIVEIRA</data>
       <data key="v_label">EUNICIO OLIVEIRA</data>
       <data key="v_congressman_id">74454</data>
@@ -3362,9 +3492,9 @@
       <data key="v_term_color">green</data>
       <data key="v_region">north-east</data>
       <data key="v_size">426.97</data>
-      <data key="v_group">255</data>
+      <data key="v_group">326</data>
     </node>
-    <node id="n335">
+    <node id="n348">
       <data key="v_name">ADEMIR CAMILO</data>
       <data key="v_label">ADEMIR CAMILO</data>
       <data key="v_congressman_id">133374</data>
@@ -3372,9 +3502,9 @@
       <data key="v_term_color">violet</data>
       <data key="v_region">south-east</data>
       <data key="v_size">121076.46</data>
-      <data key="v_group">256</data>
+      <data key="v_group">327</data>
     </node>
-    <node id="n336">
+    <node id="n349">
       <data key="v_name">JURANDIL JUAREZ</data>
       <data key="v_label">JURANDIL JUAREZ</data>
       <data key="v_congressman_id">74346</data>
@@ -3382,9 +3512,9 @@
       <data key="v_term_color">green</data>
       <data key="v_region">north</data>
       <data key="v_size">135978.76</data>
-      <data key="v_group">51</data>
+      <data key="v_group">328</data>
     </node>
-    <node id="n337">
+    <node id="n350">
       <data key="v_name">ASSIS DO COUTO</data>
       <data key="v_label">ASSIS DO COUTO</data>
       <data key="v_congressman_id">74378</data>
@@ -3392,9 +3522,9 @@
       <data key="v_term_color">violet</data>
       <data key="v_region">south</data>
       <data key="v_size">92535.34</data>
-      <data key="v_group">257</data>
+      <data key="v_group">329</data>
     </node>
-    <node id="n338">
+    <node id="n351">
       <data key="v_name">MÁRIO DE OLIVEIRA</data>
       <data key="v_label">MÁRIO DE OLIVEIRA</data>
       <data key="v_congressman_id">74747</data>
@@ -3402,9 +3532,9 @@
       <data key="v_term_color">indigo</data>
       <data key="v_region">south-east</data>
       <data key="v_size">16765.9</data>
-      <data key="v_group">258</data>
+      <data key="v_group">330</data>
     </node>
-    <node id="n339">
+    <node id="n352">
       <data key="v_name">VALADARES FILHO</data>
       <data key="v_label">VALADARES FILHO</data>
       <data key="v_congressman_id">141384</data>
@@ -3412,9 +3542,9 @@
       <data key="v_term_color">violet</data>
       <data key="v_region">north-east</data>
       <data key="v_size">4419.78</data>
-      <data key="v_group">112</data>
+      <data key="v_group">331</data>
     </node>
-    <node id="n340">
+    <node id="n353">
       <data key="v_name">ABELARDO CAMARINHA</data>
       <data key="v_label">ABELARDO CAMARINHA</data>
       <data key="v_congressman_id">141463</data>
@@ -3422,9 +3552,9 @@
       <data key="v_term_color">indigo</data>
       <data key="v_region">south-east</data>
       <data key="v_size">1018.53</data>
-      <data key="v_group">259</data>
+      <data key="v_group">332</data>
     </node>
-    <node id="n341">
+    <node id="n354">
       <data key="v_name">VANDERLEI MACRIS</data>
       <data key="v_label">VANDERLEI MACRIS</data>
       <data key="v_congressman_id">141553</data>
@@ -3432,9 +3562,9 @@
       <data key="v_term_color">violet</data>
       <data key="v_region">south-east</data>
       <data key="v_size">545247.13</data>
-      <data key="v_group">169</data>
+      <data key="v_group">333</data>
     </node>
-    <node id="n342">
+    <node id="n355">
       <data key="v_name">LÉO ALCÂNTARA</data>
       <data key="v_label">LÉO ALCÂNTARA</data>
       <data key="v_congressman_id">74455</data>
@@ -3442,9 +3572,9 @@
       <data key="v_term_color">green</data>
       <data key="v_region">north-east</data>
       <data key="v_size">64367.44</data>
-      <data key="v_group">92</data>
+      <data key="v_group">103</data>
     </node>
-    <node id="n343">
+    <node id="n356">
       <data key="v_name">LEONARDO MONTEIRO</data>
       <data key="v_label">LEONARDO MONTEIRO</data>
       <data key="v_congressman_id">74156</data>
@@ -3452,9 +3582,9 @@
       <data key="v_term_color">violet</data>
       <data key="v_region">south-east</data>
       <data key="v_size">292504.16</data>
-      <data key="v_group">54</data>
+      <data key="v_group">75</data>
     </node>
-    <node id="n344">
+    <node id="n357">
       <data key="v_name">JÔ MORAES</data>
       <data key="v_label">JÔ MORAES</data>
       <data key="v_congressman_id">141503</data>
@@ -3462,9 +3592,9 @@
       <data key="v_term_color">violet</data>
       <data key="v_region">south-east</data>
       <data key="v_size">344568.72</data>
-      <data key="v_group">260</data>
+      <data key="v_group">334</data>
     </node>
-    <node id="n345">
+    <node id="n358">
       <data key="v_name">THELMA DE OLIVEIRA</data>
       <data key="v_label">THELMA DE OLIVEIRA</data>
       <data key="v_congressman_id">74286</data>
@@ -3472,9 +3602,9 @@
       <data key="v_term_color">green</data>
       <data key="v_region">center-west</data>
       <data key="v_size">136406.62</data>
-      <data key="v_group">261</data>
+      <data key="v_group">335</data>
     </node>
-    <node id="n346">
+    <node id="n359">
       <data key="v_name">ANA ARRAES</data>
       <data key="v_label">ANA ARRAES</data>
       <data key="v_congressman_id">141377</data>
@@ -3482,9 +3612,9 @@
       <data key="v_term_color">indigo</data>
       <data key="v_region">north-east</data>
       <data key="v_size">109925.32</data>
-      <data key="v_group">262</data>
+      <data key="v_group">73</data>
     </node>
-    <node id="n347">
+    <node id="n360">
       <data key="v_name">JOSÉ SANTANA VASCONCELLOS</data>
       <data key="v_label">JOSÉ SANTANA VASCONCELLOS</data>
       <data key="v_congressman_id">74741</data>
@@ -3492,9 +3622,9 @@
       <data key="v_term_color">green</data>
       <data key="v_region">south-east</data>
       <data key="v_size">80069.13</data>
-      <data key="v_group">78</data>
+      <data key="v_group">336</data>
     </node>
-    <node id="n348">
+    <node id="n361">
       <data key="v_name">EUDES XAVIER</data>
       <data key="v_label">EUDES XAVIER</data>
       <data key="v_congressman_id">141386</data>
@@ -3502,9 +3632,9 @@
       <data key="v_term_color">indigo</data>
       <data key="v_region">north-east</data>
       <data key="v_size">151373.88</data>
-      <data key="v_group">32</data>
+      <data key="v_group">337</data>
     </node>
-    <node id="n349">
+    <node id="n362">
       <data key="v_name">DUARTE NOGUEIRA</data>
       <data key="v_label">DUARTE NOGUEIRA</data>
       <data key="v_congressman_id">141385</data>
@@ -3512,9 +3642,9 @@
       <data key="v_term_color">violet</data>
       <data key="v_region">south-east</data>
       <data key="v_size">184859.65</data>
-      <data key="v_group">263</data>
+      <data key="v_group">338</data>
     </node>
-    <node id="n350">
+    <node id="n363">
       <data key="v_name">WELLINGTON ROBERTO</data>
       <data key="v_label">WELLINGTON ROBERTO</data>
       <data key="v_congressman_id">74043</data>
@@ -3522,9 +3652,9 @@
       <data key="v_term_color">violet</data>
       <data key="v_region">north-east</data>
       <data key="v_size">14014.73</data>
-      <data key="v_group">264</data>
+      <data key="v_group">339</data>
     </node>
-    <node id="n351">
+    <node id="n364">
       <data key="v_name">MAURO BENEVIDES</data>
       <data key="v_label">MAURO BENEVIDES</data>
       <data key="v_congressman_id">73588</data>
@@ -3532,9 +3662,9 @@
       <data key="v_term_color">indigo</data>
       <data key="v_region">north-east</data>
       <data key="v_size">250.83</data>
-      <data key="v_group">265</data>
+      <data key="v_group">340</data>
     </node>
-    <node id="n352">
+    <node id="n365">
       <data key="v_name">LÍDICE DA MATA</data>
       <data key="v_label">LÍDICE DA MATA</data>
       <data key="v_congressman_id">139285</data>
@@ -3542,9 +3672,9 @@
       <data key="v_term_color">green</data>
       <data key="v_region">north-east</data>
       <data key="v_size">147443.93</data>
-      <data key="v_group">169</data>
+      <data key="v_group">333</data>
     </node>
-    <node id="n353">
+    <node id="n366">
       <data key="v_name">VANESSA GRAZZIOTIN</data>
       <data key="v_label">VANESSA GRAZZIOTIN</data>
       <data key="v_congressman_id">74357</data>
@@ -3552,9 +3682,9 @@
       <data key="v_term_color">green</data>
       <data key="v_region">north</data>
       <data key="v_size">41355.94</data>
-      <data key="v_group">266</data>
+      <data key="v_group">341</data>
     </node>
-    <node id="n354">
+    <node id="n367">
       <data key="v_name">MANOEL JUNIOR</data>
       <data key="v_label">MANOEL JUNIOR</data>
       <data key="v_congressman_id">141490</data>
@@ -3562,9 +3692,9 @@
       <data key="v_term_color">violet</data>
       <data key="v_region">north-east</data>
       <data key="v_size">369197.04</data>
-      <data key="v_group">267</data>
+      <data key="v_group">342</data>
     </node>
-    <node id="n355">
+    <node id="n368">
       <data key="v_name">FLAVIANO MELO</data>
       <data key="v_label">FLAVIANO MELO</data>
       <data key="v_congressman_id">141434</data>
@@ -3572,9 +3702,9 @@
       <data key="v_term_color">violet</data>
       <data key="v_region">north</data>
       <data key="v_size">452049.98</data>
-      <data key="v_group">78</data>
+      <data key="v_group">343</data>
     </node>
-    <node id="n356">
+    <node id="n369">
       <data key="v_name">VICENTE ARRUDA</data>
       <data key="v_label">VICENTE ARRUDA</data>
       <data key="v_congressman_id">74308</data>
@@ -3582,9 +3712,9 @@
       <data key="v_term_color">violet</data>
       <data key="v_region">north-east</data>
       <data key="v_size">137284</data>
-      <data key="v_group">268</data>
+      <data key="v_group">344</data>
     </node>
-    <node id="n357">
+    <node id="n370">
       <data key="v_name">ZÉ GERALDO</data>
       <data key="v_label">ZÉ GERALDO</data>
       <data key="v_congressman_id">73931</data>
@@ -3592,9 +3722,9 @@
       <data key="v_term_color">violet</data>
       <data key="v_region">north</data>
       <data key="v_size">422996.4</data>
-      <data key="v_group">57</data>
+      <data key="v_group">345</data>
     </node>
-    <node id="n358">
+    <node id="n371">
       <data key="v_name">VANDER LOUBET</data>
       <data key="v_label">VANDER LOUBET</data>
       <data key="v_congressman_id">74376</data>
@@ -3602,9 +3732,9 @@
       <data key="v_term_color">violet</data>
       <data key="v_region">center-west</data>
       <data key="v_size">233329.11</data>
-      <data key="v_group">269</data>
+      <data key="v_group">346</data>
     </node>
-    <node id="n359">
+    <node id="n372">
       <data key="v_name">VADÃO GOMES</data>
       <data key="v_label">VADÃO GOMES</data>
       <data key="v_congressman_id">73564</data>
@@ -3612,9 +3742,9 @@
       <data key="v_term_color">green</data>
       <data key="v_region">south-east</data>
       <data key="v_size">12887.02</data>
-      <data key="v_group">270</data>
+      <data key="v_group">347</data>
     </node>
-    <node id="n360">
+    <node id="n373">
       <data key="v_name">FERNANDO FERRO</data>
       <data key="v_label">FERNANDO FERRO</data>
       <data key="v_congressman_id">74417</data>
@@ -3622,9 +3752,9 @@
       <data key="v_term_color">indigo</data>
       <data key="v_region">north-east</data>
       <data key="v_size">132257.83</data>
-      <data key="v_group">38</data>
+      <data key="v_group">348</data>
     </node>
-    <node id="n361">
+    <node id="n374">
       <data key="v_name">MARCOS MEDRADO</data>
       <data key="v_label">MARCOS MEDRADO</data>
       <data key="v_congressman_id">74634</data>
@@ -3632,9 +3762,9 @@
       <data key="v_term_color">violet</data>
       <data key="v_region">north-east</data>
       <data key="v_size">0</data>
-      <data key="v_group">271</data>
+      <data key="v_group">349</data>
     </node>
-    <node id="n362">
+    <node id="n375">
       <data key="v_name">INDIO DA COSTA</data>
       <data key="v_label">INDIO DA COSTA</data>
       <data key="v_congressman_id">141389</data>
@@ -3642,9 +3772,9 @@
       <data key="v_term_color">blue</data>
       <data key="v_region">south-east</data>
       <data key="v_size">170364.72</data>
-      <data key="v_group">272</data>
+      <data key="v_group">350</data>
     </node>
-    <node id="n363">
+    <node id="n376">
       <data key="v_name">ARNALDO MADEIRA</data>
       <data key="v_label">ARNALDO MADEIRA</data>
       <data key="v_congressman_id">73993</data>
@@ -3652,9 +3782,9 @@
       <data key="v_term_color">green</data>
       <data key="v_region">south-east</data>
       <data key="v_size">86684.38</data>
-      <data key="v_group">37</data>
+      <data key="v_group">38</data>
     </node>
-    <node id="n364">
+    <node id="n377">
       <data key="v_name">RAUL JUNGMANN</data>
       <data key="v_label">RAUL JUNGMANN</data>
       <data key="v_congressman_id">74048</data>
@@ -3662,9 +3792,9 @@
       <data key="v_term_color">blue</data>
       <data key="v_region">north-east</data>
       <data key="v_size">126885.35</data>
-      <data key="v_group">23</data>
+      <data key="v_group">63</data>
     </node>
-    <node id="n365">
+    <node id="n378">
       <data key="v_name">BETO FARO</data>
       <data key="v_label">BETO FARO</data>
       <data key="v_congressman_id">141335</data>
@@ -3672,9 +3802,9 @@
       <data key="v_term_color">violet</data>
       <data key="v_region">north</data>
       <data key="v_size">436143.17</data>
-      <data key="v_group">273</data>
+      <data key="v_group">351</data>
     </node>
-    <node id="n366">
+    <node id="n379">
       <data key="v_name">GERVÁSIO SILVA</data>
       <data key="v_label">GERVÁSIO SILVA</data>
       <data key="v_congressman_id">73472</data>
@@ -3682,9 +3812,19 @@
       <data key="v_term_color">green</data>
       <data key="v_region">south</data>
       <data key="v_size">112287.12</data>
-      <data key="v_group">274</data>
+      <data key="v_group">352</data>
     </node>
-    <node id="n367">
+    <node id="n380">
+      <data key="v_name">MARCELO GUIMARÃES FILHO</data>
+      <data key="v_label">MARCELO GUIMARÃES FILHO</data>
+      <data key="v_congressman_id">74143</data>
+      <data key="v_state">BA</data>
+      <data key="v_term_color">indigo</data>
+      <data key="v_region">north-east</data>
+      <data key="v_size">99159.3</data>
+      <data key="v_group">353</data>
+    </node>
+    <node id="n381">
       <data key="v_name">RODRIGO DE CASTRO</data>
       <data key="v_label">RODRIGO DE CASTRO</data>
       <data key="v_congressman_id">141531</data>
@@ -3692,9 +3832,9 @@
       <data key="v_term_color">violet</data>
       <data key="v_region">south-east</data>
       <data key="v_size">331937.58</data>
-      <data key="v_group">275</data>
+      <data key="v_group">354</data>
     </node>
-    <node id="n368">
+    <node id="n382">
       <data key="v_name">LUIZ ALBERTO</data>
       <data key="v_label">LUIZ ALBERTO</data>
       <data key="v_congressman_id">74133</data>
@@ -3702,9 +3842,9 @@
       <data key="v_term_color">indigo</data>
       <data key="v_region">north-east</data>
       <data key="v_size">447314.47</data>
-      <data key="v_group">56</data>
+      <data key="v_group">355</data>
     </node>
-    <node id="n369">
+    <node id="n383">
       <data key="v_name">SANDRA ROSADO</data>
       <data key="v_label">SANDRA ROSADO</data>
       <data key="v_congressman_id">74039</data>
@@ -3712,9 +3852,9 @@
       <data key="v_term_color">indigo</data>
       <data key="v_region">north-east</data>
       <data key="v_size">69622.34</data>
-      <data key="v_group">276</data>
+      <data key="v_group">356</data>
     </node>
-    <node id="n370">
+    <node id="n384">
       <data key="v_name">NAZARENO FONTELES</data>
       <data key="v_label">NAZARENO FONTELES</data>
       <data key="v_congressman_id">74491</data>
@@ -3722,9 +3862,9 @@
       <data key="v_term_color">indigo</data>
       <data key="v_region">north-east</data>
       <data key="v_size">222260.8</data>
-      <data key="v_group">277</data>
+      <data key="v_group">357</data>
     </node>
-    <node id="n371">
+    <node id="n385">
       <data key="v_name">PAULO BORNHAUSEN</data>
       <data key="v_label">PAULO BORNHAUSEN</data>
       <data key="v_congressman_id">73883</data>
@@ -3732,19 +3872,9 @@
       <data key="v_term_color">indigo</data>
       <data key="v_region">south</data>
       <data key="v_size">128180.75</data>
-      <data key="v_group">278</data>
+      <data key="v_group">358</data>
     </node>
-    <node id="n372">
-      <data key="v_name">PAULO RENATO SOUZA</data>
-      <data key="v_label">PAULO RENATO SOUZA</data>
-      <data key="v_congressman_id">141520</data>
-      <data key="v_state">SP</data>
-      <data key="v_term_color">green</data>
-      <data key="v_region">south-east</data>
-      <data key="v_size">362.6</data>
-      <data key="v_group">279</data>
-    </node>
-    <node id="n373">
+    <node id="n386">
       <data key="v_name">CLÓVIS FECURY</data>
       <data key="v_label">CLÓVIS FECURY</data>
       <data key="v_congressman_id">74026</data>
@@ -3752,9 +3882,9 @@
       <data key="v_term_color">green</data>
       <data key="v_region">north-east</data>
       <data key="v_size">0</data>
-      <data key="v_group">280</data>
+      <data key="v_group">359</data>
     </node>
-    <node id="n374">
+    <node id="n387">
       <data key="v_name">JOÃO DADO</data>
       <data key="v_label">JOÃO DADO</data>
       <data key="v_congressman_id">73682</data>
@@ -3762,9 +3892,9 @@
       <data key="v_term_color">indigo</data>
       <data key="v_region">south-east</data>
       <data key="v_size">384199.75</data>
-      <data key="v_group">92</data>
+      <data key="v_group">103</data>
     </node>
-    <node id="n375">
+    <node id="n388">
       <data key="v_name">ALBANO FRANCO</data>
       <data key="v_label">ALBANO FRANCO</data>
       <data key="v_congressman_id">141373</data>
@@ -3772,9 +3902,9 @@
       <data key="v_term_color">green</data>
       <data key="v_region">north-east</data>
       <data key="v_size">11438.6</data>
-      <data key="v_group">281</data>
+      <data key="v_group">360</data>
     </node>
-    <node id="n376">
+    <node id="n389">
       <data key="v_name">CIDA DIOGO</data>
       <data key="v_label">CIDA DIOGO</data>
       <data key="v_congressman_id">141501</data>
@@ -3782,9 +3912,19 @@
       <data key="v_term_color">green</data>
       <data key="v_region">south-east</data>
       <data key="v_size">62608.36</data>
-      <data key="v_group">142</data>
+      <data key="v_group">208</data>
     </node>
-    <node id="n377">
+    <node id="n390">
+      <data key="v_name">ARMANDO MONTEIRO</data>
+      <data key="v_label">ARMANDO MONTEIRO</data>
+      <data key="v_congressman_id">74472</data>
+      <data key="v_state">PE</data>
+      <data key="v_term_color">green</data>
+      <data key="v_region">north-east</data>
+      <data key="v_size">78726.64</data>
+      <data key="v_group">361</data>
+    </node>
+    <node id="n391">
       <data key="v_name">EDMAR MOREIRA</data>
       <data key="v_label">EDMAR MOREIRA</data>
       <data key="v_congressman_id">74580</data>
@@ -3792,9 +3932,9 @@
       <data key="v_term_color">indigo</data>
       <data key="v_region">south-east</data>
       <data key="v_size">27167.9</data>
-      <data key="v_group">282</data>
+      <data key="v_group">362</data>
     </node>
-    <node id="n378">
+    <node id="n392">
       <data key="v_name">ROGÉRIO MARINHO</data>
       <data key="v_label">ROGÉRIO MARINHO</data>
       <data key="v_congressman_id">141535</data>
@@ -3802,9 +3942,9 @@
       <data key="v_term_color">violet</data>
       <data key="v_region">north-east</data>
       <data key="v_size">96022.44</data>
-      <data key="v_group">283</data>
+      <data key="v_group">42</data>
     </node>
-    <node id="n379">
+    <node id="n393">
       <data key="v_name">FÁTIMA PELAES</data>
       <data key="v_label">FÁTIMA PELAES</data>
       <data key="v_congressman_id">74065</data>
@@ -3812,9 +3952,9 @@
       <data key="v_term_color">indigo</data>
       <data key="v_region">north</data>
       <data key="v_size">223126.08</data>
-      <data key="v_group">284</data>
+      <data key="v_group">363</data>
     </node>
-    <node id="n380">
+    <node id="n394">
       <data key="v_name">LUIZ CARLOS SETIM</data>
       <data key="v_label">LUIZ CARLOS SETIM</data>
       <data key="v_congressman_id">141486</data>
@@ -3822,9 +3962,9 @@
       <data key="v_term_color">indigo</data>
       <data key="v_region">south</data>
       <data key="v_size">187047.22</data>
-      <data key="v_group">92</data>
+      <data key="v_group">364</data>
     </node>
-    <node id="n381">
+    <node id="n395">
       <data key="v_name">MARCELO TEIXEIRA</data>
       <data key="v_label">MARCELO TEIXEIRA</data>
       <data key="v_congressman_id">74300</data>
@@ -3832,9 +3972,9 @@
       <data key="v_term_color">green</data>
       <data key="v_region">north-east</data>
       <data key="v_size">0</data>
-      <data key="v_group">285</data>
+      <data key="v_group">365</data>
     </node>
-    <node id="n382">
+    <node id="n396">
       <data key="v_name">LUCENIRA PIMENTEL</data>
       <data key="v_label">LUCENIRA PIMENTEL</data>
       <data key="v_congressman_id">141504</data>
@@ -3842,9 +3982,9 @@
       <data key="v_term_color">green</data>
       <data key="v_region">north</data>
       <data key="v_size">9650.94</data>
-      <data key="v_group">286</data>
+      <data key="v_group">366</data>
     </node>
-    <node id="n383">
+    <node id="n397">
       <data key="v_name">BRUNO ARAÚJO</data>
       <data key="v_label">BRUNO ARAÚJO</data>
       <data key="v_congressman_id">141394</data>
@@ -3852,9 +3992,9 @@
       <data key="v_term_color">violet</data>
       <data key="v_region">north-east</data>
       <data key="v_size">264677.6</data>
-      <data key="v_group">287</data>
+      <data key="v_group">367</data>
     </node>
-    <node id="n384">
+    <node id="n398">
       <data key="v_name">ABELARDO LUPION</data>
       <data key="v_label">ABELARDO LUPION</data>
       <data key="v_congressman_id">73764</data>
@@ -3862,9 +4002,9 @@
       <data key="v_term_color">indigo</data>
       <data key="v_region">south</data>
       <data key="v_size">179104.26</data>
-      <data key="v_group">288</data>
+      <data key="v_group">368</data>
     </node>
-    <node id="n385">
+    <node id="n399">
       <data key="v_name">ROBERTO ROCHA</data>
       <data key="v_label">ROBERTO ROCHA</data>
       <data key="v_congressman_id">74209</data>
@@ -3872,9 +4012,9 @@
       <data key="v_term_color">green</data>
       <data key="v_region">north-east</data>
       <data key="v_size">2299</data>
-      <data key="v_group">289</data>
+      <data key="v_group">369</data>
     </node>
-    <node id="n386">
+    <node id="n400">
       <data key="v_name">JUTAHY JUNIOR</data>
       <data key="v_label">JUTAHY JUNIOR</data>
       <data key="v_congressman_id">74570</data>
@@ -3882,9 +4022,9 @@
       <data key="v_term_color">violet</data>
       <data key="v_region">north-east</data>
       <data key="v_size">1409.24</data>
-      <data key="v_group">290</data>
+      <data key="v_group">370</data>
     </node>
-    <node id="n387">
+    <node id="n401">
       <data key="v_name">FÁBIO FARIA</data>
       <data key="v_label">FÁBIO FARIA</data>
       <data key="v_congressman_id">141428</data>
@@ -3892,9 +4032,9 @@
       <data key="v_term_color">violet</data>
       <data key="v_region">north-east</data>
       <data key="v_size">290448.32</data>
-      <data key="v_group">291</data>
+      <data key="v_group">371</data>
     </node>
-    <node id="n388">
+    <node id="n402">
       <data key="v_name">GLADSON CAMELI</data>
       <data key="v_label">GLADSON CAMELI</data>
       <data key="v_congressman_id">141446</data>
@@ -3902,9 +4042,9 @@
       <data key="v_term_color">indigo</data>
       <data key="v_region">north</data>
       <data key="v_size">6468.95</data>
-      <data key="v_group">292</data>
+      <data key="v_group">372</data>
     </node>
-    <node id="n389">
+    <node id="n403">
       <data key="v_name">SIMÃO SESSIM</data>
       <data key="v_label">SIMÃO SESSIM</data>
       <data key="v_congressman_id">73424</data>
@@ -3912,9 +4052,9 @@
       <data key="v_term_color">violet</data>
       <data key="v_region">south-east</data>
       <data key="v_size">448747.37</data>
-      <data key="v_group">293</data>
+      <data key="v_group">373</data>
     </node>
-    <node id="n390">
+    <node id="n404">
       <data key="v_name">RATINHO JUNIOR</data>
       <data key="v_label">RATINHO JUNIOR</data>
       <data key="v_congressman_id">141403</data>
@@ -3922,9 +4062,9 @@
       <data key="v_term_color">indigo</data>
       <data key="v_region">south</data>
       <data key="v_size">86608.96</data>
-      <data key="v_group">268</data>
+      <data key="v_group">344</data>
     </node>
-    <node id="n391">
+    <node id="n405">
       <data key="v_name">RENATO AMARY</data>
       <data key="v_label">RENATO AMARY</data>
       <data key="v_congressman_id">141528</data>
@@ -3932,9 +4072,9 @@
       <data key="v_term_color">green</data>
       <data key="v_region">south-east</data>
       <data key="v_size">85684.79</data>
-      <data key="v_group">294</data>
+      <data key="v_group">374</data>
     </node>
-    <node id="n392">
+    <node id="n406">
       <data key="v_name">WELLINGTON FAGUNDES</data>
       <data key="v_label">WELLINGTON FAGUNDES</data>
       <data key="v_congressman_id">73653</data>
@@ -3942,9 +4082,9 @@
       <data key="v_term_color">indigo</data>
       <data key="v_region">center-west</data>
       <data key="v_size">39477.53</data>
-      <data key="v_group">295</data>
+      <data key="v_group">375</data>
     </node>
-    <node id="n393">
+    <node id="n407">
       <data key="v_name">ROBERTO SANTIAGO</data>
       <data key="v_label">ROBERTO SANTIAGO</data>
       <data key="v_congressman_id">141473</data>
@@ -3952,9 +4092,19 @@
       <data key="v_term_color">indigo</data>
       <data key="v_region">south-east</data>
       <data key="v_size">256383.96</data>
-      <data key="v_group">274</data>
+      <data key="v_group">352</data>
     </node>
-    <node id="n394">
+    <node id="n408">
+      <data key="v_name">BENEDITO DE LIRA</data>
+      <data key="v_label">BENEDITO DE LIRA</data>
+      <data key="v_congressman_id">74517</data>
+      <data key="v_state">AL</data>
+      <data key="v_term_color">green</data>
+      <data key="v_region">north-east</data>
+      <data key="v_size">28.88</data>
+      <data key="v_group">376</data>
+    </node>
+    <node id="n409">
       <data key="v_name">JOÃO MAIA</data>
       <data key="v_label">JOÃO MAIA</data>
       <data key="v_congressman_id">141459</data>
@@ -3962,9 +4112,9 @@
       <data key="v_term_color">indigo</data>
       <data key="v_region">north-east</data>
       <data key="v_size">123793.94</data>
-      <data key="v_group">296</data>
+      <data key="v_group">377</data>
     </node>
-    <node id="n395">
+    <node id="n410">
       <data key="v_name">SABINO CASTELO BRANCO</data>
       <data key="v_label">SABINO CASTELO BRANCO</data>
       <data key="v_congressman_id">141522</data>
@@ -3972,9 +4122,9 @@
       <data key="v_term_color">violet</data>
       <data key="v_region">north</data>
       <data key="v_size">0</data>
-      <data key="v_group">297</data>
+      <data key="v_group">378</data>
     </node>
-    <node id="n396">
+    <node id="n411">
       <data key="v_name">CARLOS ALBERTO CANUTO</data>
       <data key="v_label">CARLOS ALBERTO CANUTO</data>
       <data key="v_congressman_id">141397</data>
@@ -3982,19 +4132,9 @@
       <data key="v_term_color">green</data>
       <data key="v_region">north-east</data>
       <data key="v_size">112083.27</data>
-      <data key="v_group">298</data>
+      <data key="v_group">379</data>
     </node>
-    <node id="n397">
-      <data key="v_name">DAVI ALCOLUMBRE</data>
-      <data key="v_label">DAVI ALCOLUMBRE</data>
-      <data key="v_congressman_id">73924</data>
-      <data key="v_state">AP</data>
-      <data key="v_term_color">indigo</data>
-      <data key="v_region">north</data>
-      <data key="v_size">60760</data>
-      <data key="v_group">299</data>
-    </node>
-    <node id="n398">
+    <node id="n412">
       <data key="v_name">JULIÃO AMIN</data>
       <data key="v_label">JULIÃO AMIN</data>
       <data key="v_congressman_id">141474</data>
@@ -4002,9 +4142,9 @@
       <data key="v_term_color">blue</data>
       <data key="v_region">north-east</data>
       <data key="v_size">1414.6</data>
-      <data key="v_group">300</data>
+      <data key="v_group">380</data>
     </node>
-    <node id="n399">
+    <node id="n413">
       <data key="v_name">JOSÉ PAULO TÓFFANO</data>
       <data key="v_label">JOSÉ PAULO TÓFFANO</data>
       <data key="v_congressman_id">141471</data>
@@ -4012,9 +4152,9 @@
       <data key="v_term_color">green</data>
       <data key="v_region">south-east</data>
       <data key="v_size">25407.88</data>
-      <data key="v_group">301</data>
+      <data key="v_group">381</data>
     </node>
-    <node id="n400">
+    <node id="n414">
       <data key="v_name">CHICO LOPES</data>
       <data key="v_label">CHICO LOPES</data>
       <data key="v_congressman_id">141440</data>
@@ -4022,9 +4162,9 @@
       <data key="v_term_color">violet</data>
       <data key="v_region">north-east</data>
       <data key="v_size">623915.74</data>
-      <data key="v_group">302</data>
+      <data key="v_group">382</data>
     </node>
-    <node id="n401">
+    <node id="n415">
       <data key="v_name">NELSON PROENÇA</data>
       <data key="v_label">NELSON PROENÇA</data>
       <data key="v_congressman_id">73907</data>
@@ -4032,303 +4172,105 @@
       <data key="v_term_color">green</data>
       <data key="v_region">south</data>
       <data key="v_size">24141.91</data>
-      <data key="v_group">303</data>
+      <data key="v_group">383</data>
     </node>
-    <edge source="n18" target="n102">
-      <data key="e_weight">0.178316469735406</data>
-    </edge>
-    <edge source="n22" target="n364">
-      <data key="e_weight">0.236555137461499</data>
-    </edge>
-    <edge source="n25" target="n240">
-      <data key="e_weight">0.118182433813835</data>
-    </edge>
-    <edge source="n27" target="n237">
-      <data key="e_weight">0.176785699902776</data>
-    </edge>
-    <edge source="n31" target="n116">
-      <data key="e_weight">0.164136445192255</data>
-    </edge>
-    <edge source="n34" target="n175">
-      <data key="e_weight">0.149990859924978</data>
-    </edge>
-    <edge source="n36" target="n363">
+    <edge source="n37" target="n376">
       <data key="e_weight">0.0804048181047648</data>
     </edge>
-    <edge source="n37" target="n98">
-      <data key="e_weight">0.167427666251197</data>
-    </edge>
-    <edge source="n39" target="n228">
+    <edge source="n40" target="n239">
       <data key="e_weight">0.0894466602499975</data>
     </edge>
-    <edge source="n42" target="n88">
-      <data key="e_weight">0.178822276680842</data>
+    <edge source="n41" target="n268">
+      <data key="e_weight">0.138589109113293</data>
     </edge>
-    <edge source="n44" target="n112">
-      <data key="e_weight">0.165653977032935</data>
+    <edge source="n41" target="n392">
+      <data key="e_weight">0.152693232538619</data>
     </edge>
-    <edge source="n47" target="n117">
+    <edge source="n49" target="n118">
       <data key="e_weight">0.0631833713626444</data>
     </edge>
-    <edge source="n47" target="n269">
-      <data key="e_weight">0.112382634570776</data>
-    </edge>
-    <edge source="n48" target="n360">
-      <data key="e_weight">0.161117455963377</data>
-    </edge>
-    <edge source="n49" target="n126">
-      <data key="e_weight">0.143468035873342</data>
-    </edge>
-    <edge source="n52" target="n151">
+    <edge source="n54" target="n159">
       <data key="e_weight">0.105956216738734</data>
     </edge>
-    <edge source="n53" target="n68">
-      <data key="e_weight">0.129766933707742</data>
+    <edge source="n55" target="n82">
+      <data key="e_weight">0.0992591056357808</data>
     </edge>
-    <edge source="n53" target="n203">
-      <data key="e_weight">0.0630129885732955</data>
-    </edge>
-    <edge source="n53" target="n248">
+    <edge source="n55" target="n256">
       <data key="e_weight">0.108576004783632</data>
     </edge>
-    <edge source="n53" target="n309">
-      <data key="e_weight">0.0944763599275071</data>
+    <edge source="n62" target="n377">
+      <data key="e_weight">0.0870560876778236</data>
     </edge>
-    <edge source="n53" target="n336">
-      <data key="e_weight">0.117028806660616</data>
-    </edge>
-    <edge source="n56" target="n343">
-      <data key="e_weight">0.0946059358126281</data>
-    </edge>
-    <edge source="n57" target="n173">
-      <data key="e_weight">0.171390398564767</data>
-    </edge>
-    <edge source="n57" target="n254">
-      <data key="e_weight">0.239162670533133</data>
-    </edge>
-    <edge source="n58" target="n368">
-      <data key="e_weight">0.0829184353170034</data>
-    </edge>
-    <edge source="n59" target="n108">
-      <data key="e_weight">0.117445905709251</data>
-    </edge>
-    <edge source="n60" target="n135">
-      <data key="e_weight">0.0837499550895652</data>
-    </edge>
-    <edge source="n67" target="n229">
-      <data key="e_weight">0.17549258674416</data>
-    </edge>
-    <edge source="n71" target="n131">
+    <edge source="n72" target="n134">
       <data key="e_weight">0.0438787612740257</data>
     </edge>
-    <edge source="n71" target="n261">
-      <data key="e_weight">0.0733037838362812</data>
+    <edge source="n72" target="n359">
+      <data key="e_weight">0.0748860867101534</data>
     </edge>
-    <edge source="n73" target="n117">
+    <edge source="n74" target="n118">
       <data key="e_weight">0.0450987703456135</data>
     </edge>
-    <edge source="n73" target="n177">
-      <data key="e_weight">0.132837251856305</data>
-    </edge>
-    <edge source="n73" target="n194">
+    <edge source="n74" target="n203">
       <data key="e_weight">0.0464753813789281</data>
     </edge>
-    <edge source="n75" target="n191">
+    <edge source="n75" target="n356">
+      <data key="e_weight">0.116176726709832</data>
+    </edge>
+    <edge source="n76" target="n200">
       <data key="e_weight">0.113198891995176</data>
     </edge>
-    <edge source="n80" target="n228">
-      <data key="e_weight">0.128001381319724</data>
+    <edge source="n86" target="n285">
+      <data key="e_weight">0.131628040408231</data>
     </edge>
-    <edge source="n83" target="n347">
-      <data key="e_weight">0.128649395949463</data>
-    </edge>
-    <edge source="n83" target="n355">
-      <data key="e_weight">0.128850594297057</data>
-    </edge>
-    <edge source="n86" target="n146">
-      <data key="e_weight">0.0914403110501619</data>
-    </edge>
-    <edge source="n87" target="n117">
-      <data key="e_weight">0.11280044777922</data>
-    </edge>
-    <edge source="n87" target="n276">
-      <data key="e_weight">0.131128733740916</data>
-    </edge>
-    <edge source="n89" target="n131">
-      <data key="e_weight">0.152310788195162</data>
-    </edge>
-    <edge source="n94" target="n135">
-      <data key="e_weight">0.0835917665200772</data>
-    </edge>
-    <edge source="n96" target="n105">
-      <data key="e_weight">0.112252975726534</data>
-    </edge>
-    <edge source="n96" target="n257">
-      <data key="e_weight">0.122637849276793</data>
-    </edge>
-    <edge source="n96" target="n297">
-      <data key="e_weight">0.108671270645496</data>
-    </edge>
-    <edge source="n96" target="n360">
-      <data key="e_weight">0.117002049253374</data>
-    </edge>
-    <edge source="n97" target="n313">
-      <data key="e_weight">0.125592697246385</data>
-    </edge>
-    <edge source="n98" target="n297">
-      <data key="e_weight">0.112511677714484</data>
-    </edge>
-    <edge source="n98" target="n322">
-      <data key="e_weight">0.153647308107935</data>
-    </edge>
-    <edge source="n98" target="n326">
-      <data key="e_weight">0.166469778811929</data>
-    </edge>
-    <edge source="n104" target="n127">
+    <edge source="n104" target="n128">
       <data key="e_weight">0.0981235480022786</data>
     </edge>
-    <edge source="n104" target="n374">
-      <data key="e_weight">0.0962764971993583</data>
+    <edge source="n104" target="n155">
+      <data key="e_weight">0.103770070760088</data>
     </edge>
-    <edge source="n108" target="n128">
+    <edge source="n108" target="n131">
       <data key="e_weight">0.0673227752311607</data>
     </edge>
-    <edge source="n115" target="n228">
-      <data key="e_weight">0.185626815708728</data>
-    </edge>
-    <edge source="n116" target="n117">
-      <data key="e_weight">0.103648404559502</data>
-    </edge>
-    <edge source="n116" target="n348">
-      <data key="e_weight">0.177518409374637</data>
-    </edge>
-    <edge source="n118" target="n180">
-      <data key="e_weight">0.280293321503371</data>
-    </edge>
-    <edge source="n122" target="n252">
-      <data key="e_weight">0.157308183747925</data>
-    </edge>
-    <edge source="n128" target="n215">
+    <edge source="n131" target="n225">
       <data key="e_weight">0.0771359942455798</data>
     </edge>
-    <edge source="n128" target="n357">
-      <data key="e_weight">0.111296031937423</data>
+    <edge source="n155" target="n387">
+      <data key="e_weight">0.10163390520321</data>
     </edge>
-    <edge source="n131" target="n168">
-      <data key="e_weight">0.142000628161123</data>
-    </edge>
-    <edge source="n131" target="n200">
-      <data key="e_weight">0.143554534210003</data>
-    </edge>
-    <edge source="n134" target="n336">
-      <data key="e_weight">0.206869082367808</data>
-    </edge>
-    <edge source="n137" target="n339">
-      <data key="e_weight">0.403538608726562</data>
-    </edge>
-    <edge source="n142" target="n311">
-      <data key="e_weight">0.113087117232916</data>
-    </edge>
-    <edge source="n148" target="n342">
-      <data key="e_weight">0.11025738368675</data>
-    </edge>
-    <edge source="n151" target="n311">
-      <data key="e_weight">0.0973730863988675</data>
-    </edge>
-    <edge source="n155" target="n203">
-      <data key="e_weight">0.126730436378865</data>
-    </edge>
-    <edge source="n159" target="n245">
-      <data key="e_weight">0.306934424286795</data>
-    </edge>
-    <edge source="n163" target="n360">
-      <data key="e_weight">0.108526696777462</data>
-    </edge>
-    <edge source="n164" target="n265">
-      <data key="e_weight">0.236878065212999</data>
-    </edge>
-    <edge source="n165" target="n296">
-      <data key="e_weight">0.151005664761082</data>
-    </edge>
-    <edge source="n166" target="n360">
-      <data key="e_weight">0.151393687981724</data>
-    </edge>
-    <edge source="n174" target="n228">
-      <data key="e_weight">0.149965279495696</data>
-    </edge>
-    <edge source="n179" target="n319">
-      <data key="e_weight">0.19253784633171</data>
-    </edge>
-    <edge source="n186" target="n243">
-      <data key="e_weight">0.350762303386162</data>
-    </edge>
-    <edge source="n187" target="n210">
-      <data key="e_weight">0.170353606970113</data>
-    </edge>
-    <edge source="n189" target="n360">
-      <data key="e_weight">0.126632229715222</data>
-    </edge>
-    <edge source="n205" target="n207">
-      <data key="e_weight">0.140499716513015</data>
-    </edge>
-    <edge source="n205" target="n311">
-      <data key="e_weight">0.102852699272525</data>
-    </edge>
-    <edge source="n208" target="n319">
+    <edge source="n217" target="n331">
       <data key="e_weight">0.115875626957571</data>
     </edge>
-    <edge source="n217" target="n341">
-      <data key="e_weight">0.108635027460083</data>
+    <edge source="n233" target="n273">
+      <data key="e_weight">0.097434699848045</data>
     </edge>
-    <edge source="n228" target="n266">
-      <data key="e_weight">0.112528566696728</data>
+    <edge source="n234" target="n341">
+      <data key="e_weight">0.0741823538200133</data>
     </edge>
-    <edge source="n228" target="n307">
-      <data key="e_weight">0.131222181744446</data>
+    <edge source="n273" target="n306">
+      <data key="e_weight">0.0842894065407173</data>
     </edge>
-    <edge source="n240" target="n311">
-      <data key="e_weight">0.111971649731625</data>
+    <edge source="n298" target="n315">
+      <data key="e_weight">0.233466153602641</data>
     </edge>
-    <edge source="n248" target="n252">
-      <data key="e_weight">0.106063930363102</data>
-    </edge>
-    <edge source="n256" target="n374">
-      <data key="e_weight">0.120596800724681</data>
-    </edge>
-    <edge source="n261" target="n263">
-      <data key="e_weight">0.0799979460233542</data>
-    </edge>
-    <edge source="n268" target="n308">
-      <data key="e_weight">0.167904194130918</data>
-    </edge>
-    <edge source="n272" target="n355">
-      <data key="e_weight">0.176423039859072</data>
-    </edge>
-    <edge source="n300" target="n310">
+    <edge source="n310" target="n320">
       <data key="e_weight">0.117742440834856</data>
     </edge>
-    <edge source="n314" target="n319">
+    <edge source="n324" target="n331">
       <data key="e_weight">0.101740032691598</data>
     </edge>
-    <edge source="n319" target="n376">
+    <edge source="n331" target="n389">
       <data key="e_weight">0.09284633258998</data>
     </edge>
-    <edge source="n328" target="n360">
-      <data key="e_weight">0.154296133507768</data>
-    </edge>
-    <edge source="n341" target="n352">
+    <edge source="n354" target="n365">
       <data key="e_weight">0.0585948887383515</data>
     </edge>
-    <edge source="n342" target="n374">
+    <edge source="n355" target="n387">
       <data key="e_weight">0.0774233102802618</data>
     </edge>
-    <edge source="n342" target="n380">
-      <data key="e_weight">0.125849240303604</data>
-    </edge>
-    <edge source="n356" target="n390">
+    <edge source="n369" target="n404">
       <data key="e_weight">0.0279064235265947</data>
     </edge>
-    <edge source="n366" target="n393">
+    <edge source="n379" target="n407">
       <data key="e_weight">0.088873390289656</data>
     </edge>
   </graph>
