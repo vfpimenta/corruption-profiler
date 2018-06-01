@@ -1,6 +1,6 @@
 #!/bin/bash
  
-expenses=("default")
+expenses=("flight" "publicity" "telecom" "fuels" "maintenance" "consultancy" "auto-watercraft" "auto" "postal" "flight-ticket" "lodging" "meal" "aircraft" "security" "locomotion" "taxi" "publication" "software" "office" "watercraft" "maritme" "course" "default")
 distances=("JS" "cosine" "robust")
 ks=(2 3 4 5)
 legislatures=(53 54 55)
